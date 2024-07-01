@@ -4,35 +4,46 @@ import { menuItems } from "@/dummyData/data";
 import { Site } from "@/helpers/Site";
 import Image from "next/image";
 import { CgMenuRight } from "react-icons/cg";
+import Button from "./Button";
+import { MdClose } from "react-icons/md";
+import { usePathname } from "next/navigation";
+import { useTheme } from "@/context/ThemeContext";
+
 const Header = () => {
-  // console.log(menuItems);
+  const pathname = usePathname();
+  const { toggle, open } = useTheme();
+
   return (
-    <header className=" bg-light shadow-md">
-      <div className=" flex items-center justify-between h-[120px] page-width">
+    <header className="bg-light shadow-md">
+      <div className="flex items-center justify-between h-24 page-width">
         <div className="flex items-center space-x-4">
           <div className="relative">
             <Link href={Site?.url}>
               {Site?.logo ? (
                 <Image
                   src={Site?.logo}
-                  alt={Site?.name}
+                  alt={`${Site?.name} + 'Logo' `}
                   height={70}
                   width={162}
-                  className="object-contain"
+                  className="object-contain max-sm:w-32 max-sm:h-auto"
                 />
               ) : (
-                <span className="text-xl font-bold">{Site?.name}</span>
+                <span className="text-5xl max-sm:text-2xl font-bold text-primary">
+                  {Site?.name}
+                </span>
               )}
             </Link>
           </div>
         </div>
-        <nav className="flex-1 hidden xl:flex justify-center space-x-6">
+        <nav className="flex-1 hidden xl:flex justify-center space-x-6 ">
           <ul className="flex justify-center items-center gap-14">
             {menuItems?.map((item) => (
               <li key={item.name}>
                 <Link
                   href={item.link}
-                  className="font-semibold  text-primary text-xl"
+                  className={`${
+                    pathname == item?.link ? "text-primary !font-bold" : ""
+                  } font-semibold text-xl hover:text-primary`}
                 >
                   {item.name}
                 </Link>
@@ -40,12 +51,37 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div className="flex items-center justify-between gap-4">
-          <Link href="" className="btn btn--primary">
-            Get Started
-          </Link>
-          <CgMenuRight className="icon icon-menu !h-8 !w-8" />
+        <div className="flex items-center justify-between sm:gap-4 gap-2 ">
+          <Button title="Get Started" />
+          <CgMenuRight
+            className="icon icon-menu !h-8 !w-8 xl:hidden flex cursor-pointer"
+            onClick={toggle}
+          />
         </div>
+
+        <nav
+          className={`fixed z-50 inset-0 h-full w-full bg-white transform transition-transform duration-300 ${
+            open ? "translate-x-0" : "-translate-x-full"
+          } xl:hidden`}
+        >
+          <ul className="flex items-center justify-center gap-10 flex-col p-5 h-full">
+            {menuItems?.map((item) => (
+              <li key={item.name}>
+                <Link
+                  href={item.link}
+                  className={`${
+                    pathname == item?.link ? "text-primary !font-bold" : ""
+                  } font-semibold text-xl hover:text-primary`}
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <button className="absolute right-4 top-4" onClick={toggle}>
+            <MdClose className="icon icon-close" />
+          </button>
+        </nav>
       </div>
     </header>
   );

@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        advent_Pro: ["var(--font-advent-pro)"],
+      },
       colors: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
