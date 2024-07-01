@@ -12,17 +12,28 @@
   --color-white: rgba(255, 255, 255, 1); /* #fff */
   --color-background-start: rgba(250, 250, 250, 1); /* #fafafa */
   --color-background-end: rgba(255, 255, 255, 1); /* #fff */
-  --color-bg:#F1F3FB;
+  --color-bg: #f1f3fb;
 }
 
 .h1,
 h1 {
   @apply text-5xl leading-10 font-semibold;
 }
-.page-width{
-  @apply max-w-screen-2xl m-auto md:px-10 px-2
+.page-width {
+  @apply max-w-screen-2xl m-auto md:px-10 px-2;
 }
-
+.icon {
+  @apply w-6 h-6;
+}
+.btn {
+  @apply font-semibold text-white py-3 text-2xl leading-none px-8 rounded-full  transition ease-in-out delay-150  transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none;
+}
+.btn--primary {
+  @apply bg-gradient-to-b from-primary to-primarylight hover:bg-gradient-to-t hover:from-primarylight hover:to-primarylight;
+}
+.btn--secondary {
+  @apply bg-secondary;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-foreground-rgb: 255, 255, 255;

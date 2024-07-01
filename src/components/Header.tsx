@@ -3,10 +3,11 @@ import Link from "next/link";
 import { menuItems } from "@/dummyData/data";
 import { Site } from "@/helpers/Site";
 import Image from "next/image";
+import { CgMenuRight } from "react-icons/cg";
 const Header = () => {
   // console.log(menuItems);
   return (
-    <header className="bg-light shadow-md">
+    <header className=" bg-light shadow-md">
       <div className=" flex items-center justify-between h-[120px] page-width">
         <div className="flex items-center space-x-4">
           <div className="relative">
@@ -25,7 +26,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <nav className="flex-1 hidden md:flex justify-center space-x-6">
+        <nav className="flex-1 hidden xl:flex justify-center space-x-6">
           <ul className="flex justify-center items-center gap-14">
             {menuItems?.map((item) => (
               <li key={item.name}>
@@ -39,13 +40,11 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div>
-          <Link
-            href=""
-            className="font-semibold text-white py-3 text-2xl leading-none px-8 bg-gradient-to-b from-primary to-primarylight rounded-full hover:bg-primarylight transition-all delay-75"
-          >
+        <div className="flex items-center justify-between gap-4">
+          <Link href="" className="btn btn--primary">
             Get Started
           </Link>
+          <CgMenuRight className="icon icon-menu !h-8 !w-8" />
         </div>
       </div>
     </header>
