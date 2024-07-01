@@ -14,9 +14,9 @@ const Footer = () => {
         <div>
           <div className="relative">
             <Link href={Site?.url}>
-              {Site?.logo ? (
+              {Site?.WhiteLogo ? (
                 <Image
-                  src={Site?.logo}
+                  src={Site?.WhiteLogo}
                   alt={Site?.name}
                   height={70}
                   width={162}
