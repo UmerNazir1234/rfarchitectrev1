@@ -9,7 +9,7 @@ import { footerLinks } from "@/dummyData/data";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-primary to-primarylight py-16 ">
+    <footer className="bg-gradient-to-b from-primary to-primarylight py-16">
       <div className="page-width flex items-start  max-md:flex-wrap justify-between text-white">
         <div>
           <div className="relative">

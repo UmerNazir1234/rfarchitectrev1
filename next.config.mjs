@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "rftechnologies.com.pk",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
   },
 };
