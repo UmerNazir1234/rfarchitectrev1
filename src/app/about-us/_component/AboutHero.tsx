@@ -47,7 +47,7 @@ const AboutHero = () => {
         team there and provide them with our maximum efforts. A friendly
         environment enables our clients to completely speak their minds. So we
         can have an idea about what type of work they expected from us. And we
-        are always so on with their expectations.
+        are always so on with their expectations..
       </p>
       </div>
     </div>
