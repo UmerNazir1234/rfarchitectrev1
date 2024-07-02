@@ -19,6 +19,7 @@ const config: Config = {
         primarybtn: "var(--color-btn-primary)",
         secondarybtn: "var(--color-btn-secondary)",
         light: "var(--color-bg)",
+        blueLight: "var(--color-bg-lightBlue)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
