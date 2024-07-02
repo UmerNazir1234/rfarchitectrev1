@@ -4,7 +4,7 @@ import React from "react";
 const Experience = () => {
   return (
     <section>
-      <div className="page-width min-h-[65vh]">
+      <div className="page-width min-h-[65vh] sm-max:min-h-[75vh] flex flex-col items-center justify-center">
         <div className="text-center">
           <Heading title="Experience Talk" classes="text-secondary " />
         </div>

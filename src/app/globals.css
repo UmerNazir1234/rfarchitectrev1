@@ -39,7 +39,7 @@ h1 {
 }
 .h2,
 h2 {
-  @apply xl:text-[80px]  lg:text-[70] md:text-[50px] text-[34px] max-sm:leading-none font-semibold;
+  @apply xl:text-[80px]  lg:text-[70] md:text-[50px] text-[40px] max-sm:leading-none font-semibold;
 }
 
 .page-width {

@@ -7,9 +7,9 @@ const OurVision = () => {
   return (
     <section className="">
       <div className="page-width py-12">
-        <div className="flex justify-between gap-28">
-          <div className="flex-1">
-            <div className="text-center flex flex-col items-center justify-center gap-12">
+        <div className="flex justify-between lg:flex-none flex-wrap lg:gap-28 gap-4">
+          <div className="lg:flex-1 basis-full">
+            <div className="text-center flex flex-col items-center justify-center lg:gap-12 gap-6">
               <IconEye classes="!w-10 !h-10" />
               <Heading
                 title="our vision"
@@ -26,8 +26,8 @@ const OurVision = () => {
               modulation reflect the internal theme of our company.
             </p>
           </div>
-          <div className="flex-1">
-            <div className="text-center flex flex-col items-center justify-center gap-12">
+          <div className="lg:flex-1 basis-full">
+            <div className="text-center flex flex-col items-center justify-center lg:gap-12 gap-4">
               <IconMisson classes="!w-10 !h-10" />
               <Heading
                 title="our mission"
