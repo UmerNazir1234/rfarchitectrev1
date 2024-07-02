@@ -23,6 +23,7 @@ const FaqSection = () => {
                 </div>
             </div>
         </li>
+        
         <li>
             <button className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
                 <span className="flex-1 text-base-content">How can I customize my insurance coverage?</span>
