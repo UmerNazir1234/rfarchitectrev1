@@ -105,6 +105,7 @@ const AboutHero = () => {
         ourselves in the language they want to hear. This adaptation cuts all
         the voices of other competitive companies.
       </div>
+      
     </div>
   );
 };
