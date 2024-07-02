@@ -4,11 +4,11 @@ import React from "react";
 
 const ProjectSubmit = () => {
   return (
-    <section className="bg-secondary py-28 sm-max:py-24 ">
+    <section className="bg-secondary py-28 max-sm:py-16 ">
       <div className="page-width">
         <div className="flex items-center justify-start gap-8 md:flex-nowrap flex-wrap">
           <div className="lg:basis-2/3 basis-full">
-          <div className=" text-center">
+          <div className=" max-md:text-center">
             <Heading
               title="Submit your project"
               icon={false}
