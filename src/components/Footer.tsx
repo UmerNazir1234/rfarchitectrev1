@@ -9,7 +9,7 @@ import { footerLinks } from "@/dummyData/data";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-primary to-primarylight pb-10 pt-44 max-sm:pt-20">
+    <footer className="bg-gradient-to-b from-primary to-primarylight pb-10 pt-44 max-sm:pt-20 relative">
       <div className="page-width flex items-start  justify-between text-white md:flex-nowrap flex-wrap border-b border-white border-opacity-30 pb-10">
         <div className="flex items-start flex-col xl:basis-[60%] lg:basis-[40%] md:basis-[50%] basis-full justify-start gap-8 ">
           <div className="relative">

@@ -13,6 +13,7 @@
   --color-background-start: rgba(250, 250, 250, 1); /* #fafafa */
   --color-background-end: rgba(255, 255, 255, 1); /* #fff */
   --color-bg: #f1f3fb;
+  --color-bg-lightBlue: rgba(167, 193, 253, 0.3);
 }
 * {
   padding: 0;
@@ -22,10 +23,25 @@
 body {
   @apply font-advent_Pro;
 }
+p {
+  @apply text-base;
+}
+.p-lg {
+  @apply lg:text-3xl text-xl font-medium;
+}
+
+.text-italic {
+  @apply text-secondary italic font-semibold;
+}
 .h1,
 h1 {
-  @apply text-5xl leading-10 font-semibold;
+  @apply lg:text-[100px] md:text-[70px] text-[55px]  font-semibold max-sm:leading-tight;
 }
+.h2,
+h2 {
+  @apply xl:text-[80px]  lg:text-[70] md:text-[50px] text-[34px] max-sm:leading-none font-semibold;
+}
+
 .page-width {
   @apply max-w-screen-2xl m-auto md:px-10 px-3;
 }
@@ -40,6 +56,9 @@ h1 {
 }
 .btn--secondary {
   @apply bg-secondary;
+}
+.icon {
+  @apply w-8 h-8;
 }
 @media (prefers-color-scheme: dark) {
   :root {
