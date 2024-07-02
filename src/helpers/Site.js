@@ -1,8 +1,9 @@
 export const Site = {
   name: "Rf Technologies",
   logo: "https://rftechnologies.com.pk/wp-content/uploads/2021/04/Rf_technologies_logo.png",
-  WhiteLogo: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719825111/RfTechnologiesWebsite/Side_Logo-02_2_izjlvf.png",
-  logoWhite:"",
+  WhiteLogo:
+    "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719825111/RfTechnologiesWebsite/Side_Logo-02_2_izjlvf.png",
+  logoWhite: "",
   url: "/",
   address: "3rd floor Taha Mall, Defence Rd, Rawalpindi, Punjab 47300",
   email: "info@rftechnologies.com.pk",
