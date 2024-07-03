@@ -41,6 +41,10 @@ h1 {
 h2 {
   @apply xl:text-[80px]  lg:text-[70] md:text-[50px] text-[40px] max-sm:leading-none font-semibold;
 }
+.h3,
+h3 {
+  @apply xl:text-[40px] lg:text-[40px] text-[32px] leading-tight font-bold;
+}
 
 .page-width {
   @apply max-w-screen-2xl m-auto md:px-10 px-3;

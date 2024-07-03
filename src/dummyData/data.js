@@ -5,50 +5,103 @@ export const menuItems = [
   { id: 4, name: "Contact Us", link: "/contact-us" },
 ];
 
-export const footerLinks = [
+export const informationLinks = [
   {
-    id: 2,
+    id: 1,
     name: "Become a Partner",
     link: "/become-a-partner",
   },
   {
-    id: 3,
+    id: 2,
     name: "About Us",
     link: "/about-us",
   },
   {
-    id: 4,
+    id: 3,
     name: "Portfolio",
     link: "/portfolio",
   },
   {
-    id: 5,
+    id: 4,
     name: "Blog",
     link: "/blog",
   },
   {
-    id: 6,
+    id: 5,
     name: "Faq",
     link: "/faq",
   },
   {
-    id: 7,
+    id: 6,
     name: "NDA",
     link: "/nda",
   },
   {
-    id: 8,
+    id: 7,
     name: "Contact Us",
     link: "/contact-us",
   },
   {
-    id: 9,
+    id: 8,
     name: "Privacy Policy",
     link: "/privacy-policy",
   },
   {
-    id: 10,
+    id: 9,
     name: "Terms & Conditions",
     link: "/terms-and-conditions",
   },
+];
+
+export const serviceLinks = [
+  {
+    id: 1,
+    name: "Web Development",
+    link: "/web-development",
+  },
+  {
+    id: 2,
+    name: "WordPress Development",
+    link: "/wordPress-development",
+  },
+  {
+    id: 3,
+    name: "Shopify Development",
+    link: "/shopify-development",
+  },
+  {
+    id: 4,
+    name: "Digital Marketing",
+    link: "/digital-marketing",
+  },
+  {
+    id: 5,
+    name: "Graphic Design",
+    link: "/graphic-design",
+  },
+  {
+    id: 6,
+    name: "SEO",
+    link: "/seo",
+  },
+  {
+    id: 7,
+    name: "Mobile App Development",
+    link: "/mobile-app-development",
+  },
+  {
+    id: 8,
+    name: "CRM Development",
+    link: "/crm-development",
+  },
+  {
+    id: 9,
+    name: "Custom Software Development",
+    link: "/custom-software-development",
+  },
+  {
+    id:10,
+    name:"Woocommerce Development",
+    link:'woocommerce-development'
+  }
 ];

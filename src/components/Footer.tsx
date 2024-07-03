@@ -5,11 +5,11 @@ import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { footerLinks } from "@/dummyData/data";
+import { informationLinks, serviceLinks } from "@/dummyData/data";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-primary to-primarylight pb-10 pt-44 max-sm:pt-20 relative">
+    <footer className="bg-gradient-to-b from-primary to-primarylight pb-10 pt-36 max-sm:pt-20 relative">
       <div className="page-width flex items-start  justify-between text-white md:flex-nowrap flex-wrap border-b border-white border-opacity-30 pb-10">
         <div className="flex items-start flex-col xl:basis-[60%] lg:basis-[40%] md:basis-[50%] basis-full justify-start gap-8 ">
           <div className="relative">
@@ -35,23 +35,29 @@ const Footer = () => {
             </span>{" "}
             {Site?.address}
           </div>
-          <div className="flex gap-2 items-center justify-start text-lg font-normal">
+          <Link
+            href={`mailto:${Site?.email}`}
+            className="flex gap-2 items-center justify-start text-lg font-normal"
+          >
             <span>
               <MdEmail />
             </span>{" "}
             {Site?.email}
-          </div>
-          <div className="flex gap-2 items-center justify-start text-lg font-normal">
+          </Link>
+          <Link
+            href={`tel:${Site?.number}`}
+            className="flex gap-2 items-center justify-start text-lg font-normal"
+          >
             <span>
               <BsFillTelephoneFill />
             </span>{" "}
             {Site?.number}
-          </div>
+          </Link>
         </div>
         <div className="flex flex-col gap-8 items-start xl:basis-[20%] lg:basis-[30%] md:basis-[25%] basis-full  justify-start">
           <h2 className="font-bold text-[32px] max-md:mt-4">Information</h2>
           <ul className="flex flex-col items-start justify-start gap-4">
-            {footerLinks?.map((item) => (
+            {informationLinks?.map((item) => (
               <li key={item?.id}>
                 <Link href={item?.link} className="font-normal text-lg">
                   {item?.name}
@@ -63,7 +69,7 @@ const Footer = () => {
         <div className="flex flex-col gap-8 items-start xl:basis-[20%] lg:basis-[30%] md:basis-[25%] basis-full  justify-start">
           <h2 className="font-bold text-[32px] max-md:mt-4">Services</h2>
           <ul className="flex flex-col items-start justify-start gap-4">
-            {footerLinks?.map((item) => (
+            {serviceLinks?.map((item) => (
               <li key={item?.id}>
                 <Link className="font-normal text-lg" href={item?.link}>
                   {item?.name}

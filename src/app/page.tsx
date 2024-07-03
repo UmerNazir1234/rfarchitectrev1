@@ -1,3 +1,4 @@
+import Newsletter from "@/components/Newsletter";
 import ServiceCard from "./_components/ServiceCard";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       IT SOLUTIONS & SERVICES
     </h1>
     <ServiceCard />
+    <Newsletter />
     </>
   );
 }

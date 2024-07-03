@@ -8,18 +8,18 @@ const ProjectSubmit = () => {
       <div className="page-width">
         <div className="flex items-center justify-start gap-8 md:flex-nowrap flex-wrap">
           <div className="lg:basis-2/3 basis-full">
-          <div className=" max-md:text-center">
-            <Heading
-              title="Submit your project"
-              icon={false}
-              classes="text-primary !capitalize "
-            />
-            <div>
-              <p className="text-white p-lg w-3/4 max-md:text-center text-start max-lg:w-full ">
-                Let us know your requirements and we'll get back to you as soon
-                as possible.
-              </p>
-            </div>
+            <div className=" max-md:text-center">
+              <Heading
+                title="Submit your project"
+                icon={false}
+                classes="text-primary !capitalize "
+              />
+              <div>
+                <p className="text-white p-lg w-3/4 max-md:text-center text-start max-lg:w-full ">
+                  Let us know your requirements and we'll get back to you as
+                  soon as possible.
+                </p>
+              </div>
             </div>
           </div>
           <div className="lg:basis-1/3 basis-full ">
