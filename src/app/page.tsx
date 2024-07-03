@@ -1,5 +1,7 @@
 import Newsletter from "@/components/Newsletter";
 import ServiceCard from "./_components/ServiceCard";
+import FaqSection from "./faq/FaqSection";
+import NewsLetter from "./faq/NewsLetter";
 
 export default function Home() {
   return (
