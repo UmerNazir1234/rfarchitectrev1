@@ -1,16 +1,9 @@
-import Newsletter from "@/components/Newsletter";
-import ServiceCard from "./_components/ServiceCard";
-import FaqSection from "./faq/FaqSection";
-import NewsLetter from "./faq/NewsLetter";
+import MainPage from "./_components/MainPage";
 
-export default function Home() {
+export default function page() {
   return (
     <>
-    <h1 className="flex justify-center items-center font-bold">
-      IT SOLUTIONS & SERVICES
-    </h1>
-    <ServiceCard />
-    <Newsletter />
+      <MainPage />
     </>
   );
 }

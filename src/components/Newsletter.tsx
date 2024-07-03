@@ -3,11 +3,11 @@ import Heading from "./Heading";
 import Button from "./Button";
 import Image from "next/image";
 
-const Newsletter = () => {
+const Newsletter = ({ classes }: any) => {
   return (
-    <section>
-      <div className="page-width ">
-        <div className="bg-secondary rounded-xl sm:p-10 p-4 sm:py-16 py-10 mb-20 relative">
+    <section className={`${classes || ""} pb-20 pt-12 bg-light`}>
+      <div className="page-width">
+        <div className="bg-secondary rounded-xl sm:p-10 p-4 sm:py-16 py-10 relative">
           <div className="flex items-center justify-between gap-3 lg:flex-nowrap flex-wrap">
             <div className="lg:basis-2/3 basis-full">
               <h3 className="text-white lg:text-start text-center lg:m-0 mb-3">

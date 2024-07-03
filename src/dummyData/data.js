@@ -100,8 +100,43 @@ export const serviceLinks = [
     link: "/custom-software-development",
   },
   {
-    id:10,
-    name:"Woocommerce Development",
-    link:'woocommerce-development'
-  }
+    id: 10,
+    name: "Woocommerce Development",
+    link: "woocommerce-development",
+  },
+];
+
+export const sliderData = [
+  {
+    id: 1,
+    title: "IT SOLUTIONS SERVICES",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720021733/RfTechnologiesWebsite/annie-spratt-QckxruozjRg-unsplash_lhcffl.png",
+    buttons: [
+      {
+        id: 1,
+        text: "IT SOLUTIONS & SERVICES",
+        link: "https://www.pexels.com/@rpnickson/",
+        type: "btn-dark btn-circle",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "IT SOLUTIONS & SERVICES",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720021733/RfTechnologiesWebsite/annie-spratt-QckxruozjRg-unsplash_lhcffl.png",
+    buttons: [
+      {
+        id: 1,
+        text: "Julia M Cameron",
+        link: "https://www.pexels.com/@julia-m-cameron/",
+        type: "btn-dark btn-circle",
+      },
+    ],
+  },
 ];

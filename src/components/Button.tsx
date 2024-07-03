@@ -41,7 +41,7 @@ const Button = ({
       disabled={disabled}
     >
       <span>{title}</span>
-      {icon && <span className="icon">{icon}</span>}
+      {icon && <span className="">{icon}</span>}
     </button>
   );
 };

@@ -43,7 +43,7 @@ h2 {
 }
 .h3,
 h3 {
-  @apply xl:text-[40px] lg:text-[40px] text-[32px] leading-tight font-bold;
+  @apply xl:text-[50px] lg:text-[40px] text-[32px] leading-tight font-bold uppercase;
 }
 
 .page-width {
@@ -53,13 +53,16 @@ h3 {
   @apply w-6 h-6;
 }
 .btn {
-  @apply font-semibold text-white py-3 text-[22px] max-sm:text-lg leading-none px-8 max-sm:px-6 max-sm:py-2 rounded-full  transition ease-in-out delay-150;
+  @apply font-semibold text-white py-4 text-2xl max-sm:text-lg leading-none px-10 max-sm:px-5 max-sm:py-2 rounded-full  transition ease-in-out delay-150;
 }
 .btn--primary {
   @apply bg-gradient-to-b from-primary to-primarylight hover:bg-gradient-to-t hover:from-primarylight hover:to-primarylight;
 }
 .btn--secondary {
   @apply bg-secondary;
+}
+.btn--outline {
+  @apply bg-transparent border text-primary border-primary;
 }
 .icon {
   @apply w-8 h-8;
