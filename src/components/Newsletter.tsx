@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Newsletter = ({ classes }: any) => {
   return (
-    <section className={`${classes || ""} pb-20 pt-12 bg-light`}>
+    <section className={`${classes || ""} pb-20 pt-12 `}>
       <div className="page-width">
         <div className="bg-secondary rounded-xl sm:p-10 p-4 sm:py-16 py-10 relative">
           <div className="flex items-center justify-between gap-3 lg:flex-nowrap flex-wrap">

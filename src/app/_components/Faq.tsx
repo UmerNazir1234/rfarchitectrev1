@@ -10,7 +10,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Faq = ({ classes }: any) => {
   return (
-    <div className={`bg-light py-12 ${classes || ""}`}>
+    <div className={` py-12 ${classes || ""}`}>
       <div className="page-width">
         <h3 className="text-center text-primary ">Frequently Ask Questions</h3>
         <div className="mt-14">

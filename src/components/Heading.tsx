@@ -19,7 +19,7 @@ const Heading: React.FC<HeadingProps> = ({
       <h2
         className={`${classes} relative inline-block uppercase ${
           icon && "xl:mb-12 mb-8"
-        }  `} 
+        }  `}
       >
         {icon && (
           <>

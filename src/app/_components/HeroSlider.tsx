@@ -7,38 +7,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import HeroSliderButtons from "./HeroSliderButtons";
+import { GoArrowUpRight } from "react-icons/go";
+import Button from "@/components/Button";
 
-interface Slide {
+type Slide = {
   id: number;
   title: string;
   description: string;
   image: string;
-  buttons: ButtonProps[];
-}
+};
 
-interface ButtonProps {
-  id: number;
-  text: string;
-  link: string;
-  type: string;
-}
-
-interface HeroSliderProps {
+type HeroSliderProps = {
   data: Slide[];
-}
+};
 
 const HeroSlider: React.FC<HeroSliderProps> = ({ data }) => {
   return (
-    <section className="w-full ">
-      <div className=" h-screen">
+    <section className="w-full heroSlider ">
+      <div className="md:h-[90vh] h-[80vh] ">
         <ul className="h-full w-full flex">
           <Swiper
-            navigation
             pagination={{ type: "bullets", clickable: true }}
-            autoplay={false}
+            autoplay={true}
             loop={true}
-            modules={[Autoplay, Navigation, Pagination]}
+            modules={[Autoplay, Pagination]}
           >
             {data.map((item) => (
               <SwiperSlide key={item?.id}>
@@ -51,19 +43,22 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ data }) => {
                 <div className="h-full w-full absolute left-0 top-0 bg-black opacity-20"></div>
                 <div className="relative z-10 h-full flex items-center justify-center">
                   <div className="text-center md:max-w-[57%] max-w-[90%]">
-                    <p className="lg:text-[120px] md:text-[70px] text-4xl font-semibold leading-tight text-white">
-                      {item?.title}
-                    </p>
+                    <h1
+                      className="lg:text-[120px] drop-shadow-2xl md:text-[70px] text-4xl font-bold leading-tight text-white"
+                      dangerouslySetInnerHTML={{ __html: item.title }}
+                    ></h1>
                     {item?.description && (
-                      <p className="text-md p-lg  m-auto text-white">
+                      <p className="text-md p-lg  m-auto text-white mt-6">
                         {item?.description}
                       </p>
                     )}
-                    {item?.buttons.length > 0 ? (
-                      <p className="  mt-10 lg:mt-20">
-                        <HeroSliderButtons buttons={item?.buttons} />
-                      </p>
-                    ) : null}
+                    <p className="mt-10 lg:mt-16 flex items-center justify-center">
+                      <Button
+                        title="let's talk"
+                        classes="bg-white !text-primary uppercase !px-16"
+                        icon={<GoArrowUpRight />}
+                      />
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>

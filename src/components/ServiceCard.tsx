@@ -1,0 +1,31 @@
+import Link from "next/link";
+import React from "react";
+import { FaLaptopCode } from "react-icons/fa";
+import Button from "./Button";
+import { GoArrowUpRight } from "react-icons/go";
+const ServiceCard = () => {
+  return (
+   
+      <div className="rounded-[30px] shadow-lg bg-white p-8 flex items-center justify-center flex-col gap-10">
+        <Link
+          href="#"
+          className="bg-gradient-to-br  from-primary to-primarylight p-4 rounded-lg"
+        >
+          <FaLaptopCode className="w-24 h-24  fill-white" />
+        </Link>
+        <h5 className="">Website Development</h5>
+        <p className="text-lg">
+          Process of designing, creating, deploying, and maintaining software
+          for a specific organizations.
+        </p>
+        <Button
+          title="Read More"
+          icon={<GoArrowUpRight />}
+          classes="bg-light !text-primary !py-3 !px-8 !text-base !font-semibold"
+        />
+      </div>
+ 
+  );
+};
+
+export default ServiceCard;

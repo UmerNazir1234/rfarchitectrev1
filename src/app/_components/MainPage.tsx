@@ -1,17 +1,21 @@
 import React from "react";
-import ServiceCard from "./ServiceCard";
+
 import Faq from "./Faq";
 import Newsletter from "@/components/Newsletter";
 import Hero from "./Hero";
+import LeadingSolution from "./LeadingSolution";
+import ServiceSlider from "./ServiceSlider";
 
 const MainPage = () => {
   return (
-    <>
+    <main className="bg-light">
       <Hero />
-      <ServiceCard />
+
+      <LeadingSolution />
+      <ServiceSlider />
       <Faq />
       <Newsletter />
-    </>
+    </main>
   );
 };
 
