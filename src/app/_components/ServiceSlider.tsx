@@ -8,10 +8,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import ServiceCard from "@/components/ServiceCard";
+import Button from "@/components/Button";
 
 const ServiceSlider = () => {
   return (
-    <section className="w-full  ">
+    <section className="w-full -mt-80 mb-20 z-50 relative ">
       <div className="">
         <Swiper
           autoplay={{ delay: 2500, disableOnInteraction: false }}
@@ -21,7 +22,6 @@ const ServiceSlider = () => {
           slidesPerView={5}
           loop={true}
           modules={[Autoplay, Pagination, Navigation]}
-
           className="!pb-16"
         >
           <SwiperSlide>
@@ -46,6 +46,14 @@ const ServiceSlider = () => {
             <ServiceCard />
           </SwiperSlide>
         </Swiper>
+      </div>
+      <div className="flex items-center justify-center mt-10">
+        <Button
+          title="How We Do It"
+          classes="bg-secondary uppercase"
+          enableIcons={true}
+          iconStyle="stroke-secondary"
+        />
       </div>
     </section>
   );

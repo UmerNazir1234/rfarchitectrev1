@@ -124,3 +124,13 @@ export const sliderData = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720021733/RfTechnologiesWebsite/annie-spratt-QckxruozjRg-unsplash_lhcffl.png",
   },
 ];
+
+// export const serviceCards = [
+//   {
+//     id:1,
+//     title:"WordPress Development",
+//     description:"Process of designing, creating, deploying, and maintaining software for a specific organizations.",
+//     url:'/',
+//   },
+
+// ];
