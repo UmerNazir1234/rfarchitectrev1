@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import IconRound from "./Icons/IconRound";
 
 type ButtonProps = {
   title?: string;
@@ -10,6 +11,8 @@ type ButtonProps = {
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
   classes?: string;
+  iconStyle?: string;
+  enableIcons?: boolean;
 };
 
 const Button = ({
@@ -20,6 +23,8 @@ const Button = ({
   icon,
   type = "button",
   disabled = false,
+  iconStyle,
+  enableIcons = false,
 }: ButtonProps) => {
   if (href) {
     return (
@@ -37,11 +42,23 @@ const Button = ({
     <button
       type={type}
       onClick={onClick}
-      className={`btn flex items-center justify-center gap-1 ${classes}`}
+      className={`btn flex items-center justify-center gap-1 relative ${classes}`}
       disabled={disabled}
     >
+      {enableIcons && (
+        <>
+          <span className="absolute left-0 top-0 -ml-3 -mt-3 bg-transparent bg-contain max-sm:hidden">
+            <IconRound classes={iconStyle} />{" "}
+          </span>
+          <span className="absolute right-0 bottom-0 -mr-3 -mb-3 bg-transparent bg-contain transform rotate-180 max-sm:hidden">
+            {" "}
+            <IconRound classes={iconStyle} />{" "}
+          </span>
+        </>
+      )}
+
       <span>{title}</span>
-      {icon && <span className="icon">{icon}</span>}
+      {icon && <span className="">{icon}</span>}
     </button>
   );
 };
