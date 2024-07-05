@@ -47,14 +47,6 @@ const ServiceSlider = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="flex items-center justify-center mt-10">
-        <Button
-          title="How We Do It"
-          classes="bg-secondary uppercase"
-          enableIcons={true}
-          iconStyle="stroke-secondary"
-        />
-      </div>
     </section>
   );
 };
