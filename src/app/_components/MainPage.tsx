@@ -7,6 +7,8 @@ import LeadingSolution from "./LeadingSolution";
 import ServiceSlider from "./ServiceSlider";
 import Steps from "./Steps";
 import WhyChooseUs from "./WhyChooseUs";
+import CaseStudycard from "./CaseStudycard";
+import TestimonialCard from "./TestimonialCard";
 
 
 const MainPage = () => {
@@ -17,6 +19,8 @@ const MainPage = () => {
       <ServiceSlider />
        <Steps />
        <WhyChooseUs />
+       <CaseStudycard />
+       <TestimonialCard />
       <Faq />
       <Newsletter />
     </main>
