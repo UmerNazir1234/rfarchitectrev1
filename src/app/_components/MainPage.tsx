@@ -6,6 +6,7 @@ import Hero from "./Hero";
 import LeadingSolution from "./LeadingSolution";
 import ServiceSlider from "./ServiceSlider";
 import Steps from "./Steps";
+import WhyChooseUs from "./WhyChooseUs";
 
 
 const MainPage = () => {
@@ -15,6 +16,7 @@ const MainPage = () => {
       <LeadingSolution />
       <ServiceSlider />
        <Steps />
+       <WhyChooseUs />
       <Faq />
       <Newsletter />
     </main>
