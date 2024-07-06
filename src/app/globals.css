@@ -85,6 +85,12 @@ h5 {
 .icon {
   @apply w-8 h-8;
 }
+.serviceSwaper {
+  @apply !pb-16;
+}
+.featuredProjects .swiper-button-prev {
+  @apply !absolute !bottom-0 ;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-foreground-rgb: 255, 255, 255;

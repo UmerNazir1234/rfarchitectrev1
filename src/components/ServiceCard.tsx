@@ -8,9 +8,9 @@ const ServiceCard = () => {
     <div className="rounded-[30px] shadow-lg bg-white p-8 flex items-center justify-center flex-col gap-10">
       <Link
         href="#"
-        className="bg-gradient-to-br  from-primary to-primarylight p-4 rounded-lg"
+        className="bg-gradient-to-br from-primary to-primarylight md:p-4 p-2 rounded-lg"
       >
-        <FaLaptopCode className="w-24 h-24  fill-white" />
+        <FaLaptopCode className="xl:w-24 xl:h-24 lg:w-20 lg:h-20 md:w-16 md:h-16 w-14 h-14  fill-white" />
       </Link>
       <h5 className="">Website Development</h5>
       <p className="text-lg">

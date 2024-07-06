@@ -7,9 +7,8 @@ import LeadingSolution from "./LeadingSolution";
 import ServiceSlider from "./ServiceSlider";
 import Steps from "./Steps";
 import WhyChooseUs from "./WhyChooseUs";
-import CaseStudycard from "./CaseStudycard";
 import TestimonialCard from "./TestimonialCard";
-
+import FeaturedProjects from "./FeaturedProjects";
 
 const MainPage = () => {
   return (
@@ -17,10 +16,10 @@ const MainPage = () => {
       <Hero />
       <LeadingSolution />
       <ServiceSlider />
-       <Steps />
-       <WhyChooseUs />
-       <CaseStudycard />
-       <TestimonialCard />
+      <Steps />
+      <WhyChooseUs />
+      <FeaturedProjects />
+      <TestimonialCard />
       <Faq />
       <Newsletter />
     </main>

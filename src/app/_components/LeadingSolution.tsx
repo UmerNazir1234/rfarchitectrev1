@@ -5,7 +5,7 @@ const LeadingSolution = () => {
   return (
     <section className="relative z-20">
       <div className="page-width pt-32">
-        <div className="bg-gradient-to-l to-[#BCCDF2] from-[#0B3DAB] rounded-[40px] min-h-[90vh] relative">
+        <div className="bg-gradient-to-l to-[#BCCDF2] from-[#0B3DAB] rounded-[40px] min-h-[90vh] max-md:min-h-[80vh] relative">
           <Button
             enableIcons={true}
             title="OUR SERVICES"

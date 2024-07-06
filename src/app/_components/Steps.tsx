@@ -14,7 +14,7 @@ const Steps = () => {
             iconStyle="stroke-secondary"
           />
         </div>
-        <h2 className="text-primary text-center max-w-5xl m-auto">
+        <h2 className="text-primary text-center mt-4 max-w-5xl m-auto">
           Steps to Build a SuccessfulDigital Product
         </h2>
 
@@ -28,21 +28,19 @@ const Steps = () => {
           src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720174781/RfTechnologiesWebsite/Let_s_get_IT_done_rgluhx.png"
           loading="lazy"
           alt="Let's get it done"
-          className="absolute left-2 bottom-64 "
+          className="absolute xl:left-2 xl:bottom-80 lg:bottom-64 md:bottom-60 max-lg:w-80  max-sm:w-72 max-md:top-[210px] max-sm:top-[270px] "
         />
         <img
           src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720175560/RfTechnologiesWebsite/Trade_Mark-02_1_zxts3i.png"
           loading="lazy"
           alt="Logo"
-          className="absolute right-0 top-0"
+          className="absolute right-0 top-0 xl:w-[500px] xl:h-[500px] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] w-[120px] h-[120px]"
         />
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="584"
-          height="550"
           viewBox="0 0 584 550"
           fill="none"
-          className="absolute -top-[10%] left-[30%]"
+          className="absolute xl:-top-[10%] xl:left-[30%] lg:-top-[8%] lg:left-[20%] md:-top-[7%] md:left-[16%] -top-[6%] left-0 xl:w-[584px] xl:h-[550px] lg:w-[450px] lg:h-[480px] md:w-[380px] md:h-[300px] w-[120px] h-[120px]  "
         >
           <path
             fill-rule="evenodd"
