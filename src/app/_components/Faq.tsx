@@ -12,7 +12,17 @@ const Faq = ({ classes }: any) => {
   return (
     <div className={` py-12 ${classes || ""}`}>
       <div className="page-width">
-        <h3 className="text-center text-primary ">Frequently Ask Questions</h3>
+        <div className="flex items-center justify-center">
+          <Button
+            title="have a question"
+            classes="bg-secondary"
+            icon={true}
+            enableIcons={true}
+          />
+        </div>
+        <h3 className="text-center text-primary mt-8 ">
+          Frequently Ask Questions
+        </h3>
         <div className="mt-14">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">

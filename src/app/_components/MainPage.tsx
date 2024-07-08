@@ -1,5 +1,4 @@
 import React from "react";
-
 import Faq from "./Faq";
 import Newsletter from "@/components/Newsletter";
 import Hero from "./Hero";
@@ -7,8 +6,8 @@ import LeadingSolution from "./LeadingSolution";
 import ServiceSlider from "./ServiceSlider";
 import Steps from "./Steps";
 import WhyChooseUs from "./WhyChooseUs";
-import TestimonialCard from "./TestimonialCard";
 import FeaturedProjects from "./FeaturedProjects";
+import Testimonials from "./Testimonials";
 
 const MainPage = () => {
   return (
@@ -19,7 +18,7 @@ const MainPage = () => {
       <Steps />
       <WhyChooseUs />
       <FeaturedProjects />
-      <TestimonialCard />
+      <Testimonials />
       <Faq />
       <Newsletter />
     </main>

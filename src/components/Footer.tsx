@@ -88,7 +88,7 @@ const Footer = () => {
         src={
           "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719848735/RfTechnologiesWebsite/Trade_Mark-02_2_oggpmo.png"
         }
-        className="absolute bottom-8 right-0"
+        className="absolute bottom-8 right-0 max-sm:max-w-48 max-lg:max-w-48"
         loading="lazy"
         width={362}
         height={312}

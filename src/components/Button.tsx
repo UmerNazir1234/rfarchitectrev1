@@ -30,7 +30,7 @@ const Button = ({
     return (
       <Link
         href={href}
-        className={`btn flex items-center justify-center gap-1 ${classes}`}
+        className={`btn flex items-center justify-center uppercase gap-1 ${classes}`}
       >
         <span>{title}</span>
         {icon && <span className="icon">{icon}</span>}
@@ -42,7 +42,7 @@ const Button = ({
     <button
       type={type}
       onClick={onClick}
-      className={`btn flex items-center justify-center gap-1 relative ${classes}`}
+      className={`btn flex items-center justify-center uppercase gap-1 relative ${classes}`}
       disabled={disabled}
     >
       {enableIcons && (

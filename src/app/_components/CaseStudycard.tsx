@@ -20,7 +20,7 @@ const CaseStudycard = () => {
       </div>
       <div className="h-full w-full">
         <Image
-          className="rounded block max-w-full"
+          className="rounded block max-w-full m-auto"
           src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720256827/image_8_j2fxk9.png"
           alt="Case Study Image"
           width={472}
