@@ -20,7 +20,7 @@ const MainPage = () => {
        <Steps />
        <WhyChooseUs />
        <CaseStudycard />
-       <TestimonialCard />
+       <TestimonialCard /> 
       <Faq />
       <Newsletter />
     </main>
