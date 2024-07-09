@@ -20,6 +20,7 @@ const config: Config = {
         secondarybtn: "var(--color-btn-secondary)",
         light: "var(--color-bg)",
         blueLight: "var(--color-bg-lightBlue)",
+        themblack: "var(--color-foreground-rgb)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -28,6 +29,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'),],
+  plugins: [require("@tailwindcss/forms")],
 };
 export default config;
