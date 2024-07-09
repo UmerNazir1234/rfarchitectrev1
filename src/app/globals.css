@@ -88,6 +88,9 @@ h5 {
 .serviceSwaper {
   @apply !pb-16;
 }
+.input--field {
+  @apply bg-black bg-opacity-10 rounded-lg py-5 px-5 border-white border border-opacity-30 text-white text-2xl w-full;
+}
 .testimonial .swiper-button-prev:after,
 .testimonial .swiper-button-next:after {
   color: var(--color-primary) !important;
