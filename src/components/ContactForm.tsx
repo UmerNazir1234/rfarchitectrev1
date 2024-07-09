@@ -26,7 +26,7 @@ const ContactForm = () => {
                       placeholder="Name"
                     />
                     <label
-                      for="name"
+                      htmlFor="name"
                       className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-white transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-white"
                     >
                       Name
@@ -42,7 +42,7 @@ const ContactForm = () => {
                       placeholder="Email"
                     />
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-white transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-white"
                     >
                       Email
@@ -57,14 +57,14 @@ const ContactForm = () => {
                       placeholder="Message"
                     ></textarea>
                     <label
-                      for="message"
+                      htmlFor="message"
                       className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-black transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-white"
                     >
                       Message
                     </label>
 
                 
-<label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Upload file</label>
+<label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="file_input">Upload file</label>
 <input className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
 
 
@@ -74,7 +74,7 @@ const ContactForm = () => {
                 <div className="flex items-center">
                   <input id="link-checkbox" type="checkbox" value=""></input>
                   <label
-                    for="link-checkbox"
+                    htmlFor="link-checkbox"
                     className="ms-2 text-sm font-medium text-white dark:text-gray-300"
                   >
                     We care about your privacy and automatically agree to the
