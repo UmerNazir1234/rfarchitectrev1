@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { advent_Pro, inter } from "./fonts";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { advent_Pro, inter } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
