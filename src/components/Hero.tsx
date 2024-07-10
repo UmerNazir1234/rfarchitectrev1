@@ -17,7 +17,7 @@ const Hero = ({ image, title, colorTitle }: HeroProps) => {
           }}
         >
           <div className="flex items-center justify-center bg-cover bg-center mx-auto min-h-[80vh] max-sm:min-h-[70vh] page-width">
-            <h1 className="text-white drop-shadow-lg">
+            <h1 className="text-white drop-shadow-lg !font-bold ">
               {title} <span className="text-[#EDAC18]">{colorTitle}</span>
             </h1>
           </div>

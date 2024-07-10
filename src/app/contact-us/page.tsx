@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import ContactForm from "./_components/ContactForm";
 import GetInTouch from "./_components/GetInTouch";
 
+
 const page = () => {
   return (
     <>
