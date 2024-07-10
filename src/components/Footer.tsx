@@ -9,7 +9,7 @@ import { informationLinks, serviceLinks } from "@/dummyData/data";
 
 const Footer = () => {
   return (
-    <footer className="pt-20 max-sm:pt-20 relative overflow-hidden bg-light">
+    <footer className="pt-20 max-sm:pt-20 relative overflow-hidden bg-transparent">
       <div className="bg-gradient-to-b from-primary to-primarylight sm:pt-24">
         <div className="page-width flex items-start  justify-between text-white md:flex-nowrap flex-wrap border-b border-white border-opacity-30 pb-10">
           <div className="flex items-start flex-col xl:basis-[60%] lg:basis-[40%] md:basis-[50%] basis-full justify-start gap-8 ">

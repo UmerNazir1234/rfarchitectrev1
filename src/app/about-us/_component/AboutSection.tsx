@@ -5,9 +5,9 @@ import React from "react";
 const AboutSection = () => {
   return (
     <section
-      className="flex flex-row items-center justify-center bg-cover bg-no-repeat min-h-dvh relative"
+      className="flex flex-row items-center justify-center bg-cover bg-no-repeat min-h-dvh  relative bg-transparent -mt-28 overflow-hidden"
       style={{
-        backgroundImage: `url("https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719835637/RfTechnologiesWebsite/Vector_10_xzgp4k.jpg")`,
+        backgroundImage: `url("https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720608411/Vector_10_y3z2fg.png")`,
       }}
     >
       <div className="page-width">
@@ -45,21 +45,21 @@ const AboutSection = () => {
         src={
           "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719848735/RfTechnologiesWebsite/Trade_Mark-02_2_oggpmo.png"
         }
-        width={350}
-        height={250}
-        alt=""
-        className="absolute left-0 bottom-0 max-lg:w-36 max-lg:h-36 max-sm:w-20 max-sm:h-20 max-sm:hidden"
+        width={450}
+        height={500}
+        alt="Rf icon"
+        className="absolute left-0 lg:-bottom-[100px] bottom-0 max-lg:w-48 max-lg:h-48 max-sm:w-20 max-sm:h-20 max-md:hidden object-center object-contain"
         loading="lazy"
       />
       <Image
         src={
           "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719913174/RfTechnologiesWebsite/Let_s_get_IT_done_isjw4p.png"
         }
-        width={550}
-        height={70}
+        width={500}
+        height={80}
         alt="Let's it done"
         loading="lazy"
-        className="absolute left-[28%] bottom-10 max-md:left-[4%] max-md:bottom-6 max-md:w-64 max-md:h-14"
+        className="absolute left-[24%] bottom-10 max-md:left-[10%] max-md:bottom-6 max-md:w-64 max-md:h-14"
       />
     </section>
   );

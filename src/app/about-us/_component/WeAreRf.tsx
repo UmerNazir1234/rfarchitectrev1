@@ -6,11 +6,11 @@ const WeAreRf = () => {
   return (
     <section className="relative">
       <div className="page-width ">
-        <div className="flex items-center justify-center min-h-[70vh]  lg:gap-24 gap-6 lg:flex-nowrap flex-wrap">
+        <div className="flex items-center justify-center min-h-[70vh] lg:gap-24 gap-6 lg:flex-nowrap flex-wrap">
           <div className="lg:basis-[45%] basis-full">
             <Heading
               title="we are rf tech"
-              classes="text-primary !mb-0"
+              classes="!text-primary !mb-0"
               iconStyle="stroke-primary"
             />
           </div>
@@ -27,15 +27,17 @@ const WeAreRf = () => {
           </div>
         </div>
       </div>
-
-      <Image
-        className="object-contain absolute bottom-0 left-0 h-full"
-        loading="lazy"
-        alt="Background logo"
-        src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719920546/RfTechnologiesWebsite/Vector_vpvzwx.png"
-        height={300}
-        width={300}
-      />
+      <div className="absolute top-0 left-0">
+        <div className="relative xl:h-[550px] xl:w-[583px] lg:h-[400px] lg:w-[420px] h-[300px] w-[300px] object-contain ">
+          <Image
+            className="max-w-full block"
+            loading="lazy"
+            alt="Background logo"
+            src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719920546/RfTechnologiesWebsite/Vector_vpvzwx.png"
+            fill
+          />
+        </div>
+      </div>
     </section>
   );
 };

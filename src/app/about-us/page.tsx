@@ -9,7 +9,7 @@ import Hero from "@/components/Hero";
 
 const page = () => {
   return (
-    <div>
+    <main className="bg-light">
       <Hero
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719827376/RfTechnologiesWebsite/aboutusimage_q5msz5.jpg"
         title="WHO WE ARE"
@@ -21,7 +21,7 @@ const page = () => {
       <OurVision />
       <WhatMakesUnique />
       <ProjectSubmit />
-    </div>
+    </main>
   );
 };
 

@@ -23,10 +23,10 @@ const Heading: React.FC<HeadingProps> = ({
       >
         {icon && (
           <>
-            <span className="absolute left-0 top-0 -ml-8 -mt-1 bg-transparent bg-contain max-sm:hidden">
+            <span className="absolute left-0 top-0 -ml-5 lg:-mt-4 -mt-5 bg-transparent bg-contain ">
               <IconRound classes={iconStyle} />{" "}
             </span>
-            <span className="absolute right-0 bottom-0 -mr-8 -mb-1 bg-transparent bg-contain transform rotate-180 max-sm:hidden">
+            <span className="absolute right-0 bottom-0 -mr-5 lg:-mb-4 -mb-5  bg-transparent bg-contain transform rotate-180 ">
               {" "}
               <IconRound classes={iconStyle} />{" "}
             </span>

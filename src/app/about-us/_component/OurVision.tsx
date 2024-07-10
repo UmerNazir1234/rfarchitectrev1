@@ -1,11 +1,12 @@
 import Heading from "@/components/Heading";
 import IconEye from "@/components/Icons/IconEye";
 import IconMisson from "@/components/Icons/IconMisson";
+import Image from "next/image";
 import React from "react";
 
 const OurVision = () => {
   return (
-    <section className="">
+    <section className=" relative">
       <div className="page-width py-12">
         <div className="flex justify-between lg:flex-none flex-wrap lg:gap-28 gap-4">
           <div className="lg:flex-1 basis-full">
@@ -48,6 +49,17 @@ const OurVision = () => {
               lives.
             </p>
           </div>
+        </div>
+      </div>
+      <div className="absolute -top-[120px] right-0 ">
+        <div className="relative xl:w-[583px] xl:h-[550px] lg:w-[430px] lg:h-[400px] md:w-[330px] md:h-[300px] w-[300px] h-[270px]">
+          <Image
+            src={`https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720612053/Vector_2_ds4oyb.png`}
+            loading="lazy"
+            alt="Experience backgorund Image"
+            className=""
+            fill
+          />
         </div>
       </div>
     </section>
