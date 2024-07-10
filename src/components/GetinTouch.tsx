@@ -49,7 +49,6 @@ const GetinTouch = () => {
             </div>
           </div>
         </div>
-      
     </div>
   );
 };
