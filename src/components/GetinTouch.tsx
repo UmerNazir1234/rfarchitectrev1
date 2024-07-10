@@ -12,15 +12,15 @@ const GetinTouch = () => {
               <div className="rounded-lg overflow-hidden">
                 <iframe className="rounded-lg"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
-                  width="426"
-                  height="426"
+                  width="420"
+                  height="420"
                 ></iframe>
               </div>
-              <div>
+              <div className="md:mt-20">
                 <div className="max-w-full mx-auto rounded-lg overflow-hidden">
 
                 <div className="max-w-2xl lg:max-w-4xl mx-auto">
-            <h2 className="text-3xl font-extrabold text-gray-900">
+            <h2 className="text-3xl font-extrabold text-primary">
               Get in Touch
             </h2>
             <p className="mt-4 text-lg text-gray-500">
@@ -30,18 +30,18 @@ const GetinTouch = () => {
           </div>
 
                   <div className="px-6 py-4">
-                    <h3 className="text-lg font-medium text-gray-900 flex"> <FaLocationDot className="text-yellow-500 mx-2" /> 
+                    <h3 className="text-lg font-medium text-gray-900 flex"> <FaLocationDot className="text-secondary mx-2 mt-1" /> 
                    3rd floor Taha Mall, Defence Rd, Rawalpindi, Punjab 47300
                     </h3>
                   </div>
                   <div className="px-6 py-4">
                     <h3 className="text-lg font-medium text-gray-900 flex">
-                    <MdEmail className="text-yellow-500 mx-2" /> info@rftechnologies.com.pk
+                    <MdEmail className="text-secondary mx-2 mt-1" /> info@rftechnologies.com.pk
                     </h3>
                   </div>
                   <div className="px-6 py-4">
                     <h3 className="text-lg font-medium text-gray-900 flex">
-                    <FaPhone className="text-yellow-500 mx-2" />  +92 334 4738506
+                    <FaPhone className="text-secondary mx-2 mt-1" />  +92 334 4738506
                     </h3>
                   </div>
                 </div>
