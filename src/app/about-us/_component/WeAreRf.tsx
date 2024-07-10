@@ -28,11 +28,13 @@ const WeAreRf = () => {
         </div>
       </div>
 
-      <img
-        className="object-contain  absolute bottom-0 left-0 h-full "
+      <Image
+        className="object-contain absolute bottom-0 left-0 h-full"
         loading="lazy"
         alt="Background logo"
         src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719920546/RfTechnologiesWebsite/Vector_vpvzwx.png"
+        height={300}
+        width={300}
       />
     </section>
   );
