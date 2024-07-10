@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "@/components/Hero";
 import ContactForm from "./_components/ContactForm";
+import GetInTouch from "./_components/GetInTouch";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
         colorTitle="Ahead"
       />
       <ContactForm />
+      <GetInTouch />
     </>
   );
 };
