@@ -17,22 +17,28 @@ const Steps = () => {
         <h2 className="text-primary text-center mt-4 max-w-5xl m-auto">
           Steps to Build a SuccessfulDigital Product
         </h2>
+        <div className="block xl:min-h-[600px] sm:min-h-[500] min-h-[300px] w-full relative md:mt-20">
+          <Image
+            src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720172066/RfTechnologiesWebsite/Group_1597883770_bag6zl.png"
+            loading="lazy"
+            alt="Steps to Build a SuccessfulDigital Product"
+            layout="fill"
+            objectFit="contain"
+            className=""
+          />
+        </div>
 
-        <img
-          src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720172066/RfTechnologiesWebsite/Group_1597883770_bag6zl.png"
-          loading="lazy"
-          alt="Steps to Build a SuccessfulDigital Product"
-          className="object-center object-contain mt-20 "
-        />
-        <img
+        <Image
           src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720174781/RfTechnologiesWebsite/Let_s_get_IT_done_rgluhx.png"
           loading="lazy"
           alt="Let's get it done"
           className="absolute xl:left-2 xl:bottom-80 lg:bottom-64 md:bottom-60 max-lg:w-80  max-sm:w-72 max-md:top-[210px] max-sm:top-[270px] "
         />
-        <img
+        <Image
           src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720175560/RfTechnologiesWebsite/Trade_Mark-02_1_zxts3i.png"
           loading="lazy"
+          height={500}
+          width={500}
           alt="Logo"
           className="absolute right-0 top-0 xl:w-[500px] xl:h-[500px] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] w-[120px] h-[120px]"
         />

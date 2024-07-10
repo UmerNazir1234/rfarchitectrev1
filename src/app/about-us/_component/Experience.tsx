@@ -10,7 +10,6 @@ const Experience = () => {
         </div>
 
         <p className="p-lg">
-          {" "}
           In the era of the 20th century, our lives are dependent on
           technologies and we are bound to these gadgets. These robotic machines
           have turned our lives into survival mode.
@@ -19,7 +18,7 @@ const Experience = () => {
           What would be the success definition in our words? Or how we interrupt
           failures in our lives? Yes, we called success to a well-settled
           business, air-conditioned offices with well-furnished furniture. We
-          give importance to materialistic things but not to life's moral and
+          give importance to materialistic things but not to life&apos;s moral and
           ethical values.
           <br />
           <br />

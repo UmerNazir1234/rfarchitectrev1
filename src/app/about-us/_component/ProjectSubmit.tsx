@@ -16,7 +16,7 @@ const ProjectSubmit = () => {
               />
               <div>
                 <p className="text-white p-lg w-3/4 max-md:text-center text-start max-lg:w-full ">
-                  Let us know your requirements and we'll get back to you as
+                  Let us know your requirements and we&apos;ll get back to you as
                   soon as possible.
                 </p>
               </div>
