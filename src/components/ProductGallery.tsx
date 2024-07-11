@@ -53,6 +53,18 @@ const ProductGallery = () => {
           are always so on with their expectations..
         </p>
       </div>
+      <div className="flex items-center justify-center">
+          <Button
+            title="OUR STACK"
+            classes="bg-secondary"
+            icon={true}
+            enableIcons={true}
+          />
+        </div>
+        <h3 className="text-primary text-center mt-4 max-w-5xl m-auto">
+        Technologies We work
+        </h3>
+        <p className="text-center mt-4 max-w-5xl m-auto">With Latest Technologies and our expert teams Get a scalable and reliable website design and development which increase your profit.</p>
     </div>
   );
 };
