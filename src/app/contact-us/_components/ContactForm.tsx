@@ -16,7 +16,7 @@ const ContactForm = () => {
           height={250}
           className="m-auto"
         />
-       <Form />
+        <Form />
       </div>
     </section>
   );

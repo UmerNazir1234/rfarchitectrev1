@@ -32,6 +32,8 @@ const Steps = () => {
           src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720174781/RfTechnologiesWebsite/Let_s_get_IT_done_rgluhx.png"
           loading="lazy"
           alt="Let's get it done"
+          width={500}
+          height={200}
           className="absolute xl:left-2 xl:bottom-80 lg:bottom-64 md:bottom-60 max-lg:w-80  max-sm:w-72 max-md:top-[210px] max-sm:top-[270px] "
         />
         <Image
