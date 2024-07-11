@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="bg-light shadow-md">
-      <div className="flex items-center justify-between h-24 page-width">
+      <div className="flex items-center justify-between sm:h-28 h-24 page-width">
         <div className="flex items-center space-x-4">
           <div className="relative">
             <Link href={Site?.url}>
@@ -24,8 +24,8 @@ const Header = () => {
                   src={Site?.logo}
                   alt={`${Site?.name} + 'Logo' `}
                   height={70}
-                  width={162}
-                  className="object-contain max-sm:w-32 max-sm:h-auto"
+                  width={190}
+                  className="object-contain max-sm:w-40 max-sm:h-auto"
                 />
               ) : (
                 <span className="text-5xl max-sm:text-2xl font-bold text-primary">
@@ -51,10 +51,13 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div className="flex items-center justify-between sm:gap-4 gap-2 ">
-          <Button title="Get Started" />
+        <div className="flex items-center justify-between  sm:gap-4 gap-2  ">
+          <Button
+            title="Get Started"
+            classes="!capitalize bg-gradient-to-b from-primary to-primarylight !text-[22px] !px-12 max-sm:!px-4 max-sm:!py-2 max-sm:!text-xl max-sm:hidden"
+          />
           <CgMenuRight
-            className="icon icon-menu !h-8 !w-8 xl:hidden flex cursor-pointer"
+            className="icon icon-menu !h-10 !w-10 xl:hidden flex cursor-pointer"
             onClick={toggle}
           />
         </div>

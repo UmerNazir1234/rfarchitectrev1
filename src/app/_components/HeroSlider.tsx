@@ -1,7 +1,5 @@
 "use client";
-
 import React from "react";
-
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -21,7 +19,7 @@ type HeroSliderProps = {
   data: Slide[];
 };
 
-const HeroSlider: React.FC<HeroSliderProps> = ({ data }) => {
+const HeroSlider = ({ data }: HeroSliderProps) => {
   return (
     <section className="w-full heroSlider ">
       <div className="md:h-[90vh] h-[80vh] ">

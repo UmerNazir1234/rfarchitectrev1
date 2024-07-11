@@ -35,7 +35,7 @@ p {
 }
 .h1,
 h1 {
-  @apply lg:text-[100px] md:text-[70px] text-[55px]  font-semibold leading-tight max-sm:leading-tight drop-shadow-lg;
+  @apply lg:text-[120px] md:text-[70px] text-[55px]  font-semibold leading-tight max-sm:leading-tight drop-shadow-lg;
 }
 .h2,
 h2 {
@@ -73,10 +73,10 @@ h5 {
   @apply !bg-primary h-3 w-6 rounded-lg;
 }
 .btn {
-  @apply font-semibold text-white  lg:px-6 md:py-2 md:px-7 px-6 py-3 lg:text-2xl md:text-xl text-lg leading-none rounded-full transition ease-in-out delay-150;
+  @apply font-semibold text-white lg:px-8 md:px-7 px-6 py-3 lg:text-3xl md:text-2xl text-lg leading-none rounded-full transition ease-in-out delay-150;
 }
 .btn--primary {
-  @apply bg-gradient-to-b from-primary to-primarylight hover:bg-gradient-to-t hover:from-primarylight hover:to-primarylight;
+  @apply bg-primary hover:bg-gradient-to-t hover:from-primarylight hover:to-primarylight;
 }
 .btn--secondary {
   @apply bg-secondary;
