@@ -1,5 +1,6 @@
 import BoostYourMob from "@/components/BoostYourMob";
 import MobileAppCard from "@/components/MobileAppCard";
+import ProductGallery from "@/components/ProductGallery";
 import React from "react";
 
 const page = () => {
@@ -18,6 +19,7 @@ const page = () => {
       </div>
       <MobileAppCard />
       <BoostYourMob />
+      <ProductGallery />
     </div>
   );
 };
