@@ -21,7 +21,7 @@ const Newsletter = ({ classes }: any) => {
                   type="text"
                   name=""
                   id=""
-                  className="h-full w-full px-2 py-1.5"
+                  className="h-full w-full px-2 py-1.5 border-none"
                   placeholder="Enter you email"
                 />
                 <Button title="Subscribe" />

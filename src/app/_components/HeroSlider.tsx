@@ -13,6 +13,7 @@ type Slide = {
   title: string;
   description: string;
   image: string;
+  url?:string;
 };
 
 type HeroSliderProps = {
@@ -42,19 +43,23 @@ const HeroSlider = ({ data }: HeroSliderProps) => {
                 <div className="relative z-10 h-full flex items-center justify-center">
                   <div className="text-center md:max-w-[57%] max-w-[90%]">
                     <h1
-                      className="lg:text-[120px] drop-shadow-2xl md:text-[70px] text-4xl font-bold leading-tight text-white"
+                      className="lg:text-[120px]  drop-shadow-2xl md:text-[70px] text-4xl font-bold leading-tight text-white"
                       dangerouslySetInnerHTML={{ __html: item.title }}
                     ></h1>
                     {item?.description && (
-                      <p className="text-md p-lg  m-auto text-white mt-6">
+                      <p className="text-md !font-advent_Pro text-3xl m-auto text-white mt-6 max-w-[80%]">
                         {item?.description}
                       </p>
                     )}
-                    <p className="mt-10 lg:mt-16 flex items-center justify-center">
+                    <p className="mt-10 lg:mt-16 flex items-center justify-center ">
                       <Button
                         title="let's talk"
-                        classes="bg-white !text-primary uppercase !px-16"
-                        icon={<GoArrowUpRight />}
+                        href={item?.url}
+                      
+                        classes="bg-white !text-primary uppercase !px-14  hover:!text-white bg-gradient-to-l hover:from-primary hover:to-primary hover:!transition-all hover:!ease-out hover:!duration-200"
+                        icon={
+                          <GoArrowUpRight className="group-hover:!stroke-white group-hover:!fill-white" />
+                        }
                       />
                     </p>
                   </div>

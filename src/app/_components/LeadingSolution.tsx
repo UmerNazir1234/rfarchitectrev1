@@ -5,7 +5,7 @@ const LeadingSolution = () => {
   return (
     <section className="relative z-20">
       <div className="page-width pt-32">
-        <div className="bg-gradient-to-l to-[#BCCDF2] from-[#0B3DAB] rounded-[40px] min-h-[90vh] max-md:min-h-[80vh] relative">
+        <div className="bg-gradient-to-l clip-left-top  to-[#BCCDF2] from-[#0B3DAB] rounded-[40px] min-h-[84vh] max-md:min-h-[70vh] relative">
           <Button
             enableIcons={true}
             title="OUR SERVICES"
@@ -13,11 +13,13 @@ const LeadingSolution = () => {
             classes="bg-secondary absolute top-5 left-5"
           />
           <div className="flex justify-center md:flex-nowrap flex-wrap gap-2 lg:pt-24 lg:px-16 sm:pt-20 sm:px-10 max-sm:pt-10 max-sm:px-3  ">
-            <div className="md:basis-[50%]  basis-full">
-              <h2 className="text-primary">We Provide Leading Solutions In</h2>
+            <div className="md:basis-[30%]  basis-full">
+              <h2 className="text-primary md:w-3/4 uppercase">
+                We Provide Leading Solutions In
+              </h2>
             </div>
-            <div className="md:basis-[50%]  basis-full">
-              <p className="text-primary sm:text-2xl text-xl text-white mb-6">
+            <div className="md:basis-[70%] basis-full">
+              <p className="text-primary md:text-2xl text-lg text-white mb-6">
                 Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
                 Class aptent taciti sociosqu ad litora torquent per conubia

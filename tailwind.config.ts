@@ -1,3 +1,4 @@
+import { nunito } from "@/app/layout";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["var(--font-inter)"],
+        nunito: ["var(--font-nunito)"],
         advent_Pro: ["var(--font-advent-pro)"],
       },
       colors: {
@@ -21,6 +22,7 @@ const config: Config = {
         light: "var(--color-bg)",
         blueLight: "var(--color-bg-lightBlue)",
         themblack: "var(--color-foreground-rgb)",
+        textLight: "var(--color-text-light)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

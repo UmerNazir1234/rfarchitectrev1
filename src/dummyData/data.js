@@ -115,6 +115,7 @@ export const sliderData = [
   {
     id: 1,
     title: "IT SOLUTIONS <span class='heroSpan'>&</span> SERVICES",
+    url:"/about-us",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
     image:
@@ -123,6 +124,7 @@ export const sliderData = [
   {
     id: 2,
     title: "IT SOLUTIONS <span class='heroSpan'>&</span> SERVICES",
+    url:"/about-us",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
     image:

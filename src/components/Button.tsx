@@ -26,6 +26,8 @@ const Button = ({
   iconStyle,
   enableIcons = false,
 }: ButtonProps) => {
+
+ 
   if (href) {
     return (
       <Link
@@ -47,10 +49,10 @@ const Button = ({
     >
       {enableIcons && (
         <>
-          <span className="absolute left-0 top-0 -ml-3 -mt-3 bg-transparent bg-contain max-sm:hidden">
+          <span className="absolute left-0 top-0 -ml-2 -mt-4 bg-transparent bg-contain">
             <IconRound classes={iconStyle} />{" "}
           </span>
-          <span className="absolute right-0 bottom-0 -mr-3 -mb-3 bg-transparent bg-contain transform rotate-180 max-sm:hidden">
+          <span className="absolute right-0 bottom-0 -mr-2 -mb-4 bg-transparent bg-contain transform rotate-180 ">
             {" "}
             <IconRound classes={iconStyle} />{" "}
           </span>

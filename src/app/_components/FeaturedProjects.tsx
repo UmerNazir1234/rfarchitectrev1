@@ -21,7 +21,7 @@ const FeaturedProjects = () => {
             enableIcons={true}
           />
         </div>
-        <h2 className="text-white text-center mt-4 max-w-5xl m-auto">
+        <h2 className="text-white text-center mt-6 max-w-5xl m-auto ">
           We Serve the Best Works View Case Studies
         </h2>
         <div className="mt-16 relative">

@@ -14,6 +14,7 @@
   --color-background-end: rgba(255, 255, 255, 1); /* #fff */
   --color-bg: #f1f3fb;
   --color-bg-lightBlue: rgba(167, 193, 253, 0.3);
+  --color-text-light: #8f8787;
 }
 * {
   padding: 0;
@@ -24,8 +25,9 @@ body {
   @apply font-advent_Pro;
 }
 p {
-  @apply text-base;
+  @apply text-base font-nunito;
 }
+
 .p-lg {
   @apply lg:text-2xl text-xl font-medium;
 }
@@ -35,7 +37,7 @@ p {
 }
 .h1,
 h1 {
-  @apply lg:text-[120px] md:text-[70px] text-[55px]  font-semibold leading-tight max-sm:leading-tight drop-shadow-lg;
+  @apply lg:text-[120px] md:text-[70px] text-[55px] font-semibold leading-tight max-sm:leading-tight drop-shadow-lg;
 }
 .h2,
 h2 {
@@ -57,6 +59,12 @@ h5 {
 .img {
   @apply max-w-full block;
 }
+/* Custom CSS */
+/* styles/globals.css */
+/* .clip-left-top {
+  clip-path: polygon(356px 0, 19% 13%, 0% 13%, 0% 100%, 100% 100%, 100% 0%);
+} */
+
 .page-width {
   @apply max-w-screen-2xl m-auto md:px-10 px-3;
 }
@@ -72,8 +80,11 @@ h5 {
 .heroSlider .swiper-pagination-bullet-active {
   @apply !bg-primary h-3 w-6 rounded-lg;
 }
+button {
+  @apply font-advent_Pro;
+}
 .btn {
-  @apply font-semibold text-white lg:px-8 md:px-7 px-6 py-3 lg:text-3xl md:text-2xl text-lg leading-none rounded-full transition ease-in-out delay-150;
+  @apply font-semibold font-advent_Pro text-white lg:px-8 md:px-7 px-6 py-3 lg:text-3xl md:text-2xl text-lg leading-none rounded-full transition ease-in-out delay-150;
 }
 .btn--primary {
   @apply bg-primary hover:bg-gradient-to-t hover:from-primarylight hover:to-primarylight;

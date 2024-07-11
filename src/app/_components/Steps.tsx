@@ -14,8 +14,8 @@ const Steps = () => {
             iconStyle="stroke-secondary"
           />
         </div>
-        <h2 className="text-primary text-center mt-4 max-w-5xl m-auto">
-          Steps to Build a SuccessfulDigital Product
+        <h2 className="!text-primary text-center mt-4 max-w-5xl m-auto">
+          Steps to Build a Successful Digital Product
         </h2>
         <div className="block xl:min-h-[600px] sm:min-h-[500] min-h-[300px] w-full relative md:mt-20">
           <Image

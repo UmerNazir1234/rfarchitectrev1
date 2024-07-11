@@ -21,7 +21,9 @@ const WhyChooseUs = () => {
               enableIcons={true}
               iconStyle="stroke-secondary"
             />
-            <h2 className=" text-white">WE PROVIDE THE BEST IT SOLUTION</h2>
+            <h2 className=" text-white mt-6">
+              WE PROVIDE THE BEST IT SOLUTION
+            </h2>
           </div>
           <div className="flex items-start lg:flex-nowrap flex-wrap justify-start gap-4 mt-12">
             <div className="lg:basis-[60%] basis-full">
