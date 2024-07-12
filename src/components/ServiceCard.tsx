@@ -22,6 +22,7 @@ const ServiceCard = () => {
         icon={<GoArrowUpRight />}
         classes="bg-light !text-primary !py-3 !px-8 !text-base !font-semibold"
       />
+      
     </div>
   );
 };
