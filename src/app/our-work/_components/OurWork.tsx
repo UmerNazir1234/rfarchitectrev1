@@ -8,8 +8,7 @@ const OurWork = () => {
     <main>
       <Hero
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776049/pexels-tranmautritam-326508_rraydb.png"
-        title="Experience Our"
-        colorTitle="Expertise"
+        title={` Experience Our <span class="text-secondary">Expertise</span>`}
       />
       <WorkCard work={work} />
     </main>

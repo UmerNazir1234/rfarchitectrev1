@@ -1,3 +1,4 @@
+"use client";
 import { Site } from "@/helpers/Site";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,10 +7,22 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { informationLinks, serviceLinks } from "@/dummyData/data";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
+
+  const footerColors: { [key: string]: string } = {
+    "/about-us": "bg-[#edac18]",
+    "/contact-us": "!bg-light",
+    "/": "!bg-light",
+  };
+  console.log(pathname, footerColors[pathname]);
+  const footerClass = footerColors[pathname] || "bg-gray-500";
   return (
-    <footer className="pt-20 max-sm:pt-20 relative overflow-hidden bg-transparent">
+    <footer
+      className={`pt-20 max-sm:pt-20 relative overflow-hidden bg-transparent ${footerClass}`}
+    >
       <div className="bg-gradient-to-b from-primary to-primarylight sm:pt-24">
         <div className="page-width flex items-start  justify-between text-white md:flex-nowrap flex-wrap border-b border-white border-opacity-30 pb-10">
           <div className="flex items-start flex-col xl:basis-[60%] lg:basis-[40%] md:basis-[50%] basis-full justify-start gap-8 ">

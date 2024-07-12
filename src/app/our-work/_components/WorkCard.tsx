@@ -20,7 +20,7 @@ const WorkCard = ({ work }: WorkProps) => {
               backgroundColor: item?.color || "#28292D", // Default background
             }}
           >
-            <div className="md:basis-1/2 grow ">
+            <div className="basis-1/2 grow   ">
               <div className="relative xl:h-[650px] lg:h-[500px] md:h-[450px] h-[250px] w-auto">
                 <Image
                   src={item?.image}
@@ -32,8 +32,8 @@ const WorkCard = ({ work }: WorkProps) => {
               </div>
             </div>
             <div>
-              <div className="md:basis-1/2 grow  flex items-start gap-4 justify-start flex-col max-md:items-center">
-                <h2 className="basis-1/2 lg:!text-[70px] md:!text-[50px]">
+              <div className="basis-1/2 grow shrink-0  flex items-start gap-4 justify-start flex-col max-md:items-center">
+                <h2 className=" lg:!text-[70px] md:!text-[50px]">
                   {item?.title}
                 </h2>
                 <p className="p-lg lg:!text-[32px] !text-[20px] font-nunito max-md:text-center !leading-normal">

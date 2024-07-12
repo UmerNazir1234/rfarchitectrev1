@@ -59,6 +59,10 @@ h5 {
 .img {
   @apply max-w-full block;
 }
+#about--section footer {
+  background-color: red !important;
+  display: none;
+}
 /* Custom CSS */
 /* styles/globals.css */
 /* .clip-left-top {

@@ -1,12 +1,23 @@
 import React from "react";
+import Button from "./Button";
 
 type HeroProps = {
   image?: string;
   title?: string;
-  colorTitle?: string;
+  btnTitle?: string;
+  btnIcon?: React.ReactElement;
+  href?: string;
+  classes?: string;
 };
 
-const Hero = ({ image, title, colorTitle }: HeroProps) => {
+const Hero = ({
+  image,
+  title,
+  btnTitle,
+  btnIcon,
+  href,
+  classes,
+}: HeroProps) => {
   return (
     <>
       {image && (
@@ -16,10 +27,23 @@ const Hero = ({ image, title, colorTitle }: HeroProps) => {
             backgroundImage: `url(${image})`,
           }}
         >
-          <div className="flex items-center justify-center bg-cover bg-center mx-auto min-h-[80vh] max-sm:min-h-[70vh] page-width">
-            <h1 className="text-white drop-shadow-lg !font-bold ">
-              {title} <span className="text-[#EDAC18]">{colorTitle}</span>
-            </h1>
+          <div className="flex items-center justify-center flex-col bg-cover bg-center mx-auto min-h-[80vh] max-sm:min-h-[70vh] page-width">
+            {title && (
+              <h1
+                className={`${
+                  href && "md:mb-16 mb-8"
+                } text-white drop-shadow-lg !font-bold text-center text-balance leading-tight`}
+                dangerouslySetInnerHTML={{ __html: title || "" }}
+              />
+            )}
+            {href && (
+              <Button
+                title={btnTitle}
+                icon={btnIcon}
+                href={href}
+                classes={classes}
+              />
+            )}
           </div>
         </section>
       )}
