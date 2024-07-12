@@ -1,16 +1,14 @@
 "use client";
 import React, { useState } from "react";
+import { tabs } from "@/dummyData/data";
+import type { Tabs } from "@/lib/type"; // Use type-only import
 
-type tabProps = {
-  label?: string;
-  content?: React.ReactNode;
-  icon?: React.ReactNode;
-};
-type TabProps = {
-  tabs: tabProps[];
+type TabsProps = {
+  tabs: Tabs[]; // Using the Tabs type for props
 };
 
-const Tabs = ({ tabs }: TabProps) => {
+const TabsComponent = ({ tabs }: TabsProps) => {
+  // Renamed to avoid conflict
   const [activeTab, setActiveTab] = useState(tabs[0].label);
 
   return (
@@ -19,19 +17,19 @@ const Tabs = ({ tabs }: TabProps) => {
         {tabs.map((tab) => (
           <button
             key={tab.label}
-            className={`rounded-xl lg:min-w-48 min-w-28 lg:py-8 md:py-4 py-2 px-2 p-lg max-md:text-base text-primary font-semibold bg-blueLight shadow  ${
-              activeTab === tab.label ? " bg-secondary text-white " : ""
+            className={`rounded-xl lg:min-w-48 min-w-28 lg:py-8 md:py-4 py-2 px-2 p-lg max-md:text-base text-primary font-semibold bg-blueLight shadow ${
+              activeTab === tab.label ? "bg-secondary text-white" : ""
             }`}
             onClick={() => setActiveTab(tab.label)}
           >
-            <div className="flex items-center justify-center lg:mb-4 mb-1 ">
+            <div className="flex items-center justify-center lg:mb-4 mb-1">
               {tab?.icon}
             </div>
             {tab.label}
           </button>
         ))}
       </div>
-      <div className="py-2 ">
+      <div className="py-2">
         {tabs.map((tab) =>
           tab.label === activeTab ? (
             <div
@@ -47,4 +45,4 @@ const Tabs = ({ tabs }: TabProps) => {
   );
 };
 
-export default Tabs;
+export default TabsComponent; // Make sure to export the renamed component

@@ -3,6 +3,8 @@ import { PiHandshakeLight } from "react-icons/pi";
 import { FcProcess } from "react-icons/fc";
 import { BiCheckShield } from "react-icons/bi";
 import { SiFireship } from "react-icons/si";
+import { Tabs, Work } from "@/lib/type";
+
 export const menuItems = [
   { id: 1, name: "Who We Are?", link: "/who-we-are" },
   { id: 2, name: "Our Work", link: "/our-work" },
@@ -115,7 +117,7 @@ export const sliderData = [
   {
     id: 1,
     title: "IT SOLUTIONS <span class='heroSpan'>&</span> SERVICES",
-    url:"/about-us",
+    url: "/about-us",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
     image:
@@ -124,7 +126,7 @@ export const sliderData = [
   {
     id: 2,
     title: "IT SOLUTIONS <span class='heroSpan'>&</span> SERVICES",
-    url:"/about-us",
+    url: "/about-us",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
     image:
@@ -132,7 +134,7 @@ export const sliderData = [
   },
 ];
 
-export const tabs = [
+export const tabs: Tabs[] = [
   {
     label: "Knowledge",
     content:
@@ -161,6 +163,108 @@ export const tabs = [
     label: "Passion",
     content: "As they.",
     icon: <SiFireship className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+];
+
+export const work: Work[] = [
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776305/RfTechnologiesWebsite/image_52_zznfko.png",
+    title: "Elite By ECW",
+    text: "Elite Sports & Apparel",
+    subtitle: "React Extension Shopify",
+    color: "#28292D",
+    textColor: "#FFFFFF",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776305/RfTechnologiesWebsite/image_62_ci28zj.png",
+    title: "Eazyticks",
+    text: "Online E-Ticketing Platform",
+    subtitle: "Nextjs & Microsoft .Net",
+    color: "#F85431",
+    textColor: "#ffffff",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776302/RfTechnologiesWebsite/image_56_i69zku.png",
+    title: "Ozelu Studio",
+    text: "Traditional Photo Studio Services Online",
+    subtitle: "Nextjs",
+    color: "#378C84",
+    textColor: "#FFFFFF",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
+    title: "EZFUNDRAZR",
+    text: "FUNDRAISING MADE EASY",
+    subtitle: "Microsoft.Net",
+    color: "#BFF1E9",
+    textColor: "#000000",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776300/RfTechnologiesWebsite/image_61_bbvb27.png",
+    title: "Jenson Bike Shipping",
+    text: "The Most Convenient, Affordable Way to Ship Your Bike and Gear",
+    subtitle: "Shopify, UPS API integration",
+    color: "#00263A",
+    textColor: "#ffffff",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
+    title: "The Transparency",
+    text: "Skin Care Products",
+    subtitle: "Shopify E-commerce",
+    color: "#6AB7BD",
+    textColor: "#FFFFFF",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776300/RfTechnologiesWebsite/image_63_vm0xvw.png",
+    title: "Pump Appearl",
+    text: "Fitness Wear",
+    subtitle: "Shopify , UX & UI Design",
+    color: "#932828",
+    textColor: "#ffffff",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776299/RfTechnologiesWebsite/image_64_wgmst1.png",
+    title: "Niki's",
+    text: "Natural Wipes & Parent’s Corner",
+    subtitle: "Flutter Native App",
+    color: "#4EB4BA",
+    textColor: "#000000",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776297/RfTechnologiesWebsite/image_67_tqgzoz.png",
+    title: "Big Little Things.",
+    text: "WordPress E-commerce",
+    subtitle: "",
+    color: "#F4AE0F",
+    textColor: "#ffffff",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776296/RfTechnologiesWebsite/image_66_sxtpis.png",
+    title: "Combine Marketing",
+    text: "Find All Good Projects In One Place",
+    subtitle: "WordPress Elementor",
+    color: "#5089C6",
+    textColor: "#ffffff",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776295/RfTechnologiesWebsite/image_68_w2qfee.png",
+    title: "Hard Core Mattress",
+    text: "We Specialize In Hard Foam Mattresses!",
+    subtitle: "WordPress Elementor, Woocommerce",
+    color: "#FDF4E6",
+    textColor: "#28292D",
   },
 ];
 

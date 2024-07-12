@@ -1,7 +1,6 @@
 import Tabs from "@/components/Tabs";
 import React from "react";
 import { tabs } from "@/dummyData/data";
-
 const WhatMakesUnique = () => {
   return (
     <section className="">

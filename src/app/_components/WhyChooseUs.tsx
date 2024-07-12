@@ -85,27 +85,24 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <div className="lg:basis-[40%] basis-full">
-              <div className="flex items-center justify-center gap-4">
-                <div className="flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 sm:py-6 sm:px-14 py-6 px-9 rounded-xl border-primary border-2">
+              <div className="flex items-center justify-center sm:gap-4 gap-2 flex-wrap">
+                <div  className="transform3d flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2">
                   <h3 className="!font-medium">312+</h3>
                   <p>Products</p>
                 </div>
-                <div className="flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 sm:py-6 sm:px-14 py-6 px-9 rounded-xl border-primary border-2 ">
+                <div  className="transform3deven flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2 ">
                   <h3 className="!font-medium">20+</h3>
                   <p>Employees</p>
                 </div>
-              </div>
-              <div className="flex items-center justify-center gap-4 mt-4">
-                <div className="flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 sm:py-6 sm:px-14 py-6 px-9 rounded-xl border-primary border-2">
+                <div  className="transform3d flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2">
                   <h3 className="!font-medium">200+</h3>
                   <p>Clients</p>
                 </div>
-                <div className="flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 sm:py-6 sm:px-14 py-6 px-9 rounded-xl border-primary border-2 ">
+                <div  className="transform3deven flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2 ">
                   <h3 className="!font-medium">6+</h3>
                   <p>Experience</p>
                 </div>
               </div>
-              <div className="flex items-center justify-center gap-4"></div>
             </div>
           </div>
         </div>

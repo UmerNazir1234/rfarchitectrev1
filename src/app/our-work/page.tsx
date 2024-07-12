@@ -1,12 +1,11 @@
-import React from 'react'
-import OurworkCard from '../_components/OurworkCard'
+
+import React from "react";
+import OurWork from "./_components/OurWork";
 
 const page = () => {
   return (
-    <div>
-      <OurworkCard />
-    </div>
-  )
-}
+    <OurWork/>
+  );
+};
 
-export default page
+export default page;
