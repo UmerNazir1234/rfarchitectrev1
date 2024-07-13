@@ -1,0 +1,101 @@
+"use client";
+import React from "react";
+import Button from "./Button";
+import Image from "next/image";
+import { imageWithText } from "@/lib/type";
+
+type CardProps = {
+  content: imageWithText[];
+};
+
+const ImageWithText = ({ content }: CardProps) => {
+  return (
+    <>
+      {content?.map((data, index) => (
+        <section className="relative" key={index}>
+          <div className="page-width py-16 relative z-10">
+            <div
+              className={`flex items-center justify-between md:gap-20 gap-6 ${
+                data?.imageFirst && data?.imageFirst === true
+                  ? "max-lg:flex-col-reverse"
+                  : "flex-row-reverse"
+              }  lg:flex-nowrap  flex-wrap`}
+            >
+              <div className="lg:basis-[50%] basis-full">
+                <Image
+                  src={`${data?.image}`}
+                  alt={`${data?.title}`}
+                  loading="lazy"
+                  width={500}
+                  height={500}
+                  className="object-center object-contain  max-sm:h-[350px] max-sm:w-fit m-auto"
+                />
+              </div>
+              <div className="lg:basis-[50%] basis-full  flex items-start justify-center flex-col max-xl:mb-8">
+                <div className="flex items-start justify-start lg:mb-12 mb-8">
+                  {data?.btnLink && data?.btnTitle && (
+                    <Button
+                      title={data?.btnTitle}
+                      classes="bg-secondary uppercase"
+                      enableIcons={true}
+                      href={data?.btnLink}
+                      iconStyle="stroke-secondary"
+                    />
+                  )}
+                </div>
+                {data?.title && (
+                  <h2
+                    className="text-primary mb-6"
+                    dangerouslySetInnerHTML={{
+                      __html: (data?.title && data?.title) || "",
+                    }}
+                  ></h2>
+                )}
+                {data?.description && (
+                  <p
+                    className="text-2xl"
+                    dangerouslySetInnerHTML={{
+                      __html: (data?.description && data?.description) || "",
+                    }}
+                  ></p>
+                )}
+                {data?.ctaLink && data?.ctaTitle && (
+                  <div className="sm:pt-8 pt-4">
+                    <Button
+                      classes="btn btn--outline "
+                      title={`${data?.ctaTitle}`}
+                      href={`${data?.ctaLink}`}
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+          {data?.enableImageCenter && (
+            <Image
+              src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720882920/Vector_2_a61v0y.svg"
+              alt="Background Image"
+              loading="lazy"
+              width={583}
+              height={550}
+              className="object-center object-contain absolute -top-[150px] left-1/2 transform -translate-x-1/2 z-0 max-sm:w-[300px] max-sm:h-[300px]"
+            />
+          )}
+
+          {data?.enableImageRight && (
+            <Image
+              src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720882511/Trade_Mark-02_2_i54sew.svg"
+              alt="Background Image"
+              loading="lazy"
+              width={330}
+              height={330}
+              className="object-center object-cover absolute top-0 right-0 z-0 max-md:w-[200px] max-md:h-[200px]"
+            />
+          )}
+        </section>
+      ))}
+    </>
+  );
+};
+
+export default ImageWithText;

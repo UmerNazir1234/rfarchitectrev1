@@ -19,7 +19,6 @@ export type textWithCards = {
   title?: string;
   btnTitle?: string;
   btnLink?: string;
-  
   description?: string;
   enableImageLeft?: boolean;
   enableImageRight?: boolean;
@@ -28,4 +27,18 @@ export type textWithCards = {
 type Cards = {
   icon?: React.ReactElement;
   cardTitle?: string;
+};
+
+
+export type imageWithText = {
+  title?: string;
+  btnTitle?: string;
+  btnLink?: string;
+  ctaLink?:string;
+  ctaTitle?:string;
+  description?: string;
+  image?:string;
+  imageFirst?:boolean
+  enableImageCenter?: boolean;
+  enableImageRight?: boolean;
 };

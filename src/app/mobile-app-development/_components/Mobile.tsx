@@ -1,16 +1,14 @@
 import Hero from "@/components/Hero";
 import React from "react";
 import MobileAppCard from "./MobileAppCard";
-import ProductGallery from "@/components/ProductGallery";
 import { GoArrowUpRight } from "react-icons/go";
-import { TbLayoutGridAdd } from "react-icons/tb";
 import MobileService from "./MobileService";
+import { textWithCardData } from "./Data";
+import { imageWithText } from "./Data";
 import TextWithCards from "@/components/TextWithCards";
-import { textWithCardData } from "@/dummyData/data";
+import ImageWithText from "@/components/ImageWithText";
 
 const Mobile = () => {
-  console.log(textWithCardData);
-  const { content } = textWithCardData;
   return (
     <>
       <Hero
@@ -23,8 +21,9 @@ const Mobile = () => {
       />
       <MobileService />
       <MobileAppCard />
-      <TextWithCards content={content} />
-      <ProductGallery />
+      <TextWithCards content={textWithCardData} />
+      <ImageWithText content={imageWithText} />
+
     </>
   );
 };

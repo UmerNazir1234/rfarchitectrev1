@@ -96,6 +96,7 @@ button {
 .btn--secondary {
   @apply bg-secondary;
 }
+
 .btn--outline {
   @apply bg-transparent border text-primary border-primary;
 }

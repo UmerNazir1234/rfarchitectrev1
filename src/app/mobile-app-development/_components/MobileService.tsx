@@ -8,12 +8,12 @@ import Image from "next/image";
 const MobileService = () => {
   return (
     <section className="relative">
-      <div className="md:py-32 py-12 page-width relative z-10">
+      <div className="lg:py-32 py-12 page-width relative z-10">
         <div className="flex items-center justify-center">
           <Button
             title="Our Services"
             href="/"
-            classes="bg-secondary my-12"
+            classes="bg-secondary lg:my-12 my-6"
             icon={<GoArrowUpRight className="icon max-md:w-6  icon--arrow" />}
             enableIcons={true}
           />

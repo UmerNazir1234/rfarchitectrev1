@@ -272,50 +272,6 @@ export const work: Work[] = [
   },
 ];
 
-export const textWithCardData = {
-  content: [
-    {
-      title: "Boost Your Mobile Traffic!",
-      description:
-        "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. </br> </br> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
-      btnLink: "/about-us ",
-      btnTitle: "About us",
-      enableImageLeft: true,
-      enableImageRight: false,
-      cards: [
-        { 
-          icon: (
-            <MdOutlineImageSearch className="text-[80px] max-sm:text-[40px]" />
-          ),
-          cardTitle: "Search Engine Optimization",
-          backgroundImage:
-            "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864072/Rectangle_22_1_rk7ogw.png",
-        },
-        {
-          icon: <FiSpeaker className="text-[80px] max-sm:text-[40px]" />,
-          cardTitle: "Social Media Strategy",
-          backgroundImage:
-            "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864498/Rectangle_22_1_h38pgv.svg",
-        },
-        {
-          icon: (
-            <BsDatabaseFillGear className="text-[80px] max-sm:text-[40px]" />
-          ),
-          cardTitle: "Real Time and Data",
-          backgroundImage:
-            "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864529/Rectangle_22_2_wbgtoh.svg",
-        },
-        {
-          icon: <HiDocumentReport className="text-[80px] max-sm:text-[40px]" />,
-          cardTitle: "Reporting & Analysis",
-          backgroundImage:
-            "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864562/Rectangle_22_3_a6qf7l.svg",
-        },
-      ],
-    },
-  ],
-};
-
 // export const serviceCards = [
 //   {
 //     id:1,
