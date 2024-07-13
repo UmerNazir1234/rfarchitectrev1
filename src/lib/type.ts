@@ -1,3 +1,5 @@
+import React from "react";
+
 export type Tabs = {
   label?: string;
   content?: React.ReactNode;
@@ -11,4 +13,19 @@ export type Work = {
   subtitle: string;
   color?: string;
   textColor?: string;
+};
+
+export type textWithCards = {
+  title?: string;
+  btnTitle?: string;
+  btnLink?: string;
+  
+  description?: string;
+  enableImageLeft?: boolean;
+  enableImageRight?: boolean;
+  cards: Cards[];
+};
+type Cards = {
+  icon?: React.ReactElement;
+  cardTitle?: string;
 };

@@ -26,14 +26,23 @@ const Button = ({
   iconStyle,
   enableIcons = false,
 }: ButtonProps) => {
-
- 
   if (href) {
     return (
       <Link
         href={href}
-        className={`btn flex items-center justify-center uppercase gap-1 ${classes}`}
+        className={`btn flex items-center justify-center relative uppercase gap-1 ${classes}`}
       >
+        {enableIcons && (
+          <>
+            <span className="absolute left-0 top-0 -ml-2 -mt-4 bg-transparent bg-contain">
+              <IconRound classes={iconStyle} />{" "}
+            </span>
+            <span className="absolute right-0 bottom-0 -mr-2 -mb-4 bg-transparent bg-contain transform rotate-180 ">
+              {" "}
+              <IconRound classes={iconStyle} />{" "}
+            </span>
+          </>
+        )}
         <span>{title}</span>
         {icon && <span className="icon">{icon}</span>}
       </Link>

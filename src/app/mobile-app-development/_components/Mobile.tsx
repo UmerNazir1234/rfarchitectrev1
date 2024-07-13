@@ -1,12 +1,16 @@
 import Hero from "@/components/Hero";
 import React from "react";
 import MobileAppCard from "./MobileAppCard";
-import BoostYourMob from "@/components/BoostYourMob";
 import ProductGallery from "@/components/ProductGallery";
 import { GoArrowUpRight } from "react-icons/go";
 import { TbLayoutGridAdd } from "react-icons/tb";
+import MobileService from "./MobileService";
+import TextWithCards from "@/components/TextWithCards";
+import { textWithCardData } from "@/dummyData/data";
 
 const Mobile = () => {
+  console.log(textWithCardData);
+  const { content } = textWithCardData;
   return (
     <>
       <Hero
@@ -17,41 +21,9 @@ const Mobile = () => {
         classes="bg-white !text-primary"
         btnIcon={<GoArrowUpRight className="fill-primary icon icon--up" />}
       />
-      <section className="">
-        <div className="py-20 page-width">
-          <div className="mb-4">
-            <MobileAppCard
-              title="Cross-platform app development"
-              classes="hover:bg-black hover:bg-red"
-              description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit."
-              icon={<TbLayoutGridAdd className="md:text-[140px] text-[80px]" />}
-            />
-          </div>
-          <div className="flex items-center justify-center gap-4">
-            <div className="">
-              {" "}
-              <MobileAppCard
-                title="Cross-platform app development"
-                description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit."
-                icon={
-                  <TbLayoutGridAdd className="md:text-[140px]  text-[80px]" />
-                }
-              />
-            </div>
-            <div className="">
-              <MobileAppCard
-                title="Cross-platform app development"
-                description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit."
-                icon={
-                  <TbLayoutGridAdd className="md:text-[140px]  text-[80px]" />
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <MobileService />
       <MobileAppCard />
-      <BoostYourMob />
+      <TextWithCards content={content} />
       <ProductGallery />
     </>
   );
