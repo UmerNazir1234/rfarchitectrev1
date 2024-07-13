@@ -283,7 +283,7 @@ export const textWithCardData = {
       enableImageLeft: true,
       enableImageRight: false,
       cards: [
-        {
+        { 
           icon: (
             <MdOutlineImageSearch className="text-[80px] max-sm:text-[40px]" />
           ),
