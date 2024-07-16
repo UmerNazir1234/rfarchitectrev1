@@ -75,7 +75,7 @@ const ImageWithText = ({ content }: CardProps) => {
             <Image
               src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720882920/Vector_2_a61v0y.svg"
               alt="Background Image"
-              loading="lazy"
+              loading="lazy" 
               width={583}
               height={550}
               className="object-center object-contain absolute -top-[150px] left-1/2 transform -translate-x-1/2 z-0 max-sm:w-[300px] max-sm:h-[300px]"
@@ -91,8 +91,9 @@ const ImageWithText = ({ content }: CardProps) => {
               height={330}
               className="object-center object-cover absolute top-0 right-0 z-0 max-md:w-[200px] max-md:h-[200px]"
             />
+
           )}
-        </section>
+        </section>   
       ))}
     </>
   );
