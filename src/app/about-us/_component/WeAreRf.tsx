@@ -10,7 +10,7 @@ const WeAreRf = () => {
           <div className="lg:basis-[45%] basis-full">
             <Heading
               title="we are rf tech"
-              classes="!text-primary !mb-0"
+              classes="text-primary !mb-0 z-1"
               iconStyle="stroke-primary"
             />
           </div>
