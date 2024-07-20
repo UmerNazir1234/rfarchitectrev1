@@ -23,11 +23,11 @@ const MobileAppCard = ({
     <>
       {title && (
         <div
-          className={`flex items-center group justify-center gap-5 flex-col md:p-10 p-4 w-full shadow-2xl bg-[#048C5B] ${
+          className={`flex items-center group justify-center gap-5 flex-col md:p-10 p-4 w-full shadow-2xl bg-[#048C5B] text-white ${
             classes || ""
-          } rounded-2xl text-white`}
+          } rounded-2xl`}
         >
-          {icon && <div className={`group-hover:${iconColor}`}>{icon}</div>}
+          {icon && <div className={` group-hover:${iconColor}`}>{icon}</div>}
           <h4
             className={`max-md:text-lg text-center group-hover:${titleColor}`}
           >

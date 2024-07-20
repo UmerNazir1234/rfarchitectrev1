@@ -6,6 +6,7 @@ import { textWithCards } from "@/lib/type";
 
 type CardProps = {
   content: textWithCards[];
+  classes?: string;
 };
 const bgImages = [
   "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864072/Rectangle_22_1_rk7ogw.png",
@@ -13,12 +14,12 @@ const bgImages = [
   "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864529/Rectangle_22_2_wbgtoh.svg",
   "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864562/Rectangle_22_3_a6qf7l.svg",
 ];
-const TextWithCards = ({ content }: CardProps) => {
+const TextWithCards = ({ content, classes }: CardProps) => {
   return (
     <>
       {content?.map((data, index) => (
         <section className="relative" key={index}>
-          <div className="page-width py-12 relative z-10">
+          <div className={`page-width ${classes || "py-12"}  relative z-10`}>
             <div className="flex items-start justify-start lg:mb-12 mb-8">
               {data?.btnLink && data?.btnTitle && (
                 <Button
@@ -42,7 +43,7 @@ const TextWithCards = ({ content }: CardProps) => {
                 )}
                 {data?.description && (
                   <p
-                    className="text-2xl"
+                    className="md:text-2xl text-xl"
                     dangerouslySetInnerHTML={{
                       __html: (data?.description && data?.description) || "",
                     }}

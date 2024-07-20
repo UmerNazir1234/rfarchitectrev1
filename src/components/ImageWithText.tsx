@@ -3,17 +3,19 @@ import React from "react";
 import Button from "./Button";
 import Image from "next/image";
 import { imageWithText } from "@/lib/type";
+import { Site } from "@/helpers/Site";
 
 type CardProps = {
   content: imageWithText[];
+  classes?: string;
 };
 
-const ImageWithText = ({ content }: CardProps) => {
+const ImageWithText = ({ content, classes }: CardProps) => {
   return (
     <>
       {content?.map((data, index) => (
         <section className="relative" key={index}>
-          <div className="page-width py-16 relative z-10">
+          <div className={`page-width ${classes || "py-16"} relative z-10`}>
             <div
               className={`flex items-center justify-between md:gap-20 gap-6 ${
                 data?.imageFirst && data?.imageFirst === true
@@ -22,14 +24,25 @@ const ImageWithText = ({ content }: CardProps) => {
               }  lg:flex-nowrap  flex-wrap`}
             >
               <div className="lg:basis-[50%] basis-full">
-                <Image
-                  src={`${data?.image}`}
-                  alt={`${data?.title}`}
-                  loading="lazy"
-                  width={500}
-                  height={500}
-                  className="object-center object-contain  max-sm:h-[350px] max-sm:w-fit m-auto"
-                />
+                {data?.image ? (
+                  <Image
+                    src={`${data?.image}`}
+                    alt={`${data?.title}`}
+                    loading="lazy"
+                    width={800}
+                    height={616}
+                    className="object-center object-contain max-sm:h-[350px] max-sm:w-fit m-auto"
+                  />
+                ) : (
+                  <Image
+                    src={`${Site?.placeholder}`}
+                    alt={`${data?.title}`}
+                    loading="lazy"
+                    width={500}
+                    height={500}
+                    className="object-center object-contain max-sm:h-[350px] max-sm:w-fit m-auto"
+                  />
+                )}
               </div>
               <div className="lg:basis-[50%] basis-full  flex items-start justify-center flex-col max-xl:mb-8">
                 <div className="flex items-start justify-start lg:mb-12 mb-8">
@@ -53,7 +66,7 @@ const ImageWithText = ({ content }: CardProps) => {
                 )}
                 {data?.description && (
                   <p
-                    className="text-2xl"
+                    className="md:text-2xl text-xl"
                     dangerouslySetInnerHTML={{
                       __html: (data?.description && data?.description) || "",
                     }}
@@ -75,7 +88,7 @@ const ImageWithText = ({ content }: CardProps) => {
             <Image
               src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720882920/Vector_2_a61v0y.svg"
               alt="Background Image"
-              loading="lazy" 
+              loading="lazy"
               width={583}
               height={550}
               className="object-center object-contain absolute -top-[150px] left-1/2 transform -translate-x-1/2 z-0 max-sm:w-[300px] max-sm:h-[300px]"
@@ -91,9 +104,8 @@ const ImageWithText = ({ content }: CardProps) => {
               height={330}
               className="object-center object-cover absolute top-0 right-0 z-0 max-md:w-[200px] max-md:h-[200px]"
             />
-
           )}
-        </section>   
+        </section>
       ))}
     </>
   );

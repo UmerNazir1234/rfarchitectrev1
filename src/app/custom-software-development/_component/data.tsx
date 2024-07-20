@@ -3,15 +3,15 @@ import { FiSpeaker } from "react-icons/fi";
 import { HiDocumentReport } from "react-icons/hi";
 import { MdOutlineImageSearch } from "react-icons/md";
 
-export const textWithCardData = [
+export const customSoftwareDeveloperCardText = [
   {
-    title: "Boost Your Mobile Traffic!",
+    title: "Our focus",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. </br> </br> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
-    btnLink: "/about-us ",
-    btnTitle: "About us",
-    enableImageLeft: true,
-    enableImageRight: false,
+    btnLink: "/why-choose-us ",
+    btnTitle: "WHY CHOOSE US?",
+    enableImageLeft: false,
+    enableImageRight: true,
     cards: [
       {
         icon: (
@@ -35,19 +35,19 @@ export const textWithCardData = [
   },
 ];
 
-export const imageWithText = [
+export const customSoftwareDeveloperImageWithText = [
   {
-    title: "Our Case Study",
+    title: "Client-Centric Approach",
     image:
-      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720698819/RfTechnologiesWebsite/Group_1597883917_jpewpc.png",
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721474154/RfTechnologiesWebsite/image_122_l4jdnw.svg",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
     btnLink: "/",
-    btnTitle: "product gallery",
+    btnTitle: "clients satisfaction",
     ctaLink: "/",
     ctaTitle: "View More",
     imageFirst: true,
-    enableImageCenter: false,
-    enableImageRight: true,
+    enableImageCenter: true,
+    enableImageRight: false,
   },
 ];

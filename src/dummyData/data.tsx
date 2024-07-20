@@ -4,13 +4,9 @@ import { FcProcess } from "react-icons/fc";
 import { BiCheckShield } from "react-icons/bi";
 import { SiFireship } from "react-icons/si";
 import { Tabs, Work } from "@/lib/type";
-import { MdOutlineImageSearch } from "react-icons/md";
-import { FiSpeaker } from "react-icons/fi";
-import { BsDatabaseFillGear } from "react-icons/bs";
-import { HiDocumentReport } from "react-icons/hi";
 
 export const menuItems = [
-  { id: 1, name: "Who We Are?", link: "/who-we-are" },
+  { id: 1, name: "Who We Are?", link: "/about-us" },
   { id: 2, name: "Our Work", link: "/our-work" },
   { id: 3, name: "Our Services", link: "/our-services" },
   { id: 4, name: "Contact Us", link: "/contact-us" },
@@ -279,6 +275,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721400446/RfTechnologiesWebsite/pngwing.com_59_gm2uyx.svg",
     title: "React",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 2,
@@ -286,6 +284,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402683/RfTechnologiesWebsite/Vector_3_mbvtlf.svg",
     title: "Laravel",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 3,
@@ -293,6 +293,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402682/RfTechnologiesWebsite/pngwing.com_57_f3m3lj.svg",
     title: "ASP .NET",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 4,
@@ -300,6 +302,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402682/RfTechnologiesWebsite/pngwing.com_58_mkdbq4.svg",
     title: "Vue.js",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 5,
@@ -307,6 +311,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402678/RfTechnologiesWebsite/pngwing.com_60_xblbl8.svg",
     title: "Node.js",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 6,
@@ -314,6 +320,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402676/RfTechnologiesWebsite/pngwing.com_62_nmqazp.svg",
     title: "WordPress",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 7,
@@ -321,6 +329,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402675/RfTechnologiesWebsite/pngwing.com_63_zlabdz.svg",
     title: "Shopify",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 8,
@@ -328,6 +338,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402676/RfTechnologiesWebsite/pngwing.com_64_r2dpz2.svg",
     title: "WooCommerce",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 9,
@@ -335,6 +347,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402675/RfTechnologiesWebsite/pngwing.com_65_nb4rzf.svg",
     title: "UX/UI",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 10,
@@ -342,6 +356,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402674/RfTechnologiesWebsite/pngwing.com_66_qofvpi.svg",
     title: "Flutter",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 11,
@@ -349,6 +365,8 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402673/RfTechnologiesWebsite/image_103_hjsnhq.svg",
     title: "SEO",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
   {
     id: 12,
@@ -356,15 +374,47 @@ export const stack = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402673/RfTechnologiesWebsite/pngwing.com_67_mkn58v.svg",
     title: "PHP",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   },
 ];
 
-// export const serviceCards = [
-//   {
-//     id:1,
-//     title:"WordPress Development",
-//     description:"Process of designing, creating, deploying, and maintaining software for a specific organizations.",
-//     url:'/',
-//   },
-
-// ];
+/* Home */
+export const faq = [
+  {
+    id: 1,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 2,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 3,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 4,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 5,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 6,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+];

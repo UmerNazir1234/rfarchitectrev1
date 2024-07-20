@@ -9,6 +9,9 @@ import TextWithCards from "@/components/TextWithCards";
 import ImageWithText from "@/components/ImageWithText";
 import HeadingBox from "@/components/HeadingBox";
 import OurStack from "./OurStack";
+import Faq from "@/components/Faq";
+import { faq } from "@/dummyData/data";
+import ProjectSubmission from "@/components/ProjectSubmission";
 
 const MobileApp = () => {
   return (
@@ -26,12 +29,20 @@ const MobileApp = () => {
       <TextWithCards content={textWithCardData} />
       <ImageWithText content={imageWithText} />
       <HeadingBox
-      classes="text-primary"
+        classes="text-primary"
         title="our priorities"
         description="Fully-fledged, stable, and scalable mobile applications use this alternative to reduce costs and time-to-market and to reach more users without loss of quality. we analyse your needs and come up with a better solution that perfectly aligns with your business goals and budget."
       />
       <OurStack />
-
+      <Faq data={faq} />
+      <ProjectSubmission
+        title="Submit Your Project"
+        description="Let us know your requirements and we’ll get back to you as soon as possible."
+        email="info@rftechnologies.com"
+        number="00 000 0000"
+        btnTitle="Submit Your Project"
+        btnUrl="/"
+      />
     </>
   );
 };

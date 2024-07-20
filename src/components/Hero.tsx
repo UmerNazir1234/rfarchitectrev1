@@ -27,12 +27,12 @@ const Hero = ({
             backgroundImage: `url(${image})`,
           }}
         >
-          <div className="flex items-center justify-center flex-col bg-cover bg-center mx-auto min-h-[80vh] max-sm:min-h-[70vh] page-width">
+          <div className="flex items-center justify-center flex-col bg-cover bg-center mx-auto min-h-[80vh] max-sm:min-h-[70vh] max-w-6xl">
             {title && (
               <h1
                 className={`${
-                  href && "md:mb-16 mb-8"
-                } text-white drop-shadow-lg !font-bold text-center text-balance leading-tight`}
+                  (href && "md:mb-16 mb-8") || ""
+                } text-white drop-shadow-lg !font-bold text-center text-balance`}
                 dangerouslySetInnerHTML={{ __html: title || "" }}
               />
             )}

@@ -37,7 +37,7 @@ p {
 }
 .h1,
 h1 {
-  @apply lg:text-[120px] md:text-[70px] text-[55px] font-semibold leading-tight max-sm:leading-tight drop-shadow-lg;
+  @apply lg:text-[120px] md:text-[70px] text-[55px] font-semibold leading-none drop-shadow-lg;
 }
 .h2,
 h2 {

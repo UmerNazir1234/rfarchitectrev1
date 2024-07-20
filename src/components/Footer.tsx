@@ -13,9 +13,11 @@ const Footer = () => {
   const pathname = usePathname();
 
   const footerColors: { [key: string]: string } = {
-    "/about-us": "bg-[#edac18]",
+    "/about-us": "!bg-[#edac18]",
+    "/mobile-app-development": "!bg-[#edac18]",
+    "/custom-software-development": "!bg-[#edac18]",
     "/contact-us": "!bg-light",
-    "/our-work": "bg-[#FDF4E6]",
+    "/our-work": "!bg-[#FDF4E6]",
     "/": "!bg-light",
   };
   console.log(pathname, footerColors[pathname]);

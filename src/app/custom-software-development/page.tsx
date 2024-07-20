@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import CustomSoftwareDevelopment from "./CustomSoftwareDevelopment";
 
 const pages = () => {
   return (
-    <div>Custom Software development</div>
-  )
-}
+    <div>
+      <CustomSoftwareDevelopment />
+    </div>
+  );
+};
 
-export default pages
+export default pages;

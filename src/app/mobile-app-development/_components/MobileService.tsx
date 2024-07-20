@@ -22,6 +22,7 @@ const MobileService = () => {
           <MobileAppCard
             title="Cross-platform app development"
             classes="hover:bg-white"
+            textColor="text-black"
             description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit."
             icon={<TbLayoutGridAdd className="md:text-[140px] text-[80px]" />}
           />
