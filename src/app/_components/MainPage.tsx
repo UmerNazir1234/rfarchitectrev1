@@ -11,7 +11,7 @@ import Testimonials from "./Testimonials";
 
 const MainPage = () => {
   return (
-    <main className="bg-light">
+    <>
       <Hero />
       <LeadingSolution />
       <ServiceSlider />
@@ -21,7 +21,7 @@ const MainPage = () => {
       <Testimonials />
       <Faq />
       <Newsletter />
-    </main>
+    </>
   );
 };
 

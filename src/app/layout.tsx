@@ -33,7 +33,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <Header />
-          {children}
+          <main className="bg-light">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

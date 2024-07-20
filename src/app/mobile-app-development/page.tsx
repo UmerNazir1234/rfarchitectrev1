@@ -1,8 +1,8 @@
 import React from "react";
-import Mobile from "./_components/Mobile";
+import MobileApp from "./_components/MobileApp";
 
 const page = () => {
-  return <Mobile />;
+  return <MobileApp />;
 };
 
 export default page;

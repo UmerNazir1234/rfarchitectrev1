@@ -30,7 +30,7 @@ const Button = ({
     return (
       <Link
         href={href}
-        className={`btn flex items-center justify-center relative uppercase gap-1 ${classes}`}
+        className={`btn flex  items-center justify-center relative uppercase gap-1 ${classes}`}
       >
         {enableIcons && (
           <>

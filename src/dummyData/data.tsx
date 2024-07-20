@@ -272,6 +272,93 @@ export const work: Work[] = [
   },
 ];
 
+export const stack = [
+  {
+    id: 1,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721400446/RfTechnologiesWebsite/pngwing.com_59_gm2uyx.svg",
+    title: "React",
+  },
+  {
+    id: 2,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402683/RfTechnologiesWebsite/Vector_3_mbvtlf.svg",
+    title: "Laravel",
+  },
+  {
+    id: 3,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402682/RfTechnologiesWebsite/pngwing.com_57_f3m3lj.svg",
+    title: "ASP .NET",
+  },
+  {
+    id: 4,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402682/RfTechnologiesWebsite/pngwing.com_58_mkdbq4.svg",
+    title: "Vue.js",
+  },
+  {
+    id: 5,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402678/RfTechnologiesWebsite/pngwing.com_60_xblbl8.svg",
+    title: "Node.js",
+  },
+  {
+    id: 6,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402676/RfTechnologiesWebsite/pngwing.com_62_nmqazp.svg",
+    title: "WordPress",
+  },
+  {
+    id: 7,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402675/RfTechnologiesWebsite/pngwing.com_63_zlabdz.svg",
+    title: "Shopify",
+  },
+  {
+    id: 8,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402676/RfTechnologiesWebsite/pngwing.com_64_r2dpz2.svg",
+    title: "WooCommerce",
+  },
+  {
+    id: 9,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402675/RfTechnologiesWebsite/pngwing.com_65_nb4rzf.svg",
+    title: "UX/UI",
+  },
+  {
+    id: 10,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402674/RfTechnologiesWebsite/pngwing.com_66_qofvpi.svg",
+    title: "Flutter",
+  },
+  {
+    id: 11,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402673/RfTechnologiesWebsite/image_103_hjsnhq.svg",
+    title: "SEO",
+  },
+  {
+    id: 12,
+    url: "/",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402673/RfTechnologiesWebsite/pngwing.com_67_mkn58v.svg",
+    title: "PHP",
+  },
+];
+
 // export const serviceCards = [
 //   {
 //     id:1,

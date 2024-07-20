@@ -7,8 +7,10 @@ import { textWithCardData } from "./Data";
 import { imageWithText } from "./Data";
 import TextWithCards from "@/components/TextWithCards";
 import ImageWithText from "@/components/ImageWithText";
+import HeadingBox from "@/components/HeadingBox";
+import OurStack from "./OurStack";
 
-const Mobile = () => {
+const MobileApp = () => {
   return (
     <>
       <Hero
@@ -23,9 +25,15 @@ const Mobile = () => {
       <MobileAppCard />
       <TextWithCards content={textWithCardData} />
       <ImageWithText content={imageWithText} />
+      <HeadingBox
+      classes="text-primary"
+        title="our priorities"
+        description="Fully-fledged, stable, and scalable mobile applications use this alternative to reduce costs and time-to-market and to reach more users without loss of quality. we analyse your needs and come up with a better solution that perfectly aligns with your business goals and budget."
+      />
+      <OurStack />
 
     </>
   );
 };
 
-export default Mobile;
+export default MobileApp;
