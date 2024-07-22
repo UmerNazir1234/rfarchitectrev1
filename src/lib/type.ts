@@ -15,6 +15,7 @@ export type Work = {
   textColor?: string;
 };
 
+/* text with cards */
 export type textWithCards = {
   title?: string;
   btnTitle?: string;
@@ -28,17 +29,24 @@ type Cards = {
   icon?: React.ReactElement;
   cardTitle?: string;
 };
-
+/* end text with cards */
 
 export type imageWithText = {
   title?: string;
   btnTitle?: string;
   btnLink?: string;
-  ctaLink?:string;
-  ctaTitle?:string;
+  ctaLink?: string;
+  ctaTitle?: string;
   description?: string;
-  image?:string;
-  imageFirst?:boolean
+  image?: string;
+  imageFirst?: boolean;
   enableImageCenter?: boolean;
   enableImageRight?: boolean;
+};
+
+/* subservices card */
+export type subServiceProps = {
+  title?: string;
+  description?: string;
+  icon?: string;
 };

@@ -4,6 +4,14 @@ import { FcProcess } from "react-icons/fc";
 import { BiCheckShield } from "react-icons/bi";
 import { SiFireship } from "react-icons/si";
 import { Tabs, Work } from "@/lib/type";
+import { MdOutlineImageSearch } from "react-icons/md";
+import { FiSpeaker } from "react-icons/fi";
+import { BsDatabaseFillGear } from "react-icons/bs";
+import { HiDocumentReport } from "react-icons/hi";
+import { TbVirusSearch } from "react-icons/tb";
+import { TbSettingsPause } from "react-icons/tb";
+import { PiProjectorScreenChart } from "react-icons/pi";
+import { BsKanban } from "react-icons/bs";
 
 export const menuItems = [
   { id: 1, name: "Who We Are?", link: "/about-us" },
@@ -69,7 +77,7 @@ export const serviceLinks = [
   {
     id: 2,
     name: "WordPress Development",
-    link: "/wordPress-development",
+    link: "/wordpress-development",
   },
   {
     id: 3,
@@ -416,5 +424,273 @@ export const faq = [
     question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
     awnser:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+];
+
+/*custom software Development */
+export const customSoftwareDevelopmentServiceData = [
+  {
+    id: 1,
+    title: "UX/UI Design & Prototype",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721477113/RfTechnologiesWebsite/Mask_group_m099ft.svg",
+  },
+  {
+    id: 2,
+    title: "Software Consulting Services",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
+  },
+  {
+    id: 3,
+    title: "Custom Mobile App Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638917/RfTechnologiesWebsite/Mask_group_6_ajs3qa.svg",
+  },
+  {
+    id: 4,
+    title: "Custom Web Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487828/Mask_group_4_vn0iha.svg",
+  },
+  {
+    id: 5,
+    title: "Legacy App Upgradation",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487832/Mask_group_2_cyrs1o.svg",
+  },
+  {
+    id: 6,
+    title: "Enterprise App Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487834/Mask_group_1_bnef0w.svg",
+  },
+  {
+    id: 7,
+    title: "Custom CRM Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487835/Mask_group_jelked.svg",
+  },
+  {
+    id: 8,
+    title: "MVP Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638947/RfTechnologiesWebsite/Mask_group_7_kkk7xr.svg",
+  },
+];
+/*end Custom software Development */
+
+/* WordPress Development */
+export const wordPressServiceData = [
+  {
+    id: 1,
+    title: "WordPress API Integration Services",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642883/RfTechnologiesWebsite/Mask_group_xf3txy.svg",
+  },
+  {
+    id: 2,
+    title: "Theme Development Services",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642882/RfTechnologiesWebsite/Mask_group_2_ws5unm.svg",
+  },
+  {
+    id: 3,
+    title: "Custom WordPress Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642882/RfTechnologiesWebsite/Mask_group_1_zwcjkj.svg",
+  },
+  {
+    id: 4,
+    title: "WooCommerce Development Services",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
+  },
+  {
+    id: 5,
+    title: "WordPress Migration Service",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_3_j14sxn.svg",
+  },
+  {
+    id: 6,
+    title: "WordPress SEO Service",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_5_swkmsx.svg",
+  },
+  {
+    id: 7,
+    title: "PSD to WordPress",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_6_fnjjdx.svg",
+  },
+  {
+    id: 8,
+    title: "WordPress Speed Optimization Services",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642875/RfTechnologiesWebsite/Mask_group_7_qakhfb.svg",
+  },
+  {
+    id: 9,
+    title: "Maintenance And Support",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642875/RfTechnologiesWebsite/Mask_group_8_ahomn6.svg",
+  },
+];
+
+export const wordpressCardText = [
+  {
+    title: "why choose us<span class='text-secondary'>?</span>",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. </br> </br> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    btnLink: "/about-us ",
+    btnTitle: "about us",
+    enableImageLeft: false,
+    enableImageRight: true,
+    cards: [
+      {
+        icon: <TbVirusSearch className="text-[80px] max-sm:text-[40px]" />,
+        cardTitle: "Effective Solutions",
+      },
+      {
+        icon: <TbSettingsPause className="text-[80px] max-sm:text-[40px]" />,
+        cardTitle: "Upgradation",
+      },
+      {
+        icon: (
+          <PiProjectorScreenChart className="text-[80px] max-sm:text-[40px]" />
+        ),
+        cardTitle: "Responsive and flexible design",
+      },
+      {
+        icon: <BsKanban className="text-[80px] max-sm:text-[40px]" />,
+        cardTitle: "In-Depth Analysis",
+      },
+    ],
+  },
+];
+export const wordpressImageWithText = [
+  {
+    title: "Shopify To WordPress",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642023/RfTechnologiesWebsite/image_133_wto9ik.svg",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    btnLink: "/",
+    btnTitle: "Best services",
+    ctaLink: "",
+    ctaTitle: "View More",
+    imageFirst: true,
+    enableImageCenter: true,
+    enableImageRight: false,
+  },
+];
+export const wordpressfaq = [
+  {
+    id: 1,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 2,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 3,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 4,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 5,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 6,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+];
+/* End WordPress Development */
+
+/* woocomemrce development */
+export const woocomemrceServiceData = [
+  {
+    id: 1,
+    title: "WooCommerce Consultation",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
+  },
+  {
+    id: 2,
+    title: "WooCommerce Design",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642882/RfTechnologiesWebsite/Mask_group_2_ws5unm.svg",
+  },
+  {
+    id: 3,
+    title: "WooCommerce Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642882/RfTechnologiesWebsite/Mask_group_1_zwcjkj.svg",
+  },
+  {
+    id: 4,
+    title: "WooCommerce Integrations",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
+  },
+  {
+    id: 5,
+    title: "WooCommerce Configuration",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_3_j14sxn.svg",
+  },
+  {
+    id: 6,
+    title: "WooCommerce Migration",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_5_swkmsx.svg",
+  },
+  {
+    id: 7,
+    title: "WooCommerce Extensions",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_6_fnjjdx.svg",
   },
 ];

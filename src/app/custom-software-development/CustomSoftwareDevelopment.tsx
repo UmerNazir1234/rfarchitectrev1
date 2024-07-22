@@ -9,7 +9,7 @@ import {
 import { GoArrowUpRight } from "react-icons/go";
 import Stacks from "@/components/Stacks";
 import Faq from "@/components/Faq";
-import { faq } from "@/dummyData/data";
+import { customSoftwareDevelopmentServiceData, faq } from "@/dummyData/data";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import SubServices from "@/snippet/SubServices";
 
@@ -24,7 +24,7 @@ const CustomSoftwareDevelopment = () => {
         href="/contact-us"
         classes="bg-white !text-primary"
       />
-      <SubServices />
+      <SubServices data={customSoftwareDevelopmentServiceData} />
       <TextWithCards
         content={customSoftwareDeveloperCardText}
         classes="py-32"
