@@ -1,10 +1,11 @@
 import React from "react";
-import CustomSoftwareDevelopment from "./CustomSoftwareDevelopment";
+
+import Index from "./_component/Index";
 
 const pages = () => {
   return (
     <div>
-      <CustomSoftwareDevelopment />
+      <Index />
     </div>
   );
 };

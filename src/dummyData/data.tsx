@@ -1057,3 +1057,133 @@ export const digitalFeatures = [
   },
 ];
 /* End Digital Marketing */
+
+/* seo */
+
+export const seoServiceData = [
+  {
+    id: 1,
+    title: "Local SEO",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662845/RfTechnologiesWebsite/Mask_group_23_tx8sdx.svg",
+  },
+  {
+    id: 2,
+    title: "On-Page Optimization",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662845/RfTechnologiesWebsite/Mask_group_24_wf44ci.svg",
+  },
+  {
+    id: 3,
+    title: "Technical SEO",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662844/RfTechnologiesWebsite/Mask_group_25_sfg0dc.svg",
+  },
+  {
+    id: 4,
+    title: "Speed Optimization",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662844/RfTechnologiesWebsite/Mask_group_26_rg2tz8.svg",
+  },
+  {
+    id: 5,
+    title: "Keyword Research",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662843/RfTechnologiesWebsite/Mask_group_27_fpdmpo.svg",
+  },
+  {
+    id: 6,
+    title: "Content Creation",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662843/RfTechnologiesWebsite/Mask_group_28_lazqu5.svg",
+  },
+  {
+    id: 7,
+    title: "E-commerce SEO",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662844/RfTechnologiesWebsite/Mask_group_29_bzuvyx.svg",
+  },
+  {
+    id: 8,
+    title: "SEO Consulting",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
+  },
+  {
+    id: 9,
+    title: "Analysis and Reporting",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662843/RfTechnologiesWebsite/Mask_group_30_wme1fs.svg",
+  },
+];
+/* endseo */
+
+/* grapic designing */
+export const grapicDesignServiceData = [
+  {
+    id: 1,
+    title: "Label Design",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721477113/RfTechnologiesWebsite/Mask_group_m099ft.svg",
+  },
+  {
+    id: 2,
+    title: "Label Design",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
+  },
+  {
+    id: 3,
+    title: "Banners Design",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638917/RfTechnologiesWebsite/Mask_group_6_ajs3qa.svg",
+  },
+  {
+    id: 4,
+    title: "Logo and Branding Design",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487828/Mask_group_4_vn0iha.svg",
+  },
+  {
+    id: 5,
+    title: "Products and Catalogs",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487832/Mask_group_2_cyrs1o.svg",
+  },
+  {
+    id: 6,
+    title: "Front-end and UX/UI Design",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487834/Mask_group_1_bnef0w.svg",
+  },
+  {
+    id: 7,
+    title: "Social Media Design",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487835/Mask_group_jelked.svg",
+  },
+  {
+    id: 8,
+    title: "InfoGraphicst",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638947/RfTechnologiesWebsite/Mask_group_7_kkk7xr.svg",
+  },
+];
+/* end grapic designing */

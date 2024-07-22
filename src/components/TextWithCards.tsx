@@ -7,7 +7,7 @@ import { textWithCards } from "@/lib/type";
 type CardProps = {
   content: textWithCards[];
   classes?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 const bgImages = [
   "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864072/Rectangle_22_1_rk7ogw.png",

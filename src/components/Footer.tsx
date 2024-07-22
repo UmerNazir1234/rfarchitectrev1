@@ -14,6 +14,8 @@ const Footer = () => {
 
   const footerColors: { [key: string]: string } = {
     "/about-us": "!bg-[#edac18]",
+    "/seo": "!bg-[#edac18]",
+    "/faq": "!bg-[#edac18]",
     "/digital-marketing": "!bg-[#edac18]",
     "/web-development": "!bg-[#edac18]",
     "/woocommerce-development": "!bg-[#edac18]",
@@ -24,7 +26,7 @@ const Footer = () => {
     "/our-work": "!bg-[#FDF4E6]",
     "/": "!bg-light",
   };
-  console.log(pathname, footerColors[pathname]);
+
   const footerClass = footerColors[pathname] || "bg-gray-500";
   return (
     <footer

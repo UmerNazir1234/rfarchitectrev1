@@ -2,37 +2,27 @@ import Hero from "@/components/Hero";
 import ImageWithText from "@/components/ImageWithText";
 import TextWithCards from "@/components/TextWithCards";
 import React from "react";
-import {
-  customSoftwareDeveloperCardText,
-  customSoftwareDeveloperImageWithText,
-} from "./_component/data";
+
 import { GoArrowUpRight } from "react-icons/go";
 import Stacks from "@/components/Stacks";
 import Faq from "@/components/Faq";
-import { customSoftwareDevelopmentServiceData, faq } from "@/dummyData/data";
+import { faq, grapicDesignServiceData } from "@/dummyData/data";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import SubServices from "@/snippet/SubServices";
 
-const CustomSoftwareDevelopment = () => {
+const Index = () => {
   return (
     <div>
       <Hero
-        title={`<span class="text-secondary">Custom Software</span> Development`}
-        image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720779660/RfTechnologiesWebsite/image_70_unicwe.png"
+        title={`<span class="text-secondary">Graphic Design </span> Services`}
+        image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721664267/RfTechnologiesWebsite/marketing-strategy-planning-strategy-concept_1_a2tnp6.png"
         btnTitle="Lets Talk"
         btnIcon={<GoArrowUpRight />}
         href="/contact-us"
         classes="bg-white !text-primary"
       />
-      <SubServices data={customSoftwareDevelopmentServiceData} />
-      <TextWithCards
-        content={customSoftwareDeveloperCardText}
-        classes="py-32"
-      />
-      <ImageWithText
-        content={customSoftwareDeveloperImageWithText}
-        classes="pb-32"
-      />
+      <SubServices data={grapicDesignServiceData} />
+
       <Stacks />
       <Faq data={faq} classes="py-24" />
       <ProjectSubmission
@@ -47,4 +37,4 @@ const CustomSoftwareDevelopment = () => {
   );
 };
 
-export default CustomSoftwareDevelopment;
+export default Index;
