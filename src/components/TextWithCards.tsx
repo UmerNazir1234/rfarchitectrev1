@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Children } from "react";
 import Button from "./Button";
 import Image from "next/image";
 import { textWithCards } from "@/lib/type";
@@ -7,6 +7,7 @@ import { textWithCards } from "@/lib/type";
 type CardProps = {
   content: textWithCards[];
   classes?: string;
+  children: React.ReactNode;
 };
 const bgImages = [
   "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864072/Rectangle_22_1_rk7ogw.png",
@@ -14,7 +15,7 @@ const bgImages = [
   "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864529/Rectangle_22_2_wbgtoh.svg",
   "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720864562/Rectangle_22_3_a6qf7l.svg",
 ];
-const TextWithCards = ({ content, classes }: CardProps) => {
+const TextWithCards = ({ content, classes, children }: CardProps) => {
   return (
     <>
       {content?.map((data, index) => (
@@ -49,7 +50,9 @@ const TextWithCards = ({ content, classes }: CardProps) => {
                     }}
                   ></p>
                 )}
+                <div className="mt-6 w-full">{children && children}</div>
               </div>
+
               <div className="md:basis-[50%]">
                 <div className="flex items-center justify-center sm:gap-4 gap-2 flex-wrap max-xl:max-w-[580px] m-auto max-md:max-w-none">
                   {data?.cards?.map((card: any, index) => (

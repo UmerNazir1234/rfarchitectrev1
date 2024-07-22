@@ -656,35 +656,35 @@ export const woocomemrceServiceData = [
     title: "WooCommerce Design",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
-    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642882/RfTechnologiesWebsite/Mask_group_2_ws5unm.svg",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647257/RfTechnologiesWebsite/Mask_group_9_mu6pnf.svg",
   },
   {
     id: 3,
     title: "WooCommerce Development",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
-    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642882/RfTechnologiesWebsite/Mask_group_1_zwcjkj.svg",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647291/RfTechnologiesWebsite/Mask_group_10_r09khi.svg",
   },
   {
     id: 4,
     title: "WooCommerce Integrations",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
-    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647317/RfTechnologiesWebsite/Mask_group_11_zby2m5.svg",
   },
   {
     id: 5,
     title: "WooCommerce Configuration",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
-    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_3_j14sxn.svg",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647342/RfTechnologiesWebsite/Mask_group_12_kcarut.svg",
   },
   {
     id: 6,
     title: "WooCommerce Migration",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_5_swkmsx.svg",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
   },
   {
     id: 7,
@@ -694,3 +694,366 @@ export const woocomemrceServiceData = [
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_6_fnjjdx.svg",
   },
 ];
+
+export const woocomemrceCardText = [
+  {
+    title: "why choose us<span class='text-secondary'>?</span>",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. </br> </br> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    btnLink: "/about-us ",
+    btnTitle: "about us",
+    enableImageLeft: true,
+    enableImageRight: false,
+    cards: [
+      {
+        icon: <TbVirusSearch className="text-[80px] max-sm:text-[40px]" />,
+        cardTitle: "Effective Solutions",
+      },
+      {
+        icon: <TbSettingsPause className="text-[80px] max-sm:text-[40px]" />,
+        cardTitle: "Upgradation",
+      },
+      {
+        icon: (
+          <PiProjectorScreenChart className="text-[80px] max-sm:text-[40px]" />
+        ),
+        cardTitle: "Responsive and flexible design",
+      },
+      {
+        icon: <BsKanban className="text-[80px] max-sm:text-[40px]" />,
+        cardTitle: "In-Depth Analysis",
+      },
+    ],
+  },
+];
+
+export const woocomemrcefaq = [
+  {
+    id: 1,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 2,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 3,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 4,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 5,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 6,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+];
+/* end woocommerce */
+
+/* website design and development */
+export const websiteServiceData = [
+  {
+    id: 1,
+    title: "Ecommerce",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648706/RfTechnologiesWebsite/Mask_group_17_nd3l9k.svg",
+  },
+  {
+    id: 2,
+    title: "SEO",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648676/RfTechnologiesWebsite/Mask_group_16_vgjjim.svg",
+  },
+  {
+    id: 3,
+    title: "Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647291/RfTechnologiesWebsite/Mask_group_10_r09khi.svg",
+  },
+  {
+    id: 4,
+    title: "Web Design",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648596/RfTechnologiesWebsite/Mask_group_15_bgalcf.svg",
+  },
+  {
+    id: 5,
+    title: "Open Source Platform",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648544/RfTechnologiesWebsite/Mask_group_14_x8cunu.svg",
+  },
+  {
+    id: 6,
+    title: "CRM",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_6_fnjjdx.svg",
+  },
+  {
+    id: 7,
+    title: "Integration",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647317/RfTechnologiesWebsite/Mask_group_11_zby2m5.svg",
+  },
+  {
+    id: 7,
+    title: "Maintenance",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642875/RfTechnologiesWebsite/Mask_group_8_ahomn6.svg",
+  },
+];
+
+export const websiteImageWithText = [
+  {
+    title: "Great websites grow your business over time",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721649228/RfTechnologiesWebsite/Group_1597883924_lbomti.png",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    btnLink: "/",
+    btnTitle: "OUR EXPERTISE",
+    ctaLink: "",
+    ctaTitle: "View More",
+    imageFirst: false,
+    enableImageCenter: false,
+    enableImageRight: false,
+    enableImageleft: true,
+  },
+];
+
+export const websitefaq = [
+  {
+    id: 1,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 2,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 3,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 4,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 5,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 6,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+];
+
+/* end website desing and development */
+
+/* Digital Marketing */
+export const digitalServiceData = [
+  {
+    id: 1,
+    title: "Social Media Marketing",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651687/RfTechnologiesWebsite/Mask_group_18_kayl71.svg",
+  },
+  {
+    id: 2,
+    title: "Email Marketing",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651713/RfTechnologiesWebsite/Mask_group_19_otzj8i.svg",
+  },
+  {
+    id: 3,
+    title: "Pay Per Click (ad)",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651747/RfTechnologiesWebsite/Mask_group_20_w2h9oo.svg",
+  },
+  {
+    id: 4,
+    title: "Content Marketing",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651809/RfTechnologiesWebsite/Mask_group_22_vgivjd.svg",
+  },
+  {
+    id: 5,
+    title: "SEO",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648676/RfTechnologiesWebsite/Mask_group_16_vgjjim.svg",
+  },
+  {
+    id: 6,
+    title: "Conversion Rate Optimization",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651779/RfTechnologiesWebsite/Mask_group_21_wx4rgo.svg",
+  },
+];
+
+export const socialAnalysisImageWithText = [
+  {
+    title: "Social Analysts and Strategists",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651869/RfTechnologiesWebsite/Group_1597883924_1_oow9q4.png",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    btnLink: "/",
+    btnTitle: "OUR EXPERTISE",
+    ctaLink: "",
+    ctaTitle: "",
+    imageFirst: false,
+    enableImageCenter: false,
+    enableImageRight: false,
+    enableImageleft: true,
+  },
+];
+export const trustedBrandImageWithText = [
+  {
+    title: "Trusted by World-wide brands and organizations",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721658313/RfTechnologiesWebsite/Group_1597883962_a02iim.svg",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    btnLink: "/",
+    btnTitle: "OUR APPROCH",
+    ctaLink: "",
+    ctaTitle: "",
+    imageFirst: true,
+    enableImageCenter: false,
+    enableImageRight: false,
+    enableImageleft: false,
+  },
+];
+
+export const digitalMarketingfaq = [
+  {
+    id: 1,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 2,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 3,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 4,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 5,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 6,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+];
+
+export const digitalMarketingCardText = [
+  {
+    title: "Change the Way You See Social",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    btnLink: "/about-us ",
+    btnTitle: "Social Media Strategy",
+    enableImageLeft: true,
+    enableImageRight: false,
+    childern: "this is child",
+    cards: [
+      {
+        icon: <TbVirusSearch className="text-[80px] max-sm:text-[40px]" />,
+        cardTitle: "Effective Solutions",
+      },
+      {
+        icon: <TbSettingsPause className="text-[80px] max-sm:text-[40px]" />,
+        cardTitle: "Upgradation",
+      },
+      {
+        icon: (
+          <PiProjectorScreenChart className="text-[80px] max-sm:text-[40px]" />
+        ),
+        cardTitle: "Responsive and flexible design",
+      },
+      {
+        icon: <BsKanban className="text-[80px] max-sm:text-[40px]" />,
+        cardTitle: "In-Depth Analysis",
+      },
+    ],
+  },
+];
+export const digitalFeatures = [
+  {
+    id: 1,
+    title: "Understand Your Audience",
+  },
+  {
+    id: 2,
+    title: "Engage Your Community",
+  },
+  {
+    id: 3,
+    title: "Reach Your Audience",
+  },
+  {
+    id: 4,
+    title: "Social Media Analytics",
+  },
+];
+/* End Digital Marketing */

@@ -41,6 +41,7 @@ export type imageWithText = {
   image?: string;
   imageFirst?: boolean;
   enableImageCenter?: boolean;
+  enableImageleft?: boolean;
   enableImageRight?: boolean;
 };
 

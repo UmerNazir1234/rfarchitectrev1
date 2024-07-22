@@ -105,6 +105,16 @@ const ImageWithText = ({ content, classes }: CardProps) => {
               className="object-center object-cover absolute top-0 right-0 z-0 max-md:w-[200px] max-md:h-[200px]"
             />
           )}
+          {data?.enableImageleft && (
+            <Image
+              src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721649364/RfTechnologiesWebsite/Vector_adriqe.svg"
+              alt="Background Image"
+              loading="lazy"
+              width={330}
+              height={330}
+              className="object-center object-cover absolute top-0 left z-0 max-md:w-[200px] max-md:h-[200px]"
+            />
+          )}
         </section>
       ))}
     </>

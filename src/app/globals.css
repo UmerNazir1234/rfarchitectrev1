@@ -24,6 +24,7 @@
 body {
   @apply font-advent_Pro;
 }
+
 p {
   @apply text-base font-nunito;
 }
