@@ -1,11 +1,8 @@
 import React from "react";
-import DevelopmentServiceCard from "../_components/DevelopmentServiceCard";
-
+import Index from "./_components/Index";
 
 const page = () => {
-  return <div>
-    <DevelopmentServiceCard />
-  </div>
+  return <Index />;
 };
 
 export default page;

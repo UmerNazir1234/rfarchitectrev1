@@ -6,9 +6,17 @@ import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Stacks from "@/components/Stacks";
 import Faq from "@/components/Faq";
-import { faq, grapicDesignServiceData } from "@/dummyData/data";
+import {
+  faq,
+  grapicCardText,
+  grapicDesignServiceData,
+  woocomemrceCardText,
+} from "@/dummyData/data";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import SubServices from "@/snippet/SubServices";
+import OurProcess from "./OurProcess";
+import HeadingBox from "@/components/HeadingBox";
+import ImageWithCards from "@/components/ImageWithCards";
 
 const Index = () => {
   return (
@@ -22,7 +30,13 @@ const Index = () => {
         classes="bg-white !text-primary"
       />
       <SubServices data={grapicDesignServiceData} />
-
+      <ImageWithCards content={grapicCardText} classes="sm:pt-32" />
+      <OurProcess />
+      <HeadingBox
+        title="our priorities"
+        classes="text-primary"
+        description="Fully-fledged, stable, and scalable mobile applications use this alternative to reduce costs and time-to-market and to reach more users without loss of quality. we analyse your needs and come up with a better solution that perfectly aligns with your business goals and budget."
+      />
       <Stacks />
       <Faq data={faq} classes="py-24" />
       <ProjectSubmission

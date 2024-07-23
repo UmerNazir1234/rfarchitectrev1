@@ -1,5 +1,5 @@
 "use client";
-import React, { Children } from "react";
+import React from "react";
 import Button from "./Button";
 import Image from "next/image";
 import { textWithCards } from "@/lib/type";
@@ -21,8 +21,8 @@ const TextWithCards = ({ content, classes, children }: CardProps) => {
       {content?.map((data, index) => (
         <section className="relative" key={index}>
           <div className={`page-width ${classes || "py-12"}  relative z-10`}>
-            <div className="flex items-start justify-start lg:mb-12 mb-8">
-              {data?.btnLink && data?.btnTitle && (
+            {data?.btnLink && data?.btnTitle && (
+              <div className="flex items-start justify-start lg:mb-12 mb-8">
                 <Button
                   title={data?.btnTitle}
                   classes="bg-secondary uppercase"
@@ -30,8 +30,8 @@ const TextWithCards = ({ content, classes, children }: CardProps) => {
                   href={data?.btnLink}
                   iconStyle="stroke-secondary"
                 />
-              )}
-            </div>
+              </div>
+            )}
             <div className="xl:flex xl:items-start xl:justify-between xl:gap-20">
               <div className="md:basis-[50%] flex items-start justify-center flex-col max-xl:mb-8">
                 {data?.title && (
@@ -75,7 +75,7 @@ const TextWithCards = ({ content, classes, children }: CardProps) => {
           </div>
           {data?.enableImageLeft && (
             <Image
-              src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720867552/Vector_vjta5o.svg"
+              src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721731800/RfTechnologiesWebsite/Vector_6_ecsyzp.svg"
               alt="Background Image"
               loading="lazy"
               width={550}

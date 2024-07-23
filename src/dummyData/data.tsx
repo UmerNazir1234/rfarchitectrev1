@@ -640,9 +640,61 @@ export const wordpressfaq = [
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
   },
 ];
+
 /* End WordPress Development */
 
 /* woocomemrce development */
+
+export const wooCommerceKeyFeatures = [
+  {
+    id: 1,
+    bgColor: "#0037B1",
+    title: "Open-Source Platform",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648544/RfTechnologiesWebsite/Mask_group_14_x8cunu.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 2,
+    title: "Easy to Setup",
+    bgColor: "#C90764",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729010/RfTechnologiesWebsite/Mask_group_31_ka6ncj.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 3,
+    title: "Offer Payments & Shipping",
+    bgColor: "#01AB78",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729053/RfTechnologiesWebsite/Mask_group_32_vwcaes.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 4,
+    title: "Manage Orders On the Go",
+    bgColor: "#D09703",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729106/RfTechnologiesWebsite/Mask_group_33_shpkdh.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 5,
+    title: "Manage Orders On the Go",
+    bgColor: "#710583",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729147/RfTechnologiesWebsite/Mask_group_34_khsfqk.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 6,
+    title: "Extensions Store",
+    bgColor: "#F17812",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729190/RfTechnologiesWebsite/Mask_group_35_id3ako.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+];
 export const woocomemrceServiceData = [
   {
     id: 1,
@@ -1125,6 +1177,30 @@ export const seoServiceData = [
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662843/RfTechnologiesWebsite/Mask_group_30_wme1fs.svg",
   },
 ];
+export const seoCardText = [
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721734466/RfTechnologiesWebsite/Group_1597883924_2_yopuhj.svg",
+    cards: [
+      {
+        title: "40%",
+        cardTitle: "Reduction in Bounce Rate",
+      },
+      {
+        title: "81%",
+        cardTitle: "Higher Conversion Rate",
+      },
+      {
+        title: "410%",
+        cardTitle: "Increase In Organic Traffic",
+      },
+      {
+        title: "220%",
+        cardTitle: "Increase in Return on Investments",
+      },
+    ],
+  },
+];
 /* endseo */
 
 /* grapic designing */
@@ -1186,4 +1262,358 @@ export const grapicDesignServiceData = [
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638947/RfTechnologiesWebsite/Mask_group_7_kkk7xr.svg",
   },
 ];
+
+export const grapicCardText = [
+  {
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721733053/RfTechnologiesWebsite/Group_1597883924_1_bhav7a.svg",
+    cards: [
+      {
+        title: "300+",
+        cardTitle: "Logo and Brand Design",
+      },
+      {
+        title: "90+",
+        cardTitle: "Happy Clients",
+      },
+      {
+        title: "1350+",
+        cardTitle: "Front-end and UX & UI Design Tampltes",
+      },
+      {
+        title: "94+",
+        cardTitle: "Banners Designs",
+      },
+    ],
+  },
+];
+
 /* end grapic designing */
+
+/* CRM */
+export const crmServiceData = [
+  {
+    id: 1,
+    title: "CRM Consulting",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
+  },
+  {
+    id: 2,
+    title: "CRM Solution Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721737918/RfTechnologiesWebsite/Mask_group_36_gyikae.svg",
+  },
+  {
+    id: 3,
+    title: "CRM Implementation",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647342/RfTechnologiesWebsite/Mask_group_12_kcarut.svg",
+  },
+  {
+    id: 4,
+    title: "Mobile CRM Solutions",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721737960/RfTechnologiesWebsite/Mask_group_37_oogaqw.svg",
+  },
+  {
+    id: 5,
+    title: "CRM Integration",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647317/RfTechnologiesWebsite/Mask_group_11_zby2m5.svg",
+  },
+  {
+    id: 6,
+    title: "CRM Migration",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
+  },
+  {
+    id: 7,
+    title: "CRM Platform Customization",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_6_fnjjdx.svg",
+  },
+  {
+    id: 8,
+    title: "CRM Software Maintenance",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642875/RfTechnologiesWebsite/Mask_group_8_ahomn6.svg",
+  },
+];
+export const crmKeyFeatures = [
+  {
+    id: 1,
+    bgColor: "#0037B1",
+    title: "Understand Your Customers",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738259/RfTechnologiesWebsite/Mask_group_38_dfx41z.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 2,
+    title: "Boost Sales",
+    bgColor: "#C90764",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738285/RfTechnologiesWebsite/Mask_group_39_b5btme.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 3,
+    title: "Improve Communication",
+    bgColor: "#01AB78",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738319/RfTechnologiesWebsite/Mask_group_40_kyr5os.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 4,
+    title: "Make Data-Driven Decisions",
+    bgColor: "#D09703",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738349/RfTechnologiesWebsite/Mask_group_41_thfnjv.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 5,
+    title: "Enhance Customer Service",
+    bgColor: "#710583",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738382/RfTechnologiesWebsite/Mask_group_42_j5fxq0.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 6,
+    title: "Automate Everyday Tasks",
+    bgColor: "#F17812",
+    src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738407/RfTechnologiesWebsite/Mask_group_43_popba4.svg",
+    details:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+];
+export const crmImageWithText = [
+  {
+    title: "Functionalities & flex-abilities",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721740228/RfTechnologiesWebsite/Group_1597883913_1_joko3y.svg",
+    description:
+      "Functionalities and flex-abilities of custom CRM  are following.",
+    btnLink: "/about-us",
+    btnTitle: "why choose us",
+    ctaLink: "",
+    ctaTitle: "",
+    imageFirst: false,
+    enableImageCenter: false,
+    enableImageRight: false,
+    enableImageleft: true,
+  },
+];
+export const crmFeatures = [
+  {
+    id: 1,
+    title: "Sale Data Management",
+  },
+  {
+    id: 2,
+    title: "Leads management",
+  },
+  {
+    id: 3,
+    title: "Account management",
+  },
+  {
+    id: 4,
+    title: "Opportunity management",
+  },
+  {
+    id: 5,
+    title: "Workflows and Approvals",
+  },
+  {
+    id: 6,
+    title: "Email integrations",
+  },
+  {
+    id: 7,
+    title: "Reports and Dashboard",
+  },
+];
+/* end CRM */
+
+/* shopify development */
+export const shopifyServiceData = [
+  {
+    id: 1,
+    title: "Shopify Store Setup",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741033/RfTechnologiesWebsite/Mask_group_44_mzoynp.svg",
+  },
+  {
+    id: 2,
+    title: "Shopify Store Maintenance",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741100/RfTechnologiesWebsite/Mask_group_45_vzdue7.svg",
+  },
+  {
+    id: 3,
+    title: "Shopify Mobile App Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741139/RfTechnologiesWebsite/Mask_group_46_r3q1zj.svg",
+  },
+  {
+    id: 4,
+    title: "Shopify Theme Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647291/RfTechnologiesWebsite/Mask_group_10_r09khi.svg",
+  },
+  {
+    id: 5,
+    title: "Shopify Private App Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741139/RfTechnologiesWebsite/Mask_group_46_r3q1zj.svg",
+  },
+  {
+    id: 6,
+    title: "Migration To Shopify",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
+  },
+  {
+    id: 7,
+    title: "PSD to Shopify",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741365/RfTechnologiesWebsite/Mask_group_49_og0i73.svg",
+  },
+  {
+    id: 8,
+    title: "Shopify Integration Services",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741312/RfTechnologiesWebsite/Mask_group_48_l4wkxq.svg",
+  },
+  {
+    id: 9,
+    title: "Shopify Plus Development",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741411/RfTechnologiesWebsite/Mask_group_50_ijiekz.svg",
+  },
+];
+export const shopifyFaq = [
+  {
+    id: 1,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 2,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 3,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 4,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 5,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+  {
+    id: 6,
+    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
+    awnser:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+  },
+];
+export const shopifyImageWithText = [
+  {
+    title: "Advantage Of Choosing Us",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741821/RfTechnologiesWebsite/Group_1597883963_hevjr1.svg",
+    description:
+      "With Our best experience and good knowledge of Shopify, we provide the best solutions for your online stores.",
+    btnLink: "/",
+    btnTitle: "Advantages",
+    ctaLink: "",
+    ctaTitle: "",
+    imageFirst: false,
+    enableImageCenter: false,
+    enableImageRight: false,
+    enableImageleft: true,
+  },
+];
+export const shopifyFeatures = [
+  {
+    id: 1,
+    title: "Top Shopify Developers",
+  },
+  {
+    id: 2,
+    title: "Mobile-First Approach",
+  },
+  {
+    id: 3,
+    title: "SEO Friendly",
+  },
+  {
+    id: 4,
+    title: "Short Time To Online Running",
+  },
+  {
+    id: 5,
+    title: "Full Testing and Bug-Free site",
+  },
+  {
+    id: 6,
+    title: "Fully Customization and Full Maintenance",
+  },
+  {
+    id: 7,
+    title: "Convert existing store to online 2.0",
+  },
+];
+export const shopImageWithText = [
+  {
+    title: "",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721743386/RfTechnologiesWebsite/image_101_n1kepp.svg",
+    description:
+      "Our Shopify Experts migrate your existing theme to Shopify Online Store 2.0 Fully accurate word by word. </br> </br> With Online 2.0 Shopify Theme, Enjoy the creative designs and Sections on all the pages of your shopify Website. Easily Customize and Highly attractive with 100% Conversion rate.",
+    btnLink: "",
+    btnTitle: "",
+    ctaLink: "",
+    ctaTitle: "",
+    imageFirst: false,
+    enableImageCenter: false,
+    enableImageRight: false,
+    enableImageleft: true,
+  },
+];
+/* end shopify development */

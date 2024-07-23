@@ -11,7 +11,7 @@ import ProjectSubmission from "@/components/ProjectSubmission";
 import SubServices from "@/snippet/SubServices";
 import {
   customSoftwareDeveloperCardText,
-  customSoftwareDeveloperImageWithText,
+  customSoftwareDeveloperImageWithText,                 
 } from "./data";
 
 const Index = () => {

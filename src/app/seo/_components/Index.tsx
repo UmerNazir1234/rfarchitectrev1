@@ -1,10 +1,12 @@
 import Faq from "@/components/Faq";
 import HeadingBox from "@/components/HeadingBox";
 import Hero from "@/components/Hero";
+import ImageWithCards from "@/components/ImageWithCards";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import Stacks from "@/components/Stacks";
 import TextWithCards from "@/components/TextWithCards";
 import {
+  seoCardText,
   seoServiceData,
   woocomemrceCardText,
   woocomemrcefaq,
@@ -27,6 +29,7 @@ const Index = () => {
       />
       <Hero />
       <SubServices data={seoServiceData} />
+      <ImageWithCards content={seoCardText} classes="pt-32" />
       <HeadingBox
       classes="text-primary"
         title="our priorities"

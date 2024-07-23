@@ -12,6 +12,7 @@ import {
 import SubServices from "@/snippet/SubServices";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import WebsiteServices from "./WebsiteServices";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       />
       <Hero />
       <SubServices data={websiteServiceData} />
+      <WebsiteServices />
       <ImageWithText content={websiteImageWithText} classes="md:py-32 py-16" />
       <Stacks />
       <Faq data={websitefaq} classes="py-24" />

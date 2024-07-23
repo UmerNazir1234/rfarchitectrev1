@@ -1,4 +1,9 @@
+import {
+  customSoftwareDeveloperCardText,
+  customSoftwareDeveloperImageWithText,
+} from "@/app/custom-software-development/_component/data";
 import Faq from "@/components/Faq";
+import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import ImageWithText from "@/components/ImageWithText";
 import KeyFeatures from "@/components/KeyFeatures";
@@ -6,10 +11,11 @@ import ProjectSubmission from "@/components/ProjectSubmission";
 import Stacks from "@/components/Stacks";
 import TextWithCards from "@/components/TextWithCards";
 import {
-  woocomemrceCardText,
-  woocomemrcefaq,
-  woocomemrceServiceData,
-  wooCommerceKeyFeatures,
+  crmFeatures,
+  crmImageWithText,
+  crmKeyFeatures,
+  crmServiceData,
+  faq,
 } from "@/dummyData/data";
 import SubServices from "@/snippet/SubServices";
 import React from "react";
@@ -17,26 +23,33 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Index = () => {
   return (
-    <>
+    <div>
       <Hero
-        title={`<span class="text-secondary">WOO - Commerce</span> Development`}
-        image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721639866/RfTechnologiesWebsite/fikret-tozak-Zk--Ydz2IAs-unsplash_vmk6pk.svg"
+        title={`<span class="text-secondary">CRM</span>  Development`}
+        image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721737499/RfTechnologiesWebsite/customer-relationship-management-concept_2_webhmt.svg"
         btnTitle="Lets Talk"
         btnIcon={<GoArrowUpRight />}
         href="/contact-us"
         classes="bg-white !text-primary"
       />
-      <Hero />
-      <SubServices data={woocomemrceServiceData} />
+      <SubServices data={crmServiceData} />
       <KeyFeatures
-        data={wooCommerceKeyFeatures}
-        heading="Key Features of WooCommerce"
+        data={crmKeyFeatures}
+        heading="Benefits of CRM Software"
         btnTitle="Care features"
         btnUrl="/"
       />
-      <TextWithCards content={woocomemrceCardText} classes="py-32" />
+      {/* <TextWithCards
+        content={customSoftwareDeveloperCardText}
+        classes="py-32"
+      /> */}
+      <ImageWithText content={crmImageWithText} classes="pb-32">
+        <div className="mt-6 w-full">
+          <Features data={crmFeatures} />
+        </div>
+      </ImageWithText>
       <Stacks />
-      <Faq data={woocomemrcefaq} classes="py-24" />
+      <Faq data={faq} classes="py-24" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
@@ -45,7 +58,7 @@ const Index = () => {
         btnTitle="Submit Your Project"
         btnUrl="/"
       />
-    </>
+    </div>
   );
 };
 

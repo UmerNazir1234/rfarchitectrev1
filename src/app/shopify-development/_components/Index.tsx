@@ -1,7 +1,7 @@
-
-import AnalyticsTools from "@/components/AnalyticsTools";
+import WebsiteServices from "@/app/web-development/_components/WebsiteServices";
 import Faq from "@/components/Faq";
 import Features from "@/components/Features";
+import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
 import ImageWithText from "@/components/ImageWithText";
 import ProjectSubmission from "@/components/ProjectSubmission";
@@ -10,36 +10,49 @@ import TextWithCards from "@/components/TextWithCards";
 import {
   digitalFeatures,
   digitalMarketingCardText,
-  digitalMarketingfaq,
-  digitalServiceData,
+  shopifyFaq,
+  shopifyFeatures,
+  shopifyImageWithText,
+  shopifyServiceData,
+  shopImageWithText,
   socialAnalysisImageWithText,
   trustedBrandImageWithText,
 } from "@/dummyData/data";
 import SubServices from "@/snippet/SubServices";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import ShopifyServiceCards from "./WebServiceCards";
+import ShopifyServices from "./ShopifyServices";
 
 const Index = () => {
   return (
     <>
       <Hero
-        title={`<span class="text-secondary">Digital Marketing </span> Services`}
-        image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721639866/RfTechnologiesWebsite/fikret-tozak-Zk--Ydz2IAs-unsplash_vmk6pk.svg"
+        title={`<span class="text-secondary">Shopify</span> Development Services`}
+        image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720779660/RfTechnologiesWebsite/image_70_unicwe.png"
         btnTitle="Lets Talk"
         btnIcon={<GoArrowUpRight />}
         href="/contact-us"
         classes="bg-white !text-primary"
       />
       <Hero />
-      <SubServices data={digitalServiceData} />
-      <TextWithCards content={digitalMarketingCardText} classes="!pt-32">
-        <Features data={digitalFeatures}  />
-      </TextWithCards>
-      <ImageWithText content={socialAnalysisImageWithText} classes="" />
-      <ImageWithText content={trustedBrandImageWithText} classes="!pb-16" />
-      <AnalyticsTools />
+      <SubServices data={shopifyServiceData} />
+      <ShopifyServices />
+      <div className="flex items-center justify-center pt-32">
+        <Heading
+          title="Shopify online store 2.0"
+          icon={true}
+          classes="!mb-0 !text-secondary"
+        />
+      </div>
+      <ImageWithText content={shopImageWithText} classes="!pt-8" />
+      <ImageWithText content={shopifyImageWithText} classes="!pb-16">
+        <div className="mt-4 w-full">
+          <Features data={shopifyFeatures} />
+        </div>
+      </ImageWithText>
       <Stacks />
-      <Faq data={digitalMarketingfaq} classes="py-24" />
+      <Faq data={shopifyFaq} classes="py-24" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."

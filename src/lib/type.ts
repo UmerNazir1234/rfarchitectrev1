@@ -31,6 +31,17 @@ type Cards = {
 };
 /* end text with cards */
 
+/* image with cards */
+export type imageWithCards = {
+  image?: string;
+  cards: Cards[];
+};
+type imageCards = {
+  title?: string;
+  cardTitle?: string;
+};
+/* end image with cards */
+
 export type imageWithText = {
   title?: string;
   btnTitle?: string;

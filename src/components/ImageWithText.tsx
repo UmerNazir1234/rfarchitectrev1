@@ -8,9 +8,10 @@ import { Site } from "@/helpers/Site";
 type CardProps = {
   content: imageWithText[];
   classes?: string;
+  children?: React.ReactNode;
 };
 
-const ImageWithText = ({ content, classes }: CardProps) => {
+const ImageWithText = ({ content, classes, children }: CardProps) => {
   return (
     <>
       {content?.map((data, index) => (
@@ -72,6 +73,7 @@ const ImageWithText = ({ content, classes }: CardProps) => {
                     }}
                   ></p>
                 )}
+                {children && children}
                 {data?.ctaLink && data?.ctaTitle && (
                   <div className="sm:pt-8 pt-4">
                     <Button

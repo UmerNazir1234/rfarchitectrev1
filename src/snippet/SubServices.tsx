@@ -9,7 +9,7 @@ type dataProps = {
 const SubServices = ({ data }: dataProps) => {
   return (
     <section
-      className=" bg-center bg-cover bg-no-repeat py-32 relative z-50"
+      className="bg-center bg-cover bg-no-repeat py-32 relative z-50"
       style={{
         backgroundImage:
           "url('https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721475774/RfTechnologiesWebsite/Vector_11_bncewh.svg')",
