@@ -1403,7 +1403,7 @@ export const crmImageWithText = [
   {
     title: "Functionalities & flex-abilities",
     image:
-      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721740228/RfTechnologiesWebsite/Group_1597883913_1_joko3y.svg",
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741821/RfTechnologiesWebsite/Group_1597883963_hevjr1.svg",
     description:
       "Functionalities and flex-abilities of custom CRM  are following.",
     btnLink: "/about-us",

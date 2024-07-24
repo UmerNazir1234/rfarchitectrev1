@@ -42,18 +42,19 @@ const Index = () => {
         <Heading
           title="Shopify online store 2.0"
           icon={true}
-          classes="!mb-0 !text-secondary"
+          classes="!mb-0 !text-primary"
+          iconStyle="stroke-primary"
         />
       </div>
       <ImageWithText content={shopImageWithText} classes="!pt-8" />
       <Benifits />
-      <ImageWithText content={shopifyImageWithText} classes="!pb-16">
+      <ImageWithText content={shopifyImageWithText} classes="!pb-24">
         <div className="mt-4 w-full">
           <Features data={shopifyFeatures} />
         </div>
       </ImageWithText>
       <Stacks />
-      <Faq data={shopifyFaq} classes="py-24" />
+      <Faq data={shopifyFaq} classes="!py-24" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."

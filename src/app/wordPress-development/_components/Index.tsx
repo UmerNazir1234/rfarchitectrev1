@@ -13,6 +13,8 @@ import {
   wordpressImageWithText,
   wordPressServiceData,
 } from "@/dummyData/data";
+import Benifits from "@/components/Benifits";
+import Button from "@/components/Button";
 
 const Index = () => {
   return (
@@ -27,6 +29,8 @@ const Index = () => {
       />
       <Hero />
       <SubServices data={wordPressServiceData} />
+     
+      <Benifits />
       <ImageWithText content={wordpressImageWithText} classes="pt-32" />
       <TextWithCards content={wordpressCardText} classes="py-32" />
       <Stacks />

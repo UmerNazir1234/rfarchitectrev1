@@ -59,7 +59,7 @@ const ImageWithText = ({ content, classes, children }: CardProps) => {
                 </div>
                 {data?.title && (
                   <h2
-                    className="text-primary mb-6"
+                    className="text-primary mb-6 uppercase"
                     dangerouslySetInnerHTML={{
                       __html: (data?.title && data?.title) || "",
                     }}
@@ -112,9 +112,9 @@ const ImageWithText = ({ content, classes, children }: CardProps) => {
               src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721649364/RfTechnologiesWebsite/Vector_adriqe.svg"
               alt="Background Image"
               loading="lazy"
-              width={330}
-              height={330}
-              className="object-center object-cover absolute top-0 left z-0 max-md:w-[200px] max-md:h-[200px]"
+              width={583}
+              height={550}
+              className="object-center object-contain absolute -top-56  left-0 transform  z-0 max-sm:w-[300px] max-sm:h-[300px]"
             />
           )}
         </section>

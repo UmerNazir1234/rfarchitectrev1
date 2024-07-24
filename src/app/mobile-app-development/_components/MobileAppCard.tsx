@@ -15,26 +15,24 @@ const MobileAppCard = ({
   title,
   icon,
   classes,
-  titleColor = "text-primary",
-  textColor = "text-black",
-  iconColor = "text-red-500",
+  titleColor,
+  textColor,
+  iconColor,
 }: CardProps) => {
   return (
     <>
       {title && (
         <div
-          className={`flex items-center group justify-center gap-5 flex-col md:p-10 p-4 w-full shadow-2xl bg-[#048C5B] text-white ${
-            classes || ""
+          className={`flex items-center group justify-center gap-5 flex-col md:p-10 p-4 w-full shadow-2xl   ${
+            classes ? classes : "bg-[#13429B] text-white"
           } rounded-2xl`}
         >
-          {icon && <div className={` group-hover:${iconColor}`}>{icon}</div>}
-          <h4
-            className={`max-md:text-lg text-center group-hover:${titleColor}`}
-          >
+          {icon && <div className={`${iconColor}`}>{icon}</div>}
+          <h4 className={`max-md:text-lg text-center ${titleColor}`}>
             {title}
           </h4>
           <p
-            className={`text-lg text-center text-balance max-md:text-base group-hover:${textColor}`}
+            className={`text-lg text-center text-balance max-md:text-base ${textColor}`}
           >
             {description}
           </p>

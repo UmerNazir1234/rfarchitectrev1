@@ -19,7 +19,7 @@ type props = {
 };
 const Faq = ({ data, classes }: props) => {
   return (
-    <div className={`${classes || "py-12"}  relative`}>
+    <div className={`${classes ? classes : "py-12"}  relative`}>
       <div className="page-width relative z-50">
         <div className="flex items-center justify-center">
           <Button

@@ -1,8 +1,9 @@
 import React from "react";
 import MobileAppCard from "./MobileAppCard";
 import { TbLayoutGridAdd } from "react-icons/tb";
-import { GoArrowUpRight } from "react-icons/go";
+import { TfiAndroid } from "react-icons/tfi";
 import Button from "@/components/Button";
+import { SiApple } from "react-icons/si";
 import Image from "next/image";
 
 const MobileService = () => {
@@ -14,37 +15,38 @@ const MobileService = () => {
             title="Our Services"
             href="/"
             classes="bg-secondary lg:my-12 my-6"
-            icon={<GoArrowUpRight className="icon max-md:w-6  icon--arrow" />}
             enableIcons={true}
           />
         </div>
         <div className="mb-4">
           <MobileAppCard
             title="Cross-platform app development"
-            classes="hover:bg-white"
-            textColor="text-black"
+            classes="hover:bg-white bg-[#048C5B] text-white"
+            textColor="group-hover:!text-red"
+            titleColor="group-hover:!text-red !text-red"
+            iconColor=""
             description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit."
-            icon={<TbLayoutGridAdd className="md:text-[140px] text-[80px]" />}
+            icon={
+              <TbLayoutGridAdd className={` md:text-[140px] text-[80px]`} />
+            }
           />
         </div>
         <div className="flex items-center justify-center gap-4 md:flex-nowrap flex-wrap">
           <div className="">
             {" "}
             <MobileAppCard
-              title="Cross-platform app development"
-              description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit."
-              icon={
-                <TbLayoutGridAdd className="md:text-[140px]  text-[80px]" />
-              }
+              title="Android app development"
+              classes="hover:bg-white bg-[#13429B] text-white"
+              description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+              icon={<TfiAndroid className="md:text-[140px]  text-[80px]" />}
             />
           </div>
           <div className="">
             <MobileAppCard
-              title="Cross-platform app development"
-              description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit."
-              icon={
-                <TbLayoutGridAdd className="md:text-[140px]  text-[80px]" />
-              }
+              title="Ios App Development"
+              classes="hover:bg-white bg-[#710583] text-white"
+              description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+              icon={<SiApple className="md:text-[140px]  text-[80px]" />}
             />
           </div>
         </div>

@@ -1,6 +1,6 @@
+import Benifits from "@/components/Benifits";
 import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
-import ImageWithText from "@/components/ImageWithText";
 import KeyFeatures from "@/components/KeyFeatures";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import Stacks from "@/components/Stacks";
@@ -28,6 +28,7 @@ const Index = () => {
       />
       <Hero />
       <SubServices data={woocomemrceServiceData} />
+    
       <KeyFeatures
         data={wooCommerceKeyFeatures}
         heading="Key Features of WooCommerce"

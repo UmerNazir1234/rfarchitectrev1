@@ -90,7 +90,7 @@ const TextWithCards = ({ content, classes, children }: CardProps) => {
               loading="lazy"
               width={450}
               height={550}
-              className="object-center object-cover absolute top-0 right-0 z-0"
+              className="object-center object-cover absolute top-12 right-0 z-0"
             />
           )}
         </section>
