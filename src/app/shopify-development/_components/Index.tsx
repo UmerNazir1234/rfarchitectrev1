@@ -21,8 +21,8 @@ import {
 import SubServices from "@/snippet/SubServices";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
-import ShopifyServiceCards from "./WebServiceCards";
 import ShopifyServices from "./ShopifyServices";
+import Benifits from "@/components/Benifits";
 
 const Index = () => {
   return (
@@ -46,6 +46,7 @@ const Index = () => {
         />
       </div>
       <ImageWithText content={shopImageWithText} classes="!pt-8" />
+      <Benifits />
       <ImageWithText content={shopifyImageWithText} classes="!pb-16">
         <div className="mt-4 w-full">
           <Features data={shopifyFeatures} />

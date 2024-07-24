@@ -1603,7 +1603,7 @@ export const shopImageWithText = [
   {
     title: "",
     image:
-      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721743386/RfTechnologiesWebsite/image_101_n1kepp.svg",
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721809735/RfTechnologiesWebsite/Group_1597883964_loqihf.svg",
     description:
       "Our Shopify Experts migrate your existing theme to Shopify Online Store 2.0 Fully accurate word by word. </br> </br> With Online 2.0 Shopify Theme, Enjoy the creative designs and Sections on all the pages of your shopify Website. Easily Customize and Highly attractive with 100% Conversion rate.",
     btnLink: "",
