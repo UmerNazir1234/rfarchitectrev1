@@ -3,6 +3,8 @@ import ProjectSubmission from "@/components/ProjectSubmission";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Blogs from "./Blogs";
+import Search from "./Search";
+import BlogHeader from "./BlogHeader";
 
 const Index = () => {
   return (
@@ -15,7 +17,10 @@ const Index = () => {
         href="/contact-us"
         classes="bg-white !text-primary"
       />
-      <Blogs />
+      <div className="pt-32 pb-12">
+        <BlogHeader />
+        <Blogs />
+      </div>
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."

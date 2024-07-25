@@ -109,7 +109,7 @@ button {
   @apply !pb-16;
 }
 .input--field {
-  @apply bg-black bg-opacity-10 rounded-lg md:py-5 md:px-5 p-2 border-white border border-opacity-30 text-white md:text-2xl text-xl w-full;
+  @apply bg-[#E3E7F3] font-nunito rounded-lg md:py-5 md:px-5 p-2 border-white border border-opacity-30 text-white md:text-2xl text-xl w-full;
 }
 .testimonial .swiper-button-prev:after,
 .testimonial .swiper-button-next:after {

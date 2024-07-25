@@ -14,9 +14,9 @@ const Footer = () => {
 
   const footerColors: { [key: string]: string } = {
     "/about-us": "!bg-[#edac18]",
-    "/blog":"!bg-[#edac18]",
-    "/crm-development":"!bg-[#edac18]",
-    "/shopify-development":"!bg-[#edac18]",
+    "/blog": "!bg-[#edac18]",
+    "/crm-development": "!bg-[#edac18]",
+    "/shopify-development": "!bg-[#edac18]",
     "/graphic-design": "!bg-[#edac18]",
     "/seo": "!bg-[#edac18]",
     "/faq": "!bg-[#edac18]",
@@ -34,7 +34,7 @@ const Footer = () => {
   const footerClass = footerColors[pathname] || "bg-gray-500";
   return (
     <footer
-      className={`pt-20 max-sm:pt-20 relative overflow-hidden bg-transparent ${footerClass}`}
+      className={`pt-20 max-sm:pt-20 relative overflow-hidden bg-light ${footerClass}`}
     >
       <div className="bg-gradient-to-b from-primary to-primarylight sm:pt-24">
         <div className="page-width flex items-start  justify-between text-white md:flex-nowrap flex-wrap border-b border-white border-opacity-30 pb-10">

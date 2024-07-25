@@ -14,7 +14,7 @@ const Header = () => {
   const { toggle, open } = useTheme();
 
   return (
-    <header className="bg-light shadow-md">
+    <header className="bg-light  drop-shadow-lg ">
       <div className="flex items-center justify-between sm:h-28 h-24 page-width">
         <div className="flex items-center space-x-4">
           <div className="relative">
