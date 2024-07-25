@@ -36,7 +36,7 @@ const data = [
 const BlogHeader = () => {
   return (
     <section className="">
-      <div className="page-width ">
+      <div className="page-width">
         <div className="md:!ps-6">
           <Search />
           <BlogCategory data={data} />
