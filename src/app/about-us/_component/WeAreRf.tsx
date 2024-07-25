@@ -6,15 +6,15 @@ const WeAreRf = () => {
   return (
     <section className="relative">
       <div className="page-width ">
-        <div className="flex items-center justify-center min-h-[70vh] lg:gap-24 gap-6 lg:flex-nowrap flex-wrap">
-          <div className="lg:basis-[45%] basis-full">
+        <div className="flex items-center justify-center lg:min-h-[70vh] lg:py-0 py-16 lg:gap-24 gap-6 lg:flex-nowrap flex-wrap">
+          <div className="lg:basis-[45%] basis-full max-lg:ps-6">
             <Heading
               title="we are rf tech"
-              classes="!text-primary !mb-0"
+              classes="text-primary !mb-0 z-50"
               iconStyle="stroke-primary"
             />
           </div>
-          <div className="lg:basis-[65%] basis-full">
+          <div className="lg:basis-[65%] basis-full relative z-50">
             <p className="bg-blueLight md:p-10 p-4 rounded-3xl border-primary border p-lg">
               Our company was established in late 2018. Our main office is
               situated in Rawalpindi where our staff is available 24 hours a

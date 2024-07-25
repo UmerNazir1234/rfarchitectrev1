@@ -1,9 +1,11 @@
-import React from 'react'
+import Index from "./_components/Index";
 
 const page = () => {
   return (
-    <div>WordPress Development</div>
-  )
-}
+    <div>
+      <Index />
+    </div>
+  );
+};
 
-export default page
+export default page;

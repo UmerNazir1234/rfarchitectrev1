@@ -1,9 +1,7 @@
-import React from 'react'
+import Index from "./_components/Index";
 
-const page = () => {
-  return (
-    <div>Blog Page blog</div>
-  )
-}
+const Blog = () => {
+  return <Index />;
+};
 
-export default page
+export default Blog;

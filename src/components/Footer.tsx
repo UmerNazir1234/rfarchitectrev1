@@ -13,11 +13,24 @@ const Footer = () => {
   const pathname = usePathname();
 
   const footerColors: { [key: string]: string } = {
-    "/about-us": "bg-[#edac18]",
+    "/about-us": "!bg-[#edac18]",
+    "/blog":"!bg-[#edac18]",
+    "/crm-development":"!bg-[#edac18]",
+    "/shopify-development":"!bg-[#edac18]",
+    "/graphic-design": "!bg-[#edac18]",
+    "/seo": "!bg-[#edac18]",
+    "/faq": "!bg-[#edac18]",
+    "/digital-marketing": "!bg-[#edac18]",
+    "/web-development": "!bg-[#edac18]",
+    "/woocommerce-development": "!bg-[#edac18]",
+    "/wordpress-development": "!bg-[#edac18]",
+    "/mobile-app-development": "!bg-[#edac18]",
+    "/custom-software-development": "!bg-[#edac18]",
     "/contact-us": "!bg-light",
+    "/our-work": "!bg-[#FDF4E6]",
     "/": "!bg-light",
   };
-  console.log(pathname, footerColors[pathname]);
+
   const footerClass = footerColors[pathname] || "bg-gray-500";
   return (
     <footer

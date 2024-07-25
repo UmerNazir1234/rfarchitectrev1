@@ -1,5 +1,4 @@
 import React from "react";
-import Faq from "./Faq";
 import Newsletter from "@/components/Newsletter";
 import Hero from "./Hero";
 import LeadingSolution from "./LeadingSolution";
@@ -8,10 +7,12 @@ import Steps from "./Steps";
 import WhyChooseUs from "./WhyChooseUs";
 import FeaturedProjects from "./FeaturedProjects";
 import Testimonials from "./Testimonials";
+import Faq from "@/components/Faq";
+import { faq } from "@/dummyData/data";
 
 const MainPage = () => {
   return (
-    <main className="bg-light">
+    <>
       <Hero />
       <LeadingSolution />
       <ServiceSlider />
@@ -19,9 +20,9 @@ const MainPage = () => {
       <WhyChooseUs />
       <FeaturedProjects />
       <Testimonials />
-      <Faq />
+      <Faq data={faq} />
       <Newsletter />
-    </main>
+    </>
   );
 };
 

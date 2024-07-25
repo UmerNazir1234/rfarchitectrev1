@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+
+import Index from "./_component/Index";
 
 const pages = () => {
   return (
-    <div>Custom Software development</div>
-  )
-}
+    <div>
+      <Index />
+    </div>
+  );
+};
 
-export default pages
+export default pages;

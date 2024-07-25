@@ -24,6 +24,7 @@
 body {
   @apply font-advent_Pro;
 }
+
 p {
   @apply text-base font-nunito;
 }
@@ -37,7 +38,7 @@ p {
 }
 .h1,
 h1 {
-  @apply lg:text-[120px] md:text-[70px] text-[55px] font-semibold leading-tight max-sm:leading-tight drop-shadow-lg;
+  @apply lg:text-[120px] md:text-[70px] text-[55px] font-semibold leading-none drop-shadow-lg;
 }
 .h2,
 h2 {
@@ -88,7 +89,7 @@ button {
   @apply font-advent_Pro;
 }
 .btn {
-  @apply font-semibold font-advent_Pro text-white lg:px-8 md:px-7 px-6 py-3 lg:text-3xl md:text-2xl text-lg leading-none rounded-full transition ease-in-out delay-150;
+  @apply font-semibold flex items-center justify-center max-w-fit  font-advent_Pro text-white lg:px-8 md:px-7 px-6 py-3 lg:text-3xl md:text-2xl text-lg leading-none rounded-full transition ease-in-out delay-150;
 }
 .btn--primary {
   @apply bg-primary hover:bg-gradient-to-t hover:from-primarylight hover:to-primarylight;
@@ -96,6 +97,7 @@ button {
 .btn--secondary {
   @apply bg-secondary;
 }
+
 .btn--outline {
   @apply bg-transparent border text-primary border-primary;
 }

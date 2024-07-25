@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Index from "./_components/Index";
 
 const page = () => {
   return (
-    <div>Grapic designer</div>
-  )
-}
+    <div>
+      <Index />
+    </div>
+  );
+};
 
-export default page
+export default page;

@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Index from "./_components/Index";
 
 const page = () => {
-  return (
-    <div>CRM Development</div>
-  )
-}
+  return <Index />;
+};
 
-export default page
+export default page;

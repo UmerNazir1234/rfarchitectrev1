@@ -1,8 +1,9 @@
 import React from 'react'
+import Index from './_components/Index'
 
 const page = () => {
   return (
-    <div>Web development</div>
+    <div><Index/></div>
   )
 }
 

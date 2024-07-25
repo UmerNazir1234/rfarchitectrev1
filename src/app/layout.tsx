@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${advent_Pro.variable} ${nunito.variable}`}>
+    <html lang="en">
       <head>
         <link
           rel="icon"
@@ -30,10 +30,10 @@ export default function RootLayout({
           sizes="32x32"
         />
       </head>
-      <body>
+      <body className={`${advent_Pro.variable} ${nunito.variable}`}>
         <ThemeProvider>
           <Header />
-          {children}
+          <main className="bg-light">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

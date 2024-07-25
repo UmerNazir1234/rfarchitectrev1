@@ -8,6 +8,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      nunito: ["var(--font-nunito)"],
+      advent_Pro: ["var(--font-advent-pro)"],
+    },
     extend: {
       fontFamily: {
         nunito: ["var(--font-nunito)"],
