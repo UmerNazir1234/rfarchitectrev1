@@ -1626,7 +1626,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721834451/RfTechnologiesWebsite/image_202_tzlx4m.svg",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1637,7 +1636,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906512/RfTechnologiesWebsite/5757453_1_dnrpij.png",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1648,7 +1646,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906551/RfTechnologiesWebsite/image_203_epwbbo.png",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1659,7 +1656,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906575/RfTechnologiesWebsite/image_204_hvyuvz.svg",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1670,7 +1666,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906612/RfTechnologiesWebsite/image_205_w39xn3.svg",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1681,7 +1676,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906637/RfTechnologiesWebsite/image_206_hugvn6.svg",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1692,7 +1686,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721834451/RfTechnologiesWebsite/image_202_tzlx4m.svg",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1703,7 +1696,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906512/RfTechnologiesWebsite/5757453_1_dnrpij.png",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1714,7 +1706,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906551/RfTechnologiesWebsite/image_203_epwbbo.png",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1725,7 +1716,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906575/RfTechnologiesWebsite/image_204_hvyuvz.svg",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1736,7 +1726,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906612/RfTechnologiesWebsite/image_205_w39xn3.svg",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
@@ -1747,7 +1736,6 @@ export const blog = [
     blog_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906637/RfTechnologiesWebsite/image_206_hugvn6.svg",
     blog_title: "New HTML tag: An absolute game changer",
-    blog_url: "/",
     publish_date: "July 19, 2024",
     auther_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",

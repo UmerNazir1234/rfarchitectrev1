@@ -1,6 +1,7 @@
 import React from "react";
 import Search from "./Search";
 import BlogCategory from "./BlogCategory";
+import Image from "next/image";
 
 const data = [
   {
@@ -35,7 +36,7 @@ const data = [
 
 const BlogHeader = () => {
   return (
-    <section className="">
+    <section className="relative">
       <div className="page-width">
         <div className="md:!ps-6">
           <Search />
