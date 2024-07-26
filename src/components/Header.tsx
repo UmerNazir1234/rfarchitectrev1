@@ -8,6 +8,7 @@ import Button from "./Button";
 import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import { useTheme } from "@/context/ThemeContext";
+import DropDownMenu from "@/snippet/DropDownMenu";
 
 const Header = () => {
   const pathname = usePathname();
@@ -86,6 +87,7 @@ const Header = () => {
           </button>
         </nav>
       </div>
+      <DropDownMenu  />
     </header>
   );
 };

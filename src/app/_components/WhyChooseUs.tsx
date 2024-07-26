@@ -39,9 +39,9 @@ const WhyChooseUs = () => {
                     <div>
                       <h5 className="">CONSULTING</h5>
                       <p className="">
-                        Porem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nunc vulputate libero et velit interdum, ac aliquet odio
-                        mattis.{" "}
+                        We provide effective consultations to our clients which
+                        helps customers and organizations to improve their
+                        performance.
                       </p>
                     </div>
                   </div>
@@ -57,9 +57,9 @@ const WhyChooseUs = () => {
                     <div>
                       <h5 className="">PRODUCTION</h5>
                       <p>
-                        Porem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nunc vulputate libero et velit interdum, ac aliquet odio
-                        mattis.{" "}
+                        During the production, Experts take care of all the
+                        possible solutions and flexibilities for a better and
+                        more successful digital product.
                       </p>
                     </div>
                   </div>
@@ -75,9 +75,8 @@ const WhyChooseUs = () => {
                     <div>
                       <h5 className="">SUPPORT</h5>
                       <p>
-                        Porem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nunc vulputate libero et velit interdum, ac aliquet odio
-                        mattis.{" "}
+                        We don't abandon you. we provide 24/7 support and
+                        maintenance for your product.
                       </p>
                     </div>
                   </div>
@@ -86,19 +85,19 @@ const WhyChooseUs = () => {
             </div>
             <div className="lg:basis-[40%] basis-full">
               <div className="flex items-center justify-center sm:gap-4 gap-2 flex-wrap">
-                <div  className="transform3d flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2">
+                <div className="transform3d flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2">
                   <h3 className="!font-medium">312+</h3>
                   <p>Products</p>
                 </div>
-                <div  className="transform3deven flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2 ">
+                <div className="transform3deven flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2 ">
                   <h3 className="!font-medium">20+</h3>
                   <p>Employees</p>
                 </div>
-                <div  className="transform3d flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2">
+                <div className="transform3d flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2">
                   <h3 className="!font-medium">200+</h3>
                   <p>Clients</p>
                 </div>
-                <div  className="transform3deven flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2 ">
+                <div className="transform3deven flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2 ">
                   <h3 className="!font-medium">6+</h3>
                   <p>Experience</p>
                 </div>

@@ -8,7 +8,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import FeaturedProjects from "./FeaturedProjects";
 import Testimonials from "./Testimonials";
 import Faq from "@/components/Faq";
-import { faq } from "@/dummyData/data";
+import { faq, testimonial,featuredProjects } from "@/dummyData/data";
 
 const MainPage = () => {
   return (
@@ -18,8 +18,8 @@ const MainPage = () => {
       <ServiceSlider />
       <Steps />
       <WhyChooseUs />
-      <FeaturedProjects />
-      <Testimonials />
+      <FeaturedProjects data={featuredProjects}  />
+      <Testimonials data={testimonial} />
       <Faq data={faq} />
       <Newsletter />
     </>
