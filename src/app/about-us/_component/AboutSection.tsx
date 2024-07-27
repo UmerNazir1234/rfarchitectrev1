@@ -4,12 +4,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section
-      className="flex flex-row items-center justify-center bg-cover bg-no-repeat min-h-dvh  relative bg-transparent -mt-28 overflow-hidden"
-      style={{
-        backgroundImage: `url("https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720608411/Vector_10_y3z2fg.png")`,
-      }}
-    >
+    <section className="flex flex-row relative items-center justify-center bg-cover bg-no-repeat min-h-dvh   -mt-28 overflow-hidden bg-primary">
       <div className="page-width">
         <Heading title="about rf technologies" />
 
@@ -61,6 +56,37 @@ const AboutSection = () => {
         loading="lazy"
         className="absolute left-[24%] bottom-10 max-md:left-[10%] max-md:bottom-6 max-md:w-64 max-md:h-14"
       />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1237 81"
+        className=" lg:h-36 !w-[90%] absolute right-0 top-0 z-50"
+        fill="black"
+      >
+        <path
+          d="M104.5 0H1237V81H-0.000244141C8.39978 81 16.1664 200 18.9998 75C34.1664 64 75.3998 12.6 82.9998 7C90.5997 1.4 100.5 0 104.5 0Z"
+          fill="#002475"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+     
+        viewBox="0 0 1440 53"
+        className="absolute bottom-0 w-full"
+        fill="none"
+      >
+        <g clip-path="url(#clip0_703_899)">
+          <rect width="1440" height="53" fill="#f1f3fb" />
+          <path
+            d="M667 0H0V53H762.5C754.1 53 746.333 49 743.5 47C728.333 36 696.1 12.6 688.5 7C680.9 1.4 671 0 667 0Z"
+            fill="#002475"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_703_899">
+            <rect width="1440" height="53" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
     </section>
   );
 };
