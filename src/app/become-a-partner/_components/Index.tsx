@@ -13,15 +13,17 @@ const Index = () => {
       <Hero
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722244527/RfTechnologiesWebsite/pexels-sora-shimazaki-5673488_2_khakqn.svg"
         title='Become a <span class="text-secondary">Valued Partner</span>'
+        logo={true}
       />
       <PerfectPartnerShip />
       <ImageWithText content={becomeImageWithText} />
+      <Benefits />
+      
       <ProjectSubmission
         title="Transform your brand's challenges into successes with our expert solutions."
         btnTitle="Contact us"
         btnUrl="/contact-us"
       />
-      <Benefits />
     </div>
   );
 };

@@ -30,8 +30,8 @@ const AboutSection = () => {
         src={
           "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719912842/RfTechnologiesWebsite/Group_1597883856_r26khq.png"
         }
-        width={350}
-        height={250}
+        width={260}
+        height={260}
         alt=""
         className="absolute right-24 top-0 max-lg:w-36 max-lg:h-36 max-sm:w-20 max-sm:h-20 max-sm:top-0 max-sm:right-4"
         loading="lazy"
@@ -40,26 +40,26 @@ const AboutSection = () => {
         src={
           "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719848735/RfTechnologiesWebsite/Trade_Mark-02_2_oggpmo.png"
         }
-        width={450}
-        height={500}
+        width={250}
+        height={250}
         alt="Rf icon"
-        className="absolute left-0 lg:-bottom-[100px] bottom-0 max-lg:w-48 max-lg:h-48 max-sm:w-20 max-sm:h-20 max-md:hidden object-center object-contain"
+        className="absolute left-0 lg:-bottom-[20px] bottom-0 max-lg:w-48 max-lg:h-48 max-sm:w-20 max-sm:h-20 max-md:hidden object-center object-contain"
         loading="lazy"
       />
       <Image
         src={
           "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719913174/RfTechnologiesWebsite/Let_s_get_IT_done_isjw4p.png"
-        }
-        width={500}
-        height={80}
+        }   
+        width={452}
+        height={67}
         alt="Let's it done"
         loading="lazy"
-        className="absolute left-[24%] bottom-10 max-md:left-[10%] max-md:bottom-6 max-md:w-64 max-md:h-14"
+        className="absolute left-[15%] bottom-10 max-md:left-[10%] max-md:bottom-6 max-md:w-64 max-md:h-14"
       />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1237 81"
-        className=" lg:h-36 !w-[90%] absolute right-0 top-0 z-50"
+        className=" lg:h-36 !w-[90%] absolute right-0 -top-28 !z-50"
         fill="black"
       >
         <path

@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import Image from "next/image";
 
 type HeroProps = {
   image?: string;
@@ -8,6 +9,7 @@ type HeroProps = {
   btnIcon?: React.ReactElement;
   href?: string;
   classes?: string;
+  logo?: boolean;
 };
 
 const Hero = ({
@@ -16,6 +18,7 @@ const Hero = ({
   btnTitle,
   btnIcon,
   href,
+  logo = false,
   classes,
 }: HeroProps) => {
   return (
@@ -29,12 +32,25 @@ const Hero = ({
         >
           <div className="flex items-center justify-center flex-col bg-cover bg-center mx-auto min-h-[80vh] max-sm:min-h-[70vh] max-w-8xl">
             {title && (
-              <h1
-                className={`${
-                  (href && "md:mb-16 mb-8") || ""
-                } text-white drop-shadow-lg !font-bold text-center text-balance`}
-                dangerouslySetInnerHTML={{ __html: title || "" }}
-              />
+              <>
+                <h1
+                  className={`${
+                    (href && "md:mb-16 mb-8") || ""
+                  } text-white drop-shadow-lg !font-bold text-center text-balance`}
+                  dangerouslySetInnerHTML={{ __html: title || "" }}
+                />
+                <div>
+                  {logo && (
+                    <Image
+                      src={`https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722248970/RfTechnologiesWebsite/pexels-sora-shimazaki-5673488_2_lptkta.svg`}
+                      alt="Rf Technologies Logo"
+                      width={419}
+                      height={167}
+                      loading="lazy"
+                    />
+                  )}
+                </div>
+              </>
             )}
             {href && (
               <Button

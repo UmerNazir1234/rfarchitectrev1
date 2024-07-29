@@ -1988,7 +1988,7 @@ export const becomeImageWithText = [
     ctaLink: "",
     ctaTitle: "",
     imageFirst: false,
-    enableImageLeft: true,
+    enableImageleft: true,
     enableImageCenter: false,
     enableImageRight: false,
   },

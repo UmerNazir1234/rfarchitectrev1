@@ -19,7 +19,7 @@ const ProjectSubmission = ({
   btnTitle,
   btnUrl,
 }: ContentProps) => {
-  if (!title || !description) {
+  if (!title) {
     return null;
   }
 
