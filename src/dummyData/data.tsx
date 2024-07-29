@@ -335,7 +335,7 @@ export const sliderData = [
     description:
       "Want To Turn Your Idea Into A Digital Product And Make It Successful Using Best Marketing Strategies?",
     image:
-      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720021733/RfTechnologiesWebsite/annie-spratt-QckxruozjRg-unsplash_lhcffl.png",
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722243811/RfTechnologiesWebsite/Desktop_-_9_lcv48g.png",
   },
   {
     id: 2,
@@ -344,7 +344,7 @@ export const sliderData = [
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
     image:
-      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720021733/RfTechnologiesWebsite/annie-spratt-QckxruozjRg-unsplash_lhcffl.png",
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722243811/RfTechnologiesWebsite/Desktop_-_9_lcv48g.png",
   },
 ];
 
@@ -1974,3 +1974,55 @@ export const blog = [
   },
 ];
 /* end blog */
+
+/* become a password */
+export const becomeImageWithText = [
+  {
+    title: "Why Choose a Business Partner?",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741821/RfTechnologiesWebsite/Group_1597883963_hevjr1.svg",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    btnLink: "",
+    btnTitle: "",
+    ctaLink: "",
+    ctaTitle: "",
+    imageFirst: false,
+    enableImageLeft: true,
+    enableImageCenter: false,
+    enableImageRight: false,
+  },
+];
+
+export const becomePartnersTabs: Tabs[] = [
+  {
+    label: "Our Priorities",
+    content:
+      "Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus. Curabitur tempor quis eros tempus lacinia.",
+    icon: <TbBulb className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Beginners Partnership",
+    content:
+      "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+    icon: <PiHandshakeLight className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Modified Developers",
+    content:
+      "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+    icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Trustworthy Companionship",
+    content:
+      "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+    icon: <BiCheckShield className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "24/7 hours Availability",
+    content: "As they.",
+    icon: <SiFireship className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+];
+/* end become a password */

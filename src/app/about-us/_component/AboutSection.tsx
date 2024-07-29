@@ -67,7 +67,7 @@ const AboutSection = () => {
           fill="#002475"
         />
       </svg>
-      <svg
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1440"
         height="53"
@@ -86,7 +86,7 @@ const AboutSection = () => {
             <rect width="1440" height="53" fill="white" />
           </clipPath>
         </defs>
-      </svg>
+      </svg> */}
     </section>
   );
 };

@@ -26,11 +26,11 @@ body {
 }
 
 p {
-  @apply text-base font-nunito;
+  @apply text-base font-nunito leading-normal;
 }
 
 .p-lg {
-  @apply lg:text-2xl text-xl font-medium;
+  @apply lg:text-[26px] text-xl font-medium leading-normal;
 }
 
 .text-italic {
@@ -38,7 +38,7 @@ p {
 }
 .h1,
 h1 {
-  @apply lg:text-[120px] md:text-[70px] text-[55px] font-semibold leading-none drop-shadow-lg;
+  @apply lg:text-[120px] md:text-[70px] text-[55px] font-semibold leading-tight drop-shadow-lg;
 }
 .h2,
 h2 {
