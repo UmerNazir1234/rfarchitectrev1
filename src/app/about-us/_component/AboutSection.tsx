@@ -69,16 +69,16 @@ const AboutSection = () => {
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-     
+        width="1440"
+        height="53"
         viewBox="0 0 1440 53"
-        className="absolute bottom-0 w-full"
         fill="none"
       >
         <g clip-path="url(#clip0_703_899)">
-          <rect width="1440" height="53" fill="#f1f3fb" />
+          <rect width="1440" height="53" fill="#D9D9D9" />
           <path
             d="M667 0H0V53H762.5C754.1 53 746.333 49 743.5 47C728.333 36 696.1 12.6 688.5 7C680.9 1.4 671 0 667 0Z"
-            fill="#002475"
+            fill="black"
           />
         </g>
         <defs>
