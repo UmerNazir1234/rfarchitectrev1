@@ -22,7 +22,7 @@ type HeroSliderProps = {
 
 const HeroSlider = ({ data }: HeroSliderProps) => {
   return (
-    <section className="w-full heroSlider ">
+    <section className="w-full heroSlider relative z-10">
       <div className="md:h-[90vh] h-[80vh] ">
         <ul className="h-full w-full flex">
           <Swiper

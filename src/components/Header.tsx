@@ -8,7 +8,6 @@ import Button from "./Button";
 import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import { useTheme } from "@/context/ThemeContext";
-import DropDownMenu from "@/snippet/DropDownMenu";
 
 const Header = () => {
   const pathname = usePathname();
@@ -64,7 +63,7 @@ const Header = () => {
         </div>
 
         <nav
-          className={`fixed z-50 inset-0 h-full w-full bg-white transform transition-transform duration-300 ${
+          className={`fixed z-20 inset-0 h-full w-full bg-white transform transition-transform duration-300 ${
             open ? "translate-x-0" : "-translate-x-full"
           } xl:hidden`}
         >
@@ -87,7 +86,6 @@ const Header = () => {
           </button>
         </nav>
       </div>
-      {/* <DropDownMenu /> */}
     </header>
   );
 };
