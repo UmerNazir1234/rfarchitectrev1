@@ -10,7 +10,9 @@ type props = {
     btnLink: string;
   };
 };
+
 const LeadingSolution = ({ content }: props) => {
+  
   return (
     <section className="relative z-20">
       <div className="page-width pt-32">
