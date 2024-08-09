@@ -14,6 +14,7 @@ import { homeContent } from "@/data/home";
 
 const MainPage = () => {
   return (
+
     <>
       <HeroSlider data={homeContent?.banner} />
       <LeadingSolution content={homeContent?.ourServices} />

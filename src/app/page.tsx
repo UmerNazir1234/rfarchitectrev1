@@ -1,7 +1,8 @@
-import SampleComponent from "@/components/SampleComponent";
+import { Metadata } from "next";
 import MainPage from "./_components/MainPage";
 
-export default function page() {
 
-  return <SampleComponent name="name" age={12}/>;
+
+export default function page() {
+  return <MainPage />;
 }
