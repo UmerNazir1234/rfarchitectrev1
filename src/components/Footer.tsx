@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="page-width flex items-start  justify-between text-white md:flex-nowrap flex-wrap border-b border-white border-opacity-30 pb-10">
           <div className="flex items-start flex-col xl:basis-[60%] lg:basis-[40%] md:basis-[50%] basis-full justify-start gap-8 ">
             <div className="relative">
-              <Link href={Site?.url}>
+              <Link href={'/'}>
                 {Site?.WhiteLogo ? (
                   <Image
                     src={Site?.WhiteLogo}
@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="pt-10 text-xl text-center text-white text-opacity-80 pb-8">
-          Ⓒ2024 RF Technologies, All rights reserved.
+          Ⓒ{new Date().getFullYear()} RF Technologies, All rights reserved.
         </div>
       </div>
       <Image

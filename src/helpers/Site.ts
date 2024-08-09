@@ -4,7 +4,7 @@ export const Site = {
   WhiteLogo:
     "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719825111/RfTechnologiesWebsite/Side_Logo-02_2_izjlvf.png",
   logoWhite: "",
-  url: "/",
+  url: "https://rftechnologies.com.pk",
   placeholder:
     "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721470809/RfTechnologiesWebsite/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279_e7mp3b.jpg",
   mapAddress:
@@ -12,6 +12,7 @@ export const Site = {
   address: "3rd floor Taha Mall, Defence Rd, Rawalpindi, Punjab 47300",
   email: "info@rftechnologies.com.pk",
   number: "+92 334 4738506",
+  themeColor: '#002475',
   social_links: {
     facebook: "https://www.facebook.com/rftechnologiespk/",
     twitter: "https://twitter.com/rftechnologies_",
@@ -20,4 +21,7 @@ export const Site = {
     youtube: "https://www.youtube.com/channel/UCwNKTsriLX7-VB_KLG5-vUQ",
     whatsapp: "https://api.whatsapp.com/send?phone=+923344738506%E2%80%8B",
   },
+  SEO_title: "Premier Software Services for Digital Products - RF Tech",
+  SEO_Description:
+    "RF Tech Solutions - Premier Software Services Provider. Transform your ideas into digital success with top-tier solutions and marketing strategies.",
 };

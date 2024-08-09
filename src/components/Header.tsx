@@ -18,7 +18,7 @@ const Header = () => {
       <div className="flex items-center justify-between sm:h-28 h-24 page-width">
         <div className="flex items-center space-x-4">
           <div className="relative">
-            <Link href={Site?.url}>
+            <Link href={'/'}>
               {Site?.logo ? (
                 <Image
                   src={Site?.logo}
@@ -61,7 +61,6 @@ const Header = () => {
             onClick={toggle}
           />
         </div>
-
         <nav
           className={`fixed z-20 inset-0 h-full w-full bg-white transform transition-transform duration-300 ${
             open ? "translate-x-0" : "-translate-x-full"
