@@ -12,7 +12,7 @@ import { BsKanban } from "react-icons/bs";
 export const menuItems = [
   { id: 1, name: "Who We Are?", link: "/about-us" },
   { id: 2, name: "Our Work", link: "/our-work" },
-  { id: 3, name: "Our Services", link: "#" },
+  { id: 3, name: "Our Services", link: "#", links: [{}] },
   { id: 4, name: "Contact Us", link: "/contact-us" },
 ];
 

@@ -27,7 +27,7 @@ const HeroSlider = ({ data }: HeroSliderProps) => {
         <ul className="h-full w-full flex">
           <Swiper
             pagination={{ type: "bullets", clickable: true }}
-            autoplay={true}
+            // autoplay={true}
             loop={true}
             modules={[Autoplay, Pagination]}
           >

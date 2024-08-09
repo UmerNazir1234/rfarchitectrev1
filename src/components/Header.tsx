@@ -8,13 +8,13 @@ import Button from "./Button";
 import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import { useTheme } from "@/context/ThemeContext";
-
+import { MdKeyboardArrowDown } from "react-icons/md";
 const Header = () => {
   const pathname = usePathname();
   const { toggle, open } = useTheme();
 
   return (
-    <header className="bg-light  drop-shadow-lg ">
+    <header className="bg-light  drop-shadow-lg relative z-50">
       <div className="flex items-center justify-between sm:h-28 h-24 page-width">
         <div className="flex items-center space-x-4">
           <div className="relative">
@@ -38,15 +38,36 @@ const Header = () => {
         <nav className="flex-1 hidden xl:flex justify-center space-x-6 ">
           <ul className="flex justify-center items-center gap-14">
             {menuItems?.map((item) => (
-              <li key={item.name}>
-                <Link
-                  href={item.link}
-                  className={`${
-                    pathname == item?.link ? "text-primary !font-bold" : ""
-                  } font-semibold text-xl hover:text-primary`}
-                >
-                  {item.name}
-                </Link>
+              <li key={item?.id}>
+                {item?.links && item?.links?.length > 0 ? (
+                  <div className="relative">
+                    <button
+                      className={`flex items-center justify-center gap-1 ${
+                        pathname == "" ? "text-primary !font-bold" : ""
+                      } font-semibold text-xl hover:text-primary`}
+                    >
+                      <span className="">{item?.name}</span>
+                      <span>
+                        <MdKeyboardArrowDown />
+                      </span>
+                    </button>
+
+                    <div className="absolute z-50 inset-0 top-32 min-w-full w-full max-w-full h-full bg-white text-black ">
+                      <div className="bg-orange-200">
+                        <h1>This is heading</h1>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    href={item.link}
+                    className={`${
+                      pathname == item?.link ? "text-primary !font-bold" : ""
+                    } font-semibold text-xl hover:text-primary`}
+                  >
+                    {item.name}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
