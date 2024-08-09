@@ -11,6 +11,7 @@ type props = {
   };
 };
 const LeadingSolution = ({ content }: props) => {
+  console.log(content)
   return (
     <section className="relative z-20">
       <div className="page-width pt-32">
@@ -31,7 +32,7 @@ const LeadingSolution = ({ content }: props) => {
               <p className="text-primary md:text-2xl text-lg text-white mb-6">
                 {content?.content}
               </p>
-              <Button title={content?.btnText} icon={<GoArrowUpRight />} />
+              <Button title={content?.btnText} href={content?.btnLink} icon={<GoArrowUpRight />} />
             </div>
           </div>
         </div>

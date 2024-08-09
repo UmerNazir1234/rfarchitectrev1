@@ -7,8 +7,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ServiceCard from "@/components/ServiceCard";
-
-const ServiceSlider = () => {
+type props = {
+  cards: {
+    id: number;
+    icon: string;
+    title: string;
+    content: string;
+    btnText: string;
+    btnLink: string;
+  }[];
+};
+const ServiceSlider = ({ cards }: props) => {
+  console.log(cards);
   return (
     <section className="w-full xl:-mt-[300px] sm:-mt-[200px] -mt-[140px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
       <div className="">
@@ -46,27 +56,13 @@ const ServiceSlider = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="!pb-16 "
         >
-          <SwiperSlide>
-            <ServiceCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServiceCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServiceCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServiceCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServiceCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServiceCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServiceCard />
-          </SwiperSlide>
+          {cards?.map((card) => {
+            return (
+              <SwiperSlide key={card?.id}>
+                <ServiceCard card={card}/>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </section>
