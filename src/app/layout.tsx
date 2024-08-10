@@ -61,12 +61,17 @@ export const metadata: Metadata = {
   },
 };
 
-export const advent_Pro = Advent_Pro({
+const advent_Pro = Advent_Pro({
   subsets: ["latin"],
+  weight: ['400','500','600', '700'],
+  display: 'swap',
   variable: "--font-advent-pro",
 });
-export const nunito = Nunito({ 
+
+const nunito = Nunito({ 
   subsets: ["latin"], 
+  weight: ['400','500','600', '700'],
+  display: 'swap',
   variable: "--font-nunito" 
 });
 
@@ -84,9 +89,9 @@ export default function RootLayout({
         <meta name="theme-color" content={Site?.themeColor} />
         <link rel="icon" type="image/png" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
-        <link rel="alternate" hrefLang="en-US" href={Site.url} />
+        <link rel="alternate" hrefLang="en-US" href={Site?.url} />
       </head>
-      <body className={`${advent_Pro.variable} ${nunito.variable}`}>
+      <body className={`${advent_Pro?.variable} ${nunito?.variable}`}>
         <Providers>
           <Header />
           <main className="bg-light">{children}</main>

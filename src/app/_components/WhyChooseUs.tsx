@@ -74,10 +74,10 @@ const WhyChooseUs = () => {
                     </div>
                     <div>
                       <h5 className="">SUPPORT</h5>
-                      <p>
+                      <p>{`
                         We don't abandon you. we provide 24/7 support and
                         maintenance for your product.
-                      </p>
+                      `}</p>
                     </div>
                   </div>
                 </div>
