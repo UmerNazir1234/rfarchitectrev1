@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-light  drop-shadow-lg relative z-50">
+    <header className="bg-light drop-shadow-lg relative z-50">
       <div className="flex items-center justify-between sm:h-28 h-24 page-width">
         <div className="flex items-center space-x-4">
           <div className="relative">
@@ -46,7 +46,11 @@ const Header = () => {
             {menuItems?.map((item) => (
               <li key={item?.id}>
                 {item?.links && item?.links?.length > 0 ? (
-                  <div className="relative">
+                  <div
+                    className="relative"
+                    onMouseEnter={handleDropdownToggle}
+                    onMouseLeave={handleDropdownToggle}
+                  >
                     <button
                       className={`flex items-center justify-center gap-1 ${
                         pathname == "" ? "text-primary !font-bold" : ""
@@ -64,50 +68,59 @@ const Header = () => {
                     </button>
                     {dropdownOpen && (
                       <div
-                        className={`fixed  z-50 inset-3 top-32 h-fit min text-black dropShadow rounded-xl p-8 border-white border transition-all duration-300 ease-in-out transform ${
+                        className={`fixed z-50 inset-3 header-bg-custom top-[70px] h-fit min text-black rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
                           dropdownOpen
                             ? "opacity-100 translate-y-0"
                             : "opacity-0 -translate-y-5"
                         }`}
                       >
-                        <div className="flex items-center justify-center my-4 border-b-2 border-white pb-10">
-                          <Button
-                            title="Services we offer"
-                            classes="bg-transparent text-white"
-                            enableIcons={true}
-                            iconStyle="stroke-white"
-                          />
+                        <div className="p-8 relative">
+                          <div className="absolute w-full h-full inset-0 z-10 custom-backdrop">
+                            <span></span>
+                          </div>
+                          <div className="header-inside-color relative z-20">
+                            <div className="flex items-center justify-center my-4 border-b-2 border-white pb-10 ">
+                              <Button
+                                title="Services we offer"
+                                classes="bg-transparent text-white"
+                                enableIcons={true}
+                                iconStyle="stroke-white"
+                              />
+                            </div>
+                            <ul className="flex justify-between items-start gap-x-4 gap-y-10 flex-wrap pt-9 pb-12">
+                              {item?.links.map((item) => {
+                                return (
+                                  <li
+                                    className="basis-[32%] group"
+                                    key={item?.id}
+                                  >
+                                    <div className="flex justify-between min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg">
+                                      <div className="flex items-start justify-start gap-3">
+                                        <div className="bg-white group-hover:bg-secondary p-2 rounded min-h-12 flex items-center justify-center">
+                                          <Image
+                                            src={`${item?.icon}`}
+                                            alt={item?.title + "icon"}
+                                            loading="lazy"
+                                            width={30}
+                                            height={30}
+                                          />
+                                        </div>
+                                        <div>
+                                          <h5 className="group-hover:text-primary">
+                                            {item?.title}
+                                          </h5>
+                                          <p className="max-w-sm mt-1">
+                                            {item?.description}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
                         </div>
-
-                        <ul className="flex justify-between items-start gap-x-4 gap-y-10 flex-wrap pt-9 pb-12">
-                          {item?.links.map((item) => {
-                            return (
-                              <li className="basis-[32%] group" key={item?.id}>
-                                <div className="flex justify-between min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg">
-                                  <div className="flex items-start justify-start gap-3">
-                                    <div className="bg-white group-hover:bg-secondary p-2 rounded min-h-12 flex items-center justify-center">
-                                      <Image
-                                        src={`${item?.icon}`}
-                                        alt={item?.title + "icon"}
-                                        loading="lazy"
-                                        width={30}
-                                        height={30}
-                                      />
-                                    </div>
-                                    <div>
-                                      <h5 className="group-hover:text-primary">
-                                        {item?.title}
-                                      </h5>
-                                      <p className="max-w-sm mt-1">
-                                        {item?.description}
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                            );
-                          })}
-                        </ul>
                       </div>
                     )}
                   </div>
