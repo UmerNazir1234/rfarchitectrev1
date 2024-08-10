@@ -7,25 +7,21 @@ import WhyChooseUs from "./WhyChooseUs";
 import FeaturedProjects from "./FeaturedProjects";
 import Testimonials from "./Testimonials";
 import Faq from "@/components/Faq";
-import { faq, testimonial, featuredProjects } from "@/dummyData/data";
+import { testimonial, featuredProjects } from "@/dummyData/data";
 import HeroSlider from "./HeroSlider";
 import { homeContent } from "@/data/home";
 
-
-
 const MainPage = () => {
- 
   return (
-
     <>
       <HeroSlider data={homeContent?.banner} />
       <LeadingSolution content={homeContent?.ourServices} />
-      <ServiceSlider cards={homeContent?.ourServices?.cards}/>
+      <ServiceSlider cards={homeContent?.ourServices?.cards} />
       <Steps />
       <WhyChooseUs />
       <FeaturedProjects data={featuredProjects} />
       <Testimonials data={testimonial} />
-      <Faq data={faq} />
+      <Faq data={homeContent?.faqs} />
       <Newsletter />
     </>
   );

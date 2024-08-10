@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import CommentForm from "./_components/CommentForm";
-
-const Page = ({ params }:any) => {
-  
+export const runtime = "edge";
+const Page = ({ params }: any) => {
   return (
     <section className="relative">
       <div className="max-w-4xl m-auto sm:py-24 py-12 xl:px-6 px-3">

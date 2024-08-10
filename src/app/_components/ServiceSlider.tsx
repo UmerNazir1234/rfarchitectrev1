@@ -18,7 +18,6 @@ type props = {
   }[];
 };
 const ServiceSlider = ({ cards }: props) => {
-  console.log(cards);
   return (
     <section className="w-full md:-mt-[250px]  -mt-[120px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
       <div className="">

@@ -73,8 +73,7 @@ const homeContent = {
         id: 5,
         icon: "reactIcon",
         title: "CRM Development",
-        content:
-          "Creating stunning, user-friendly websites that captivate and convert.",
+        content: "Enhancing customer relationships with tailored CRM systems.",
 
         btnText: "Read More",
         btnLink: "/crm-development",
@@ -84,7 +83,7 @@ const homeContent = {
         icon: "reactIcon",
         title: "Shopify Development",
         content:
-          "Creating stunning, user-friendly websites that captivate and convert.",
+          "Building robust, scalable e-commerce stores for online success.",
 
         btnText: "Read More",
         btnLink: "/shopify-development",
@@ -94,7 +93,7 @@ const homeContent = {
         icon: "reactIcon",
         title: "Woocommerce Development",
         content:
-          "Creating stunning, user-friendly websites that captivate and convert.",
+          "Designing and developing high-performance e-commerce stores on WooCommerce.",
 
         btnText: "Read More",
         btnLink: "/woocommerce-development",
@@ -104,23 +103,58 @@ const homeContent = {
         icon: "reactIcon",
         title: "Wordpress Development",
         content:
-          "Creating stunning, user-friendly websites that captivate and convert.",
+          "Building versatile and scalable WordPress sites tailored to your needs.",
 
         btnText: "Read More",
         btnLink: "/wordPress-development",
       },
       {
-      id: 9,
-      icon: "reactIcon",
-      title: "Custom Software Development",
-      content:
-        "Creating stunning, user-friendly websites that captivate and convert.",
+        id: 9,
+        icon: "reactIcon",
+        title: "Custom Software Development",
+        content:
+          "Delivering bespoke software solutions that drive business innovation.",
 
-      btnText: "Read More",
-      btnLink: "/custom-software-development",
-    },
+        btnText: "Read More",
+        btnLink: "/custom-software-development",
+      },
     ],
   },
+  faqs: [
+    {
+      id: 1,
+      question: "What is RF Technologies?",
+      answer:
+        "RF Technologies is a software company which provides custom software development, e-commerce development, digital marketing and Shopify development services.",
+    },
+    {
+      id: 2,
+      question: "What services does RF Technologies offer?",
+      answer:
+        "At RF Tech, we provide a comprehensive range of digital solutions including SEO, digital marketing, web development, Shopify and WooCommerce development, WordPress development, custom software development, CRM development, and graphic design. Our goal is to tailor these services to meet the unique needs of your business and drive measurable results.",
+    },
+    {
+      id: 3,
+      question: "What makes your web development services stand out?",
+      answer:
+        "Our web development services are distinguished by our commitment to creating user-centric, high-performance websites. We focus on delivering responsive designs, seamless functionality, and a robust user experience. Whether you need a new site or a revamp, our team ensures that your website aligns with your brand and business objectives.",
+    },
+    {
+      id: 4,
+      question:
+        "How do you ensure the success of custom software development projects?",
+      answer:
+        "We ensure the success of custom software development projects through a structured approach that includes comprehensive requirements gathering, iterative development, and rigorous testing. Our team works closely with you throughout the process to ensure the final product meets your specifications, enhances operational efficiency, and delivers tangible benefits.",
+    },
+    {
+      id: 5,
+      question:
+        "How can I become a partner with RF Technologies?",
+      answer:
+        "You can contact us to become a partner or you can visit our office or manage a meeting with us.",
+    },
+    
+  ],
 };
 
 export { homeContent };
