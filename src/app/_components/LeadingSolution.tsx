@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import IconLeading from "@/components/Icons/IconLeading";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 type props = {
@@ -14,22 +15,22 @@ type props = {
 const LeadingSolution = ({ content }: props) => {
   return (
     <section className="relative z-20">
-      <div className="page-width pt-32">
-        <div className="bg-gradient-to-l clip-left-top  to-[#BCCDF2] from-[#0B3DAB] rounded-[40px] min-h-[84vh] max-md:min-h-[70vh] relative">
+      <div className="page-width pt-32 relative">
+        <div className="bg-gradient-to-l clip-left-top  to-[#BCCDF2] from-[#0B3DAB] rounded-[40px] min-h-[84vh] max-md:min-h-[80vh] relative">
           <Button
             enableIcons={true}
             title={content?.roundCta}
             iconStyle="stroke-secondary"
             classes="bg-secondary absolute top-5 left-5"
           />
-          <div className="flex justify-center md:flex-nowrap flex-wrap gap-2 lg:pt-24 lg:px-16 sm:pt-20 sm:px-10 max-sm:pt-10 max-sm:px-3  ">
-            <div className="md:basis-[30%]  basis-full">
+          <div className="flex justify-center md:flex-nowrap flex-wrap gap-2 lg:pt-18 lg:px-16 sm:pt-20 sm:px-10 max-sm:pt-10 max-sm:px-3  ">
+            <div className="md:basis-[45%]  basis-full">
               <h2 className="text-primary md:w-3/4 uppercase">
                 {content?.title}
               </h2>
             </div>
-            <div className="md:basis-[70%] basis-full">
-              <p className="text-primary md:text-2xl text-lg text-white mb-6">
+            <div className="md:basis-[65%] basis-full">
+              <p className="text-primary xl:text-2xl  text-lg text-white mb-6">
                 {content?.content}
               </p>
               <Button

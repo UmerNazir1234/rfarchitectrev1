@@ -20,14 +20,19 @@ type props = {
 const ServiceSlider = ({ cards }: props) => {
   console.log(cards);
   return (
-    <section className="w-full xl:-mt-[300px] sm:-mt-[200px] -mt-[140px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
+    <section className="w-full md:-mt-[250px]  -mt-[120px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
       <div className="">
         <Swiper
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+          }}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           spaceBetween={30}
           slidesPerView={5}
+          centeredSlides={true}
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -47,7 +52,7 @@ const ServiceSlider = ({ cards }: props) => {
               spaceBetween: 20,
             },
 
-            1280: {
+            1400: {
               slidesPerView: 5,
               spaceBetween: 30,
             },
@@ -59,7 +64,7 @@ const ServiceSlider = ({ cards }: props) => {
           {cards?.map((card) => {
             return (
               <SwiperSlide key={card?.id}>
-                <ServiceCard card={card}/>
+                <ServiceCard card={card} />
               </SwiperSlide>
             );
           })}
