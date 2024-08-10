@@ -9,7 +9,7 @@ const IconCircle = () => {
       viewBox="0 0 218 221"
       fill="none"
     >
-      <g clip-path="url(#clip0_448_622)">
+      <g clipPath="url(#clip0_448_622)">
         <line
           x1="267.263"
           y1="-45.1853"
