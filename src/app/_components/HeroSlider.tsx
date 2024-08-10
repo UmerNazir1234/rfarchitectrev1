@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,7 +13,7 @@ type Slide = {
   title: string;
   description: string;
   image: string;
-  url?:string;
+  url?: string;
 };
 
 type HeroSliderProps = {
@@ -22,7 +22,7 @@ type HeroSliderProps = {
 
 const HeroSlider = ({ data }: HeroSliderProps) => {
   return (
-    <section className="w-full heroSlider ">
+    <section className="w-full heroSlider relative z-10">
       <div className="md:h-[90vh] h-[80vh] ">
         <ul className="h-full w-full flex">
           <Swiper
@@ -55,7 +55,6 @@ const HeroSlider = ({ data }: HeroSliderProps) => {
                       <Button
                         title="let's talk"
                         href={item?.url}
-                      
                         classes="bg-white !text-primary uppercase !px-14  hover:!text-white bg-gradient-to-l hover:from-primary hover:to-primary hover:!transition-all hover:!ease-out hover:!duration-200"
                         icon={
                           <GoArrowUpRight className="group-hover:!stroke-white group-hover:!fill-white" />

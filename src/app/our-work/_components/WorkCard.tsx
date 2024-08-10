@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Work } from "@/lib/type"; // Ensure Work type is correctly defined
+import { Work } from "@/lib/type";
 import { work } from "@/dummyData/data";
 
 type WorkProps = {
@@ -13,7 +13,8 @@ const WorkCard = ({ work }: WorkProps) => {
       <div>
         {work?.map((item) => (
           <div
-            key={item?.title}
+            key={item?.id}
+            id={`${item?.workId}`}
             className={`md:flex px-12 max-md:px-4 py-16 max-md:py-10 items-center justify-evenly max-md:flex-wrap w-full even:flex-row-reverse`}
             style={{
               color: item?.textColor || "white", // Default to white

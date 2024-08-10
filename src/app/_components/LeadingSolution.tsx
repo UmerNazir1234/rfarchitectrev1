@@ -1,32 +1,43 @@
 import Button from "@/components/Button";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
-const LeadingSolution = () => {
+type props = {
+  content: {
+    roundCta: string;
+    title: string;
+    content: string;
+    btnText: string;
+    btnLink: string;
+  };
+};
+
+const LeadingSolution = ({ content }: props) => {
+<<<<<<< HEAD
+  console.log(content)
+=======
+  
+>>>>>>> 817f32afa49217a13653fe06647e962c47a1f062
   return (
     <section className="relative z-20">
       <div className="page-width pt-32">
         <div className="bg-gradient-to-l clip-left-top  to-[#BCCDF2] from-[#0B3DAB] rounded-[40px] min-h-[84vh] max-md:min-h-[70vh] relative">
           <Button
             enableIcons={true}
-            title="OUR SERVICES"
+            title={content?.roundCta}
             iconStyle="stroke-secondary"
             classes="bg-secondary absolute top-5 left-5"
           />
           <div className="flex justify-center md:flex-nowrap flex-wrap gap-2 lg:pt-24 lg:px-16 sm:pt-20 sm:px-10 max-sm:pt-10 max-sm:px-3  ">
             <div className="md:basis-[30%]  basis-full">
               <h2 className="text-primary md:w-3/4 uppercase">
-                We Provide Leading Solutions In
+                {content?.title}
               </h2>
             </div>
             <div className="md:basis-[70%] basis-full">
               <p className="text-primary md:text-2xl text-lg text-white mb-6">
-                Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos.
+                {content?.content}
               </p>
-
-              <Button title="Get Started" icon={<GoArrowUpRight />} />
+              <Button title={content?.btnText} href={content?.btnLink} icon={<GoArrowUpRight />} />
             </div>
           </div>
         </div>

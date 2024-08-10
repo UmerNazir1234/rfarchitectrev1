@@ -7,6 +7,8 @@ export type Tabs = {
 };
 
 export type Work = {
+  id: number;
+  workId:string,
   image: string;
   title: string;
   text: string;

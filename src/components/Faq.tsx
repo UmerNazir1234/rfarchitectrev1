@@ -44,6 +44,7 @@ const Faq = ({ data, classes }: props) => {
           <div className="flex items-center justify-center mt-10">
             <Button
               title="Read More"
+              href="/faq"
               classes="btn--outline"
               icon={<GoArrowUpRight className="h-7 w-7" />}
             />

@@ -4,10 +4,6 @@ import { FcProcess } from "react-icons/fc";
 import { BiCheckShield } from "react-icons/bi";
 import { SiFireship } from "react-icons/si";
 import { Tabs, Work } from "@/lib/type";
-import { MdOutlineImageSearch } from "react-icons/md";
-import { FiSpeaker } from "react-icons/fi";
-import { BsDatabaseFillGear } from "react-icons/bs";
-import { HiDocumentReport } from "react-icons/hi";
 import { TbVirusSearch } from "react-icons/tb";
 import { TbSettingsPause } from "react-icons/tb";
 import { PiProjectorScreenChart } from "react-icons/pi";
@@ -16,10 +12,219 @@ import { BsKanban } from "react-icons/bs";
 export const menuItems = [
   { id: 1, name: "Who We Are?", link: "/about-us" },
   { id: 2, name: "Our Work", link: "/our-work" },
-  { id: 3, name: "Our Services", link: "/our-services" },
+  { id: 3, name: "Our Services", link: "#" },
   { id: 4, name: "Contact Us", link: "/contact-us" },
 ];
 
+/* home */
+export const testimonial = [
+  {
+    id: 1,
+    review:
+      "I had Best experience with them. Very fast and professional. We wanted contact page link to change with our help desk code and they were able to do it in less than 24 hours. Will do another project with them. Thank you",
+    client_name: "Nick Jabber",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "United States",
+  },
+  {
+    id: 2,
+    review:
+      "RF Technologies was amazing! Will hire again for all my Shopify needs. Knows exactly what to do and works fast. Very well done.",
+    client_name: "Marco Lange",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "United States",
+  },
+  {
+    id: 3,
+    review:
+      "I had Best experience with them. Very fast and professional. We wanted contact page link to change with our help desk code and they were able to do it in less than 24 hours. Will do another project with them. Thank you",
+    client_name: "Nick Jabber",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "United States",
+  },
+  {
+    id: 4,
+    review:
+      "Great job, great communication, super fast, and got everything correct quickly! Thank you and highly recommended : ) ... I look forward to repeat business.",
+    client_name: "Rico",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "United States",
+  },
+  {
+    id: 5,
+    review:
+      "It's amazing to meet someone electronically from across the world, and grow to trust and respect them in such a short period of time. But that's exactly what happened with RF Technologies . I look forward to working with them for the foreseeable future.",
+    client_name: "Leekim",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "United States",
+  },
+  {
+    id: 6,
+    review:
+      "Having worked on multiple projects with RFtechnologoes, i've always been very happy with the outcome and quality.",
+    client_name: "Austen Plummer",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "Australia",
+  },
+  {
+    id: 7,
+    review:
+      "Adding a code on the product template Shopify. Very responsive and great job. Resolved as I needed it. Thank you.",
+    client_name: "Zanetita",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "Czech Republic",
+  },
+  {
+    id: 8,
+    review:
+      "The BEST. I honestly don’t want to share them with anyone else so that they can do all of my projects!",
+    client_name: "The Best 10 Ever",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "United States",
+  },
+  {
+    id: 9,
+    review: "Excellent transparent communication throughout the process.",
+    client_name: "Invividcolour",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "United States",
+  },
+  {
+    id: 10,
+    review:
+      "RF Technologies continues to do excellent work for my website . An absolute pleasure to work with. Has made an incredible difference to my store",
+    client_name: "Tdsv",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "United Kingdom",
+  },
+  {
+    id: 11,
+    review: "Worked with them a lot, and saw really good service 👏 👌",
+    client_name: "Mordecha",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "United Kingdom",
+  },
+  {
+    id: 12,
+    review:
+      "RF Technologies is definitely the option for us. I’ve renamed them USAIN BOLT because they are SUPER-FAST AND VERY EFFICIENT. Delivered way ahead of deadline.",
+    client_name: "David Davinci",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "Ireland",
+  },
+  {
+    id: 13,
+    review:
+      "RF Technologies is fantastic. Clear communications and I'm super happy with the work delivered. I look forward to working with them on the future projects. :)",
+    client_name: "Littlehk",
+    client_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
+    client_country: "Hong Kong",
+  },
+];
+export const featuredProjects = [
+  {
+    id: 1,
+    title: "Elite ECW",
+
+    url: "/our-work/#elite",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721996209/RfTechnologiesWebsite/elite_ejhwtj.webp",
+  },
+  {
+    id: 2,
+    title: "Wildflower",
+    url: "/our-work/#whildflower",
+
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997065/RfTechnologiesWebsite/wearewildflower-300x145.webp_sopxw0.webp",
+  },
+  {
+    id: 3,
+    title: "Thrust",
+
+    url: "/our-work/#thrust",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997760/RfTechnologiesWebsite/thrust-1-e1653319909879_hteovy.webp",
+  },
+  {
+    id: 4,
+    title: "Presto",
+
+    url: "/our-work/#presto",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997797/RfTechnologiesWebsite/other-1_uqi3w2.webp",
+  },
+  {
+    id: 5,
+    title: "The Lazy Monkey",
+
+    url: "/our-work/#thelazy",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997830/RfTechnologiesWebsite/lazy-monkey-1_cuq5dm.webp",
+  },
+  {
+    id: 6,
+    title: "Big Little Things",
+
+    url: "/our-work/#big",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997866/RfTechnologiesWebsite/big-little-1-e1653320233846_ctxsjz.webp",
+  },
+  {
+    id: 7,
+    title: " Pump Apparel",
+
+    url: "/our-work/#pump",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997919/RfTechnologiesWebsite/pumpapparel-1-e1653320400598_i33jaj.webp",
+  },
+  {
+    id: 8,
+    title: "Niki's",
+
+    url: "/our-work/#niki",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997965/RfTechnologiesWebsite/nikisss-banner-img_rabd61.webp",
+  },
+  {
+    id: 9,
+    title: "EazyTicks",
+
+    url: "/our-work/#eazyticks",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721998002/RfTechnologiesWebsite/EazyTicks-Image_rtyiio.webp",
+  },
+  {
+    id: 10,
+    title: "Elite Customizer",
+
+    url: "/our-work/#elitecustomizer",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721998034/RfTechnologiesWebsite/shopify-app_fkbokv.webp",
+  },
+  {
+    id: 11,
+    title: "Epic Neons",
+    url: "/our-work/#epic",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721998064/RfTechnologiesWebsite/epic-neons_tqjtxe.webp",
+  },
+];
+
+/* endHome */
 export const informationLinks = [
   {
     id: 1,
@@ -124,21 +329,22 @@ export const serviceLinks = [
 export const sliderData = [
   {
     id: 1,
-    title: "IT SOLUTIONS <span class='heroSpan'>&</span> SERVICES",
+    title:
+      "<span class='text-secondary'>RF TECHNOLOGIES</span> We Provide Awnsers. ",
     url: "/about-us",
     description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+      "Want To Turn Your Idea Into A Digital Product And Make It Successful Using Best Marketing Strategies?",
     image:
-      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720021733/RfTechnologiesWebsite/annie-spratt-QckxruozjRg-unsplash_lhcffl.png",
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722243811/RfTechnologiesWebsite/Desktop_-_9_lcv48g.png",
   },
   {
     id: 2,
-    title: "IT SOLUTIONS <span class='heroSpan'>&</span> SERVICES",
+    title: "IT SOLUTIONS <span class='text-secondary'>&</span> SERVICES",
     url: "/about-us",
     description:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
     image:
-      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720021733/RfTechnologiesWebsite/annie-spratt-QckxruozjRg-unsplash_lhcffl.png",
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722243811/RfTechnologiesWebsite/Desktop_-_9_lcv48g.png",
   },
 ];
 
@@ -176,6 +382,8 @@ export const tabs: Tabs[] = [
 
 export const work: Work[] = [
   {
+    id: 1,
+    workId: "elite",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776305/RfTechnologiesWebsite/image_52_zznfko.png",
     title: "Elite By ECW",
@@ -185,6 +393,8 @@ export const work: Work[] = [
     textColor: "#FFFFFF",
   },
   {
+    id: 2,
+    workId: "whildflower",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776305/RfTechnologiesWebsite/image_62_ci28zj.png",
     title: "Eazyticks",
@@ -194,6 +404,8 @@ export const work: Work[] = [
     textColor: "#ffffff",
   },
   {
+    id: 3,
+    workId: "thrust",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776302/RfTechnologiesWebsite/image_56_i69zku.png",
     title: "Ozelu Studio",
@@ -203,6 +415,8 @@ export const work: Work[] = [
     textColor: "#FFFFFF",
   },
   {
+    id: 4,
+    workId: "presto",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
     title: "EZFUNDRAZR",
@@ -212,6 +426,8 @@ export const work: Work[] = [
     textColor: "#000000",
   },
   {
+    id: 5,
+    workId: "thelazy",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776300/RfTechnologiesWebsite/image_61_bbvb27.png",
     title: "Jenson Bike Shipping",
@@ -221,6 +437,8 @@ export const work: Work[] = [
     textColor: "#ffffff",
   },
   {
+    id: 6,
+    workId: "big",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
     title: "The Transparency",
@@ -230,6 +448,8 @@ export const work: Work[] = [
     textColor: "#FFFFFF",
   },
   {
+    id: 7,
+    workId: "pump",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776300/RfTechnologiesWebsite/image_63_vm0xvw.png",
     title: "Pump Appearl",
@@ -239,6 +459,8 @@ export const work: Work[] = [
     textColor: "#ffffff",
   },
   {
+    id: 8,
+    workId: "niki",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776299/RfTechnologiesWebsite/image_64_wgmst1.png",
     title: "Niki's",
@@ -248,6 +470,8 @@ export const work: Work[] = [
     textColor: "#000000",
   },
   {
+    id: 9,
+    workId: "eazyticks",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776297/RfTechnologiesWebsite/image_67_tqgzoz.png",
     title: "Big Little Things.",
@@ -257,6 +481,8 @@ export const work: Work[] = [
     textColor: "#ffffff",
   },
   {
+    id: 10,
+    workId: "elitecustomizer",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776296/RfTechnologiesWebsite/image_66_sxtpis.png",
     title: "Combine Marketing",
@@ -266,6 +492,8 @@ export const work: Work[] = [
     textColor: "#ffffff",
   },
   {
+    id: 11,
+    workId: "hard",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776295/RfTechnologiesWebsite/image_68_w2qfee.png",
     title: "Hard Core Mattress",
@@ -279,7 +507,7 @@ export const work: Work[] = [
 export const stack = [
   {
     id: 1,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721400446/RfTechnologiesWebsite/pngwing.com_59_gm2uyx.svg",
     title: "React",
@@ -288,7 +516,7 @@ export const stack = [
   },
   {
     id: 2,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402683/RfTechnologiesWebsite/Vector_3_mbvtlf.svg",
     title: "Laravel",
@@ -297,7 +525,7 @@ export const stack = [
   },
   {
     id: 3,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402682/RfTechnologiesWebsite/pngwing.com_57_f3m3lj.svg",
     title: "ASP .NET",
@@ -306,7 +534,7 @@ export const stack = [
   },
   {
     id: 4,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402682/RfTechnologiesWebsite/pngwing.com_58_mkdbq4.svg",
     title: "Vue.js",
@@ -315,7 +543,7 @@ export const stack = [
   },
   {
     id: 5,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402678/RfTechnologiesWebsite/pngwing.com_60_xblbl8.svg",
     title: "Node.js",
@@ -324,7 +552,8 @@ export const stack = [
   },
   {
     id: 6,
-    url: "/",
+    url: "/our-work",
+    workId: "big",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402676/RfTechnologiesWebsite/pngwing.com_62_nmqazp.svg",
     title: "WordPress",
@@ -333,7 +562,7 @@ export const stack = [
   },
   {
     id: 7,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402675/RfTechnologiesWebsite/pngwing.com_63_zlabdz.svg",
     title: "Shopify",
@@ -342,7 +571,7 @@ export const stack = [
   },
   {
     id: 8,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402676/RfTechnologiesWebsite/pngwing.com_64_r2dpz2.svg",
     title: "WooCommerce",
@@ -351,7 +580,7 @@ export const stack = [
   },
   {
     id: 9,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402675/RfTechnologiesWebsite/pngwing.com_65_nb4rzf.svg",
     title: "UX/UI",
@@ -360,7 +589,7 @@ export const stack = [
   },
   {
     id: 10,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402674/RfTechnologiesWebsite/pngwing.com_66_qofvpi.svg",
     title: "Flutter",
@@ -369,7 +598,7 @@ export const stack = [
   },
   {
     id: 11,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402673/RfTechnologiesWebsite/image_103_hjsnhq.svg",
     title: "SEO",
@@ -378,7 +607,7 @@ export const stack = [
   },
   {
     id: 12,
-    url: "/",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402673/RfTechnologiesWebsite/pngwing.com_67_mkn58v.svg",
     title: "PHP",
@@ -1179,6 +1408,7 @@ export const seoServiceData = [
 ];
 export const seoCardText = [
   {
+    id: 1,
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721734466/RfTechnologiesWebsite/Group_1597883924_2_yopuhj.svg",
     cards: [
@@ -1265,6 +1495,7 @@ export const grapicDesignServiceData = [
 
 export const grapicCardText = [
   {
+    id: 1,
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721733053/RfTechnologiesWebsite/Group_1597883924_1_bhav7a.svg",
     cards: [
@@ -1617,3 +1848,181 @@ export const shopImageWithText = [
   },
 ];
 /* end shopify development */
+
+/* blog */
+
+export const blog = [
+  {
+    id: 1,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721834451/RfTechnologiesWebsite/image_202_tzlx4m.svg",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 2,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906512/RfTechnologiesWebsite/5757453_1_dnrpij.png",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 3,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906551/RfTechnologiesWebsite/image_203_epwbbo.png",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 4,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906575/RfTechnologiesWebsite/image_204_hvyuvz.svg",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 5,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906612/RfTechnologiesWebsite/image_205_w39xn3.svg",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 6,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906637/RfTechnologiesWebsite/image_206_hugvn6.svg",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 7,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721834451/RfTechnologiesWebsite/image_202_tzlx4m.svg",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 8,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906512/RfTechnologiesWebsite/5757453_1_dnrpij.png",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 9,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906551/RfTechnologiesWebsite/image_203_epwbbo.png",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 10,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906575/RfTechnologiesWebsite/image_204_hvyuvz.svg",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 11,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906612/RfTechnologiesWebsite/image_205_w39xn3.svg",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+  {
+    id: 12,
+    blog_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721906637/RfTechnologiesWebsite/image_206_hugvn6.svg",
+    blog_title: "New HTML tag: An absolute game changer",
+    publish_date: "July 19, 2024",
+    auther_image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png",
+    auther_name: "Jacob Jones",
+  },
+];
+/* end blog */
+
+/* become a password */
+export const becomeImageWithText = [
+  {
+    title: "Why Choose a Business Partner?",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741821/RfTechnologiesWebsite/Group_1597883963_hevjr1.svg",
+    description:
+      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    btnLink: "",
+    btnTitle: "",
+    ctaLink: "",
+    ctaTitle: "",
+    imageFirst: false,
+    enableImageleft: true,
+    enableImageCenter: false,
+    enableImageRight: false,
+  },
+];
+
+export const becomePartnersTabs: Tabs[] = [
+  {
+    label: "Our Priorities",
+    content:
+      "Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus. Curabitur tempor quis eros tempus lacinia.",
+    icon: <TbBulb className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Beginners Partnership",
+    content:
+      "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+    icon: <PiHandshakeLight className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Modified Developers",
+    content:
+      "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+    icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Trustworthy Companionship",
+    content:
+      "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+    icon: <BiCheckShield className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "24/7 hours Availability",
+    content: "As they.",
+    icon: <SiFireship className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+];
+/* end become a password */

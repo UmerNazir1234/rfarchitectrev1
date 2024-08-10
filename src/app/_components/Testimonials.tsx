@@ -8,9 +8,21 @@ import "swiper/css";
 import "swiper/css/navigation";
 import TestimonialCard from "@/components/TestimonialCard";
 
-const Testimonials = () => {
+type TestimonialProps = {
+  id: number;
+  review?: string;
+  client_name?: string;
+  client_image?: string;
+  client_country?: string;
+};
+
+type Props = {
+  data: TestimonialProps[];
+};
+
+const Testimonials = ({ data }: Props) => {
   return (
-    <section className=" relative md:py-32 py-20">
+    <section className="relative md:py-32 py-20">
       <div className="page-width">
         <div className="flex items-center justify-center">
           <Button
@@ -20,7 +32,7 @@ const Testimonials = () => {
             enableIcons={true}
           />
         </div>
-        <h2 className="text-primary text-center mt-8 max-w-5xl m-auto">
+        <h2 className="text-primary uppercase text-center mt-8 max-w-5xl m-auto">
           what our clients say
         </h2>
         <div className="mt-20 relative">
@@ -43,7 +55,6 @@ const Testimonials = () => {
                 slidesPerView: 2,
                 spaceBetween: 15,
               },
-
               1024: {
                 slidesPerView: 3,
                 spaceBetween: 30,
@@ -51,29 +62,18 @@ const Testimonials = () => {
             }}
             loop={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="featuredProjects testimonial !pb-20 "
+            className="featuredProjects testimonial !pb-20"
           >
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
+            {data?.map((item) => (
+              <SwiperSlide key={item?.id}>
+                <TestimonialCard
+                  review={item.review}
+                  client_name={item.client_name}
+                  client_image={item.client_image}
+                  client_country={item.client_country}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

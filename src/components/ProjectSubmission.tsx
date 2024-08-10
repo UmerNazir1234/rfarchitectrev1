@@ -19,7 +19,7 @@ const ProjectSubmission = ({
   btnTitle,
   btnUrl,
 }: ContentProps) => {
-  if (!title || !description) {
+  if (!title) {
     return null;
   }
 
@@ -65,16 +65,15 @@ const ProjectSubmission = ({
           />
         </div>
       </div>
-      <div className="absolute sm:right-0 sm:-top-[90px] bottom-0 right-0 z-10">
-        <div className="relative lg:w-[200px] lg:h-[180px] w-[130px] h-[100px]">
-          <Image
-            src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720613337/Frame_1597883705_yhbvpg.svg"
-            loading="lazy"
-            alt="Experience background Image"
-            fill
-          />
-        </div>
-      </div>
+
+      <Image
+        src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720613337/Frame_1597883705_yhbvpg.svg"
+        loading="lazy"
+        alt="Image Circle"
+        width={200}
+        height={200}
+        className="absolute -top-20 max-md:-top-10 right-0 max-lg:w-36 max-lg:h-36 max-md:w-20 max-md:h-20"
+      />
     </section>
   );
 };

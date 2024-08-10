@@ -9,7 +9,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const FeaturedProjects = () => {
+type projectsProps = {
+  id: number;
+  title?: string;
+  url?: string;
+  image?: string;
+};
+type propsProjects = {
+  data: projectsProps[];
+};
+const FeaturedProjects = ({ data }: propsProjects) => {
   return (
     <section className="bg-gradient-to-tr from-primary to-primarylight  relative md:py-32 py-20">
       <div className="xl:ps-48 max-xl:px-4">
@@ -26,7 +35,7 @@ const FeaturedProjects = () => {
         </h2>
         <div className="mt-16 relative">
           <Swiper
-            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            // autoplay={{ delay: 2500, disableOnInteraction: false }}
             navigation
             scrollbar={{ draggable: true }}
             spaceBetween={20}
@@ -59,30 +68,15 @@ const FeaturedProjects = () => {
             modules={[Autoplay, Pagination, Navigation]}
             className="featuredProjects !pb-20 max-md:!pb-16"
           >
-            <SwiperSlide>
-              <CaseStudycard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <CaseStudycard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <CaseStudycard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <CaseStudycard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <CaseStudycard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <CaseStudycard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <CaseStudycard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <CaseStudycard />
-            </SwiperSlide>
+            {data?.map((item) => (
+              <SwiperSlide key={item?.id}>
+                <CaseStudycard
+                  title={item?.title}
+                  url={item?.url}
+                  image={item?.image}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
