@@ -12,7 +12,76 @@ import { BsKanban } from "react-icons/bs";
 export const menuItems = [
   { id: 1, name: "Who We Are?", link: "/about-us" },
   { id: 2, name: "Our Work", link: "/our-work" },
-  { id: 3, name: "Our Services", link: "#" },
+  {
+    id: 3,
+    name: "Our Services",
+    link: "#",
+    links: [
+      {
+        id: 1,
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196288/RfTechnologiesWebsite/Vector_ifagk2.svg",
+        title: "Shopify Development",
+        description:
+          "Run Your business today with best e-commerce platform for online stores and retail point-of-sale systems.",
+      },
+      {
+        id: 2,
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196288/RfTechnologiesWebsite/Group_1597883894_ryszwv.svg",
+        title: "Custom Software Development",
+        description:
+          "Process of designing, creating, deploying, and maintaining software for a specific organizations.",
+      },
+      {
+        id: 3,
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196291/RfTechnologiesWebsite/Mask_group_amioaw.svg",
+        title: "Mobile Application Development",
+        description:
+          "Bring your project to market on every device and platform. attractive design and Fully Functional",
+      },
+      {
+        id: 4,
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196290/RfTechnologiesWebsite/Vector_1_wogkfq.svg",
+        title: "Wordpress Development",
+        description:
+          "Fulfills your content management needs, event calendars, media management, and general page content.",
+      },
+      {
+        id: 5,
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196290/RfTechnologiesWebsite/Mask_group_1_g65yf4.svg",
+        title: "CRM Development",
+        description:
+          "Get your personal CRM which allows for leads generation, assigning leads and staff management",
+      },
+      {
+        id: 6,
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196289/RfTechnologiesWebsite/Group_1597883895_rbvc1l.svg",
+        title: "Woocommerce Development",
+        description:
+          "Turn your WordPress website into an E-commerce Store online fully customizable",
+      },
+      {
+        id: 7,
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196288/RfTechnologiesWebsite/Mask_group_2_tfk5vp.svg",
+        title: "Graphic Designing",
+        description:
+          "Creation of visual compositions to solve problems and communicate ideas through typography, imagery, color and form",
+      },
+      {
+        id: 8,
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196290/RfTechnologiesWebsite/Group_1597883896_uvpa5k.svg",
+        title: "Search Engine Optimization",
+        description:
+          "Process of improving the quality and quantity of website traffic to a website or a web page from search engines.",
+      },
+      {
+        id: 9,
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196288/RfTechnologiesWebsite/Group_1597883897_lanfsg.svg",
+        title: "Digital Marketing",
+        description:
+          "Promotion of brands to connect with potential customers using the internet and other forms of digital communication",
+      },
+    ],
+  },
   { id: 4, name: "Contact Us", link: "/contact-us" },
 ];
 
