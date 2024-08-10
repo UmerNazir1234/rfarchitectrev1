@@ -9,7 +9,7 @@ const IconPromise = ({ classes }: any) => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       className={`icon icon--promise ${classes}`}
     >
-      <g clip-path="url(#clip0_453_1045)">
+      <g clipPath="url(#clip0_453_1045)">
         <mask
           id="mask0_453_1045"
           style={{ maskType: "alpha" }}
