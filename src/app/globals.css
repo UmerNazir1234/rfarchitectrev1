@@ -65,6 +65,11 @@
     background-color: red !important;
     display: none;
   }
+  .dropShadow {
+    /* -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important; */
+    background-color: #fff !important;
+  }
   /* Custom CSS */
   /* styles/globals.css */
   /* .clip-left-top {
