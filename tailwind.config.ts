@@ -1,4 +1,3 @@
-import { nunito } from "@/app/layout";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
+      sans: ['var(--font-nunito)'],
       nunito: ["var(--font-nunito)"],
       advent_Pro: ["var(--font-advent-pro)"],
     },

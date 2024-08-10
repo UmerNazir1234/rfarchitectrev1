@@ -8,17 +8,17 @@ import Button from "./Button";
 import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import { useTheme } from "@/context/ThemeContext";
-
+import { MdKeyboardArrowDown } from "react-icons/md";
 const Header = () => {
   const pathname = usePathname();
   const { toggle, open } = useTheme();
 
   return (
-    <header className="bg-light  drop-shadow-lg ">
+    <header className="bg-light  drop-shadow-lg relative z-50">
       <div className="flex items-center justify-between sm:h-28 h-24 page-width">
         <div className="flex items-center space-x-4">
           <div className="relative">
-            <Link href={'/'}>
+            <Link href={"/"}>
               {Site?.logo ? (
                 <Image
                   src={Site?.logo}
@@ -38,15 +38,70 @@ const Header = () => {
         <nav className="flex-1 hidden xl:flex justify-center space-x-6 ">
           <ul className="flex justify-center items-center gap-14">
             {menuItems?.map((item) => (
-              <li key={item.name}>
-                <Link
-                  href={item.link}
-                  className={`${
-                    pathname == item?.link ? "text-primary !font-bold" : ""
-                  } font-semibold text-xl hover:text-primary`}
-                >
-                  {item.name}
-                </Link>
+              <li key={item?.id}>
+                {item?.links && item?.links?.length > 0 ? (
+                  <div className="relative">
+                    <button
+                      className={`flex items-center justify-center gap-1 ${
+                        pathname == "" ? "text-primary !font-bold" : ""
+                      } font-semibold text-xl hover:text-primary`}
+                    >
+                      <span className="">{item?.name}</span>
+                      <span>
+                        <MdKeyboardArrowDown />
+                      </span>
+                    </button>
+
+                    <div className="fixed z-50 inset-3 top-32 h-fit min text-black bg-orange-200 rounded-xl p-8 border-white border ">
+                      <div className="flex items-center justify-center my-4 border-b-2 border-white pb-10 ">
+                        <Button
+                          title="Services we offer"
+                          classes="bg-transparent text-white"
+                          enableIcons={true}
+                          iconStyle="stroke-white"
+                        />
+                      </div>
+                      <ul className="flex justify-between items-start gap-x-4 gap-y-10 flex-wrap pt-9 pb-12">
+                        {item?.links.map((item) => {
+                          return (
+                            <li className="basis-[32%] group" key={item?.id}>
+                              <div className="flex justify-between min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg  ">
+                                <div className="flex items-start justify-start gap-3">
+                                  <div className="bg-white group-hover:bg-secondary p-2 rounded min-h-12 flex items-center justify-center">
+                                    <Image
+                                      src={`${item?.icon}`}
+                                      alt={item?.title + "icon"}
+                                      loading="lazy"
+                                      width={30}
+                                      height={30}
+                                    />
+                                  </div>
+                                  <div>
+                                    <h5 className="group-hover:text-primary">
+                                      {item?.title}
+                                    </h5>
+                                    <p className=" max-w-sm mt-1">
+                                      {item?.description}
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    href={item.link}
+                    className={`${
+                      pathname == item?.link ? "text-primary !font-bold" : ""
+                    } font-semibold text-xl hover:text-primary`}
+                  >
+                    {item.name}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
