@@ -16,7 +16,7 @@ import {
 
 import { NextResponse, type NextRequest } from "next/server";
 export const runtime = 'edge';
-export const revaliate = 30;
+export const revalidate = 60;
 const blogsCollection = "blogs";
 async function generateUniqueSlug(baseSlug:string) {
   let slug = baseSlug;

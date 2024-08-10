@@ -13,7 +13,7 @@ import {
 } from "firebase/firestore";
 import { NextResponse, type NextRequest } from "next/server";
 export const runtime = 'edge';
-export const revaliate = 30;
+export const revalidate = 60;
 const authorsCollection = "authors";
 
 export async function POST(request: Request) {
