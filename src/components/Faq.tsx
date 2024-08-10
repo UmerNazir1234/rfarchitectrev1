@@ -11,13 +11,15 @@ import Image from "next/image";
 
 type faqProps = {
   question?: string;
-  awnser?: string;
+  answer?: string;
+  id: number ;
 };
 type props = {
   data: faqProps[];
   classes?: string;
 };
 const Faq = ({ data, classes }: props) => {
+ 
   return (
     <div className={`${classes ? classes : "py-12"}  relative`}>
       <div className="page-width relative z-50">
@@ -37,7 +39,7 @@ const Faq = ({ data, classes }: props) => {
             {data?.map((data, index) => (
               <AccordionItem value={`item-${index}`} key={index}>
                 <AccordionTrigger>{data?.question}</AccordionTrigger>
-                <AccordionContent>{data?.awnser}</AccordionContent>
+                <AccordionContent>{data?.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
