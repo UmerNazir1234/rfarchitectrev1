@@ -107,7 +107,74 @@ const content = {
     roundCta: "Shopify online store 2.0",
     content:
       "Our Shopify Experts migrate your existing theme to Shopify Online Store 2.0 Fully accurate word by word. With Online 2.0 Shopify Theme, Enjoy the creative designs and Sections on all the pages of your shopify Website. Easily Customize and Highly attractive with 100% Conversion rate.",
-      image: ""
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721809735/RfTechnologiesWebsite/Group_1597883964_loqihf.svg",
+  },
+  shopifyPuzzleCards: [
+    {
+      id: 1,
+      title: "Hosted Solution",
+      content:
+        "Shopify is a cloud-based setup and hosted solution where you no need to worry about servers or databases. You can access your store from anywhere with admin login details & an internet connection without any setup.",
+    },
+    {
+      id: 2,
+      title: "Security, and Reliability",
+      content:
+        "Shopify Offers the Best Services In terms of Security and provides the best data protection.",
+    },
+    {
+      id: 3,
+      title: "SEO Friendly",
+      content:
+        "Shopify has the Best built-in SEO Features that are easy to use and the best to rank higher on the SERPs.",
+    },
+    {
+      id: 4,
+      title: "Built-In Marketing Tools",
+      content:
+        "Shopify has built-in marketing tools which make it lower the cast on start-ups. It allows us to edit page meta title, meta description, meta URL, make pages visible and invisible, and redirect to any URL.",
+    },
+  ],
+  advantages: {
+    title: "Advantage Of Choosing Us",
+    Content:
+      "With Our best experience and good knowledge of Shopify, we provide the best solutions for your online stores.",
+  },
+  shopifyList: [
+    {
+      id: 1,
+      title: "Top Shopify Developers",
+    },
+    {
+      id: 2,
+      title: "Mobile-First Approach",
+    },
+    {
+      id: 3,
+      title: "SEO Friendly",
+    },
+    {
+      id: 4,
+      title: "Short Time To Online Running",
+    },
+    {
+      id: 5,
+      title: "Full Testing and Bug-Free site",
+    },
+    {
+      id: 6,
+      title: "Fully Customization and Full Maintenance",
+    },
+    {
+      id: 7,
+      title: "Convert existing store to online 2.0",
+    },
+  ],
+  ourStack: {
+    title: "Technologies We work",
+    content:
+      "With Latest Technologies and our expert teams Get a scalable and reliable website design and development which increase your profit.",
   },
 };
 
