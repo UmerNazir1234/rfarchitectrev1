@@ -12,7 +12,8 @@ import {
   getDocs,
 } from "firebase/firestore";
 import { NextResponse, type NextRequest } from "next/server";
-
+export const runtime = 'edge';
+export const revaliate = 30;
 const authorsCollection = "authors";
 
 export async function POST(request: Request) {

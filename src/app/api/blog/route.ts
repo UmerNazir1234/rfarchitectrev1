@@ -15,7 +15,8 @@ import {
 } from "firebase/firestore";
 
 import { NextResponse, type NextRequest } from "next/server";
-
+export const runtime = 'edge';
+export const revaliate = 30;
 const blogsCollection = "blogs";
 async function generateUniqueSlug(baseSlug:string) {
   let slug = baseSlug;
