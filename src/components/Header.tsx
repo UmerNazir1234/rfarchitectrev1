@@ -18,7 +18,7 @@ const Header = () => {
       <div className="flex items-center justify-between sm:h-28 h-24 page-width">
         <div className="flex items-center space-x-4">
           <div className="relative">
-            <Link href={'/'}>
+            <Link href={"/"}>
               {Site?.logo ? (
                 <Image
                   src={Site?.logo}
@@ -52,10 +52,44 @@ const Header = () => {
                       </span>
                     </button>
 
-                    <div className="absolute z-50 inset-0 top-32 min-w-full w-full max-w-full h-full bg-white text-black ">
-                      <div className="bg-orange-200">
-                        <h1>This is heading</h1>
+                    <div className="fixed z-50 inset-3 top-32 h-fit min text-black bg-orange-200 rounded-xl p-8 border-white border ">
+                      <div className="flex items-center justify-center my-4 border-b-2 border-white pb-10 ">
+                        <Button
+                          title="Services we offer"
+                          classes="bg-transparent text-white"
+                          enableIcons={true}
+                          iconStyle="stroke-white"
+                        />
                       </div>
+                      <ul className="flex justify-between items-start gap-x-4 gap-y-10 flex-wrap pt-9 pb-12">
+                        {item?.links.map((item) => {
+                          return (
+                            <li className="basis-[32%] group" key={item?.id}>
+                              <div className="flex justify-between min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg  ">
+                                <div className="flex items-start justify-start gap-3">
+                                  <div className="bg-white group-hover:bg-secondary p-2 rounded min-h-12 flex items-center justify-center">
+                                    <Image
+                                      src={`${item?.icon}`}
+                                      alt={item?.title + "icon"}
+                                      loading="lazy"
+                                      width={30}
+                                      height={30}
+                                    />
+                                  </div>
+                                  <div>
+                                    <h5 className="group-hover:text-primary">
+                                      {item?.title}
+                                    </h5>
+                                    <p className=" max-w-sm mt-1">
+                                      {item?.description}
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          );
+                        })}
+                      </ul>
                     </div>
                   </div>
                 ) : (

@@ -11,7 +11,6 @@ import { faq, testimonial, featuredProjects } from "@/dummyData/data";
 import HeroSlider from "./HeroSlider";
 import { homeContent } from "@/data/home";
 
-
 const MainPage = () => {
   return (
     <>
