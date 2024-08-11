@@ -8,7 +8,7 @@ export type Tabs = {
 
 export type Work = {
   id: number;
-  workId:string,
+  workId: string;
   image: string;
   title: string;
   text: string;
@@ -64,3 +64,17 @@ export type subServiceProps = {
   description?: string;
   icon?: string;
 };
+
+export type icons =
+  | "Circle"
+  | "Consulting"
+  | "Eye"
+  | "Graphic"
+  | "Leading"
+  | "Misson"
+  | "Promise"
+  | "React"
+  | "Round"
+  | "Seo"
+  | "Support"
+  | "Wordpress";

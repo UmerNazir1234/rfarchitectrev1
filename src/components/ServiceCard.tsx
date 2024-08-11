@@ -3,10 +3,12 @@ import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import Button from "./Button";
 import { GoArrowUpRight } from "react-icons/go";
+import { icons } from "@/lib/type";
+import Icons from "./icons";
 type props = {
   card: {
     id: number;
-    icon: string;
+    icon: icons;
     title: string;
     content: string;
     btnText: string;
@@ -20,7 +22,7 @@ const ServiceCard = ({ card }: props) => {
         href="#"
         className="bg-gradient-to-br group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-white from-primary to-primarylight md:p-4 p-2 rounded-lg "
       >
-        <FaLaptopCode className="xl:w-24 xl:h-24 lg:w-20 lg:h-20 md:w-16 md:h-16 w-14 h-14  fill-white" />
+        <Icons type={card?.icon}/>
       </Link>
       <h5 className=" text-[20px] font-bold group-hover:text-white">
         {card?.title}

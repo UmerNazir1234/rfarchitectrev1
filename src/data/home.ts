@@ -1,4 +1,44 @@
-const homeContent = {
+import { icons } from "@/lib/type";
+
+interface BannerItem {
+  id: number;
+  title: string;
+  url: string;
+  description: string;
+  image: string;
+}
+
+interface ServiceCard {
+  id: number;
+  icon: icons;
+  title: string;
+  content: string;
+  btnText: string;
+  btnLink: string;
+}
+
+interface OurServices {
+  roundCta: string;
+  title: string;
+  content: string;
+  btnText: string;
+  btnLink: string;
+  cards: ServiceCard[];
+}
+
+interface Faq {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+interface HomeContent {
+  banner: BannerItem[];
+  ourServices: OurServices;
+  faqs: Faq[];
+}
+
+const homeContent: HomeContent = {
   banner: [
     {
       id: 1,
@@ -22,7 +62,6 @@ const homeContent = {
   ],
   ourServices: {
     roundCta: "OUR SERVICES",
-
     title: "We Provide Leading Solutions In",
     content: ` At RF Tech, we deliver top-quality services in Graphic designing, web development, CRM development, App Development, SEO, digital marketing. Our expert team is dedicated to helping your business thrive with innovative and effective digital solutions. Partner with us to achieve unparalleled success.
 `,
@@ -31,7 +70,7 @@ const homeContent = {
     cards: [
       {
         id: 1,
-        icon: "reactIcon",
+        icon: "Circle",
         title: "Application Development",
         content:
           "Build a successful iOS or Android app that optimize your processes, deeply engage your customers, and gain more profit",
@@ -41,7 +80,7 @@ const homeContent = {
       },
       {
         id: 2,
-        icon: "reactIcon",
+        icon: "Consulting",
         title: "Website Development",
         content:
           "Creating stunning, user-friendly websites that captivate and convert.",
@@ -51,7 +90,7 @@ const homeContent = {
       },
       {
         id: 3,
-        icon: "reactIcon",
+        icon: "Eye",
         title: "Digital Marketing",
         content:
           "Crafting campaigns that engage, convert, and retain customers",
@@ -61,7 +100,7 @@ const homeContent = {
       },
       {
         id: 4,
-        icon: "reactIcon",
+        icon: "Circle",
         title: "Graphic Design & UX/UI",
         content:
           "Crafting visually stunning graphics that enhance your brand identity.",
@@ -71,7 +110,7 @@ const homeContent = {
       },
       {
         id: 5,
-        icon: "reactIcon",
+        icon: "Circle",
         title: "CRM Development",
         content: "Enhancing customer relationships with tailored CRM systems.",
 
@@ -80,7 +119,7 @@ const homeContent = {
       },
       {
         id: 6,
-        icon: "reactIcon",
+        icon: "Circle",
         title: "Shopify Development",
         content:
           "Building robust, scalable e-commerce stores for online success.",
@@ -90,7 +129,7 @@ const homeContent = {
       },
       {
         id: 7,
-        icon: "reactIcon",
+        icon: "Circle",
         title: "Woocommerce Development",
         content:
           "Designing and developing high-performance e-commerce stores on WooCommerce.",
@@ -100,7 +139,7 @@ const homeContent = {
       },
       {
         id: 8,
-        icon: "reactIcon",
+        icon: "Circle",
         title: "Wordpress Development",
         content:
           "Building versatile and scalable WordPress sites tailored to your needs.",
@@ -110,7 +149,7 @@ const homeContent = {
       },
       {
         id: 9,
-        icon: "reactIcon",
+        icon: "Circle",
         title: "Custom Software Development",
         content:
           "Delivering bespoke software solutions that drive business innovation.",
@@ -148,12 +187,10 @@ const homeContent = {
     },
     {
       id: 5,
-      question:
-        "How can I become a partner with RF Technologies?",
+      question: "How can I become a partner with RF Technologies?",
       answer:
         "You can contact us to become a partner or you can visit our office or manage a meeting with us.",
     },
-    
   ],
 };
 

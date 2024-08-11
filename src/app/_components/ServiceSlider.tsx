@@ -7,10 +7,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ServiceCard from "@/components/ServiceCard";
+import { icons } from "@/lib/type";
 type props = {
   cards: {
     id: number;
-    icon: string;
+    icon: icons;
     title: string;
     content: string;
     btnText: string;
@@ -19,7 +20,7 @@ type props = {
 };
 const ServiceSlider = ({ cards }: props) => {
   return (
-    <section className="w-full md:-mt-[250px]  -mt-[120px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
+    <section className="w-full md:-mt-[250px]  -mt-[130px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
       <div className="">
         <Swiper
           autoplay={{

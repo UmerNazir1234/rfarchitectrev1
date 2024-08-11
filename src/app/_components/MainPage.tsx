@@ -12,6 +12,7 @@ import HeroSlider from "./HeroSlider";
 import { homeContent } from "@/data/home";
 
 const MainPage = () => {
+  
   return (
     <>
       <HeroSlider data={homeContent?.banner} />
