@@ -107,7 +107,7 @@ const content = {
     roundCta: "Shopify online store 2.0",
     content:
       "Our Shopify Experts migrate your existing theme to Shopify Online Store 2.0 Fully accurate word by word. With Online 2.0 Shopify Theme, Enjoy the creative designs and Sections on all the pages of your shopify Website. Easily Customize and Highly attractive with 100% Conversion rate.",
-      image: ""
+    image: "",
   },
 };
 
