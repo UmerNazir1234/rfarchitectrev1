@@ -317,7 +317,7 @@ export const informationLinks = [
   {
     id: 3,
     name: "Portfolio",
-    link: "/portfolio",
+    link: "/our-work",
   },
   {
     id: 4,

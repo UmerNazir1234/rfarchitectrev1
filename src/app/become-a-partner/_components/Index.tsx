@@ -18,11 +18,9 @@ const Index = () => {
       <PerfectPartnerShip />
       <ImageWithText content={becomeImageWithText} />
       <Benefits />
-      
+
       <ProjectSubmission
         title="Transform your brand's challenges into successes with our expert solutions."
-        btnTitle="Contact us"
-        btnUrl="/contact-us"
       />
     </div>
   );

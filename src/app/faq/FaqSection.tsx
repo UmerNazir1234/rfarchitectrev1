@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+
 const FaqSection = () => {
   return (
     <div className="page-width">
