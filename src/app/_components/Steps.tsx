@@ -2,9 +2,12 @@ import Button from "@/components/Button";
 import Image from "next/image";
 import React from "react";
 
-const Steps = () => {
+type props = {
+  classes?: string;
+};
+const Steps = ({ classes }: props) => {
   return (
-    <section className="relative py-20">
+    <section className={`relative py-20 ${classes || classes} `}>
       <div className="page-width">
         <div className="flex items-center justify-center">
           <Button

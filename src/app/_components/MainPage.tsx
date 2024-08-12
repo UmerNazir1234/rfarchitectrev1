@@ -12,13 +12,12 @@ import HeroSlider from "./HeroSlider";
 import { homeContent } from "@/data/home";
 
 const MainPage = () => {
-  
   return (
     <>
       <HeroSlider data={homeContent?.banner} />
       <LeadingSolution content={homeContent?.ourServices} />
       <ServiceSlider cards={homeContent?.ourServices?.cards} />
-      <Steps />
+      <Steps classes="max-sm:!py-10" />
       <WhyChooseUs />
       <FeaturedProjects data={featuredProjects} />
       <Testimonials data={testimonial} />

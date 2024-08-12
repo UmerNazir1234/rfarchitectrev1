@@ -145,6 +145,7 @@ const Header = () => {
           <Button
             title="Get Started"
             classes="!capitalize bg-gradient-to-b from-primary to-primarylight !text-[22px] !px-12 max-sm:!px-4 max-sm:!py-2 max-sm:!text-xl max-sm:hidden"
+            href="/contact-us"
           />
           <CgMenuRight
             className="icon icon-menu !h-10 !w-10 xl:hidden flex cursor-pointer"

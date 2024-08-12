@@ -107,8 +107,12 @@ const content = {
     roundCta: "Shopify online store 2.0",
     content:
       "Our Shopify Experts migrate your existing theme to Shopify Online Store 2.0 Fully accurate word by word. With Online 2.0 Shopify Theme, Enjoy the creative designs and Sections on all the pages of your shopify Website. Easily Customize and Highly attractive with 100% Conversion rate.",
+<<<<<<< HEAD
+    image: "",
+=======
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721809735/RfTechnologiesWebsite/Group_1597883964_loqihf.svg",
+>>>>>>> d99b637873a30a593f10ddbc61d5b7a5611496e9
   },
   shopifyPuzzleCards: [
     {
@@ -176,6 +180,35 @@ const content = {
     content:
       "With Latest Technologies and our expert teams Get a scalable and reliable website design and development which increase your profit.",
   },
+  faqs: [
+    {
+      id: 1,
+      question: "What type of Shopify services you are providing?",
+      answer:
+        "",
+    },
+    {
+      id: 2,
+      question: "Can you customize my existing Shopify store??",
+      answer:
+        "Absolutely. We can revamp your existing Shopify store to better align with your brand identity and business goals. Our team will enhance the design, improve functionality, and integrate any necessary apps to optimize your store.",
+    },
+    {
+      id: 3,
+      question: "Do you provide support after the Shopify store is live?",
+      answer:
+        "Yes, we offer ongoing support and maintenance services to ensure your Shopify store runs smoothly after launch. Our team is available to handle updates, troubleshoot issues, and implement new features as needed.",
+    },
+    {
+      id: 4,
+      question:
+        "Can you help with Shopify app integrations?",
+      answer:
+        "Yes, we specialize in integrating various Shopify apps to enhance your store's functionality. Whether you need tools for inventory management, marketing automation, or customer support, we can integrate the right apps to meet your business needs.",
+    },
+    
+    
+  ],
 };
 
 export { content };
