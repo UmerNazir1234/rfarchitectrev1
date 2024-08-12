@@ -2,7 +2,7 @@ import { db } from "@/lib/firebase";
 import { collection, addDoc, Timestamp, doc, updateDoc, deleteDoc } from "firebase/firestore";
 import { NextResponse, type NextRequest } from "next/server";
 
-export const runtime = 'edge';
+
 export const revalidate = 60;
 const commentsCollection = "comments";
 

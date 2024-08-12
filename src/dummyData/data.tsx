@@ -23,6 +23,7 @@ export const menuItems = [
         title: "Shopify Development",
         description:
           "Run Your business today with best e-commerce platform for online stores and retail point-of-sale systems.",
+        link: "/shopify-development",
       },
       {
         id: 2,
@@ -30,6 +31,7 @@ export const menuItems = [
         title: "Custom Software Development",
         description:
           "Process of designing, creating, deploying, and maintaining software for a specific organizations.",
+        link: "/custom-software-development",
       },
       {
         id: 3,
@@ -37,6 +39,7 @@ export const menuItems = [
         title: "Mobile Application Development",
         description:
           "Bring your project to market on every device and platform. attractive design and Fully Functional",
+        link: "/mobile-application-development",
       },
       {
         id: 4,
@@ -44,6 +47,7 @@ export const menuItems = [
         title: "Wordpress Development",
         description:
           "Fulfills your content management needs, event calendars, media management, and general page content.",
+        link: "/wordpress-development",
       },
       {
         id: 5,
@@ -51,6 +55,7 @@ export const menuItems = [
         title: "CRM Development",
         description:
           "Get your personal CRM which allows for leads generation, assigning leads and staff management",
+        link: "/crm-development",
       },
       {
         id: 6,
@@ -58,6 +63,7 @@ export const menuItems = [
         title: "Woocommerce Development",
         description:
           "Turn your WordPress website into an E-commerce Store online fully customizable",
+        link: "/woocommerce-development",
       },
       {
         id: 7,
@@ -65,6 +71,7 @@ export const menuItems = [
         title: "Graphic Designing",
         description:
           "Creation of visual compositions to solve problems and communicate ideas through typography, imagery, color and form",
+        link: "/graphic-design",
       },
       {
         id: 8,
@@ -72,6 +79,7 @@ export const menuItems = [
         title: "Search Engine Optimization",
         description:
           "Process of improving the quality and quantity of website traffic to a website or a web page from search engines.",
+        link: "/seo",
       },
       {
         id: 9,
@@ -79,6 +87,7 @@ export const menuItems = [
         title: "Digital Marketing",
         description:
           "Promotion of brands to connect with potential customers using the internet and other forms of digital communication",
+        link: "/digital-marketing",
       },
     ],
   },
@@ -312,8 +321,8 @@ export const informationLinks = [
   },
   {
     id: 4,
-    name: "Blog",
-    link: "/blog",
+    name: "Blogs",
+    link: "/blogs",
   },
   {
     id: 5,

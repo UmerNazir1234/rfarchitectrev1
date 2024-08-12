@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "@/context/ThemeContext";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
+
 const Header = () => {
   const pathname = usePathname();
   const { toggle, open } = useTheme();
@@ -68,7 +69,7 @@ const Header = () => {
                     </button>
                     {dropdownOpen && (
                       <div
-                        className={`fixed z-50 inset-3 header-bg-custom top-[70px] h-fit min text-black rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
+                        className={`fixed z-50 inset-3 header-bg-custom top-[70px] h-fit min text-white rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
                           dropdownOpen
                             ? "opacity-100 translate-y-0"
                             : "opacity-0 -translate-y-5"
@@ -94,7 +95,8 @@ const Header = () => {
                                     className="basis-[32%] group"
                                     key={item?.id}
                                   >
-                                    <div className="flex justify-between min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg">
+                                    <div className="flex items-center justify-center min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg">
+                                      <Link href={item?.link} className="block">
                                       <div className="flex items-start justify-start gap-3">
                                         <div className="bg-white group-hover:bg-secondary p-2 rounded min-h-12 flex items-center justify-center">
                                           <Image
@@ -109,11 +111,12 @@ const Header = () => {
                                           <h5 className="group-hover:text-primary">
                                             {item?.title}
                                           </h5>
-                                          <p className="max-w-sm mt-1">
+                                          <p className="max-w-sm mt-1 group-hover:text-primary">
                                             {item?.description}
                                           </p>
                                         </div>
                                       </div>
+                                      </Link>
                                     </div>
                                   </li>
                                 );
