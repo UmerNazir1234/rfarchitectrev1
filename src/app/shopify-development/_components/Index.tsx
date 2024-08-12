@@ -23,12 +23,14 @@ import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import ShopifyServices from "./ShopifyServices";
 import Benifits from "@/components/Benifits";
+import { content } from "@/data/sds";
 
 const Index = () => {
+  
   return (
     <>
       <Hero
-        title={`<span class="text-secondary">Shopify</span> Development Services`}
+        title={content?.banner?.title}
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720779660/RfTechnologiesWebsite/image_70_unicwe.png"
         btnTitle="Lets Talk"
         btnIcon={<GoArrowUpRight />}
@@ -36,7 +38,7 @@ const Index = () => {
         classes="bg-white !text-primary"
       />
       <Hero />
-      <SubServices data={shopifyServiceData} />
+      <SubServices data={content?.ourServices?.cards} />
       <ShopifyServices />
       <div className="flex items-center justify-center pt-32">
         <Heading
