@@ -1,7 +1,7 @@
 const content = {
   banner: {
     id: 1,
-    title: "Shopify Development Services",
+    title: `<span class="text-secondary">Shopify</span> Development Services`,
     btnText: "LET’S TALK",
     btnLink: "/contact-us",
     image:
@@ -14,63 +14,63 @@ const content = {
     cards: [
       {
         id: 1,
-        icon: "reactIcon",
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741033/RfTechnologiesWebsite/Mask_group_44_mzoynp.svg",
         title: "Shopify Store Setup",
         content:
           "Get your Online Store up and running and win quickly with our best custom solutions.",
       },
       {
         id: 2,
-        icon: "reactIcon",
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741100/RfTechnologiesWebsite/Mask_group_45_vzdue7.svg",
         title: "Shopify Store Maintenance",
         content:
           "Our Dedicated Team manages and ensures zero business loss by keeping your online store bug-free, content updated, and fully optimized.",
       },
       {
         id: 3,
-        icon: "reactIcon",
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741139/RfTechnologiesWebsite/Mask_group_46_r3q1zj.svg",
         title: "Shopify Mobile App Development",
         content:
           "Get your Shopify Store as a fully functional and high-quality mobile app on Android or IOS.",
       },
       {
         id: 4,
-        icon: "reactIcon",
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647291/RfTechnologiesWebsite/Mask_group_10_r09khi.svg",
         title: "Shopify Theme Development",
         content:
           "Our Experts create custom, user-friendly, fully responsive, and highly web and mobile interactive themes which create maximum conversion.",
       },
       {
         id: 5,
-        icon: "reactIcon",
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741139/RfTechnologiesWebsite/Mask_group_46_r3q1zj.svg",
         title: "Shopify Private App Development",
         content:
           "Get your own custom Private App, which fulfills your need and increases the AVE(Average Visitor Experience) of your store.",
       },
       {
         id: 6,
-        icon: "reactIcon",
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
         title: "Migration To Shopify",
         content:
           "Our Shopify Expert developer takes accurate, secure, and smooth migration to Shopify. In Migration, We take care of your products, contents, and order fully exactly.",
       },
       {
         id: 7,
-        icon: "reactIcon",
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741365/RfTechnologiesWebsite/Mask_group_49_og0i73.svg",
         title: "PSD to Shopify",
         content:
           "Our Best Front-End Developers will convert your PSD to Shopify, fully responsible and faultless.",
       },
       {
         id: 8,
-        icon: "reactIcon",
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741312/RfTechnologiesWebsite/Mask_group_48_l4wkxq.svg",
         title: "Shopify Integration Services",
         content:
           "We Provide Third Party Integration to increase customer experience and boost sales.",
       },
       {
         id: 9,
-        icon: "reactIcon",
+        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741411/RfTechnologiesWebsite/Mask_group_50_ijiekz.svg",
         title: "Shopify Plus Development",
         content:
           "Our Shopify Experts understand clients' expectations and always deliver on them.",

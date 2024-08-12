@@ -61,6 +61,6 @@ export type imageWithText = {
 /* subservices card */
 export type subServiceProps = {
   title?: string;
-  description?: string;
+  content?: string;
   icon?: string;
 };

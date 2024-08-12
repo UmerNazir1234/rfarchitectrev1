@@ -23,7 +23,7 @@ const SubServiceCard = ({ data }: serviceProps) => {
               {item?.title}
             </h4>
             <p className="font-nunito text-lg text-center">
-              {item?.description}
+              {item?.content}
             </p>
           </div>
         </div>
