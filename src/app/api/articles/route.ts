@@ -1,48 +1,62 @@
-import { db } from "@/lib/firebase";
+import client from "@/lib/mongodb"; // Update this path as necessary
 import { handleize } from "@/lib/utils";
-import {
-  collection,
-  addDoc,
-  Timestamp,
-  doc,
-  updateDoc,
-  deleteDoc,
-  getDocs,
-  writeBatch,
-  where,
-  query,
-  getDoc,
-  arrayRemove,
-} from "firebase/firestore";
 import { NextResponse, type NextRequest } from "next/server";
+import { ObjectId } from "mongodb";
 
-export const runtime = 'edge';
+
 export const revalidate = 60;
+
 const articlesCollection = "articles";
 const authorsCollection = "authors";
 const commentsCollection = "comments";
 const blogsCollection = "blogs";
 
-async function generateUniqueSlug(baseSlug: string, currentSlug: string) {
+async function generateUniqueSlug(
+  baseSlug: string,
+  currentSlug: string,
+  collection: any
+) {
   let slug = baseSlug;
   let suffix = 1;
 
   while (true) {
-    const q = query(
-      collection(db, articlesCollection),
-      where("slug", "==", slug)
-    );
-    const existingSlugs = await getDocs(q);
+    const existingSlug = await collection.findOne({ slug });
 
     if (
-      existingSlugs.empty ||
-      (slug === currentSlug && existingSlugs.size === 1)
+      !existingSlug ||
+      (slug === currentSlug && existingSlug.slug === currentSlug)
     ) {
       return slug;
     }
 
     slug = `${baseSlug}-${suffix}`;
     suffix += 1;
+  }
+}
+
+export async function GET(request: NextRequest) {
+  try {
+    await client.connect();
+    const db = client.db('company-site');
+
+    const articles = await db.collection(articlesCollection).find({}).toArray();
+
+    return NextResponse.json(
+      {
+        message: "Articles retrieved successfully",
+        data: articles,
+      },
+      { status: 200 }
+    );
+  } catch (error: any) {
+    console.error("Error retrieving articles:", error);
+    return NextResponse.json(
+      {
+        message: "Error retrieving articles",
+        error: error?.message,
+      },
+      { status: 500 }
+    );
   }
 }
 
@@ -59,9 +73,17 @@ export async function POST(request: Request) {
       blogIds = [], // List of blog IDs where the article will be added
     } = await request.json();
 
-    const now = Timestamp.now();
+    const now = new Date();
     const baseSlug = handleize(title);
-    const uniqueSlug = await generateUniqueSlug(baseSlug, "");
+
+    await client.connect();
+    const db = client.db('company-site');
+
+    const uniqueSlug = await generateUniqueSlug(
+      baseSlug,
+      "",
+      db.collection(articlesCollection)
+    );
 
     const article = {
       title,
@@ -71,19 +93,19 @@ export async function POST(request: Request) {
       content,
       tags,
       slug: uniqueSlug,
-      author: authorId, // Reference to the author
-      comments: [], // Initialize with an empty array
+      author: new ObjectId(authorId),
+      comments: [],
       views,
       likes,
-      blogIds, // List of blog IDs
+      blogIds: blogIds.map((id:any) => new ObjectId(id)),
     };
 
-    const docRef = await addDoc(collection(db, articlesCollection), article);
+    const result = await db.collection(articlesCollection).insertOne(article);
 
     return NextResponse.json(
       {
         message: "Article added successfully",
-        docId: docRef.id,
+        docId: result.insertedId,
       },
       { status: 200 }
     );
@@ -101,42 +123,58 @@ export async function POST(request: Request) {
 
 export async function PATCH(request: NextRequest) {
   try {
-    const { id, title, feature_image, content, tags, blogIds,slug } =
+    const { id, title, feature_image, content, tags, blogIds, slug } =
       await request.json();
 
-    // Update the updated_at timestamp
+    const now = new Date();
+
+    await client.connect();
+    const db = client.db('company-site');
+
+    const existingArticle = await db
+      .collection(articlesCollection)
+      .findOne({ _id: new ObjectId(id) });
+    if (!existingArticle) {
+      return NextResponse.json(
+        {
+          message: "Article not found",
+        },
+        { status: 404 }
+      );
+    }
+
+    const baseSlug = handleize(title);
+    let updatedSlug = slug;
+
+    if (baseSlug !== existingArticle.slug) {
+      updatedSlug = await generateUniqueSlug(
+        baseSlug,
+        existingArticle.slug,
+        db.collection(articlesCollection)
+      );
+    }
+
     const updatedData = {
       title,
       feature_image,
       content,
       tags,
-      blogIds,
-      slug,
-      updated_at: Timestamp.now(),
+      blogIds: blogIds.map((id:any) => new ObjectId(id)),
+      slug: updatedSlug,
+      updated_at: now,
     };
 
-    // Handle slug update if title changes
-    const existingArticle = await getDoc(doc(db, articlesCollection, id));
-    if (existingArticle !== undefined) {
-      const currentSlug = existingArticle?.data()?.slug;
-      const baseSlug = handleize(title);
+    await db
+      .collection(articlesCollection)
+      .updateOne({ _id: new ObjectId(id) }, { $set: updatedData });
 
-      if (baseSlug !== currentSlug) {
-        updatedData.slug = await generateUniqueSlug(baseSlug, currentSlug);
-      }
-
-      const docRef = doc(db, articlesCollection, id);
-      await updateDoc(docRef, updatedData);
-
-      return NextResponse.json(
-        {
-          message: "Article updated successfully",
-          docId: id,
-        },
-        { status: 200 }
-      );
-    } else {
-    }
+    return NextResponse.json(
+      {
+        message: "Article updated successfully",
+        docId: id,
+      },
+      { status: 200 }
+    );
   } catch (error: any) {
     console.error("Error updating article:", error);
     return NextResponse.json(
@@ -151,47 +189,51 @@ export async function PATCH(request: NextRequest) {
 
 export async function DELETE(request: NextRequest) {
   try {
-    const { id } = await request.json();
+    const { slug } = await request.json();
 
-    if (!id) {
+    if (!slug) {
       return NextResponse.json(
         {
-          message: "Article ID is required",
+          message: "Article slug is required",
         },
         { status: 400 }
       );
     }
 
-    // Create a batch
-    const batch = writeBatch(db);
+    await client.connect();
+    const db = client.db('company-site');
+
+    // Find the article by slug
+    const article = await db
+      .collection(articlesCollection)
+      .findOne({ slug });
+
+    if (!article) {
+      return NextResponse.json(
+        {
+          message: "Article not found",
+        },
+        { status: 404 }
+      );
+    }
+
+    const articleId = article._id;
 
     // Delete the article
-    const articleRef = doc(db, articlesCollection, id);
-    batch.delete(articleRef);
+    const articleResult = await db
+      .collection(articlesCollection)
+      .deleteOne({ _id: articleId });
 
-    // Optionally, delete related comments
-    const commentsQuery = query(collection(db, commentsCollection), where("articleId", "==", id));
-    const commentsSnapshot = await getDocs(commentsQuery);
-    commentsSnapshot.docs.forEach((commentDoc) => {
-      batch.delete(commentDoc.ref);
-    });
+    // Delete related comments
+    const commentsResult = await db
+      .collection(commentsCollection)
+      .deleteMany({ articleId: articleId.toString() });
 
-    // Optionally, remove article from all associated blogs
-    const blogsSnapshot = await getDocs(query(collection(db, blogsCollection), where("articles", "array-contains", id)));
-    blogsSnapshot.docs.forEach((blogDoc) => {
-      const blogRef = doc(db, blogsCollection, blogDoc.id);
-      batch.update(blogRef, {
-        articles: arrayRemove(id)
-      });
-    });
-
-    // Commit the batch
-    await batch.commit();
 
     return NextResponse.json(
       {
         message: "Article and related comments deleted successfully",
-        docId: id,
+        docId: articleId,
       },
       { status: 200 }
     );
@@ -206,4 +248,3 @@ export async function DELETE(request: NextRequest) {
     );
   }
 }
-

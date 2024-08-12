@@ -14,7 +14,7 @@ const Footer = () => {
 
   const footerColors: { [key: string]: string } = {
     "/about-us": "!bg-[#edac18]",
-    "/blog": "!bg-[#edac18]",
+    "/blogs": "!bg-[#edac18]",
     "/crm-development": "!bg-[#edac18]",
     "/shopify-development": "!bg-[#edac18]",
     "/graphic-design": "!bg-[#edac18]",

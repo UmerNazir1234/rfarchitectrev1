@@ -17,7 +17,6 @@ type BlogProps = {
 };
 
 const BlogCard = ({ data }: BlogProps) => {
-  console.log(data);
   return (
     <>
       {data?.map((item, index) => {

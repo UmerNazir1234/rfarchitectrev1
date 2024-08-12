@@ -1,35 +1,24 @@
-import { db } from "@/lib/firebase";
+import client from "@/lib/mongodb"; // Assuming you have a MongoDB connection setup
 import { handleize } from "@/lib/utils";
-import {
-  doc,
-  getDoc,
-  collection,
-  addDoc,
-  getDocs,
-  query,
-  deleteDoc,
-  updateDoc,
-  Timestamp,
-  increment,
-  where,
-} from "firebase/firestore";
-
+import { ObjectId } from "mongodb";
 import { NextResponse, type NextRequest } from "next/server";
-export const runtime = 'edge';
-export const revalidate = 60;
+
+
 const blogsCollection = "blogs";
-async function generateUniqueSlug(baseSlug:string) {
+
+async function generateUniqueSlug(baseSlug: string) {
   let slug = baseSlug;
   let suffix = 1;
-  
+
   while (true) {
-    const q = query(collection(db, blogsCollection), where("slug", "==", slug));
-    const existingSlugs = await getDocs(q);
-    
-    if (existingSlugs.empty) {
+    await client.connect();
+    const db = client.db('company-site');
+    const existingSlugs = await db.collection(blogsCollection).find({ slug }).toArray();
+
+    if (existingSlugs.length === 0) {
       return slug;
     }
-    
+
     slug = `${baseSlug}-${suffix}`;
     suffix += 1;
   }
@@ -46,16 +35,17 @@ export async function POST(request: Request) {
       content,
       slug: uniqueSlug,
       feature_image,
-      created_at: Timestamp.now(),
-      updated_at: Timestamp.now(),
+      created_at: new Date(),
+      updated_at: new Date(),
     };
-
-    const docRef = await addDoc(collection(db, blogsCollection), blog);
+    await client.connect();
+    const db = client.db('company-site');
+    const result = await db.collection(blogsCollection).insertOne(blog);
 
     return NextResponse.json(
       {
         message: "Blog created successfully",
-        docId: docRef.id,
+        docId: result.insertedId,
       },
       { status: 200 }
     );
@@ -70,7 +60,6 @@ export async function POST(request: Request) {
     );
   }
 }
-
 
 export async function PATCH(request: NextRequest) {
   try {
@@ -90,16 +79,29 @@ export async function PATCH(request: NextRequest) {
     if (slug && slug !== handleize(title)) {
       updatedSlug = await generateUniqueSlug(updatedSlug);
     }
+    await client.connect();
+    const db = client.db('company-site');
+    const result = await db.collection(blogsCollection).updateOne(
+      { _id: new ObjectId(id) },
+      {
+        $set: {
+          title,
+          content,
+          slug: updatedSlug,
+          feature_image,
+          updated_at: new Date(),
+        },
+      }
+    );
 
-    const docRef = doc(db, "blogs", id);
-
-    await updateDoc(docRef, {
-      title,
-      content,
-      slug: updatedSlug,
-      feature_image,
-      updated_at: Timestamp.now(),
-    });
+    if (result.matchedCount === 0) {
+      return NextResponse.json(
+        {
+          message: "Blog not found",
+        },
+        { status: 404 }
+      );
+    }
 
     return NextResponse.json(
       {
@@ -132,10 +134,18 @@ export async function DELETE(request: NextRequest) {
         { status: 400 }
       );
     }
+    await client.connect();
+    const db = client.db('company-site');
+    const result = await db.collection(blogsCollection).deleteOne({ _id: new ObjectId(id) });
 
-    const docRef = doc(db, "blogs", id);
-
-    await deleteDoc(docRef);
+    if (result.deletedCount === 0) {
+      return NextResponse.json(
+        {
+          message: "Blog not found",
+        },
+        { status: 404 }
+      );
+    }
 
     return NextResponse.json(
       {
