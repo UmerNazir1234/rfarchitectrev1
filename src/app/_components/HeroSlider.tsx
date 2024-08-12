@@ -43,11 +43,11 @@ const HeroSlider = ({ data }: HeroSliderProps) => {
                 <div className="relative z-10 h-full flex items-center justify-center">
                   <div className="text-center md:max-w-[57%] max-w-[90%]">
                     <h1
-                      className="lg:text-[120px]  drop-shadow-2xl md:text-[70px] text-4xl font-bold leading-tight text-white"
+                      className="lg:text-[90px]  drop-shadow-2xl md:text-[70px] text-4xl font-bold leading-tight text-white"
                       dangerouslySetInnerHTML={{ __html: item.title }}
                     ></h1>
                     {item?.description && (
-                      <p className="text-md !font-advent_Pro text-3xl m-auto text-white mt-6 max-w-[80%]">
+                      <p className="text-md !font-advent_Pro md:text-3xl text-2xl m-auto text-white mt-6 max-w-[80%]">
                         {item?.description}
                       </p>
                     )}

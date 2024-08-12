@@ -16,6 +16,8 @@ import {
 } from "firebase/firestore";
 import { NextResponse, type NextRequest } from "next/server";
 
+export const runtime = 'edge';
+export const revalidate = 60;
 const articlesCollection = "articles";
 const authorsCollection = "authors";
 const commentsCollection = "comments";
