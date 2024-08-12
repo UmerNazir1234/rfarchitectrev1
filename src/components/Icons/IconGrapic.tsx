@@ -1,6 +1,8 @@
 import React from "react";
-
-const IconGrapic = () => {
+type props = {
+  classes?: string;
+};
+const IconGrapic = ({ classes }: props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,13 +11,11 @@ const IconGrapic = () => {
       height="80"
       viewBox="0 0 80 80"
       fill="none"
-      style={{
-        background: "red",
-      }}
+      className={`${classes || classes}`}
     >
       <mask
         id="mask0_2016_260"
-        style={{maskType:"alpha"}}
+        style={{ maskType: "alpha" }}
         maskUnits="userSpaceOnUse"
         x="5"
         y="5"
@@ -31,7 +31,14 @@ const IconGrapic = () => {
         />
       </mask>
       <g mask="url(#mask0_2016_260)">
-        <rect x="5" y="5" width="70" height="70" fill="white" />
+        <rect
+          x="5"
+          y="5"
+          width="70"
+          height="70"
+          fill="white"
+          className="group-hover:stroke-primary group-hover:fill-primary"
+        />
       </g>
       <defs>
         <pattern

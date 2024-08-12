@@ -11,7 +11,7 @@ import { icons } from "@/lib/type";
 type props = {
   cards: {
     id: number;
-    icon: icons;
+    icon: React.ReactElement;
     title: string;
     content: string;
     btnText: string;

@@ -1,4 +1,13 @@
-import { icons } from "@/lib/type";
+import IconApplicationDev from "@/components/Icons/IconApplicationDev";
+import IconCircle from "@/components/Icons/IconCircle";
+import IconCustomSoftDev from "@/components/Icons/IconCustomSoftDev";
+import IconDigitalMarketing from "@/components/Icons/IconDigitalMarketing";
+import IconGrapic from "@/components/Icons/IconGrapic";
+import IconSeo from "@/components/Icons/IconSeo";
+import IconShopify from "@/components/Icons/IconShopify";
+import IconWebDev from "@/components/Icons/IconWebDev";
+import IconWoocommerce from "@/components/Icons/IconWoocommerce";
+import IconWordpress from "@/components/Icons/IconWordpress";
 
 interface BannerItem {
   id: number;
@@ -10,7 +19,7 @@ interface BannerItem {
 
 interface ServiceCard {
   id: number;
-  icon: icons;
+  icon: React.ReactElement;
   title: string;
   content: string;
   btnText: string;
@@ -70,17 +79,17 @@ const homeContent: HomeContent = {
     cards: [
       {
         id: 1,
-        icon: "Circle",
+        icon: <IconWebDev classes="w-16 h-16" />,
         title: "Application Development",
         content:
-          "Build a successful iOS or Android app that optimize your processes, deeply engage your customers, and gain more profit",
+          "Build a successful iOS or Android app that optimize your processes.",
 
         btnText: "Read More",
         btnLink: "/mobile-app-development",
       },
       {
         id: 2,
-        icon: "Consulting",
+        icon: <IconApplicationDev classes="w-16 h-16" />,
         title: "Website Development",
         content:
           "Creating stunning, user-friendly websites that captivate and convert.",
@@ -90,7 +99,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 3,
-        icon: "Eye",
+        icon: <IconDigitalMarketing classes="w-16 h-16" />,
         title: "Digital Marketing",
         content:
           "Crafting campaigns that engage, convert, and retain customers",
@@ -100,7 +109,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 4,
-        icon: "Circle",
+        icon: <IconGrapic classes="w-16 h-16" />,
         title: "Graphic Design & UX/UI",
         content:
           "Crafting visually stunning graphics that enhance your brand identity.",
@@ -110,7 +119,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 5,
-        icon: "Circle",
+        icon: <IconSeo classes="w-16 h-16" />,
         title: "CRM Development",
         content: "Enhancing customer relationships with tailored CRM systems.",
 
@@ -119,7 +128,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 6,
-        icon: "Circle",
+        icon: <IconShopify classes="w-16 h-16" />,
         title: "Shopify Development",
         content:
           "Building robust, scalable e-commerce stores for online success.",
@@ -129,7 +138,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 7,
-        icon: "Circle",
+        icon: <IconWoocommerce classes="w-16 h-16" />,
         title: "Woocommerce Development",
         content:
           "Designing and developing high-performance e-commerce stores on WooCommerce.",
@@ -139,7 +148,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 8,
-        icon: "Circle",
+        icon: <IconWordpress classes="w-16 h-16" />,
         title: "Wordpress Development",
         content:
           "Building versatile and scalable WordPress sites tailored to your needs.",
@@ -149,7 +158,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 9,
-        icon: "Circle",
+        icon: <IconCustomSoftDev classes="w-16 h-16" />,
         title: "Custom Software Development",
         content:
           "Delivering bespoke software solutions that drive business innovation.",
