@@ -1,3 +1,75 @@
+import { BiCheckShield } from "react-icons/bi";
+import { FcProcess } from "react-icons/fc";
+import { PiHandshakeLight } from "react-icons/pi";
+import { SiFireship } from "react-icons/si";
+import { TbBulb } from "react-icons/tb";
+import { ReactNode } from "react";
+
+// Define types for the content structure
+interface Banner {
+  title: string;
+  image: string;
+}
+
+interface About {
+  title: string;
+  description: string;
+  dotsImage: string;
+  rfLogo: string;
+  letsItImage: string;
+}
+
+interface Wearerf {
+  title: string;
+  description: string;
+}
+
+interface Experience {
+  title: string;
+  description: string;
+}
+
+interface VisionDetails {
+  id: number;
+  title: string;
+  details: string;
+}
+
+interface Vision {
+  ourvision: VisionDetails;
+  ourmission: VisionDetails;
+  image: string;
+}
+
+interface ProjectSubmission {
+  title: string;
+  details: string;
+  email: string;
+  number: string;
+  btnurl: string;
+  btntitle: string;
+}
+
+interface Tab {
+  label: string;
+  content: string;
+  icon: ReactNode;
+}
+
+interface Tabs {
+  [key: number]: Tab;
+}
+
+interface Content {
+  banner: Banner;
+  about: About;
+  wearerf: Wearerf;
+  experience: Experience;
+  vision: Vision;
+  projectSubmission: ProjectSubmission;
+  tabs: Tabs;
+}
+
 const content = {
   banner: {
     title: `WHO WE ARE <span class="text-secondary">?</span>`,
@@ -59,6 +131,37 @@ const content = {
     number: "00 000 0000",
     btnurl: "/contact-us",
     btntitle: "submit your project",
+  },
+  tabs: {
+    1: {
+      label: "Knowledge",
+      content:
+        "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+      icon: <TbBulb className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    },
+    2: {
+      label: "Promise",
+      content:
+        "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+      icon: <PiHandshakeLight className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    },
+    3: {
+      label: "Consistency",
+      content:
+        "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+      icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    },
+    4: {
+      label: "Authenticity",
+      content:
+        "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+      icon: <BiCheckShield className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    },
+    5: {
+      label: "Passion",
+      content: "As they.",
+      icon: <SiFireship className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    },
   },
 };
 

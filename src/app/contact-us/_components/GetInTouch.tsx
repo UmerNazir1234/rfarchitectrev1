@@ -5,13 +5,13 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-const GetInTouch = () => {
+const GetInTouch = ({ data }: any) => {
   const [loading, setLoading] = useState();
   return (
-    <section className="bg-light relative">
+    <section className="bg-light relative z-50">
       <div className="page-width xl:py-40 lg:py-36 py-20">
         <div className="flex lg:flex-nowrap flex-wrap items-center justify-center xl:gap-20 lg:gap-10 md:gap-6 gap-3">
-          <div className=" lg:basis-1/2 basis-full rounded-lg overflow-hidden">
+          <div className=" lg:basis-1/2 relative z-20 basis-full rounded-lg overflow-hidden">
             {loading ? (
               <iframe
                 className="rounded-2xl w-full min-h-[500px] shadow-lg relative z-10"
@@ -29,13 +29,12 @@ const GetInTouch = () => {
             )}
           </div>
 
-          <div className="lg:basis-1/2 basis-full ">
+          <div className="lg:basis-1/2 basis-full relative z-50 ">
             <div className="flex items-start justify-center flex-col lg:gap-10 gap-6">
               <div className="">
-                <h3 className="text-primary !font-bold">Get in Touch</h3>
+                <h3 className="text-primary !font-bold">{data?.title}</h3>
                 <p className="md:text-xl text-base font-semibold">
-                  Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  vulputate libero et
+                  {data?.detials}
                 </p>
               </div>
 
@@ -81,7 +80,7 @@ const GetInTouch = () => {
         alt="Get in touch background image"
         width={545}
         height={427}
-        className="absolute lg:top-[160px] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 bottom-0 right-0 max-lg:h-60 max-lg:w-80"
+        className="absolute z-10 lg:top-[160px] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 bottom-0 right-0 max-lg:h-60 max-lg:w-80"
       />
     </section>
   );

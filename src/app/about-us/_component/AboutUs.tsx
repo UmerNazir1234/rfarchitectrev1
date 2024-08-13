@@ -10,7 +10,7 @@ import content from "@/data/about";
 console.log(content);
 
 const AboutUs = () => {
-  const { banner, about, wearerf, experience, vision, projectSubmission } =
+  const { banner, about, wearerf, experience, vision, projectSubmission, tabs } =
     content;
   return (
     <div>

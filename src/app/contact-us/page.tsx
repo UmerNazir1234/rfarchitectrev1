@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "@/components/Hero";
+import contact from "@/data/contact";
 import ContactForm from "./_components/ContactForm";
 import GetInTouch from "./_components/GetInTouch";
 import { Metadata } from "next";
@@ -25,14 +26,12 @@ export const metadata: Metadata = {
   },
 };
 const page = () => {
+  const { banner, conactform, getInTouch } = contact;
   return (
     <>
-      <Hero
-        image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720528423/RfTechnologiesWebsite/u3zkpsspioigvktsnwve.png"
-        title={`Get in Touch, Get <span class="text-secondary">Ahead</span>`}
-      />
-      <ContactForm />
-      <GetInTouch />
+      <Hero image={banner?.image} title={banner?.title} />
+      <ContactForm data={conactform} />
+      <GetInTouch data={getInTouch} />
     </>
   );
 };
