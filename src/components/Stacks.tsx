@@ -27,23 +27,23 @@ const Stacks = () => {
             <Link
               key={index}
               href=""
-              className="group md:basis-[30%] basis-[48%] max-sm:basis-[98%] xl:min-w-[360px] xl:min-h-[320px]"
+              className="md:basis-[30%] basis-[48%] max-sm:basis-[98%] xl:min-w-[360px] xl:min-h-[380px] stack-card"
             >
-              <div className="bg-white group-hover:bg-primary flex items-center justify-center flex-col lg:gap-6 gap-3 border border-black border-opacity-20 lg:p-8 p-4  rounded-[20px] shadow-sm h-full w-full">
-                <div className="flex items-center justify-center flex-col lg:gap-5 gap-2 group-hover:flex-row">
+              <div className="bg-white flex items-center justify-center flex-col lg:gap-6 gap-3 border border-black border-opacity-20 lg:p-8 p-4  rounded-[20px] shadow-sm h-full w-full card-wrapper">
+                <div className="flex items-center justify-center flex-col lg:gap-5 gap-2 image-wrapper">
                   <Image
                     src={item.image}
                     loading="lazy"
                     alt={item.title}
                     width={130}
                     height={130}
-                    className=" max-sm:w-24 max-sm:h-24 group-hover:w-24 group-hover:h-24 group-hover:bg-white rounded p-2"
+                    className=" max-sm:w-24 max-sm:h-24 rounded p-2"
                   />
-                  <h4 className="text-primary max-sm:text-base group-hover:text-white">
+                  <h4 className="text-primary max-sm:text-base title">
                     {item.title}
                   </h4>
                 </div>
-                <p className="lg:hidden group-hover:block p-lg text-center group-hover:text-white">
+                <p className="p-lg text-center content">
                   {item?.description}
                 </p>
               </div>

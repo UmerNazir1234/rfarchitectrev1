@@ -226,3 +226,27 @@
     }
   }
 }
+
+
+/* Stack Card */
+.stack-card > *{
+  transition: all 200ms ease-out;
+}
+.stack-card .content{
+  height: 0;
+  opacity: 0;
+}
+.stack-card:hover .content{
+  opacity: 1;
+  height:100%;
+}
+.stack-card .image-wrapper{
+}
+.stack-card:hover .image-wrapper{
+  flex-direction: row;
+}
+.stack-card .card-wrapper{
+}
+.stack-card:hover .card-wrapper{
+  justify-content: flex-start;
+}
