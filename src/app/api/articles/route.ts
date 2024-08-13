@@ -40,11 +40,33 @@ export async function GET(request: NextRequest) {
     const db = client.db('company-site');
 
     const articles = await db.collection(articlesCollection).find({}).toArray();
+    // Fetch the author and blog details for each article
+    const populatedArticles = await Promise.all(
+      articles.map(async (article: any) => {
+        // Fetch author details
+        const author = await db
+          .collection(authorsCollection)
+          .findOne({ _id: new ObjectId(article.author) });
+
+        // Fetch blog details
+        const blogs = await db
+          .collection(blogsCollection)
+          .find({ _id: { $in: article.blogIds.map((id: any) => new ObjectId(id)) } })
+          .toArray();
+
+        // Populate the article with author and blog details
+        return {
+          ...article,
+          author, // Include the author details
+          blogs, // Include the blog details
+        };
+      })
+    );
 
     return NextResponse.json(
       {
         message: "Articles retrieved successfully",
-        data: articles,
+        data: populatedArticles,
       },
       { status: 200 }
     );
@@ -71,6 +93,8 @@ export async function POST(request: Request) {
       views = 0,
       likes = 0,
       blogIds = [], // List of blog IDs where the article will be added
+      seo_title, // New field
+      seo_description, // New field
     } = await request.json();
 
     const now = new Date();
@@ -98,6 +122,8 @@ export async function POST(request: Request) {
       views,
       likes,
       blogIds: blogIds.map((id:any) => new ObjectId(id)),
+      seo_title, // New field
+      seo_description, // New fie
     };
 
     const result = await db.collection(articlesCollection).insertOne(article);
@@ -123,7 +149,7 @@ export async function POST(request: Request) {
 
 export async function PATCH(request: NextRequest) {
   try {
-    const { id, title, feature_image, content, tags, blogIds, slug } =
+    const { id, title, feature_image, content, tags, blogIds, slug,seo_title, seo_description } =
       await request.json();
 
     const now = new Date();
@@ -162,6 +188,8 @@ export async function PATCH(request: NextRequest) {
       blogIds: blogIds.map((id:any) => new ObjectId(id)),
       slug: updatedSlug,
       updated_at: now,
+      seo_title, // New field
+      seo_description, // New field
     };
 
     await db
