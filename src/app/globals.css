@@ -31,9 +31,9 @@
   }
 
   .p-lg {
-    @apply lg:text-[26px] text-xl font-medium leading-normal;
+    @apply lg:text-[26px] text-xl font-medium leading-normal max-sm:text-base;
   }
-
+  
   .text-italic {
     @apply text-secondary italic font-semibold;
   }
@@ -211,17 +211,18 @@
   .text-balance {
     text-wrap: balance;
   }
- 
-  .header-bg-custom {
-    
-  }
   .custom-backdrop{
     background: url(https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723456684/RfTechnologiesWebsite/Frame_1597883875_msdq2s.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 0.75rem;
+    background-color: #3a3a3a;
   }
-  .header-inside-color {
+  @media(max-width:768px){
+    .bottom-svg,
+    .top-svg{
+      height:22px;
+    }
   }
 }

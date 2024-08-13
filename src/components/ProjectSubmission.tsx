@@ -48,14 +48,14 @@ const ProjectSubmission = ({
               {email && (
                 <p className="p-lg text-white">
                   <span className="font-bold me-2">Email:</span>
-                  {email}
+                  <a href={"mailto:" + email}>{email}</a>
                 </p>
               )}
               {number && (
                 <p className="p-lg text-white">
                   {" "}
                   <span className="font-bold me-2">Number:</span>
-                  {number}
+                  <a href={"tel:" + number}>{number}</a>
                 </p>
               )}
               {btnUrl && <Button title={btnTitle} href={btnUrl} />}

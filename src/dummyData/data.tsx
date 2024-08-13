@@ -469,10 +469,15 @@ export const work: Work[] = [
     subtitle: "React Extension Shopify",
     color: "#28292D",
     textColor: "#FFFFFF",
+    topBgFirstClr: '#28292D',
+    topBgSecondClr: '',
+    bottomBgSecondClr: '#f85431',
+    bottomBgFirstClr: '',
+    imageFirst: true
   },
   {
     id: 2,
-    workId: "whildflower",
+    workId: "EazyTicks",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776305/RfTechnologiesWebsite/image_62_ci28zj.png",
     title: "Eazyticks",
@@ -480,10 +485,15 @@ export const work: Work[] = [
     subtitle: "Nextjs & Microsoft .Net",
     color: "#F85431",
     textColor: "#ffffff",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#f85431',
+    bottomBgFirstClr: '#378C84',
+    imageFirst: false
   },
   {
     id: 3,
-    workId: "thrust",
+    workId: "ozelu",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776302/RfTechnologiesWebsite/image_56_i69zku.png",
     title: "Ozelu Studio",
@@ -491,10 +501,15 @@ export const work: Work[] = [
     subtitle: "Nextjs",
     color: "#378C84",
     textColor: "#FFFFFF",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#BFF1E9',
+    bottomBgFirstClr: '#378C84',
+    imageFirst: true
   },
   {
     id: 4,
-    workId: "presto",
+    workId: "ezfundrazr",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
     title: "EZFUNDRAZR",
@@ -502,10 +517,15 @@ export const work: Work[] = [
     subtitle: "Microsoft.Net",
     color: "#BFF1E9",
     textColor: "#000000",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#BFF1E9',
+    bottomBgFirstClr: '#00263A',
+    imageFirst: false
   },
   {
     id: 5,
-    workId: "thelazy",
+    workId: "jensonbikeshipping",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776300/RfTechnologiesWebsite/image_61_bbvb27.png",
     title: "Jenson Bike Shipping",
@@ -513,10 +533,15 @@ export const work: Work[] = [
     subtitle: "Shopify, UPS API integration",
     color: "#00263A",
     textColor: "#ffffff",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#6AB7BD',
+    bottomBgFirstClr: '#00263A',
+    imageFirst: true
   },
   {
     id: 6,
-    workId: "big",
+    workId: "thetransparency",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
     title: "The Transparency",
@@ -524,6 +549,11 @@ export const work: Work[] = [
     subtitle: "Shopify E-commerce",
     color: "#6AB7BD",
     textColor: "#FFFFFF",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#6AB7BD',
+    bottomBgFirstClr: '#932828',
+    imageFirst: false
   },
   {
     id: 7,
@@ -535,6 +565,11 @@ export const work: Work[] = [
     subtitle: "Shopify , UX & UI Design",
     color: "#932828",
     textColor: "#ffffff",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#4EB4BA',
+    bottomBgFirstClr: '#932828',
+    imageFirst: true
   },
   {
     id: 8,
@@ -546,10 +581,15 @@ export const work: Work[] = [
     subtitle: "Flutter Native App",
     color: "#4EB4BA",
     textColor: "#000000",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#4EB4BA',
+    bottomBgFirstClr: '#F4AE0F',
+    imageFirst: false
   },
   {
     id: 9,
-    workId: "eazyticks",
+    workId: "biglittlethings",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776297/RfTechnologiesWebsite/image_67_tqgzoz.png",
     title: "Big Little Things.",
@@ -557,10 +597,15 @@ export const work: Work[] = [
     subtitle: "",
     color: "#F4AE0F",
     textColor: "#ffffff",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#5089C6',
+    bottomBgFirstClr: '#F4AE0F',
+    imageFirst: true
   },
   {
     id: 10,
-    workId: "elitecustomizer",
+    workId: "combinemarketing",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776296/RfTechnologiesWebsite/image_66_sxtpis.png",
     title: "Combine Marketing",
@@ -568,6 +613,11 @@ export const work: Work[] = [
     subtitle: "WordPress Elementor",
     color: "#5089C6",
     textColor: "#ffffff",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#5089C6',
+    bottomBgFirstClr: '#FDF4E6',
+    imageFirst: false
   },
   {
     id: 11,
@@ -579,6 +629,11 @@ export const work: Work[] = [
     subtitle: "WordPress Elementor, Woocommerce",
     color: "#FDF4E6",
     textColor: "#28292D",
+    topBgFirstClr: '#f85431',
+    topBgSecondClr: '#f85431',
+    bottomBgSecondClr: '#FDF4E6',
+    bottomBgFirstClr: '#FDF4E6',
+    imageFirst: true
   },
 ];
 

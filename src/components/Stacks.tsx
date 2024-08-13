@@ -22,7 +22,7 @@ const Stacks = () => {
             reliable website design and development which increase your profit.
           </p>
         </div>
-        <div className="flex items-stretch  justify-center xl:gap-10 md:gap-4 gap-2 flex-wrap">
+        <div className="flex items-stretch justify-center xl:gap-10 md:gap-4 gap-2 flex-wrap">
           {stack?.map((item, index) => (
             <Link
               key={index}

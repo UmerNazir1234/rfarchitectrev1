@@ -24,7 +24,7 @@ const SubServices = ({ data }: dataProps) => {
         <h2 className="text-white uppercase">What we offer</h2>
       </div>
       <div className="page-width ">
-        <div className="flex items-center justify-center gap-10 flex-wrap">
+        <div className="flex justify-center gap-10 flex-wrap">
           <SubServiceCard data={data} />
         </div>
       </div>
