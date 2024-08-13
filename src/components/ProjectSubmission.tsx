@@ -9,6 +9,7 @@ type ContentProps = {
   number?: string;
   btnTitle?: string;
   btnUrl?: string;
+  titleColor?: string;
 };
 
 const ProjectSubmission = ({
@@ -18,6 +19,7 @@ const ProjectSubmission = ({
   number,
   btnTitle,
   btnUrl,
+  titleColor,
 }: ContentProps) => {
   if (!title) {
     return null;
@@ -29,7 +31,13 @@ const ProjectSubmission = ({
         <div className="flex items-center justify-start gap-8 md:flex-nowrap flex-wrap">
           <div className="lg:basis-2/3 basis-full">
             <div className=" max-md:text-center">
-              <h2 className="text-primary !capitalize mb-4">{title}</h2>
+              <h2
+                className={`${
+                  titleColor ? titleColor : "text-primary"
+                } !capitalize mb-4"`}
+              >
+                {title}
+              </h2>
               <p className="text-white xl:text-3xl text-2xl w-3/4 max-md:text-center text-start max-lg:w-full ">
                 {description}
               </p>

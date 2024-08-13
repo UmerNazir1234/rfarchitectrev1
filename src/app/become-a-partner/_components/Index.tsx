@@ -6,6 +6,7 @@ import { becomeImageWithText } from "@/dummyData/data";
 import React from "react";
 import Benefits from "./BenefitsOfPartnerShip";
 import PerfectPartnerShip from "./PerfectPartnerShip";
+import BecomePartnerForm from "./BecomePartnerForm";
 
 const Index = () => {
   return (
@@ -21,7 +22,9 @@ const Index = () => {
 
       <ProjectSubmission
         title="Transform your brand's challenges into successes with our expert solutions."
+        titleColor="!text-white"
       />
+      <BecomePartnerForm />
     </div>
   );
 };

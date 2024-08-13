@@ -28,7 +28,7 @@ const Footer = () => {
     "/custom-software-development": "!bg-[#edac18]",
     "/contact-us": "!bg-light",
     "/our-work": "!bg-[#FDF4E6]",
-    "/become-a-partner": "!bg-[#edac18]",
+    "/become-a-partner": "!bg-light",
     "/": "!bg-light",
   };
 
