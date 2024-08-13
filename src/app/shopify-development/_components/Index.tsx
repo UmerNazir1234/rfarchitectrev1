@@ -24,6 +24,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import ShopifyServices from "./ShopifyServices";
 import Benifits from "@/components/Benifits";
 import { content } from "@/data/sds";
+import { Site } from "@/helpers/Site";
 
 const Index = () => {
   
@@ -44,7 +45,7 @@ const Index = () => {
         <Heading
           title="Shopify online store 2.0"
           icon={true}
-          classes="!mb-0 !text-primary"
+          classes="!mb-0 !text-primary max-md:text-xl"
           iconStyle="stroke-primary"
         />
       </div>
@@ -59,11 +60,11 @@ const Index = () => {
       <Faq data={shopifyFaq} classes="!py-24" />
       <ProjectSubmission
         title="Submit Your Project"
-        description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
+        description="Let us know your requirements and we'll get back to you as soon as possible."
+        email={Site?.email}
+        number={Site?.number}
         btnTitle="Submit Your Project"
-        btnUrl="/"
+        btnUrl="/contact-us"
       />
     </>
   );
