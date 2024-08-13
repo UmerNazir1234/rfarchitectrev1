@@ -6,30 +6,31 @@ import Experience from "./Experience";
 import OurVision from "./OurVision";
 import WhatMakesUnique from "./WhatMakesUnique";
 import ProjectSubmission from "@/components/ProjectSubmission";
+import content from "@/data/about";
+console.log(content);
 
 const AboutUs = () => {
+  const { banner, about, wearerf, experience, vision, projectSubmission } =
+    content;
   return (
     <div>
-      <Hero
-        image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719827376/RfTechnologiesWebsite/aboutusimage_q5msz5.jpg"
-        title={`WHO WE ARE <span class="text-secondary">?</span>`}
-      />
-      <AboutSection />
+      <Hero image={banner?.image} title={banner?.title} />
+      <AboutSection data={about} />
       <HeadingBox
         classes="text-primary"
-        title="we are rf tech"
-        description="Our company was established in late 2018. Our main office is situated in Rawalpindi where our staff is available 24 hours a day. We work as a team there and provide them with our maximum efforts. A friendly environment enables our clients to completely speak their minds. So we can have an idea about what type of work they expected from us. And we are always so on with their expectations."
+        title={wearerf?.title}
+        description={wearerf?.description}
       />
-      <Experience />
-      <OurVision />
+      <Experience data={experience} />
+      <OurVision data={vision} />
       <WhatMakesUnique />
       <ProjectSubmission
-        title="Submit Your Project"
-        description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
-        btnTitle="Submit Your Project"
-        btnUrl="/"
+        title={projectSubmission?.title}
+        description={projectSubmission?.details}
+        email={projectSubmission?.email}
+        number={projectSubmission?.number}
+        btnTitle={projectSubmission?.btntitle}
+        btnUrl={projectSubmission?.btnurl}
       />
     </div>
   );

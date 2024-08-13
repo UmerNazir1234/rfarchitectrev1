@@ -7,7 +7,7 @@ const BecomePartnerForm = () => {
     name: "",
     email: "",
     message: "",
-    joinOption: "", 
+    joinOption: "",
   });
 
   const handleChange = (e: any) => {

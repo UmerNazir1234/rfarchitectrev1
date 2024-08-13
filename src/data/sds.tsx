@@ -180,8 +180,7 @@ const content = {
     {
       id: 1,
       question: "What type of Shopify services you are providing?",
-      answer:
-        "",
+      answer: "",
     },
     {
       id: 2,
@@ -197,13 +196,10 @@ const content = {
     },
     {
       id: 4,
-      question:
-        "Can you help with Shopify app integrations?",
+      question: "Can you help with Shopify app integrations?",
       answer:
         "Yes, we specialize in integrating various Shopify apps to enhance your store's functionality. Whether you need tools for inventory management, marketing automation, or customer support, we can integrate the right apps to meet your business needs.",
     },
-    
-    
   ],
 };
 

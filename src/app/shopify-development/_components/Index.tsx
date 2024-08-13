@@ -1,4 +1,3 @@
-import WebsiteServices from "@/app/web-development/_components/WebsiteServices";
 import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Heading from "@/components/Heading";
@@ -6,17 +5,11 @@ import Hero from "@/components/Hero";
 import ImageWithText from "@/components/ImageWithText";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import Stacks from "@/components/Stacks";
-import TextWithCards from "@/components/TextWithCards";
 import {
-  digitalFeatures,
-  digitalMarketingCardText,
   shopifyFaq,
   shopifyFeatures,
   shopifyImageWithText,
-  shopifyServiceData,
   shopImageWithText,
-  socialAnalysisImageWithText,
-  trustedBrandImageWithText,
 } from "@/dummyData/data";
 import SubServices from "@/snippet/SubServices";
 import React from "react";
@@ -24,9 +17,9 @@ import { GoArrowUpRight } from "react-icons/go";
 import ShopifyServices from "./ShopifyServices";
 import Benifits from "@/components/Benifits";
 import { content } from "@/data/sds";
+console.log(content);
 
 const Index = () => {
-  
   return (
     <>
       <Hero
