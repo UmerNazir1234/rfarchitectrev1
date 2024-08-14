@@ -22,7 +22,7 @@ const Benifits = () => {
           />
         </div> */}
         <div className="flex relative z-50 items-stretch justify-center flex-wrap shadow-lg max-sm:rounded-xl border border-[#404040] rounded-xl">
-          <div className="sm:basis-1/2 relative z-0 basis-full flex  bg-[#F8E0E0] border xl:px-24 lg:px-12 px-8 xl:py-24 lg:py-12 py-6  overflow-hidden border-[#404040] max-sm:min-h-48 sm:rounded-tl-xl max-sm:rounded-t-xl">
+          <div className="sm:basis-1/2 relative z-1 basis-full flex  bg-[#F8E0E0] border xl:px-24 lg:px-12 px-8 xl:py-24 lg:py-12 py-6  overflow-hidden border-[#404040] max-sm:min-h-48 sm:rounded-tl-xl max-sm:rounded-t-xl">
             <div className="flex items-start justify-start flex-col gap-4">
               <h4 className="text-[#CC3232]">Hosted Solution</h4>
               <p className="sm:text-xl text-lg text-black">
@@ -62,21 +62,6 @@ const Benifits = () => {
               </p>
             </div>
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="153"
-            height="93"
-            viewBox="0 0 153 93"
-            fill="none"
-            className="absolute z-1 top-28 rotate-90 left-[47.8%] "
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M76.5 0C118.75 0 153 34.2502 153 76.5C153 82.1649 152.384 87.686 151.216 93H1.78395C0.615744 87.686 0 82.1649 0 76.5C0 34.2502 34.2502 0 76.5 0Z"
-              fill="#F8E0E0"
-            />
-          </svg>
         </div>
       </div>
     </section>
