@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "./Heading";
 import Link from "next/link";
 
-const Form = () => {
+const Form = ({ data }: any) => {
   return (
     <>
       {" "}
@@ -10,14 +10,14 @@ const Form = () => {
         <div>
           <div className="flex items-center justify-center">
             <Heading
-              title="Contact Us"
+              title={data?.title}
               icon={true}
               iconStyle="!stroke-white"
               classes="text-white "
             />
           </div>
           <p className="text-white md:text-2xl text-base text-center">
-            We look forward to your questions and inquiries.
+            {data?.tagline}
           </p>
         </div>
 

@@ -13,7 +13,7 @@ const TabsComponent = ({ tabs }: TabsProps) => {
 
   return (
     <div>
-      <div className="flex items-center md:flex-nowrap flex-wrap justify-center gap-5 max-md:px-2 relative z-50">
+      <div className="flex items-center md:flex-nowrap flex-wrap justify-center gap-5 max-md:px-2">
         {tabs.map((tab) => (
           <button
             key={tab.label}
