@@ -24,4 +24,91 @@ export const Site = {
   SEO_title: "Premier Software Services for Digital Products - RF Tech",
   SEO_Description:
     "RF Tech Solutions - Premier Software Services Provider. Transform your ideas into digital success with top-tier solutions and marketing strategies.",
+  routes:[
+    {
+      id:2222,
+      name:'Home',
+      link: ''
+    },
+    {
+      id: 1,
+      name: "Become a Partner",
+      link: "/become-a-partner",
+    },
+    {
+      id: 2,
+      name: "About Us",
+      link: "/about-us",
+    },
+    {
+      id: 3,
+      name: "Portfolio",
+      link: "/our-work",
+    },
+    {
+      id: 4,
+      name: "Blogs",
+      link: "/blogs",
+    },
+    {
+      id: 5,
+      name: "Faq's",
+      link: "/faq",
+    },
+    {
+      id: 7,
+      name: "Contact Us",
+      link: "/contact-us",
+    },
+    {
+      id: 10,
+      name: "Web Development",
+      link: "/web-development",
+    },
+    {
+      id: 11,
+      name: "WordPress Development",
+      link: "/wordpress-development",
+    },
+    {
+      id: 12,
+      name: "Shopify Development",
+      link: "/shopify-development",
+    },
+    {
+      id: 13,
+      name: "Digital Marketing",
+      link: "/digital-marketing",
+    },
+    {
+      id: 14,
+      name: "Graphic Design",
+      link: "/graphic-design",
+    },
+    {
+      id: 15,
+      name: "SEO",
+      link: "/seo",
+    },
+    {
+      id: 16,
+      name: "Mobile App Development",
+      link: "/mobile-app-development",
+    },
+    {
+      id: 17,
+      name: "CRM Development",
+      link: "/crm-development",
+    },
+    {
+      id: 18,
+      name: "Custom Software Development",
+      link: "/custom-software-development",
+    },
+    {
+      id: 19,
+      name: "Woocommerce Development",
+      link: "/woocommerce-development",
+    }
+  ]
 };

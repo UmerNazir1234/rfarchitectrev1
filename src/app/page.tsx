@@ -22,6 +22,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function page() {
+export default async function page() {
   return <MainPage />;
 }

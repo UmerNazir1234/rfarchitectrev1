@@ -1,0 +1,105 @@
+# RF Technologies Front-End App in Next.js
+
+
+User-agent: *
+Disallow: /admin
+Disallow: /account
+Disallow: /account/
+Disallow: /account/*
+Disallow: /account/signin
+Disallow: /account/signup
+Disallow: /account/user-profile
+Disallow: /account/user-profile/tickets
+Disallow: /account/user-profile/following
+Disallow: /account/user-profile/*
+Disallow: /account/user-profile/*/*
+Disallow: /account/forgetpassword
+Disallow: /account/email-confirmation
+Disallow: /account/reset-password
+Disallow: /policies
+Disallow: /policies/privacy-policy
+Disallow: /policies/terms-conditions
+Disallow: /policies/nda
+
+
+
+Sitemap: https://rftechnologies.com.pk/sitemap.xml
+
+# Google adsbot ignores robots.txt unless specifically named!
+User-agent: adsbot-google
+Disallow: /admin
+Disallow: /account
+Disallow: /account/
+Disallow: /account/*
+Disallow: /account/signin
+Disallow: /account/signup
+Disallow: /account/user-profile
+Disallow: /account/user-profile/tickets
+Disallow: /account/user-profile/following
+Disallow: /account/user-profile/*
+Disallow: /account/user-profile/*/*
+Disallow: /account/forgetpassword
+Disallow: /account/email-confirmation
+Disallow: /account/reset-password
+Disallow: /policies
+Disallow: /policies/privacy-policy
+Disallow: /policies/terms-conditions
+Disallow: /policies/nda
+
+
+User-agent: Nutch
+Disallow: /
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+Disallow: /admin
+Disallow: /account
+Disallow: /account/
+Disallow: /account/*
+Disallow: /account/signin
+Disallow: /account/signup
+Disallow: /account/user-profile
+Disallow: /account/user-profile/tickets
+Disallow: /account/user-profile/following
+Disallow: /account/user-profile/*
+Disallow: /account/user-profile/*/*
+Disallow: /account/forgetpassword
+Disallow: /account/email-confirmation
+Disallow: /account/reset-password
+Disallow: /policies
+Disallow: /policies/privacy-policy
+Disallow: /policies/terms-conditions
+Disallow: /policies/nda
+
+
+
+Sitemap: https://rftechnologies.com.pk/sitemap.xml
+
+User-agent: AhrefsSiteAudit
+Crawl-delay: 10
+Disallow: /admin
+Disallow: /account
+Disallow: /account/
+Disallow: /account/*
+Disallow: /account/signin
+Disallow: /account/signup
+Disallow: /account/user-profile
+Disallow: /account/user-profile/tickets
+Disallow: /account/user-profile/following
+Disallow: /account/user-profile/*
+Disallow: /account/user-profile/*/*
+Disallow: /account/forgetpassword
+Disallow: /account/email-confirmation
+Disallow: /account/reset-password
+Disallow: /policies
+Disallow: /policies/privacy-policy
+Disallow: /policies/terms-conditions
+Disallow: /policies/nda
+
+Sitemap: https://rftechnologies.com.pk/sitemap.xml
+
+User-agent: MJ12bot
+Crawl-Delay: 10
+
+User-agent: Pinterest
+Crawl-delay: 1

@@ -10,8 +10,15 @@ import content from "@/data/about";
 console.log(content);
 
 const AboutUs = () => {
-  const { banner, about, wearerf, experience, vision, projectSubmission, tabs } =
-    content;
+  const {
+    banner,
+    about,
+    wearerf,
+    experience,
+    vision,
+    projectSubmission,
+    tabs,
+  } = content;
   return (
     <div>
       <Hero image={banner?.image} title={banner?.title} />
@@ -27,8 +34,6 @@ const AboutUs = () => {
       <ProjectSubmission
         title={projectSubmission?.title}
         description={projectSubmission?.details}
-        email={projectSubmission?.email}
-        number={projectSubmission?.number}
         btnTitle={projectSubmission?.btntitle}
         btnUrl={projectSubmission?.btnurl}
       />

@@ -10,7 +10,7 @@ import { Site } from "@/helpers/Site";
 export const metadata: Metadata = {
   title: {
     template: `%s | ${Site.name}`,
-    default: Site?.SEO_title, // a default is required when creating a template
+    default: Site?.SEO_title,
   },
   description: `${Site?.SEO_Description}`,
   metadataBase: new URL(`${Site.url}`),
