@@ -6,8 +6,7 @@ import { MdOutlineImageSearch } from "react-icons/md";
 export const textWithCardData = [
   {
     title: "Boost Your Mobile Traffic!",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. </br> </br> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:"We specialize in designing, developing, and integrating technology solutions that enable businesses to adapt, evolve, and thrive in a competitive landscape.<br/><br/>With 58% of web users now accessing sites via mobile devices, leveraging a mobile app alongside your e-commerce website can significantly amplify your reach and engagement. Imagine the power of providing your customers with a seamless mobile experience—let us help you turn that vision into reality.",
     btnLink: "/about-us ",
     btnTitle: "About us",
     enableImageLeft: true,
@@ -41,10 +40,10 @@ export const imageWithText = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720698819/RfTechnologiesWebsite/Group_1597883917_jpewpc.png",
     description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "We specialize in designing, developing, and integrating technology solutions that help businesses adapt, evolve, and grow. With 58% of web users on mobile devices, pairing your e-commerce website with a custom mobile app can significantly boost your reach and engagement.<br/><br/>Check out our case studies to see the impressive results we've achieved for our clients. We've developed apps for leading brands and businesses, delivering exceptional success. Partner with us to elevate your digital strategy and grow your business.",
     btnLink: "/",
     btnTitle: "product gallery",
-    ctaLink: "/",
+    ctaLink: "/portfolio",
     ctaTitle: "View More",
     imageFirst: true,
     enableImageCenter: false,

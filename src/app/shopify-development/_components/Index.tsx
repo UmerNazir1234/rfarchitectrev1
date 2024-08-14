@@ -32,7 +32,7 @@ const Index = () => {
       />
       <Hero />
       <SubServices data={content?.ourServices?.cards} />
-      <ShopifyServices />
+      <ShopifyServices data={content?.whyChooseUs}/>
       <div className="flex items-center justify-center pt-32">
         <Heading
           title="Shopify online store 2.0"
@@ -49,12 +49,10 @@ const Index = () => {
         </div>
       </ImageWithText>
       <Stacks />
-      <Faq data={shopifyFaq} classes="!py-24" />
+      <Faq data={content?.faqs} classes="!py-24" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we'll get back to you as soon as possible."
-        email={Site?.email}
-        number={Site?.number}
         btnTitle="Submit Your Project"
         btnUrl="/contact-us"
       />

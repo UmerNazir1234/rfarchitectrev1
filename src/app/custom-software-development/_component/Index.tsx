@@ -5,7 +5,7 @@ import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Stacks from "@/components/Stacks";
 import Faq from "@/components/Faq";
-import { customSoftwareDevelopmentServiceData, faq } from "@/dummyData/data";
+import { csdFaqs, customSoftwareDevelopmentServiceData, faq } from "@/dummyData/data";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import SubServices from "@/snippet/SubServices";
 import {
@@ -26,7 +26,6 @@ const Index = () => {
         classes="bg-white !text-primary"
       />
       <SubServices data={customSoftwareDevelopmentServiceData} />
-    
       <TextWithCards
         content={customSoftwareDeveloperCardText}
         classes="py-32"
@@ -36,12 +35,10 @@ const Index = () => {
         classes="pb-32"
       />
       <Stacks />
-      <Faq data={faq} classes="py-24" />
+      <Faq data={csdFaqs} classes="py-24" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
         btnTitle="Submit Your Project"
         btnUrl="/"
       />

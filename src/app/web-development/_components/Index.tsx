@@ -34,10 +34,8 @@ const Index = () => {
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
         btnTitle="Submit Your Project"
-        btnUrl="/"
+        btnUrl="/contact-us"
       />
     </>
   );

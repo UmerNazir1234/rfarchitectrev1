@@ -59,7 +59,7 @@ const Form = ({ data }: any) => {
           </div>
           <div className="w-full mt-8 ">
             <input
-              className="input--field !border-dashed !py-10"
+              className="input--field !border-dashed !md:py-10"
               id="file_input"
               type="file"
             />

@@ -1,13 +1,28 @@
 import React from "react";
 import ShopifyServiceCards from "./ShopifyServiceCards";
 import Button from "@/components/Button";
-
-const ShopifyServices = () => {
+type props = {
+  data: {
+    roundCta: string;
+    cards: {
+      id: number;
+      icon: string;
+      title: string;
+      content: string;
+    }[];
+  };
+};
+const ShopifyServices = ({ data }: props) => {
   return (
     <section>
       <div className="page-width sm:pt-32 max-sm:py-12">
         <div className="flex items-center justify-center mb-16">
-          <Button title="WHY CHOOSE US?" href="/about-us" classes="bg-secondary" enableIcons={true} />
+          <Button
+            title={data?.roundCta}
+            href="/about-us"
+            classes="bg-secondary"
+            enableIcons={true}
+          />
         </div>
         <div className="flex items-stretch gap-3 justify-center max-lg:flex-wrap ">
           <ShopifyServiceCards

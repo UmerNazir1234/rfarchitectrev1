@@ -43,7 +43,7 @@ const Stacks = () => {
                     {item.title}
                   </h4>
                 </div>
-                <p className="p-lg text-center content">
+                <p className="text-lg max-md:text-base text-center content">
                   {item?.description}
                 </p>
               </div>

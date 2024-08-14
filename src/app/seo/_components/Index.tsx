@@ -7,6 +7,7 @@ import Stacks from "@/components/Stacks";
 import TextWithCards from "@/components/TextWithCards";
 import {
   seoCardText,
+  seoFaqs,
   seoServiceData,
   woocomemrceCardText,
   woocomemrcefaq,
@@ -31,18 +32,15 @@ const Index = () => {
       <SubServices data={seoServiceData} />
       <ImageWithCards content={seoCardText} classes="pt-32" />
       <HeadingBox
-      classes="text-primary"
+        classes="text-primary"
         title="our priorities"
-        description="Fully-fledged, stable, and scalable mobile applications use this alternative to reduce costs and time-to-market and to reach more users without loss of quality. we analyse your needs and come up with a better solution that perfectly aligns with your business goals and budget."
+        description={`At RF Tech, our priority is to boost your online visibility with customized SEO strategies that drive targeted traffic and improve search engine rankings. We focus on aligning our efforts with your business goals to deliver impactful results and long-term growth.`}
       />
       <Stacks />
-      <Faq data={woocomemrcefaq} classes="py-24" />
+      <Faq data={seoFaqs} classes="py-24" />
       <ProjectSubmission
         title="Submit Your Project"
-        
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
         btnTitle="Submit Your Project"
         btnUrl="/"
       />

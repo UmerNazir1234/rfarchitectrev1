@@ -8,6 +8,7 @@ import { TbVirusSearch } from "react-icons/tb";
 import { TbSettingsPause } from "react-icons/tb";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import { BsKanban } from "react-icons/bs";
+import { content } from "@/data/mad";
 
 export const menuItems = [
   { id: 1, name: "Who We Are?", link: "/about-us" },
@@ -326,13 +327,13 @@ export const informationLinks = [
   },
   {
     id: 5,
-    name: "Faq",
+    name: "Faq's",
     link: "/faq",
   },
   {
     id: 6,
     name: "NDA",
-    link: "/nda",
+    link: "/policies/nda",
   },
   {
     id: 7,
@@ -342,12 +343,12 @@ export const informationLinks = [
   {
     id: 8,
     name: "Privacy Policy",
-    link: "/privacy-policy",
+    link: "/policies/privacy-policy",
   },
   {
     id: 9,
     name: "Terms & Conditions",
-    link: "/terms-and-conditions",
+    link: "/policies/terms-conditions",
   },
 ];
 
@@ -408,7 +409,7 @@ export const sliderData = [
   {
     id: 1,
     title:
-      "<span class='text-secondary'>RF TECHNOLOGIES</span> We Provide Awnsers. ",
+      "<span class='text-secondary'>RF TECHNOLOGIES</span> We Provide answers. ",
     url: "/about-us",
     description:
       "Want To Turn Your Idea Into A Digital Product And Make It Successful Using Best Marketing Strategies?",
@@ -645,7 +646,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721400446/RfTechnologiesWebsite/pngwing.com_59_gm2uyx.svg",
     title: "React",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "A JavaScript library for building user interfaces. React makes it easy to create interactive UIs by managing state efficiently.",
   },
   {
     id: 2,
@@ -654,7 +655,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402683/RfTechnologiesWebsite/Vector_3_mbvtlf.svg",
     title: "Laravel",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "A PHP framework for web artisans, Laravel provides an elegant syntax and tools for building modern web applications.",
   },
   {
     id: 3,
@@ -663,7 +664,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402682/RfTechnologiesWebsite/pngwing.com_57_f3m3lj.svg",
     title: "ASP .NET",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "A web framework developed by Microsoft, ASP.NET allows developers to build dynamic web sites, applications, and services.",
   },
   {
     id: 4,
@@ -672,7 +673,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402682/RfTechnologiesWebsite/pngwing.com_58_mkdbq4.svg",
     title: "Vue.js",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "A progressive JavaScript framework, Vue.js is used for building user interfaces and single-page applications.",
   },
   {
     id: 5,
@@ -681,7 +682,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402678/RfTechnologiesWebsite/pngwing.com_60_xblbl8.svg",
     title: "Node.js",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "A JavaScript runtime built on Chrome's V8 engine, Node.js allows for building scalable network applications.",
   },
   {
     id: 6,
@@ -691,7 +692,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402676/RfTechnologiesWebsite/pngwing.com_62_nmqazp.svg",
     title: "WordPress",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "A popular content management system (CMS), WordPress is used for creating websites and blogs with ease.",
   },
   {
     id: 7,
@@ -700,7 +701,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402675/RfTechnologiesWebsite/pngwing.com_63_zlabdz.svg",
     title: "Shopify",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "A leading e-commerce platform, Shopify enables businesses to create online stores and manage their sales and inventory.",
   },
   {
     id: 8,
@@ -709,7 +710,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402676/RfTechnologiesWebsite/pngwing.com_64_r2dpz2.svg",
     title: "WooCommerce",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "A customizable, open-source e-commerce platform built on WordPress, WooCommerce is ideal for online businesses of all sizes.",
   },
   {
     id: 9,
@@ -718,7 +719,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402675/RfTechnologiesWebsite/pngwing.com_65_nb4rzf.svg",
     title: "UX/UI",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "Focusing on the user's experience and interface design, UX/UI involves creating intuitive, aesthetically pleasing digital products.",
   },
   {
     id: 10,
@@ -727,7 +728,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402674/RfTechnologiesWebsite/pngwing.com_66_qofvpi.svg",
     title: "Flutter",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "An open-source UI toolkit by Google, Flutter is used for building natively compiled applications for mobile, web, and desktop from a single codebase.",
   },
   {
     id: 11,
@@ -736,7 +737,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402673/RfTechnologiesWebsite/image_103_hjsnhq.svg",
     title: "SEO",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "Search Engine Optimization (SEO) involves optimizing websites to rank higher in search engine results, driving more traffic.",
   },
   {
     id: 12,
@@ -745,7 +746,7 @@ export const stack = [
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721402673/RfTechnologiesWebsite/pngwing.com_67_mkn58v.svg",
     title: "PHP",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "A widely-used open-source scripting language, PHP is especially suited for web development and can be embedded into HTML.",
   },
 ];
 
@@ -753,39 +754,27 @@ export const stack = [
 export const faq = [
   {
     id: 1,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "What graphic design services do you offer?",
+    answer:
+      "We offer a full range of graphic design services, including brand identity design, logo creation, marketing materials, web graphics, and custom illustrations. Our goal is to provide cohesive and impactful visual solutions tailored to your needs.",
   },
   {
     id: 2,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "How long does it take to complete a graphic design project?",
+    answer:
+      "The timeline for a graphic design project varies based on its complexity and scope. Typically, projects can take from a few days to several weeks. We provide a detailed timeline after discussing your specific requirements.",
   },
   {
     id: 3,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "Can you help with redesigning an existing brand or logo?",
+    answer:
+      "Yes, we specialize in redesigning existing brands and logos to refresh their look and better align with your current business goals and market trends. Our team will work closely with you to update and enhance your brand’s visual identity.",
   },
   {
     id: 4,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    id: 5,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    id: 6,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "What is your process for working on a graphic design project?",
+    answer:
+      "Our process includes understanding your needs, developing initial concepts, refining designs based on your feedback, and delivering the final product. We ensure clear communication and collaboration throughout the project to achieve the best results.",
   },
 ];
 
@@ -794,57 +783,53 @@ export const customSoftwareDevelopmentServiceData = [
   {
     id: 1,
     title: "UX/UI Design & Prototype",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:"We craft intuitive and visually engaging designs, creating prototypes that ensure a seamless user experience before development.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721477113/RfTechnologiesWebsite/Mask_group_m099ft.svg",
   },
   {
     id: 2,
     title: "Software Consulting Services",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We provide expert guidance to optimize your software strategy, ensuring tailored solutions that align with your business goals and technical requirements.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
   },
   {
     id: 3,
     title: "Custom Mobile App Development",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We develop bespoke mobile applications tailored to your specific needs, delivering innovative solutions for both iOS and Android platforms.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638917/RfTechnologiesWebsite/Mask_group_6_ajs3qa.svg",
   },
   {
     id: 4,
     title: "Custom Web Development",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:"We build tailor-made web solutions that meet your unique requirements, ensuring a seamless, scalable, and engaging online experience.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487828/Mask_group_4_vn0iha.svg",
   },
   {
     id: 5,
     title: "Legacy App Upgradation",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:"We modernize outdated applications with the latest technologies and features, enhancing performance and ensuring compatibility with current systems.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487832/Mask_group_2_cyrs1o.svg",
   },
   {
     id: 6,
     title: "Enterprise App Development",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    content:"We create robust, scalable applications designed to streamline operations, improve efficiency, and meet the complex needs of large organizations.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487834/Mask_group_1_bnef0w.svg",
   },
   {
     id: 7,
     title: "Custom CRM Development",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We design and build tailored CRM systems that enhance customer relationship management, streamline processes, and drive business growth.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487835/Mask_group_jelked.svg",
   },
   {
     id: 8,
     title: "MVP Development",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We develop Minimum Viable Products (MVPs) to validate your ideas with essential features, enabling quick market entry and iterative improvements.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638947/RfTechnologiesWebsite/Mask_group_7_kkk7xr.svg",
   },
 ];
@@ -855,64 +840,64 @@ export const wordPressServiceData = [
   {
     id: 1,
     title: "WordPress API Integration Services",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We integrate API to the WordPress website to improve the website experience and get more from the site.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642883/RfTechnologiesWebsite/Mask_group_xf3txy.svg",
   },
   {
     id: 2,
     title: "Theme Development Services",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Get Your Website More interactive fully functional and responsive with our best theme development experts.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642882/RfTechnologiesWebsite/Mask_group_2_ws5unm.svg",
   },
   {
     id: 3,
     title: "Custom WordPress Development",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We Provide The Best Custom WordPress development solution to improve the user experience.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642882/RfTechnologiesWebsite/Mask_group_1_zwcjkj.svg",
   },
   {
     id: 4,
     title: "WooCommerce Development Services",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Easily convert your site into an e-commerce site with the help of our WooCommerce development service.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
   },
   {
     id: 5,
     title: "WordPress Migration Service",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Our Experts will take smooth and secure migration of your site and ensure no loss of data and the website stay functional.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_3_j14sxn.svg",
   },
   {
     id: 6,
     title: "WordPress SEO Service",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    content:
+      "Increase your Google ranking and Potential Organic traffic with our best search engine optimization efforts and strategies.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_5_swkmsx.svg",
   },
   {
     id: 7,
     title: "PSD to WordPress",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We convert your PSD file to pixel-perfect, fully responsive, and faultless sites.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_6_fnjjdx.svg",
   },
   {
     id: 8,
     title: "WordPress Speed Optimization Services",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We make your site fast and highly optimized, which improves user engagement and conversion rate.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642875/RfTechnologiesWebsite/Mask_group_7_qakhfb.svg",
   },
   {
     id: 9,
     title: "Maintenance And Support",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Our Team will Take care of your website and take it bug-free, fixing all flaws and glitches.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642875/RfTechnologiesWebsite/Mask_group_8_ahomn6.svg",
   },
 ];
@@ -920,8 +905,7 @@ export const wordPressServiceData = [
 export const wordpressCardText = [
   {
     title: "why choose us<span class='text-secondary'>?</span>",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. </br> </br> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: `At RF Tech, we create standout WordPress sites with top-notch design and functionality. Our expert team ensures your website performs seamlessly and meets your business goals.<br/><br/>We also offer ongoing support and optimization, ensuring your site remains effective and up-to-date. Partner with us for personalized service and a commitment to your success.`,
     btnLink: "/about-us ",
     btnTitle: "about us",
     enableImageLeft: false,
@@ -953,8 +937,8 @@ export const wordpressImageWithText = [
     title: "Shopify To WordPress",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642023/RfTechnologiesWebsite/image_133_wto9ik.svg",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: `We migrate your Shopify Store to a flexible, stunning  WordPress e-commerce store.<br/><br/>We are passionate about our work. Our designers stay ahead of the curve to provide engaging and user-friendly website designs to make your business stand out. Our developers are committed to maintaining the highest web standards so that your site will withstand the test of time. We care about your business, which is why we work with you.
+`,
     btnLink: "/",
     btnTitle: "Best services",
     ctaLink: "",
@@ -967,43 +951,108 @@ export const wordpressImageWithText = [
 export const wordpressfaq = [
   {
     id: 1,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "What is included in your WordPress development services?",
+    answer:
+      "Our WordPress development services include custom theme design, plugin integration, site optimization, and responsive design. We also offer ongoing support and maintenance to ensure your site runs smoothly.",
   },
   {
     id: 2,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "How long does it take to develop a WordPress site?",
+    answer:
+      "The timeline for developing a WordPress site varies based on complexity and requirements. Typically, a standard site can be completed in a few weeks. We provide a detailed timeline after discussing your specific needs.",
   },
   {
     id: 3,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "Can you redesign an existing WordPress site?",
+    answer:
+      "Yes, we can revamp your existing WordPress site to improve design, functionality, and performance. Our team will work with you to update and enhance your site according to your vision and goals.",
   },
   {
     id: 4,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    id: 5,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    id: 6,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "Do you provide support and maintenance after the site is live?",
+    answer:
+      "Yes, we offer ongoing support and maintenance to ensure your WordPress site stays secure, updated, and fully functional. Our team is available for any updates, troubleshooting, or enhancements you may need.",
   },
 ];
 
 /* End WordPress Development */
+
+export const madFaqs = [
+  {
+    id: 1,
+    question: "What mobile app development services do you offer?",
+    answer:
+      "We provide end-to-end mobile app development services, including custom design, development, integration, testing, deployment, and ongoing maintenance for both iOS and Android platforms.",
+  },
+  {
+    id: 2,
+    question: "How long does it take to develop a mobile app?",
+    answer:
+      "The timeline for mobile app development varies based on the project's complexity and requirements. Generally, it can take anywhere from a few weeks to several months. We will provide a detailed timeline after understanding your specific needs.",
+  },
+  {
+    id: 3,
+    question: "Why choose RF Technologies mobile app development services?",
+    answer:
+      "Our team’s great experience ensures high productivity and efficiency. we always keep track of the best market solutions to deliver our best strategy and offer top-class mobile application development services. We will also provide support, maintenance, and updates for your app for its continued success and growth.",
+  },
+  {
+    id: 4,
+    question: "Do you provide post-launch support and maintenance?",
+    answer:
+      "Absolutely. We offer comprehensive post-launch support and maintenance services to ensure your app remains up-to-date, secure, and fully functional. Our team is always available to assist with updates, troubleshooting, and new feature additions.",
+  },
+];
+
+export const crmFaqs = [
+  {
+    id: 1,
+    question: "How does CRM software enhance customer relationships?",
+    answer:
+      "CRM software enhances customer relationships by providing a detailed view of interactions, preferences, and history. This allows you to personalize communication and offer tailored services, improving customer satisfaction and loyalty.",
+  },
+  {
+    id: 2,
+    question: "Can CRM software help increase sales?",
+    answer:
+      "Yes, CRM software boosts sales by streamlining lead management, automating follow-ups, and tracking sales activities. These features help improve conversion rates, optimize sales processes, and ultimately increase revenue.",
+  },
+  {
+    id: 3,
+    question: "What types of data can CRM software analyze?",
+    answer: "CRM software can analyze various types of data, including customer interactions, sales performance, marketing campaign results, and customer feedback. This data helps you identify trends, make informed decisions, and refine your strategies.",
+  },
+  {
+    id: 4,
+    question: "How does CRM software improve customer service?",
+    answer:"CRM software improves customer service by providing quick access to customer information, facilitating timely responses, and streamlining issue resolution. This results in more efficient support and a better overall customer experience.",
+  }
+];
+export const csdFaqs = [
+  {
+    id: 1,
+    question: "What is custom software development?",
+    answer:
+      "Custom software development involves creating tailor-made software solutions designed to meet your specific business needs and objectives. Unlike off-the-shelf solutions, custom software is built from scratch to address unique challenges and requirements.",
+  },
+  {
+    id: 2,
+    question: "How do you ensure the software aligns with my business goals?",
+    answer:
+      "We start by thoroughly understanding your business needs and objectives through detailed consultations. Our team works closely with you throughout the development process to ensure the final product aligns with your goals and delivers the desired outcomes.",
+  },
+  {
+    id: 3,
+    question: "What is the typical timeline for a custom software project?",
+    answer:
+      "The timeline for custom software development varies depending on the complexity and scope of the project. On average, it can range from a few months to over a year. We provide a detailed project timeline after assessing your specific requirements.",
+  },
+  {
+    id: 4,
+    question: "Do you offer support and maintenance after the software is delivered?",
+    answer: "Yes, we provide comprehensive post-launch support and maintenance to ensure your software remains up-to-date, secure, and fully functional. Our team is available to handle any issues, updates, or enhancements as needed.",
+  },
+];
 
 /* woocomemrce development */
 
@@ -1014,7 +1063,7 @@ export const wooCommerceKeyFeatures = [
     title: "Open-Source Platform",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648544/RfTechnologiesWebsite/Mask_group_14_x8cunu.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "WooCommerce is an open-source platform, providing you with complete control over your online store. This flexibility allows you to customize every aspect of your site to meet your specific business needs.",
   },
   {
     id: 2,
@@ -1022,7 +1071,7 @@ export const wooCommerceKeyFeatures = [
     bgColor: "#C90764",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729010/RfTechnologiesWebsite/Mask_group_31_ka6ncj.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "WooCommerce is designed for easy setup, allowing you to quickly launch your online store with a user-friendly interface and step-by-step guidance, even if you have limited technical expertise.",
   },
   {
     id: 3,
@@ -1030,7 +1079,7 @@ export const wooCommerceKeyFeatures = [
     bgColor: "#01AB78",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729053/RfTechnologiesWebsite/Mask_group_32_vwcaes.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "WooCommerce integrates with various payment gateways and shipping carriers, providing your customers with flexible payment options and real-time shipping rates for a seamless shopping experience.",
   },
   {
     id: 4,
@@ -1038,73 +1087,71 @@ export const wooCommerceKeyFeatures = [
     bgColor: "#D09703",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729106/RfTechnologiesWebsite/Mask_group_33_shpkdh.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "With the WooCommerce mobile app, you can manage orders, track sales, and stay updated on your store's performance from anywhere, ensuring you never miss a beat.",
   },
   {
     id: 5,
-    title: "Manage Orders On the Go",
+    title: "Sell Anything",
     bgColor: "#710583",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729147/RfTechnologiesWebsite/Mask_group_34_khsfqk.svg",
-    details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    details:"WooCommerce supports a wide range of product types, from physical goods to digital downloads and subscriptions, giving you the flexibility to sell virtually any product or service.",
   },
   {
     id: 6,
     title: "Extensions Store",
     bgColor: "#F17812",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729190/RfTechnologiesWebsite/Mask_group_35_id3ako.svg",
-    details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    details:"WooCommerce’s Extensions Store offers a vast selection of plugins and add-ons, allowing you to enhance your store’s functionality with additional features like advanced analytics, marketing tools, and more.",
   },
 ];
 export const woocomemrceServiceData = [
   {
     id: 1,
     title: "WooCommerce Consultation",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We provide expert WooCommerce consultation to help you plan, design, and implement an effective e-commerce strategy tailored to your business needs.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
   },
   {
     id: 2,
     title: "WooCommerce Design",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Our experts build a Woo-Commerce store that is unique, effective, engaging and works faultlessly on any device.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647257/RfTechnologiesWebsite/Mask_group_9_mu6pnf.svg",
   },
   {
     id: 3,
     title: "WooCommerce Development",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We develop the entire Woo-Commerce store for you focusing on your success and business growth.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647291/RfTechnologiesWebsite/Mask_group_10_r09khi.svg",
   },
   {
     id: 4,
     title: "WooCommerce Integrations",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Increase your Store power and efficiency with the best Woo-Commerce Integrations.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647317/RfTechnologiesWebsite/Mask_group_11_zby2m5.svg",
   },
   {
     id: 5,
     title: "WooCommerce Configuration",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We expertly configure WooCommerce settings to optimize your online store’s performance, ensuring a seamless and efficient shopping experience for your customers.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647342/RfTechnologiesWebsite/Mask_group_12_kcarut.svg",
   },
   {
     id: 6,
     title: "WooCommerce Migration",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    content:
+      "We manage the seamless migration of your existing e-commerce store to WooCommerce, ensuring data integrity and minimal downtime during the transition.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
   },
   {
     id: 7,
     title: "WooCommerce Extensions",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We integrate and customize WooCommerce extensions to enhance your store's functionality, providing advanced features and tailored solutions to meet your unique business needs.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_6_fnjjdx.svg",
   },
 ];
@@ -1113,7 +1160,7 @@ export const woocomemrceCardText = [
   {
     title: "why choose us<span class='text-secondary'>?</span>",
     description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. </br> </br> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "At RF Tech, we deliver tailored WooCommerce solutions that elevate your online store's performance and functionality. Our expert team ensures a seamless setup, customization, and optimization, making your e-commerce vision a reality.<br/><br/>We offer dedicated support and ongoing enhancements to keep your store competitive and efficient. Choose us to experience exceptional service and a commitment to driving your e-commerce success.",
     btnLink: "/about-us ",
     btnTitle: "about us",
     enableImageLeft: true,
@@ -1121,7 +1168,7 @@ export const woocomemrceCardText = [
     cards: [
       {
         icon: <TbVirusSearch className="text-[80px] max-sm:text-[40px]" />,
-        cardTitle: "Effective Solutions",
+        cardTitle: "Effective",
       },
       {
         icon: <TbSettingsPause className="text-[80px] max-sm:text-[40px]" />,
@@ -1144,39 +1191,51 @@ export const woocomemrceCardText = [
 export const woocomemrcefaq = [
   {
     id: 1,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "What is included in your WooCommerce development services?",
+    answer:
+      "Our WooCommerce development services include custom theme design, configuration, extension integration, migration, and ongoing support. We ensure your online store is optimized for performance and meets your specific business needs.",
   },
   {
     id: 2,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "How long does it take to develop a WooCommerce store?",
+    answer:"The timeline for developing a WooCommerce store depends on the complexity and requirements of your project. Typically, it ranges from a few weeks to a couple of months. We provide a detailed timeline after discussing your specific needs.",
   },
   {
     id: 3,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "Can you help with migrating my existing store to WooCommerce?",
+    answer:"Yes, we handle the complete migration of your existing e-commerce store to WooCommerce, ensuring data integrity and minimal disruption. Our team manages the transfer of products, orders, and customer data for a smooth transition.",
   },
   {
     id: 4,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "What kind of support do you offer after my WooCommerce store is live?",
+    answer:
+      "We offer comprehensive post-launch support, including troubleshooting, updates, and enhancements. Our team is available to assist with any issues and provide ongoing maintenance to ensure your store continues to run smoothly.",
+  },
+];
+export const seoFaqs = [
+  {
+    id: 1,
+    question: "What SEO services do you offer?",
+    answer:
+      "We provide a comprehensive range of SEO services, including keyword research, on-page optimization, technical SEO, content creation, link building, and performance tracking, all tailored to enhance your online visibility and drive traffic.",
   },
   {
-    id: 5,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    id: 2,
+    question: "How long does it take to see results from SEO?",
+    answer:
+      "SEO is a long-term strategy, and results typically start to become visible within 3 to 6 months. However, the timeline can vary depending on your industry, competition, and the current state of your website.",
   },
   {
-    id: 6,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    id: 3,
+    question: "Do you offer ongoing SEO support?",
+    answer:
+      "Yes, we offer ongoing SEO support and maintenance to continuously optimize your site, adapt to changes in search algorithms, and refine strategies based on performance metrics.",
+  },
+  {
+    id: 4,
+    question: "How do you measure the success of an SEO campaign?",
+    answer:
+      "We measure the success of an SEO campaign through various metrics, including organic traffic, search engine rankings, conversion rates, and overall engagement. Regular reports and analytics provide insights into your campaign's performance and effectiveness.",
   },
 ];
 /* end woocommerce */
@@ -1186,57 +1245,57 @@ export const websiteServiceData = [
   {
     id: 1,
     title: "Ecommerce",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We design and develop high-performance e-commerce websites that provide seamless shopping experiences and drive online sales.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648706/RfTechnologiesWebsite/Mask_group_17_nd3l9k.svg",
   },
   {
     id: 2,
     title: "SEO",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We implement effective SEO strategies to optimize your website, improve search engine rankings, and increase organic traffic to drive more qualified leads.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648676/RfTechnologiesWebsite/Mask_group_16_vgjjim.svg",
   },
   {
     id: 3,
     title: "Development",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We create custom, scalable web solutions tailored to your needs, ensuring robust functionality and a seamless user experience across all devices.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647291/RfTechnologiesWebsite/Mask_group_10_r09khi.svg",
   },
   {
     id: 4,
     title: "Web Design",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We craft visually stunning and user-friendly websites that enhance your brand’s identity and engage visitors with intuitive navigation and responsive design.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648596/RfTechnologiesWebsite/Mask_group_15_bgalcf.svg",
   },
   {
     id: 5,
     title: "Open Source Platform",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We leverage open source platforms to build flexible and cost-effective web solutions, providing you with full control and customization to meet your specific needs.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648544/RfTechnologiesWebsite/Mask_group_14_x8cunu.svg",
   },
   {
     id: 6,
     title: "CRM",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    content:
+      "We integrate CRM systems into your website to streamline customer management, enhance communication, and improve overall efficiency in handling client relationships.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_6_fnjjdx.svg",
   },
   {
     id: 7,
     title: "Integration",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We seamlessly integrate your website with various tools and platforms, ensuring smooth data flow and enhancing functionality for a cohesive digital experience.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647317/RfTechnologiesWebsite/Mask_group_11_zby2m5.svg",
   },
   {
     id: 7,
     title: "Maintenance",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We provide ongoing website maintenance to ensure optimal performance, security updates, and timely troubleshooting, keeping your site running smoothly and efficiently.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642875/RfTechnologiesWebsite/Mask_group_8_ahomn6.svg",
   },
 ];
@@ -1246,9 +1305,8 @@ export const websiteImageWithText = [
     title: "Great websites grow your business over time",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721649228/RfTechnologiesWebsite/Group_1597883924_lbomti.png",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
-    btnLink: "/",
+    description: `We excel in crafting dynamic websites that blend stunning design with top-notch functionality, tailored to meet your business goals. Our focus is on delivering exceptional user experiences and impactful results.<br/><br/> Our team specializes in custom web solutions, ensuring seamless integration, robust performance, and responsive design for optimal results in a competitive market.`,
+    btnLink: "/contact-us",
     btnTitle: "OUR EXPERTISE",
     ctaLink: "",
     ctaTitle: "View More",
@@ -1262,39 +1320,27 @@ export const websiteImageWithText = [
 export const websitefaq = [
   {
     id: 1,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "What is included in your web design and development services?",
+    answer:
+      "Our services encompass everything from initial design concepts to full website development, including responsive design, front-end and back-end development, e-commerce solutions, and ongoing maintenance.",
   },
   {
     id: 2,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "How long does it take to build a website?",
+    answer:
+      "The timeline for building a website varies depending on its complexity and requirements. Typically, it ranges from a few weeks to a few months. We provide a detailed timeline based on your specific project needs.",
   },
   {
     id: 3,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "Do you offer ongoing website maintenance and support?",
+    answer:
+      "Yes, we offer comprehensive website maintenance and support services to ensure your site remains secure, up-to-date, and fully functional. This includes regular updates, performance monitoring, and troubleshooting.",
   },
   {
     id: 4,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    id: 5,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    id: 6,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "Can you help with integrating third-party tools and systems?",
+    answer:
+      "Absolutely. We specialize in integrating your website with various third-party tools and systems, such as CRM platforms, payment gateways, and marketing automation systems, to enhance functionality and streamline operations.",
   },
 ];
 
@@ -1305,43 +1351,43 @@ export const digitalServiceData = [
   {
     id: 1,
     title: "Social Media Marketing",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Boost your sale and revenue with our social media marketing skills which use the latest trends and technology.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651687/RfTechnologiesWebsite/Mask_group_18_kayl71.svg",
   },
   {
     id: 2,
     title: "Email Marketing",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Email marketing helps you to send customized messages, offer discount codes, and campaigns that increase customer lifetime value (CLV).",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651713/RfTechnologiesWebsite/Mask_group_19_otzj8i.svg",
   },
   {
     id: 3,
     title: "Pay Per Click (ad)",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Get an effective PPC strategy that increases potential traffic and the power of your business and drives the revenue.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651747/RfTechnologiesWebsite/Mask_group_20_w2h9oo.svg",
   },
   {
     id: 4,
     title: "Content Marketing",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "our content marketing strategy helps you to reach your target audience and provide quality information and increase brand impression.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651809/RfTechnologiesWebsite/Mask_group_22_vgivjd.svg",
   },
   {
     id: 5,
     title: "SEO",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Search Engine Optimization helps you to increase your google ranking and organic traffic which is a necessary part of a growing business.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721648676/RfTechnologiesWebsite/Mask_group_16_vgjjim.svg",
   },
   {
     id: 6,
     title: "Conversion Rate Optimization",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    content:
+      "With our experienced performance increase your monthly revenue and business area with the best marketing strategies.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651779/RfTechnologiesWebsite/Mask_group_21_wx4rgo.svg",
   },
 ];
@@ -1351,8 +1397,7 @@ export const socialAnalysisImageWithText = [
     title: "Social Analysts and Strategists",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721651869/RfTechnologiesWebsite/Group_1597883924_1_oow9q4.png",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: `We understand your business needs and keep in mind the core element of all our campaigns. We make fasten strategies and run campaigns to fulfill your business needs.<br/><br/>We analyze analytics to refine our strategies and help you become a market leader. Our expert team crafts innovative strategies to improve your product and drive results. By embracing new technologies and tactics, we ensure continuous improvement and enhanced marketing outcomes.`,
     btnLink: "/",
     btnTitle: "OUR EXPERTISE",
     ctaLink: "",
@@ -1369,7 +1414,7 @@ export const trustedBrandImageWithText = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721658313/RfTechnologiesWebsite/Group_1597883962_a02iim.svg",
     description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "We are passionate about delivering exceptional results. Our marketing experts develop tailored strategies to ensure high-class outcomes and drive significant revenue growth for our clients.<br/><br/>With a commitment to excellence, we employ innovative techniques and data-driven approaches to achieve optimal performance. Our goal is to provide impactful solutions that elevate your brand and maximize your success.",
     btnLink: "/",
     btnTitle: "OUR APPROCH",
     ctaLink: "",
@@ -1384,39 +1429,29 @@ export const trustedBrandImageWithText = [
 export const digitalMarketingfaq = [
   {
     id: 1,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "What digital marketing services do you offer?",
+    answer:
+      "We provide a comprehensive range of digital marketing services, including SEO, PPC advertising, content marketing, social media marketing, email marketing, and analytics. Each service is tailored to drive growth and achieve your specific business goals.",
   },
   {
     id: 2,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    id: 3,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question:
+      "How do you develop a digital marketing strategy for my business?",
+    answer:
+      "We develop customized digital marketing strategies by analyzing your business objectives, target audience, and market trends. Our team conducts thorough research to create a strategy that aligns with your goals and maximizes your marketing impact.",
   },
   {
     id: 4,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question: "How do you measure the success of digital marketing campaigns?",
+    answer:
+      "We measure success through key performance indicators (KPIs) such as website traffic, conversion rates, ROI, and engagement metrics. Detailed reports and analytics provide insights into campaign performance and help refine strategies for better results.",
   },
   {
     id: 5,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    id: 6,
-    question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    question:
+      "How long does it take to see results from digital marketing efforts?",
+    answer:
+      "The timeline for seeing results can vary depending on the strategy and goals. Generally, SEO and content marketing may take a few months to show significant impact, while PPC and social media campaigns can yield faster results. We provide regular updates and performance reviews to track progress.",
   },
 ];
 
@@ -1424,7 +1459,7 @@ export const digitalMarketingCardText = [
   {
     title: "Change the Way You See Social",
     description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      "Digital Marketing helps to increase your customers and potential views of your business which increases your business revenue.",
     btnLink: "/about-us ",
     btnTitle: "Social Media Strategy",
     enableImageLeft: true,
@@ -1433,21 +1468,21 @@ export const digitalMarketingCardText = [
     cards: [
       {
         icon: <TbVirusSearch className="text-[80px] max-sm:text-[40px]" />,
-        cardTitle: "Effective Solutions",
+        cardTitle: "My Blogs",
       },
       {
         icon: <TbSettingsPause className="text-[80px] max-sm:text-[40px]" />,
-        cardTitle: "Upgradation",
+        cardTitle: "My Podcasts",
       },
       {
         icon: (
           <PiProjectorScreenChart className="text-[80px] max-sm:text-[40px]" />
         ),
-        cardTitle: "Responsive and flexible design",
+        cardTitle: "My Videos",
       },
       {
         icon: <BsKanban className="text-[80px] max-sm:text-[40px]" />,
-        cardTitle: "In-Depth Analysis",
+        cardTitle: "Social Media",
       },
     ],
   },
@@ -1478,64 +1513,64 @@ export const seoServiceData = [
   {
     id: 1,
     title: "Local SEO",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Our Local SEO services will make you seen by thousands of local customers and beat your competitors.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662845/RfTechnologiesWebsite/Mask_group_23_tx8sdx.svg",
   },
   {
     id: 2,
     title: "On-Page Optimization",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Our On-Page Optimization service helps your individual page to rank higher organically for a specific keyword or multiple keywords.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662845/RfTechnologiesWebsite/Mask_group_24_wf44ci.svg",
   },
   {
     id: 3,
     title: "Technical SEO",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Get your website healthy and properly managed and indexed and rich snippet applicable without any technical issues.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662844/RfTechnologiesWebsite/Mask_group_25_sfg0dc.svg",
   },
   {
     id: 4,
     title: "Speed Optimization",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "With our speed optimization service get your web pages fast and speedy on all desktop and mobile devices.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662844/RfTechnologiesWebsite/Mask_group_26_rg2tz8.svg",
   },
   {
     id: 5,
     title: "Keyword Research",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Get the most reliable and less difficult keyword which ranks easily and grows your web page's potential and organic traffic.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662843/RfTechnologiesWebsite/Mask_group_27_fpdmpo.svg",
   },
   {
     id: 6,
     title: "Content Creation",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    content:
+      "We provide better quality content for your site that targets the right keywords, attracts visitors, and keeps users engaged with your site.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662843/RfTechnologiesWebsite/Mask_group_28_lazqu5.svg",
   },
   {
     id: 7,
     title: "E-commerce SEO",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "E-commerce SEO helps brands attract potential customers and set the stage for increased conversion rates. We take care of technical issues and optimize descriptions and titles.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662844/RfTechnologiesWebsite/Mask_group_29_bzuvyx.svg",
   },
   {
     id: 8,
     title: "SEO Consulting",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Get a better consultant from your well-experienced SEO analyst which has good marketing and business experience.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
   },
   {
     id: 9,
     title: "Analysis and Reporting",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Get a proper analysis and reporting of your all web pages, URLs, keywords and viewers, and conversion rates.s",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721662843/RfTechnologiesWebsite/Mask_group_30_wme1fs.svg",
   },
 ];
@@ -1570,58 +1605,65 @@ export const seoCardText = [
 export const grapicDesignServiceData = [
   {
     id: 1,
-    title: "Label Design",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    title: "Packaging Design",
+    content:
+      "Whether, it is a pouch or a box requiring design tactics, a pouch, sachets, or a bag with a simple design, we can bring life to your products with our best creative design skills.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721477113/RfTechnologiesWebsite/Mask_group_m099ft.svg",
   },
   {
     id: 2,
     title: "Label Design",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Our experienced designer gives creative designs for all types of labels including full wrap-around labels as well as front and back labels with different 2D or 3D Designs.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
   },
   {
     id: 3,
     title: "Banners Design",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "Creative web banners for driving more organic traffic or for display banners and hoardings, get awesome designs with our great skills.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638917/RfTechnologiesWebsite/Mask_group_6_ajs3qa.svg",
   },
   {
     id: 4,
-    title: "Logo and Branding Design",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    title: "Web Design",
+    content:
+      "We can also design a perfect layout for your website that will sit well with your brand and be user-friendly. ",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487828/Mask_group_4_vn0iha.svg",
   },
   {
     id: 5,
-    title: "Products and Catalogs",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    title: "Logo and Branding Design",
+    content:
+      "Your logo is the unique identity of your business or brand. Logo designs need to eye-catching impact on business insight perfectly.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487832/Mask_group_2_cyrs1o.svg",
   },
   {
     id: 6,
-    title: "Front-end and UX/UI Design",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    title: "Products and Catalogs",
+    content:
+      "Get a creative and effective design for your product catalogs. it might need animated GIFs, 2D designs, or 3D Designs.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487834/Mask_group_1_bnef0w.svg",
   },
   {
     id: 7,
-    title: "Social Media Design",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    title: "Front-end and UX/UI Design",
+    content:
+      "Front-End and UI/UX design services include gaming apps, e-commerce apps, delivery apps, educational apps, and business service app designs.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487835/Mask_group_jelked.svg",
   },
   {
     id: 8,
-    title: "InfoGraphicst",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    title: "Social Media Design",
+    content:
+      "Make impactful social media profiles, campaigns, and ads customized and personalized through our social media design expertise.",
+    icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638947/RfTechnologiesWebsite/Mask_group_7_kkk7xr.svg",
+  },
+  {
+    id: 9,
+    title: "InfoGraphics",
+    content:
+      "Get the best layouts, color schemes, icons, and fonts that make a strong attractive impact on your landing pages, brochure, or product guides.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638947/RfTechnologiesWebsite/Mask_group_7_kkk7xr.svg",
   },
 ];
@@ -1659,57 +1701,57 @@ export const crmServiceData = [
   {
     id: 1,
     title: "CRM Consulting",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We offer expert guidance to help you select and implement the right CRM system, optimizing your processes and enhancing customer relationships.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721638848/RfTechnologiesWebsite/Mask_group_5_dstriz.svg",
   },
   {
     id: 2,
     title: "CRM Solution Development",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We design and develop customized CRM solutions tailored to your specific business needs, streamlining operations and improving customer management.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721737918/RfTechnologiesWebsite/Mask_group_36_gyikae.svg",
   },
   {
     id: 3,
     title: "CRM Implementation",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We ensure a smooth and effective deployment of your CRM system, handling integration, data migration, and user training for optimal performance.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647342/RfTechnologiesWebsite/Mask_group_12_kcarut.svg",
   },
   {
     id: 4,
     title: "Mobile CRM Solutions",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We create mobile-optimized CRM applications that provide seamless access and management of customer data from any device, enhancing flexibility and productivity. ",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721737960/RfTechnologiesWebsite/Mask_group_37_oogaqw.svg",
   },
   {
     id: 5,
     title: "CRM Integration",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We integrate your CRM system with existing tools and platforms, ensuring seamless data flow and unified operations across your business.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721647317/RfTechnologiesWebsite/Mask_group_11_zby2m5.svg",
   },
   {
     id: 6,
     title: "CRM Migration",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    content:
+      "We manage the secure and efficient transfer of your CRM data to a new system, ensuring minimal disruption and preserving data integrity.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642877/RfTechnologiesWebsite/Mask_group_4_suj206.svg",
   },
   {
     id: 7,
     title: "CRM Platform Customization",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We tailor CRM platforms to fit your unique business processes, enhancing functionality and user experience to meet your specific needs.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642876/RfTechnologiesWebsite/Mask_group_6_fnjjdx.svg",
   },
   {
     id: 8,
     title: "CRM Software Maintenance",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+    content:
+      "We provide ongoing maintenance to ensure your CRM software remains up-to-date, secure, and fully functional, addressing any issues promptly.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721642875/RfTechnologiesWebsite/Mask_group_8_ahomn6.svg",
   },
 ];
@@ -1720,7 +1762,7 @@ export const crmKeyFeatures = [
     title: "Understand Your Customers",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738259/RfTechnologiesWebsite/Mask_group_38_dfx41z.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "CRM software provides deep insights into customer behavior, preferences, and interactions, enabling you to better understand their needs and tailor your strategies for more personalized and effective engagement.",
   },
   {
     id: 2,
@@ -1728,7 +1770,7 @@ export const crmKeyFeatures = [
     bgColor: "#C90764",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738285/RfTechnologiesWebsite/Mask_group_39_b5btme.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "CRM software enhances your sales efforts by streamlining lead management, tracking sales activities, and automating follow-ups, ultimately driving higher conversion rates and increased revenue.",
   },
   {
     id: 3,
@@ -1736,7 +1778,7 @@ export const crmKeyFeatures = [
     bgColor: "#01AB78",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738319/RfTechnologiesWebsite/Mask_group_40_kyr5os.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "CRM software centralizes customer interactions and provides tools for streamlined communication, ensuring timely and effective exchanges between your team and customers for enhanced relationship management.",
   },
   {
     id: 4,
@@ -1744,7 +1786,7 @@ export const crmKeyFeatures = [
     bgColor: "#D09703",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738349/RfTechnologiesWebsite/Mask_group_41_thfnjv.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "CRM software offers powerful analytics and reporting tools that provide valuable insights into customer trends and business performance, enabling you to make informed, strategic decisions for better outcomes.",
   },
   {
     id: 5,
@@ -1752,7 +1794,7 @@ export const crmKeyFeatures = [
     bgColor: "#710583",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738382/RfTechnologiesWebsite/Mask_group_42_j5fxq0.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "CRM software improves customer service by providing quick access to customer history, enabling prompt responses and personalized support, and streamlining issue resolution for a superior customer experience.",
   },
   {
     id: 6,
@@ -1760,7 +1802,7 @@ export const crmKeyFeatures = [
     bgColor: "#F17812",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721738407/RfTechnologiesWebsite/Mask_group_43_popba4.svg",
     details:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "CRM software automates routine tasks such as data entry, follow-up reminders, and workflow management, freeing up your team’s time to focus on more strategic activities and improving overall productivity.",
   },
 ];
 export const crmImageWithText = [
@@ -1882,37 +1924,37 @@ export const shopifyFaq = [
   {
     id: 1,
     question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
+    answer:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
   },
   {
     id: 2,
     question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
+    answer:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
   },
   {
     id: 3,
     question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
+    answer:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
   },
   {
     id: 4,
     question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
+    answer:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
   },
   {
     id: 5,
     question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
+    answer:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
   },
   {
     id: 6,
     question: "Porem ipsum dolor sit amet, consectetur adipiscing elit?",
-    awnser:
+    answer:
       "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
   },
 ];

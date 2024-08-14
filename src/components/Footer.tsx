@@ -94,7 +94,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="flex flex-col gap-8 items-start xl:basis-[20%] lg:basis-[30%] md:basis-[25%] basis-full  justify-start">
+          <div className="flex flex-col gap-8 items-start xl:basis-[20%] lg:basis-[30%] md:basis-[25%] basis-full  justify-start relative z-1">
             <h2 className="font-bold text-[32px] max-md:mt-4">Services</h2>
             <ul className="flex flex-col items-start justify-start gap-4">
               {serviceLinks?.map((item) => (
@@ -115,7 +115,7 @@ const Footer = () => {
         src={
           "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719848735/RfTechnologiesWebsite/Trade_Mark-02_2_oggpmo.png"
         }
-        className="absolute bottom-8 right-0 max-sm:max-w-48 max-lg:max-w-48"
+        className="absolute bottom-8 right-0 max-sm:max-w-48 max-lg:max-w-48 z-0"
         loading="lazy"
         width={362}
         height={312}

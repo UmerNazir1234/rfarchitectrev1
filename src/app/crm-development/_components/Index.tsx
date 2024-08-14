@@ -11,6 +11,7 @@ import ProjectSubmission from "@/components/ProjectSubmission";
 import Stacks from "@/components/Stacks";
 import TextWithCards from "@/components/TextWithCards";
 import {
+  crmFaqs,
   crmFeatures,
   crmImageWithText,
   crmKeyFeatures,
@@ -49,12 +50,10 @@ const Index = () => {
         </div>
       </ImageWithText>
       <Stacks />
-      <Faq data={faq} classes="py-24" />
+      <Faq data={crmFaqs} classes="py-24" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
         btnTitle="Submit Your Project"
         btnUrl="/"
       />
