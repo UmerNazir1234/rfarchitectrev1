@@ -16,7 +16,7 @@ const IconCircle = () => {
           x2="-45.1853"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="267.263"
@@ -24,7 +24,7 @@ const IconCircle = () => {
           x2="-45.1853"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="282.504"
@@ -32,7 +32,7 @@ const IconCircle = () => {
           x2="-29.9441"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="297.746"
@@ -40,7 +40,7 @@ const IconCircle = () => {
           x2="-14.7024"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="312.987"
@@ -48,7 +48,7 @@ const IconCircle = () => {
           x2="0.538834"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="328.228"
@@ -56,7 +56,7 @@ const IconCircle = () => {
           x2="15.78"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="343.47"
@@ -64,7 +64,7 @@ const IconCircle = () => {
           x2="31.0217"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="358.711"
@@ -72,7 +72,7 @@ const IconCircle = () => {
           x2="46.263"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="373.952"
@@ -80,7 +80,7 @@ const IconCircle = () => {
           x2="61.5042"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="389.194"
@@ -88,7 +88,7 @@ const IconCircle = () => {
           x2="76.7459"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="404.435"
@@ -96,7 +96,7 @@ const IconCircle = () => {
           x2="91.9871"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="419.677"
@@ -104,7 +104,7 @@ const IconCircle = () => {
           x2="107.228"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="434.918"
@@ -112,7 +112,7 @@ const IconCircle = () => {
           x2="122.47"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="450.159"
@@ -120,7 +120,7 @@ const IconCircle = () => {
           x2="137.711"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="465.401"
@@ -128,7 +128,7 @@ const IconCircle = () => {
           x2="152.953"
           y2="282.504"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="252.022"
@@ -136,7 +136,7 @@ const IconCircle = () => {
           x2="-60.4265"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="236.78"
@@ -144,7 +144,7 @@ const IconCircle = () => {
           x2="-75.6682"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="221.539"
@@ -152,7 +152,7 @@ const IconCircle = () => {
           x2="-90.9094"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="206.298"
@@ -160,7 +160,7 @@ const IconCircle = () => {
           x2="-106.151"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="191.056"
@@ -168,7 +168,7 @@ const IconCircle = () => {
           x2="-121.392"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="175.815"
@@ -176,7 +176,7 @@ const IconCircle = () => {
           x2="-136.634"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="160.574"
@@ -184,7 +184,7 @@ const IconCircle = () => {
           x2="-151.875"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="145.332"
@@ -192,7 +192,7 @@ const IconCircle = () => {
           x2="-167.116"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="130.091"
@@ -200,7 +200,7 @@ const IconCircle = () => {
           x2="-182.358"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="114.849"
@@ -208,7 +208,7 @@ const IconCircle = () => {
           x2="-197.599"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="99.6077"
@@ -216,7 +216,7 @@ const IconCircle = () => {
           x2="-212.841"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="84.3665"
@@ -224,7 +224,7 @@ const IconCircle = () => {
           x2="-228.082"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="69.1253"
@@ -232,7 +232,7 @@ const IconCircle = () => {
           x2="-243.323"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
         <line
           x1="53.8836"
@@ -240,7 +240,7 @@ const IconCircle = () => {
           x2="-258.565"
           y2="267.263"
           stroke="#002577"
-          stroke-width="1.52414"
+          strokeWidth="1.52414"
         />
       </g>
       <defs>
