@@ -1,6 +1,6 @@
 export const Site = {
   name: "Rf Technologies",
-  logo: "https://rftechnologies.com.pk/wp-content/uploads/2021/04/Rf_technologies_logo.png",
+  logo: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1703166464/RF%20Technologies%20Logo-20231221T134528Z-001/RF%20Technologies%20Logo/Side%20by%20Side/PNG/Side_Logo-05_mjeold.png",
   WhiteLogo:
     "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719825111/RfTechnologiesWebsite/Side_Logo-02_2_izjlvf.png",
   logoWhite: "",

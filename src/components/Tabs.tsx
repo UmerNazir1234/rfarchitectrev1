@@ -12,7 +12,7 @@ const TabsComponent = ({ tabs }: TabsProps) => {
   const [activeTab, setActiveTab] = useState(tabs[0].label);
 
   return (
-    <div>
+    <div className="relative z-1">
       <div className="flex items-center md:flex-nowrap flex-wrap justify-center gap-5 max-md:px-2">
         {tabs.map((tab) => (
           <button

@@ -90,6 +90,10 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
         <link rel="alternate" hrefLang="en-US" href={Site?.url} />
+        <link
+          rel="prefetch"
+          href={Site?.logo}
+        />
       </head>
       <body className={`${advent_Pro?.variable} ${nunito?.variable}`}>
         <Providers>

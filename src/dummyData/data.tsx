@@ -459,6 +459,40 @@ export const tabs: Tabs[] = [
   },
 ];
 
+export const aboutTabs: Tabs[] = [
+  {
+    label: "Knowledge",
+    content:
+      "Knowledge is the foundation of innovation. At RF Technologies, we believe that true power lies in not just acquiring knowledge, but in delivering it precisely when and where it's needed. Our team of experts is dedicated to guiding our clients with the insights they need to excel. We don't just speak to everyone; we focus on our target audience, communicating in a way that resonates with them. This strategic approach sets us apart from the competition, allowing us to cut through the noise and deliver unparalleled value.",
+    icon: <TbBulb className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Promise",
+    content:
+      "Our commitment to our clients is unwavering. We make promises that we intend to keep, ensuring that every project we undertake is completed with the highest level of integrity and professionalism. At RF Technologies, a promise is more than just words; it's a bond of trust. We understand the importance of reliability in building long-lasting relationships, and we work tirelessly to uphold the trust our clients place in us.",
+    icon: <PiHandshakeLight className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Consistency",
+    content:
+      "Consistency is key to our success. At RF Technologies, we are committed to maintaining a high standard of quality across all our services. Whether it's our approach to problem-solving or our attention to detail, consistency is what ensures our clients receive the same level of excellence every time they work with us. This steadfast dedication to quality is what keeps us ahead in a competitive industry.",
+    icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Authenticity",
+    content:
+      "Authenticity is at the heart of everything we do. We believe in being true to our values and transparent in our dealings. At RF Technologies, authenticity means staying genuine in our approach, whether it's in our communication with clients or the way we conduct our business. This honesty and openness are what build trust and foster strong, enduring partnerships.",
+    icon: <BiCheckShield className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+  {
+    label: "Passion",
+    content:
+      "Passion drives us to go the extra mile. At RF Technologies, we are passionate about technology and its potential to transform businesses. This passion fuels our creativity and innovation, pushing us to deliver solutions that are not only effective but also inspiring. Our enthusiasm for what we do is evident in the results we achieve for our clients, making us a partner who is as invested in their success as they are.",
+    icon: <SiFireship className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+  },
+];
+
+
 export const work: Work[] = [
   {
     id: 1,
@@ -783,7 +817,8 @@ export const customSoftwareDevelopmentServiceData = [
   {
     id: 1,
     title: "UX/UI Design & Prototype",
-    content:"We craft intuitive and visually engaging designs, creating prototypes that ensure a seamless user experience before development.",
+    content:
+      "We craft intuitive and visually engaging designs, creating prototypes that ensure a seamless user experience before development.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721477113/RfTechnologiesWebsite/Mask_group_m099ft.svg",
   },
   {
@@ -803,19 +838,22 @@ export const customSoftwareDevelopmentServiceData = [
   {
     id: 4,
     title: "Custom Web Development",
-    content:"We build tailor-made web solutions that meet your unique requirements, ensuring a seamless, scalable, and engaging online experience.",
+    content:
+      "We build tailor-made web solutions that meet your unique requirements, ensuring a seamless, scalable, and engaging online experience.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487828/Mask_group_4_vn0iha.svg",
   },
   {
     id: 5,
     title: "Legacy App Upgradation",
-    content:"We modernize outdated applications with the latest technologies and features, enhancing performance and ensuring compatibility with current systems.",
+    content:
+      "We modernize outdated applications with the latest technologies and features, enhancing performance and ensuring compatibility with current systems.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487832/Mask_group_2_cyrs1o.svg",
   },
   {
     id: 6,
     title: "Enterprise App Development",
-    content:"We create robust, scalable applications designed to streamline operations, improve efficiency, and meet the complex needs of large organizations.",
+    content:
+      "We create robust, scalable applications designed to streamline operations, improve efficiency, and meet the complex needs of large organizations.",
     icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721487834/Mask_group_1_bnef0w.svg",
   },
   {
@@ -1020,13 +1058,15 @@ export const crmFaqs = [
   {
     id: 3,
     question: "What types of data can CRM software analyze?",
-    answer: "CRM software can analyze various types of data, including customer interactions, sales performance, marketing campaign results, and customer feedback. This data helps you identify trends, make informed decisions, and refine your strategies.",
+    answer:
+      "CRM software can analyze various types of data, including customer interactions, sales performance, marketing campaign results, and customer feedback. This data helps you identify trends, make informed decisions, and refine your strategies.",
   },
   {
     id: 4,
     question: "How does CRM software improve customer service?",
-    answer:"CRM software improves customer service by providing quick access to customer information, facilitating timely responses, and streamlining issue resolution. This results in more efficient support and a better overall customer experience.",
-  }
+    answer:
+      "CRM software improves customer service by providing quick access to customer information, facilitating timely responses, and streamlining issue resolution. This results in more efficient support and a better overall customer experience.",
+  },
 ];
 export const csdFaqs = [
   {
@@ -1049,8 +1089,10 @@ export const csdFaqs = [
   },
   {
     id: 4,
-    question: "Do you offer support and maintenance after the software is delivered?",
-    answer: "Yes, we provide comprehensive post-launch support and maintenance to ensure your software remains up-to-date, secure, and fully functional. Our team is available to handle any issues, updates, or enhancements as needed.",
+    question:
+      "Do you offer support and maintenance after the software is delivered?",
+    answer:
+      "Yes, we provide comprehensive post-launch support and maintenance to ensure your software remains up-to-date, secure, and fully functional. Our team is available to handle any issues, updates, or enhancements as needed.",
   },
 ];
 
@@ -1094,14 +1136,16 @@ export const wooCommerceKeyFeatures = [
     title: "Sell Anything",
     bgColor: "#710583",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729147/RfTechnologiesWebsite/Mask_group_34_khsfqk.svg",
-    details:"WooCommerce supports a wide range of product types, from physical goods to digital downloads and subscriptions, giving you the flexibility to sell virtually any product or service.",
+    details:
+      "WooCommerce supports a wide range of product types, from physical goods to digital downloads and subscriptions, giving you the flexibility to sell virtually any product or service.",
   },
   {
     id: 6,
     title: "Extensions Store",
     bgColor: "#F17812",
     src: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721729190/RfTechnologiesWebsite/Mask_group_35_id3ako.svg",
-    details:"WooCommerce’s Extensions Store offers a vast selection of plugins and add-ons, allowing you to enhance your store’s functionality with additional features like advanced analytics, marketing tools, and more.",
+    details:
+      "WooCommerce’s Extensions Store offers a vast selection of plugins and add-ons, allowing you to enhance your store’s functionality with additional features like advanced analytics, marketing tools, and more.",
   },
 ];
 export const woocomemrceServiceData = [
@@ -1198,16 +1242,19 @@ export const woocomemrcefaq = [
   {
     id: 2,
     question: "How long does it take to develop a WooCommerce store?",
-    answer:"The timeline for developing a WooCommerce store depends on the complexity and requirements of your project. Typically, it ranges from a few weeks to a couple of months. We provide a detailed timeline after discussing your specific needs.",
+    answer:
+      "The timeline for developing a WooCommerce store depends on the complexity and requirements of your project. Typically, it ranges from a few weeks to a couple of months. We provide a detailed timeline after discussing your specific needs.",
   },
   {
     id: 3,
     question: "Can you help with migrating my existing store to WooCommerce?",
-    answer:"Yes, we handle the complete migration of your existing e-commerce store to WooCommerce, ensuring data integrity and minimal disruption. Our team manages the transfer of products, orders, and customer data for a smooth transition.",
+    answer:
+      "Yes, we handle the complete migration of your existing e-commerce store to WooCommerce, ensuring data integrity and minimal disruption. Our team manages the transfer of products, orders, and customer data for a smooth transition.",
   },
   {
     id: 4,
-    question: "What kind of support do you offer after my WooCommerce store is live?",
+    question:
+      "What kind of support do you offer after my WooCommerce store is live?",
     answer:
       "We offer comprehensive post-launch support, including troubleshooting, updates, and enhancements. Our team is available to assist with any issues and provide ongoing maintenance to ensure your store continues to run smoothly.",
   },
@@ -2156,8 +2203,7 @@ export const becomeImageWithText = [
     title: "Why Choose a Business Partner?",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741821/RfTechnologiesWebsite/Group_1597883963_hevjr1.svg",
-    description:
-      "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <br/> Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:"Partnering with experts gives you access to specialized knowledge and tailored strategies designed to drive your success. You gain a strategic ally committed to achieving your goals and overcoming challenges.<br/><br/>A strong partnership offers more than just services; it provides enhanced support and streamlined processes, ensuring measurable results and long-term growth.",
     btnLink: "",
     btnTitle: "",
     ctaLink: "",
@@ -2173,31 +2219,104 @@ export const becomePartnersTabs: Tabs[] = [
   {
     label: "Our Priorities",
     content:
-      "Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus. Curabitur tempor quis eros tempus lacinia.",
+      "Our priority is to build partnerships grounded in trust, collaboration, and a shared vision for success. By aligning our expertise with your business goals, we craft synergistic solutions that deliver exceptional results and foster long-term growth. Together, we transform challenges into opportunities, achieving extraordinary outcomes.",
     icon: <TbBulb className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
   {
     label: "Beginners Partnership",
     content:
-      "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+      "Starting a partnership with RF Technologies means entering into a world of guidance and growth. We understand that the beginning of any partnership requires careful nurturing. We provide tailored support and strategic insights to ensure that even those new to collaboration with us find a clear path to success. Our approach is focused on meeting the unique needs of beginners, ensuring they feel confident and supported every step of the way.",
     icon: <PiHandshakeLight className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
   {
     label: "Modified Developers",
     content:
-      "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+      "At RF Technologies, we continuously evolve our development practices to stay ahead of the curve. Our team of modified developers is equipped with the latest tools and methodologies, enabling us to offer innovative solutions tailored to your specific needs. By choosing us, you partner with a team that is not only skilled but also adaptable, ensuring that your projects benefit from cutting-edge techniques and forward-thinking strategies.",
     icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
   {
     label: "Trustworthy Companionship",
     content:
-      "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
+      "Trust is the cornerstone of every successful partnership. At RF Technologies, we pride ourselves on being reliable partners who stand by our commitments. Our trustworthy companionship means that you can count on us to deliver what we promise, when we promise. We build relationships based on integrity and mutual respect, ensuring that your experience with us is both positive and productive.",
     icon: <BiCheckShield className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
   {
-    label: "24/7 hours Availability",
-    content: "As they.",
+    label: "24/7 Availability",
+    content:
+      "In today's fast-paced world, availability is crucial. That's why we offer round-the-clock support to our partners. Whether you need assistance during the day or in the middle of the night, our team is always ready to help. This 24/7 availability ensures that your business runs smoothly without any interruptions, giving you the peace of mind that we're always here when you need us.",
     icon: <SiFireship className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
 ];
+
 /* end become a password */
+
+//  Benefits Section data here............
+export const shopifyBenefits = [
+  {
+    id: 1,
+    title: "Hosted Solution",
+    content: `Shopify is a cloud-based setup and hosted solution where you no
+                need to worry about servers or databases. You can access your
+                store from anywhere with admin login details & an internet
+                connection without any setup.`,
+    bgClr: "#F8E0E0",
+    titleClr: "#CC3232",
+  },
+  {
+    id: 2,
+    title: "Security, and Reliability",
+    content: `Shopify Offers the Best Services In terms of Security and
+                provides the best data protection.`,
+    bgClr: "#CAEBFF",
+    titleClr: "#1270AA",
+  },
+  {
+    id: 3,
+    title: "SEO Friendly",
+    content: `Shopify has the Best built-in SEO Features that are easy to use
+                and the best to rank higher on the SERPs.`,
+    bgClr: "#bbf7d0",
+    titleClr: "#0E975E",
+  },
+  {
+    id: 4,
+    title: "Built-In Marketing Tools",
+    content: `Shopify has built-in marketing tools which make it lower the
+                cast on start-ups. It allows us to edit page meta title, meta
+                description, meta URL, make pages visible and invisible, and
+                redirect to any URL.`,
+    bgClr: "#F9D1F0",
+    titleClr: "#B7419B",
+  }
+];
+
+export const wordPressBenefits = [
+  {
+    id: 1,
+    title: "User-friendly Content Management",
+    content: `WordPress provides easy features for quick editing and a good user experience.`,
+    bgClr: "#F8E0E0",
+    titleClr: "#CC3232",
+  },
+  {
+    id: 2,
+    title: "Plugins and Integrations",
+    content: `WordPress is compatible with plug-ins that provide advanced functions and complete your needs completely.`,
+    bgClr: "#CAEBFF",
+    titleClr: "#1270AA",
+  },
+  {
+    id: 3,
+    title: "Flexible and Customizable Design",
+    content: `WordPress provides a very easy drag and drop functionality to customize your site for a better experience.`,
+    bgClr: "#BCF2DB",
+    titleClr: "#0E975E",
+  },
+  {
+    id: 4,
+    title: "WordPress Community",
+    content: `WordPress provides a very easy drag and drop functionality to customize your site for a better experience.`,
+    bgClr: "#F9D1F0",
+    titleClr: "#B7419B",
+  }
+];

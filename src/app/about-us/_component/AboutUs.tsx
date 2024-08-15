@@ -7,7 +7,6 @@ import OurVision from "./OurVision";
 import WhatMakesUnique from "./WhatMakesUnique";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import content from "@/data/about";
-console.log(content);
 
 const AboutUs = () => {
   const {

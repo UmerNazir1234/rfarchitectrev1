@@ -8,6 +8,7 @@ import Stacks from "@/components/Stacks";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import Faq from "@/components/Faq";
 import {
+  wordPressBenefits,
   wordpressCardText,
   wordpressfaq,
   wordpressImageWithText,
@@ -28,7 +29,7 @@ const Index = () => {
       />
       <Hero />
       <SubServices data={wordPressServiceData} />
-      <Benifits />
+      <Benifits data={wordPressBenefits}/>
       <ImageWithText content={wordpressImageWithText} classes="pt-32" />
       <TextWithCards content={wordpressCardText} classes="py-32" />
       <Stacks />

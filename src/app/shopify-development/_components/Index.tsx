@@ -6,6 +6,7 @@ import ImageWithText from "@/components/ImageWithText";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import Stacks from "@/components/Stacks";
 import {
+  shopifyBenefits,
   shopifyFaq,
   shopifyFeatures,
   shopifyImageWithText,
@@ -42,7 +43,7 @@ const Index = () => {
         />
       </div>
       <ImageWithText content={shopImageWithText} classes="!pt-8" />
-      <Benifits />
+      <Benifits data={shopifyBenefits}/>
       <ImageWithText content={shopifyImageWithText} classes="!pb-24">
         <div className="mt-4 w-full">
           <Features data={shopifyFeatures} />

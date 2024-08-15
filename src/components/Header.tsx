@@ -29,7 +29,7 @@ const Header = () => {
               {Site?.logo ? (
                 <Image
                   src={Site?.logo}
-                  alt={`${Site?.name} + 'Logo' `}
+                  alt={`${Site?.name} + 'Offical Logo' `}
                   height={70}
                   width={190}
                   className="object-contain max-sm:w-40 max-sm:h-auto"
