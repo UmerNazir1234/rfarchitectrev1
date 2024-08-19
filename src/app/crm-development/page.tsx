@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: URL,
-  },
+  }, 
   twitter: {
     title,
     description,
@@ -24,7 +24,8 @@ export const metadata: Metadata = {
   },
 };
 const page = () => {
-  return <Index />;
+
+  return <Index />;   
 };
 
 export default page;
