@@ -16,14 +16,14 @@ const LeadingSolution = ({ content }: props) => {
   return (
     <section className="relative z-20">
       <div className="page-width pt-32 relative">
-        <div className="bg-gradient-to-l clip-left-top  to-[#BCCDF2] from-[#0B3DAB] rounded-[40px] min-h-[84vh] max-md:min-h-[80vh] relative">
+        <div className="bg-gradient-to-l clip-left-top  to-[#BCCDF2] from-[#0B3DAB] rounded-[40px] min-h-[84vh] max-md:min-h-[80vh] relative h-full">
           <Button
             enableIcons={true}
             title={content?.roundCta}
             iconStyle="stroke-secondary"
             classes="bg-secondary absolute top-5 left-5"
           />
-          <div className="flex justify-center md:flex-nowrap flex-wrap gap-2 lg:pt-18 lg:px-16 sm:pt-20 sm:px-10 max-sm:pt-10 max-sm:px-3  ">
+          <div className="flex justify-center md:flex-nowrap flex-wrap gap-2 lg:pt-18 lg:px-16 sm:py-20 sm:px-10 max-sm:pt-10 max-sm:px-3  ">
             <div className="md:basis-[45%]  basis-full">
               <h2 className="text-primary md:w-3/4 uppercase">
                 {content?.title}

@@ -25,7 +25,7 @@ const Steps = ({ classes }: props) => {
             src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720172066/RfTechnologiesWebsite/Group_1597883770_bag6zl.png"
             loading="lazy"
             alt="Steps to Build a SuccessfulDigital Product"
-            layout="fill"
+            fill
             objectFit="contain"
             className=""
           />

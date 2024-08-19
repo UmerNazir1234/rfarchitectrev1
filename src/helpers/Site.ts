@@ -109,6 +109,11 @@ export const Site = {
       id: 19,
       name: "Woocommerce Development",
       link: "/woocommerce-development",
+    },
+    {
+      id:20,
+      name: "Our Services",
+      link: "/our-services"
     }
   ]
 };

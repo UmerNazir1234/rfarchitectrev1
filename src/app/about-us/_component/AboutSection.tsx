@@ -14,7 +14,7 @@ interface AboutSectionProps {
 
 const AboutSection: React.FC<AboutSectionProps> = ({ data }) => {
   return (
-    <section className="flex flex-row relative items-center justify-center bg-cover bg-no-repeat min-h-dvh -mt-28 overflow-hidden bg-primary">
+    <section className="flex flex-row relative items-center justify-center bg-cover bg-no-repeat min-h-dvh md:-mt-28 overflow-hidden bg-primary">
       <div className="page-width">
         <Heading title={data.title} />
         <p

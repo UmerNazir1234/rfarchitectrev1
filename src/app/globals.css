@@ -256,3 +256,9 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width:520px){
+  .serviceSlider{
+    margin-top:-10px;
+  }
+}

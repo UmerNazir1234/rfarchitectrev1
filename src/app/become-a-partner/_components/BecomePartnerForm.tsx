@@ -89,7 +89,7 @@ const BecomePartnerForm = () => {
                   How would you like to join us?
                 </p>
 
-                <div className="flex items-center justify-between gap-10 mt-5">
+                <div className="flex items-center justify-between gap-10 mt-5 flex-wrap">
                   <div className="bg-blueLight w-full p-4 rounded-lg border-primary border">
                     <label className="flex items-center justify-start gap-3">
                       <input

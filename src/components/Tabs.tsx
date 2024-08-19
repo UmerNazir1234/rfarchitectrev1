@@ -17,7 +17,7 @@ const TabsComponent = ({ tabs }: TabsProps) => {
         {tabs.map((tab) => (
           <button
             key={tab.label}
-            className={`rounded-xl lg:min-w-52 min-w-28 lg:py-8 md:py-4 py-2 px-6 p-lg max-md:text-base text-primary font-semibold bg-blueLight shadow ${
+            className={`w-full rounded-xl lg:min-w-52 min-w-28 lg:py-8 md:py-4 py-2 px-6 text-primary font-semibold bg-blueLight shadow ${
               activeTab === tab.label ? "bg-secondary text-white" : ""
             }`}
             onClick={() => setActiveTab(tab.label)}
@@ -25,7 +25,7 @@ const TabsComponent = ({ tabs }: TabsProps) => {
             <div className="flex items-center justify-center lg:mb-4 mb-1">
               {tab?.icon}
             </div>
-            {tab.label}
+            <p className="text-base">{tab.label}</p>
           </button>
         ))}
       </div>

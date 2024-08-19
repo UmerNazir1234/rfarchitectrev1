@@ -9,7 +9,7 @@ import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import { useTheme } from "@/context/ThemeContext";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const pathname = usePathname();
@@ -19,164 +19,178 @@ const Header = () => {
   const handleDropdownToggle = () => {
     setDropdownOpen(!dropdownOpen);
   };
+  const handleToggle = () => {
+    toggle();
+  };
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (body) {
+      body.style.overflow = open ? "hidden" : "";
+    }
+  }, [open]);
 
   return (
-    <header className="bg-light drop-shadow-lg relative z-50">
-      <div className="flex items-center justify-between sm:h-28 h-24 page-width">
-        <div className="flex items-center space-x-4">
-          <div className="relative">
-            <Link href={"/"}>
-              {Site?.logo ? (
-                <Image
-                  src={Site?.logo}
-                  alt={`${Site?.name} + 'Offical Logo' `}
-                  height={70}
-                  width={190}
-                  className="object-contain max-sm:w-40 max-sm:h-auto"
-                />
-              ) : (
-                <span className="text-5xl max-sm:text-2xl font-bold text-primary">
-                  {Site?.name}
-                </span>
-              )}
-            </Link>
+    <>
+      <header className="bg-light drop-shadow-lg relative z-50">
+        <div className="flex items-center justify-between sm:h-28 h-24 page-width">
+          <div className="flex items-center space-x-4">
+            <div className="relative">
+              <Link href={"/"}>
+                {Site?.logo ? (
+                  <Image
+                    src={Site?.logo}
+                    alt={`${Site?.name} + 'Offical Logo' `}
+                    height={70}
+                    width={190}
+                    className="object-contain max-sm:w-40 max-sm:h-auto"
+                  />
+                ) : (
+                  <span className="text-5xl max-sm:text-2xl font-bold text-primary">
+                    {Site?.name}
+                  </span>
+                )}
+              </Link>
+            </div>
           </div>
-        </div>
-        <nav className="flex-1 hidden xl:flex justify-center space-x-6 ">
-          <ul className="flex justify-center items-center gap-14">
-            {menuItems?.map((item) => (
-              <li key={item?.id}>
-                {item?.links && item?.links?.length > 0 ? (
-                  <div
-                    className="relative"
-                    onMouseEnter={handleDropdownToggle}
-                    onMouseLeave={handleDropdownToggle}
-                  >
-                    <button
-                      className={`flex items-center justify-center gap-1 ${
-                        pathname == "" ? "text-primary !font-bold" : ""
-                      } font-semibold text-xl hover:text-primary`}
-                      onClick={handleDropdownToggle}
+          <nav className="flex-1 hidden xl:flex justify-center space-x-6 ">
+            <ul className="flex justify-center items-center gap-14">
+              {menuItems?.map((item) => (
+                <li key={item?.id}>
+                  {item?.links && item?.links?.length > 0 ? (
+                    <div
+                      className="relative"
+                      onMouseEnter={handleDropdownToggle}
+                      onMouseLeave={handleDropdownToggle}
                     >
-                      <span className="">{item?.name}</span>
-                      <span
-                        className={`transform transition-transform duration-300 ${
-                          dropdownOpen ? "rotate-180" : "rotate-0"
-                        }`}
+                      <button
+                        className={`flex items-center justify-center gap-1 ${
+                          pathname == "" ? "text-primary !font-bold" : ""
+                        } font-semibold text-xl hover:text-primary`}
+                        onClick={handleDropdownToggle}
                       >
-                        <MdKeyboardArrowDown />
-                      </span>
-                    </button>
-                    {dropdownOpen && (
-                      <div
-                        className={`fixed z-50 inset-3 header-bg-custom top-[70px] h-fit min text-white rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
-                          dropdownOpen
-                            ? "opacity-100 translate-y-0"
-                            : "opacity-0 -translate-y-5"
-                        }`}
-                      >
-                        <div className="p-8 relative">
-                          <div className="absolute w-full h-full inset-0 z-10 custom-backdrop">
-                            <span></span>
-                          </div>
-                          <div className="header-inside-color relative z-20">
-                            <div className="flex items-center justify-center my-4 border-b-2 border-white pb-10 ">
-                              <Button
-                                title="Services we offer"
-                                classes="bg-transparent text-white"
-                                enableIcons={true}
-                                iconStyle="stroke-white"
-                              />
+                        <span className="">{item?.name}</span>
+                        <span
+                          className={`transform transition-transform duration-300 ${
+                            dropdownOpen ? "rotate-180" : "rotate-0"
+                          }`}
+                        >
+                          <MdKeyboardArrowDown />
+                        </span>
+                      </button>
+                      {dropdownOpen && (
+                        <div
+                          className={`fixed z-50 inset-3 header-bg-custom top-[70px] h-fit min text-white rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
+                            dropdownOpen
+                              ? "opacity-100 translate-y-0"
+                              : "opacity-0 -translate-y-5"
+                          }`}
+                        >
+                          <div className="p-8 relative">
+                            <div className="absolute w-full h-full inset-0 z-10 custom-backdrop">
+                              <span></span>
                             </div>
-                            <ul className="flex justify-between items-start gap-x-4 gap-y-10 flex-wrap pt-9 pb-12">
-                              {item?.links.map((item) => {
-                                return (
-                                  <li
-                                    className="basis-[32%] group"
-                                    key={item?.id}
-                                  >
-                                    <div className="flex items-center justify-center min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg">
-                                      <Link href={item?.link} className="block">
-                                      <div className="flex items-start justify-start gap-3">
-                                        <div className="bg-white group-hover:bg-secondary p-2 rounded min-h-12 flex items-center justify-center">
-                                          <Image
-                                            src={`${item?.icon}`}
-                                            alt={item?.title + "icon"}
-                                            loading="lazy"
-                                            width={30}
-                                            height={30}
-                                          />
-                                        </div>
-                                        <div>
-                                          <h5 className="group-hover:text-primary">
-                                            {item?.title}
-                                          </h5>
-                                          <p className="max-w-sm mt-1 group-hover:text-primary">
-                                            {item?.description}
-                                          </p>
-                                        </div>
+                            <div className="header-inside-color relative z-20">
+                              <div className="flex items-center justify-center my-4 border-b-2 border-white pb-10 ">
+                                <Button
+                                  title="Services we offer"
+                                  classes="bg-transparent text-white"
+                                  enableIcons={true}
+                                  iconStyle="stroke-white"
+                                />
+                              </div>
+                              <ul className="flex justify-between items-start gap-x-4 gap-y-10 flex-wrap pt-9 pb-12">
+                                {item?.links.map((item) => {
+                                  return (
+                                    <li
+                                      className="basis-[32%] group"
+                                      key={item?.id}
+                                    >
+                                      <div className="flex items-center justify-center min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg">
+                                        <Link
+                                          href={item?.link}
+                                          className="block"
+                                        >
+                                          <div className="flex items-start justify-start gap-3">
+                                            <div className="bg-white group-hover:bg-secondary p-2 rounded min-h-12 flex items-center justify-center">
+                                              <Image
+                                                src={`${item?.icon}`}
+                                                alt={item?.title + "icon"}
+                                                loading="lazy"
+                                                width={30}
+                                                height={30}
+                                              />
+                                            </div>
+                                            <div>
+                                              <h5 className="group-hover:text-primary">
+                                                {item?.title}
+                                              </h5>
+                                              <p className="max-w-sm mt-1 group-hover:text-primary">
+                                                {item?.description}
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </Link>
                                       </div>
-                                      </Link>
-                                    </div>
-                                  </li>
-                                );
-                              })}
-                            </ul>
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    href={item.link}
-                    className={`${
-                      pathname == item?.link ? "text-primary !font-bold" : ""
-                    } font-semibold text-xl hover:text-primary`}
-                  >
-                    {item.name}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="flex items-center justify-between  sm:gap-4 gap-2  ">
-          <Button
-            title="Get Started"
-            classes="!capitalize bg-gradient-to-b from-primary to-primarylight !text-[22px] !px-12 max-sm:!px-4 max-sm:!py-2 max-sm:!text-xl max-sm:hidden"
-            href="/contact-us"
-          />
-          <CgMenuRight
-            className="icon icon-menu !h-10 !w-10 xl:hidden flex cursor-pointer"
-            onClick={toggle}
-          />
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      href={item.link}
+                      className={`${
+                        pathname == item?.link ? "text-primary !font-bold" : ""
+                      } font-semibold text-xl hover:text-primary`}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="flex items-center justify-between  sm:gap-4 gap-2  ">
+            <Button
+              title="Get Started"
+              classes="!capitalize bg-gradient-to-b from-primary to-primarylight !text-[22px] !px-12 max-sm:!px-4 max-sm:!py-2 max-sm:!text-xl max-sm:hidden"
+              href="/contact-us"
+            />
+            <button className="" type="button" onClick={() => handleToggle()}>
+              <CgMenuRight className="icon icon-menu !h-10 !w-10 xl:hidden flex cursor-pointer" />
+            </button>
+          </div>
         </div>
-        <nav
-          className={`fixed z-50 inset-0  bg-white transform transition-transform duration-300  ${
-            open ? "translate-x-0" : "-translate-x-full"
-          } xl:hidden`}
-        >
-          <ul className="flex items-center justify-center gap-10 flex-col p-5 h-dvh bg-white ">
-            {menuItems?.map((item) => (
-              <li key={item.name}>
-                <Link
-                  href={item.link}
-                  className={`${
-                    pathname == item?.link ? "text-primary !font-bold" : ""
-                  } font-semibold text-xl hover:text-primary`}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <button className="absolute right-4 top-4" onClick={toggle}>
-            <MdClose className="icon icon-close" />
-          </button>
-        </nav>
-      </div>
-    </header>
+      </header>
+      <nav
+        className={`fixed z-100 inset-0  bg-white transform transition-transform w-full h-full block duration-300  ${
+          open ? "translate-x-0" : "-translate-x-full"
+        } xl:hidden`}
+      >
+        <ul className="flex items-center justify-center gap-10 flex-col p-5 h-dvh bg-white ">
+          {menuItems?.map((item) => (
+            <li key={item.name}>
+              <Link
+                href={item.link}
+                onClick={() => handleToggle()}
+                className={`${
+                  pathname == item?.link ? "text-primary !font-bold" : ""
+                } font-semibold text-xl hover:text-primary`}
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <button className="absolute right-4 top-4" onClick={toggle}>
+          <MdClose className="icon icon-close" />
+        </button>
+      </nav>
+    </>
   );
 };
 

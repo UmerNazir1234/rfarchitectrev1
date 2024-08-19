@@ -5,7 +5,6 @@ import Link from "next/link";
 import React from "react";
 
 const ContactForm = ({ data }: any) => {
-  console.log(data);
   return (
     <section className="bg-no-repeat bg-cover  bg-black !z-50 relative ">
       <div className="lg:py-48 py-24 page-width">
