@@ -2,11 +2,10 @@ import Hero from "@/components/Hero";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
-import BlogHeader from "./BlogHeader";
 import Image from "next/image";
 import BlogCard from "./BlogCard";
-import Link from "next/link";
 import { BlogPost } from "@/lib/type";
+import { json } from "stream/consumers";
 type props = {
   blogs: BlogPost[] | null;
 };
@@ -21,12 +20,13 @@ const Index = ({ blogs }: props) => {
         href="/contact-us"
         classes="bg-white !text-primary"
       />
+
       <div className="pt-32 pb-12 relative">
         {/* <BlogHeader /> */}
         <section className="relative">
-          {blogs && (
+          {blogs && blogs.length > 0 && (
             <div className="page-width py-12 relative z-50">
-              <div className="flex items-center justify-center lg:gap-10 sm:gap-5 gap-6 flex-wrap">
+              <div className="flex  lg:gap-10 sm:gap-5 gap-6 flex-wrap">
                 <BlogCard data={blogs} />
               </div>
               {/* <div className="flex items-center justify-center md:gap-8 gap-6 md:py-20 py-10 font-nunito md:text-xl text-lg text-primary">
@@ -75,8 +75,6 @@ const Index = ({ blogs }: props) => {
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
         btnTitle="Submit Your Project"
         btnUrl="/"
       />
