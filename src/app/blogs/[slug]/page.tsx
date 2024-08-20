@@ -2,31 +2,16 @@ import Image from "next/image";
 import React from "react";
 import CommentForm from "./_components/CommentForm";
 import { baseURL, formatDate } from "@/lib/utils";
+import fetchClient from "@/helpers/fetchClient";
+import { BlogPost } from "@/lib/type";
 
 export const runtime = "edge";
 
-const getData = async (slug: string) => {
-  try {
-    const res = await fetch(baseURL + `/api/articles?slug=${slug}`);
-    //console.log(res)
-    if (!res?.ok) {
-      return null;
-    } else {
-      const result = await res?.json();
-      //console.log(result);
-      return result;
-    }
-  } catch (error) {
-    console.log(error);
-    return null;
-  }
-};
 
 const page = async ({ params }: any) => {
-  const response = await getData(params?.slug);
-  //console.log(response);
+  const response = await fetchClient(`/article/${params?.slug}`);
   const { data } = response;
-  const article = data[0];
+  const article: BlogPost = data;
   return (
     <section className="relative">
       <div className="max-w-4xl m-auto sm:py-24 py-12 xl:px-6 px-3">
@@ -46,7 +31,7 @@ const page = async ({ params }: any) => {
           <p className="text-xl font-medium text-gray-600">{article?.author?.name}</p>
         </div>
         <div>
-          <p className="text-[#8C8C8C] my-4 text-lg">{formatDate(article?.created_at)}</p>
+          <p className="text-[#8C8C8C] my-4 text-lg">{formatDate(article?.createdAt)}</p>
         </div>
         <div className="">
           <Image

@@ -99,8 +99,8 @@ export type BlogPost = {
   _id: string;
   title: string;
   feature_image: string | null;
-  created_at: string;
-  updated_at: string;
+  createdAt: string;
+  updatedAt: string;
   content: string;
   tags: string[] | null;
   slug: string;
@@ -112,4 +112,5 @@ export type BlogPost = {
   blogs?: any; // Assuming blogIds is an array of strings, modify if it's different
   seo_title: string;
   seo_description: string;
+  __v: string;
 };
