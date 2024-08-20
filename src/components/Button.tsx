@@ -30,6 +30,7 @@ const Button = ({
     return (
       <Link
         href={href}
+        aria-label={title}
         className={`btn flex  items-center justify-center relative uppercase gap-1 ${classes}`}
       >
         {enableIcons && (
@@ -53,6 +54,7 @@ const Button = ({
     <button
       type={type}
       onClick={onClick}
+      aria-label={title}
       className={`btn flex items-center justify-center uppercase gap-1 relative ${classes}`}
       disabled={disabled}
     >
