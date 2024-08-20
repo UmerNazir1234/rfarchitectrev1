@@ -9,9 +9,12 @@ type BlogProps = {
   data: BlogPost[];
 };
 
-const BlogCard = ({ data }: BlogProps) => {
+const BlogCard = ({ data}: BlogProps) => {
+
+  console.log(data);
   return (
     <>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
       {data?.map((item, index) => {
         return (
           <Link
@@ -38,7 +41,7 @@ const BlogCard = ({ data }: BlogProps) => {
                   {item?.title}
                 </h4>
                 <p className="text-[#8C8C8C] text-sm">
-                  {formatDate(item?.created_at)}
+                  {formatDate(item?.)}
                 </p>
                 <div className="flex items-center justify-start gap-3">
                   <Image
