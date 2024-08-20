@@ -15,7 +15,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="flex items-center justify-center flex-col">
+    <div className="flex items-center justify-center flex-col py-8">
       <h2 className="mb-4">Something went wrong!</h2>
       <button
         className="btn btn--primary max-w-44 mx-auto"

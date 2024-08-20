@@ -25,7 +25,7 @@ const Stacks = () => {
         <div className="flex items-stretch justify-center xl:gap-10 md:gap-4 gap-2 flex-wrap">
           {stack?.map((item, index) => {
             return (
-              <div className="md:basis-[30%] basis-[48%] max-sm:basis-[98%] xl:min-w-[360px] xl:min-h-[380px] stack-card">
+              <div key={index} className="md:basis-[30%] basis-[48%] max-sm:basis-[98%] xl:min-w-[360px] xl:min-h-[380px] stack-card">
                 <div className="bg-white flex items-center justify-center flex-col lg:gap-6 gap-3 border border-black border-opacity-20 lg:p-8 p-4  rounded-[20px] shadow-sm h-full w-full card-wrapper">
                   <div className="flex items-center justify-center flex-col lg:gap-5 gap-2 image-wrapper">
                     <Image

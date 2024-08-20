@@ -9,7 +9,8 @@ type BlogProps = {
   data: BlogPost[];
 };
 
-const BlogCard = ({ data }: BlogProps) => {
+const BlogCard = ({ data}: BlogProps) => {
+  console.log(data);
   return (
     <>
       {data?.map((item, index) => {
@@ -38,7 +39,7 @@ const BlogCard = ({ data }: BlogProps) => {
                   {item?.title}
                 </h4>
                 <p className="text-[#8C8C8C] text-sm">
-                  {formatDate(item?.author?.createdAt)}
+                  {formatDate(item?.createdAt)}
                 </p>
                 <div className="flex items-center justify-start gap-3">
                   <Image

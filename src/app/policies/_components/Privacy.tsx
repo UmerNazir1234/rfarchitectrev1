@@ -86,7 +86,7 @@ const Privacy = () => {
           to identify trusted web traffic
         </li>
         <li>
-          <strong>cookiesAccepted</strong> – stores the user’s cookie consent
+          <strong>cookiesAccepted</strong> – stores the user&apos;s cookie consent
           state for the current domain
         </li>
       </ul>
@@ -115,11 +115,11 @@ const Privacy = () => {
         <li>
           <strong>ads/ga-audiences</strong> – used by Google AdWords to
           re-engage visitors that are likely to convert to customers based on
-          the visitor’s online behavior across websites
+          the visitor&apos;s online behavior across websites
         </li>
         <li>
           <strong>collect</strong> – used to send data to Google Analytics about
-          the visitor’s device and behavior. Tracks the visitor across devices
+          the visitor&apos;s device and behavior. Tracks the visitor across devices
           and marketing channels.
         </li>
         <li>
@@ -168,7 +168,7 @@ const Privacy = () => {
       </ul>
       <p>
         To find information relating to other browsers, visit the browser
-        developer's website. To opt out of being tracked by Google Analytics
+        developer&apos;s website. To opt out of being tracked by Google Analytics
         across all websites, visit{" "}
         <a href="http://tools.google.com/dlpage/gaoptout">
           http://tools.google.com/dlpage/gaoptout

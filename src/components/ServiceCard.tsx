@@ -18,13 +18,14 @@ const ServiceCard = ({ card }: props) => {
     <div className="h-full min-h-[450px] rounded-[30px] shadow-xl bg-white p-6 flex items-center text-center justify-center flex-col gap-8 hover:bg-gradient-to-b hover:from-primary hover:to-primarylight group ">
       <Link
         href={card?.btnLink}
+        aria-label={card?.title + "service"}
         className="bg-gradient-to-br group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-white from-primary to-primarylight md:p-4 p-2 rounded-lg "
       >
        {card?.icon}
       </Link>
-      <h5 className=" text-[19px] !font-bold group-hover:text-white text-center">
+      <div className="text-[19px] !font-bold group-hover:text-white text-center">
         {card?.title}
-      </h5>
+      </div>
       <p className="text-lg text-textLight group-hover:text-white">
         {card?.content}
       </p>

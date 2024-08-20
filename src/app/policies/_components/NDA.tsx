@@ -5,17 +5,16 @@ const NDA = () => {
     <div className="prose lg:prose-lg max-w-screen-lg mx-auto py-12 px-3">
       <h1 className="text-center">Non-Disclosure Agreement</h1>
       <p>
-        Information is power. We'll keep yours safe, secure, and confidential.
+        Information is power. We&apos;ll keep yours safe, secure, and confidential.
       </p>
       <p>
-        We’re as concerned as you are about data security, and that’s why we
+        We&apos;re as concerned as you are about data security, and that&apos;s why we
         guarantee that any and all proprietary information you share with us
         will be held in the strictest confidence. Our Non-Disclosure Agreement
-        is designed to cover all precautions and contingencies, but if you’d
-        prefer to use your own NDA, please upload it, and we’d be happy to
+        is designed to cover all precautions and contingencies, but if you&apos;d
+        prefer to use your own NDA, please upload it, and we&apos;d be happy to
         review it.
       </p>
-
       <h2>Non-Disclosure Agreement</h2>
       <p>
         This Non-Disclosure Agreement was made and entered into in January 2017,
@@ -100,7 +99,7 @@ const NDA = () => {
       <p>
         Nothing in this Agreement is intended to grant any rights under the
         patent or copyright of either party, nor shall this Agreement grant
-        either party any rights in or to the other party’s Confidential
+        either party any rights in or to the other party&apos;s Confidential
         Information, except the limited right to review such Confidential
         Information solely for the purposes of determining whether to enter into
         the proposed business relationship between the parties and carrying out
@@ -112,11 +111,11 @@ const NDA = () => {
         Each disclosing party understands that the receiving party may currently
         or in the future be developing information internally, or receiving
         information externally from parties that may be the same as or similar
-        to the disclosing party’s Confidential Information. Accordingly, nothing
+        to the disclosing party&apos;s Confidential Information. Accordingly, nothing
         in this Agreement shall be construed as a representation or inference
         that the receiving party will not develop products, or have products
         developed for it, that compete with the products or systems contemplated
-        by the disclosing party’s Confidential Information.
+        by the disclosing party&apos;s Confidential Information.
       </p>
 
       <h3>Term</h3>
@@ -146,7 +145,7 @@ const NDA = () => {
       <h3>Remedies</h3>
       <p>
         Each party agrees that its obligations hereunder are necessary and
-        reasonable in order to protect the other party and the other party's
+        reasonable in order to protect the other party and the other party&apos;s
         business and expressly agrees that monetary damages would be inadequate
         to compensate the other party for any breach of any covenant of this
         Agreement set forth herein. Accordingly, each party agrees and

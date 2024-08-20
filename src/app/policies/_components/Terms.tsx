@@ -7,7 +7,7 @@ const Terms = () => {
 
       <p>
         Welcome to RF Technologies! These terms and conditions outline the rules
-        and regulations for the use of RF Technologies' Website, located at{" "}
+        and regulations for the use of RF Technologies&apos; Website, located at{" "}
         <a href="http://www.rftechnologies.com.pk">www.rftechnologies.com.pk</a>
         .
       </p>
