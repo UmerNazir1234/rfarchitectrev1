@@ -2,12 +2,12 @@ import React from "react";
 
 const Terms = () => {
   return (
-    <div className="prose lg:prose-lg max-w-screen-lg mx-auto py-12 px-3">{`
+    <div className="prose lg:prose-lg max-w-screen-lg mx-auto py-12 px-3">
       <h1 className="text-center">Terms and Conditions</h1>
 
       <p>
         Welcome to RF Technologies! These terms and conditions outline the rules
-        and regulations for the use of RF Technologies' Website, located at{" "}
+        and regulations for the use of RF Technologies&apos; Website, located at{" "}
         <a href="http://www.rftechnologies.com.pk">www.rftechnologies.com.pk</a>
         .
       </p>
@@ -95,7 +95,7 @@ const Terms = () => {
         </a>
         .
       </p>
-    `}</div>
+    </div>
   );
 };
 
