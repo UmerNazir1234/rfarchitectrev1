@@ -2,7 +2,7 @@ import React from "react";
 
 const NDA = () => {
   return (
-    <div className="prose lg:prose-lg max-w-screen-lg mx-auto py-12 px-3">
+    <div className="prose lg:prose-lg max-w-screen-lg mx-auto py-12 px-3">{`
       <h1 className="text-center">Non-Disclosure Agreement</h1>
       <p>
         Information is power. We'll keep yours safe, secure, and confidential.
@@ -157,7 +157,7 @@ const NDA = () => {
         threatened breach of the Agreement or the continuation of such breach,
         without the necessity of proving actual damages.
       </p>
-    </div>
+    `}</div>
   );
 };
 

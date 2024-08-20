@@ -29,27 +29,27 @@ const Form = ({ data }: any) => {
     // Implement form submission logic here
     console.log("Form submitted:", formData);
 
-    try {
-      setLoading(true);
-      const form = {
-        to: "raoabrar629@gmail.com",
-        subject: "Need Help?",
-        text: "Sending this message form the website",
-        html: `<h1>Name:  ${formData?.name}</h1><p>Email:  ${formData?.email}</p><p>Message: <br/> ${formData?.message}</p>`,
-      };
-      const response = await fetch(baseURL + "/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
-      });
-      console.log(response);
-      setLoading(false);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
+    // try {
+    //   setLoading(true);
+    //   const form = {
+    //     to: "raoabrar629@gmail.com",
+    //     subject: "Need Help?",
+    //     text: "Sending this message form the website",
+    //     html: `<h1>Name:  ${formData?.name}</h1><p>Email:  ${formData?.email}</p><p>Message: <br/> ${formData?.message}</p>`,
+    //   };
+    //   const response = await fetch(baseURL + "/api/contact", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(form),
+    //   });
+    //   console.log(response);
+    //   setLoading(false);
+    // } catch (error) {
+    //   console.log(error);
+    //   setLoading(false);
+    // }
     // // Reset form fields after submission (optional)
     // setFormData({
     //   name: "",

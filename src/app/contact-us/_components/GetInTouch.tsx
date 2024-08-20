@@ -33,9 +33,6 @@ const GetInTouch = ({ data }: any) => {
             <div className="flex items-start justify-center flex-col lg:gap-10 gap-6">
               <div className="">
                 <h3 className="text-primary !font-bold">{data?.title}</h3>
-                <p className="md:text-xl text-base font-semibold">
-                  {data?.detials}
-                </p>
               </div>
 
               <div className="">

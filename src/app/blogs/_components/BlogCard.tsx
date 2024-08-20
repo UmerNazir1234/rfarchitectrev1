@@ -41,7 +41,7 @@ const BlogCard = ({ data}: BlogProps) => {
                   {item?.title}
                 </h4>
                 <p className="text-[#8C8C8C] text-sm">
-                  {formatDate(item?.)}
+                  {formatDate(item?.created_at)}
                 </p>
                 <div className="flex items-center justify-start gap-3">
                   <Image

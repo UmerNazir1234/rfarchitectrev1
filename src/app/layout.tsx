@@ -90,6 +90,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
         <link rel="alternate" hrefLang="en-US" href={Site?.url} />
+        <meta name="google-site-verification" content="1Dsrd7N94QmN_tjanKmwjzfzAW0AxGY9sgsJi0xfw0w" />
         <link
           rel="prefetch"
           href={Site?.logo}

@@ -1,6 +1,8 @@
 import { baseURL } from "@/lib/utils";
 import Index from "./_components/Index";
 
+export const runtime = "edge";
+
 const getData = async () => {
   try {
     const res = await fetch(
