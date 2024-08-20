@@ -20,7 +20,7 @@ type props = {
 };
 const ServiceSlider = ({ cards }: props) => {
   return (
-    <section className="w-full md:-mt-[250px]  -mt-[130px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
+    <section className="w-full lg:-mt-[150px] md:-mt-[250px]  -mt-[130px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
       <div className="">
         <Swiper
           autoplay={{
@@ -63,7 +63,7 @@ const ServiceSlider = ({ cards }: props) => {
         >
           {cards?.map((card) => {
             return (
-              <SwiperSlide key={card?.id}>
+              <SwiperSlide key={card?.id} className="h-full">
                 <ServiceCard card={card} />
               </SwiperSlide>
             );

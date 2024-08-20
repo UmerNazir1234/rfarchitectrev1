@@ -33,17 +33,15 @@ const Index = () => {
       <ImageWithCards content={grapicCardText} classes="sm:pt-32" />
       <OurProcess />
       <HeadingBox
-        title="our priorities"
+        title="Our Priorities"
         classes="text-primary"
-        description="Fully-fledged, stable, and scalable mobile applications use this alternative to reduce costs and time-to-market and to reach more users without loss of quality. we analyse your needs and come up with a better solution that perfectly aligns with your business goals and budget."
+        description={`At RF Tech, our top priority is delivering outstanding graphic design solutions that effectively communicate your brand’s message and engage your audience. We focus on understanding your vision and goals to create visually compelling designs that drive results and make a lasting impact.`}
       />
       <Stacks />
       <Faq data={faq} classes="py-24" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
         btnTitle="Submit Your Project"
         btnUrl="/"
       />

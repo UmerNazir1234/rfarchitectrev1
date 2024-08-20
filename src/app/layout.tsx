@@ -10,7 +10,7 @@ import { Site } from "@/helpers/Site";
 export const metadata: Metadata = {
   title: {
     template: `%s | ${Site.name}`,
-    default: Site?.SEO_title, // a default is required when creating a template
+    default: Site?.SEO_title,
   },
   description: `${Site?.SEO_Description}`,
   metadataBase: new URL(`${Site.url}`),
@@ -90,6 +90,10 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
         <link rel="alternate" hrefLang="en-US" href={Site?.url} />
+        <link
+          rel="prefetch"
+          href={Site?.logo}
+        />
       </head>
       <body className={`${advent_Pro?.variable} ${nunito?.variable}`}>
         <Providers>

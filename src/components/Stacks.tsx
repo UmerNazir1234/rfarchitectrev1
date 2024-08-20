@@ -23,32 +23,30 @@ const Stacks = () => {
           </p>
         </div>
         <div className="flex items-stretch justify-center xl:gap-10 md:gap-4 gap-2 flex-wrap">
-          {stack?.map((item, index) => (
-            <Link
-              key={index}
-              href=""
-              className="md:basis-[30%] basis-[48%] max-sm:basis-[98%] xl:min-w-[360px] xl:min-h-[380px] stack-card"
-            >
-              <div className="bg-white flex items-center justify-center flex-col lg:gap-6 gap-3 border border-black border-opacity-20 lg:p-8 p-4  rounded-[20px] shadow-sm h-full w-full card-wrapper">
-                <div className="flex items-center justify-center flex-col lg:gap-5 gap-2 image-wrapper">
-                  <Image
-                    src={item.image}
-                    loading="lazy"
-                    alt={item.title}
-                    width={130}
-                    height={130}
-                    className=" max-sm:w-24 max-sm:h-24 rounded p-2"
-                  />
-                  <h4 className="text-primary max-sm:text-base title">
-                    {item.title}
-                  </h4>
+          {stack?.map((item, index) => {
+            return (
+              <div className="md:basis-[30%] basis-[48%] max-sm:basis-[98%] xl:min-w-[360px] xl:min-h-[380px] stack-card">
+                <div className="bg-white flex items-center justify-center flex-col lg:gap-6 gap-3 border border-black border-opacity-20 lg:p-8 p-4  rounded-[20px] shadow-sm h-full w-full card-wrapper">
+                  <div className="flex items-center justify-center flex-col lg:gap-5 gap-2 image-wrapper">
+                    <Image
+                      src={item.image}
+                      loading="lazy"
+                      alt={item.title}
+                      width={130}
+                      height={130}
+                      className=" max-sm:w-24 max-sm:h-24 rounded p-2"
+                    />
+                    <h4 className="text-primary max-sm:text-base title">
+                      {item.title}
+                    </h4>
+                  </div>
+                  <p className="text-lg max-md:text-base text-center content">
+                    {item?.description}
+                  </p>
                 </div>
-                <p className="p-lg text-center content">
-                  {item?.description}
-                </p>
               </div>
-            </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
       <Image

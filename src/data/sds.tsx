@@ -10,7 +10,6 @@ const content = {
   ourServices: {
     roundCta: "OUR SERVICES",
     title: "How We Can Help?",
-
     cards: [
       {
         id: 1,

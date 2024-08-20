@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: ['var(--font-nunito)'],
+      sans: ["var(--font-nunito)"],
       nunito: ["var(--font-nunito)"],
       advent_Pro: ["var(--font-advent-pro)"],
     },
@@ -33,18 +33,23 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      zIndex:{
-        '1':'1',
-        '2':'2',
-        '3':'3',
-        '4':'4',
-        '5':'5',
-        '6':'6',
-        '7':'7',
-        '8':'8',
-      }
+      zIndex: {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "60": "60",
+        "70": "70",
+        "80": "80",
+        "90": "90",
+        "100": "100",
+      },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };
 export default config;

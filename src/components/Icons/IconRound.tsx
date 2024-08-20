@@ -13,8 +13,8 @@ const IconRound = ({ classes }: any) => {
       <path
         d="M81.5 2H37.51C18 2.98682 2 15.9868 2 37.51"
         stroke={`${classes ? "" : "#EDAC18"} `}
-        stroke-width="3"
-        stroke-linecap="round"
+        strokeWidth="3"
+        strokeLinecap="round"
       />
     </svg>
   );

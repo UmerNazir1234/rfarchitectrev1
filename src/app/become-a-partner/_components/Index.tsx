@@ -14,14 +14,14 @@ const Index = () => {
       <Hero
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722244527/RfTechnologiesWebsite/pexels-sora-shimazaki-5673488_2_khakqn.svg"
         title='Become a <span class="text-secondary">Valued Partner</span>'
-        logo={true}
+        logo={false}
       />
-      <PerfectPartnerShip />
+      
       <ImageWithText content={becomeImageWithText} />
+      <PerfectPartnerShip />
       <Benefits />
-
       <ProjectSubmission
-        title="Transform your brand's challenges into successes with our expert solutions."
+        title="Transform your brand's challenges into successes wi th our expert solutions."
         titleColor="!text-white"
       />
       <BecomePartnerForm />

@@ -8,13 +8,13 @@ import Stacks from "@/components/Stacks";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import Faq from "@/components/Faq";
 import {
+  wordPressBenefits,
   wordpressCardText,
   wordpressfaq,
   wordpressImageWithText,
   wordPressServiceData,
 } from "@/dummyData/data";
 import Benifits from "@/components/Benifits";
-import Button from "@/components/Button";
 
 const Index = () => {
   return (
@@ -29,8 +29,7 @@ const Index = () => {
       />
       <Hero />
       <SubServices data={wordPressServiceData} />
-     
-      <Benifits />
+      <Benifits data={wordPressBenefits}/>
       <ImageWithText content={wordpressImageWithText} classes="pt-32" />
       <TextWithCards content={wordpressCardText} classes="py-32" />
       <Stacks />
@@ -38,10 +37,8 @@ const Index = () => {
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
         btnTitle="Submit Your Project"
-        btnUrl="/"
+        btnUrl="/contact-us"
       />
     </>
   );

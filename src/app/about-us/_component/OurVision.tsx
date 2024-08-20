@@ -33,7 +33,7 @@ const OurVision = ({ data }: any) => {
           </div>
         </div>
       </div>
-      <div className="absolute -top-[120px] right-0 ">
+      <div className="absolute -top-[120px] right-0 z-0">
         <div className="relative xl:w-[583px] xl:h-[550px] lg:w-[430px] lg:h-[400px] md:w-[330px] md:h-[300px] w-[300px] h-[270px]">
           <Image
             src={data?.image}

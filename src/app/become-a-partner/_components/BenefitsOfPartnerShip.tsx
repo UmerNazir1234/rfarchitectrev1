@@ -13,13 +13,7 @@ const Benefits = () => {
             iconStyle="text-primary"
             icon={true}
           />
-          <p className="p-lg text-center">
-            Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-            lobortis.
-          </p>
+          <p className="p-lg text-center">Choosing us as your partner means gaining a dedicated team committed to your success. We bring expert insights, innovative solutions, and personalized support to drive your business forward and achieve outstanding results together.</p>
         </div>
         <Tabs tabs={becomePartnersTabs} />
       </div>

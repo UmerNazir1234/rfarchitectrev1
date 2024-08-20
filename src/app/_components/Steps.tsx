@@ -25,7 +25,7 @@ const Steps = ({ classes }: props) => {
             src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720172066/RfTechnologiesWebsite/Group_1597883770_bag6zl.png"
             loading="lazy"
             alt="Steps to Build a SuccessfulDigital Product"
-            layout="fill"
+            fill
             objectFit="contain"
             className=""
           />
@@ -54,11 +54,11 @@ const Steps = ({ classes }: props) => {
           className="absolute xl:-top-[10%] xl:left-[30%] lg:-top-[8%] lg:left-[20%] md:-top-[7%] md:left-[16%] -top-[6%] left-0 xl:w-[584px] xl:h-[550px] lg:w-[450px] lg:h-[480px] md:w-[380px] md:h-[300px] w-[120px] h-[120px]  "
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M266.008 91.7059C294.136 104.397 328.493 92.0801 356.422 105.205C384.44 118.372 404.308 143.115 424.791 166.328C446.023 190.388 459.161 219.21 479.163 244.302C512.8 286.498 582.699 311.462 583.495 365.418C584.203 413.437 545.245 427.259 503.5 451C467.25 471.616 419.323 455.16 384 477.328C342.368 503.456 351.282 557.205 303 548C248.682 537.644 235.168 484.315 186.442 458.174C140.978 433.784 79.7017 502.753 34.8092 477.328C-2.90637 455.967 -0.570221 396.657 1.36879 353.355C3.16842 313.167 34.7652 281.402 45.321 242.583C55.3774 205.601 49.9706 166.664 62.027 130.284C77.3194 84.14 77.6283 10 125.394 0.966218C180.901 -9.53179 214.515 68.4726 266.008 91.7059Z"
             fill="#EDAC18"
-            fill-opacity="0.18"
+            fillOpacity="0.18"
           />
         </svg>
       </div>

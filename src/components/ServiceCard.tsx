@@ -15,14 +15,14 @@ type props = {
 };
 const ServiceCard = ({ card }: props) => {
   return (
-    <div className="rounded-[30px] shadow-xl bg-white p-8 flex items-center justify-center flex-col gap-8 hover:bg-gradient-to-b hover:from-primary hover:to-primarylight group ">
+    <div className="h-full min-h-[450px] rounded-[30px] shadow-xl bg-white p-6 flex items-center text-center justify-center flex-col gap-8 hover:bg-gradient-to-b hover:from-primary hover:to-primarylight group ">
       <Link
-        href="#"
+        href={card?.btnLink}
         className="bg-gradient-to-br group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-white from-primary to-primarylight md:p-4 p-2 rounded-lg "
       >
        {card?.icon}
       </Link>
-      <h5 className=" text-[19px] !font-bold group-hover:text-white">
+      <h5 className=" text-[19px] !font-bold group-hover:text-white text-center">
         {card?.title}
       </h5>
       <p className="text-lg text-textLight group-hover:text-white">
@@ -31,6 +31,7 @@ const ServiceCard = ({ card }: props) => {
       <Button
         title="Read More"
         icon={<GoArrowUpRight />}
+        href={card?.btnLink}
         classes="bg-light !text-primary !py-3 !px-8 !text-base !font-semibold"
       />
     </div>

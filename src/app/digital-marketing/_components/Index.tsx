@@ -38,13 +38,10 @@ const Index = () => {
       <ImageWithText content={socialAnalysisImageWithText} classes="" />
       <ImageWithText content={trustedBrandImageWithText} classes="!pb-16" />
       <AnalyticsTools />
-      <Stacks />
       <Faq data={digitalMarketingfaq} classes="py-24" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        email="info@rftechnologies.com"
-        number="00 000 0000"
         btnTitle="Submit Your Project"
         btnUrl="/"
       />

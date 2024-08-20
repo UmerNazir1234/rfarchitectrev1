@@ -25,39 +25,41 @@ const KeyFeatures = ({ data, heading, btnUrl, btnTitle }: keyFeaturesProps) => {
           enableIcons={true}
           href={btnUrl}
         />
-        <h2 className="uppercase text-primary">{heading}</h2>
+        <h2 className="uppercase text-primary text-center">{heading}</h2>
       </div>
       <div className="page-width">
         <div className="flex items-center justify-center flex-col gap-6 flex-wrap w-full">
-          {data?.map((item) => (
-            <div
-              key={item?.id}
-              style={{ backgroundColor: `${item?.bgColor}` }}
-              className={`rounded-2xl z-50 sm:p-6 p-4 flex items-center justify-between md:flex-nowrap flex-wrap md:gap-0 gap-3 w-full min-h-24`}
-            >
-              <div className="md:basis-1/2">
-                <div className="flex items-center justify-start gap-4">
-                  <span className="rounded-full p-3 bg-white sm:h-20 sm:w-20 h-16 w-16 flex items-center justify-center">
-                    <Image
-                      src={`${item?.src}`}
-                      alt={`${item?.title}` + "icon"}
-                      width={45}
-                      height={45}
-                      className="max-sm:w-12 max-sm:h-12"
-                    />
-                  </span>
-                  <div className="text-white font-bold sm:text-2xl text-xl ">
-                    {item?.title}
+          {data?.map((item) => {
+            return (
+              <div
+                key={item?.id}
+                style={{ backgroundColor: `${item?.bgColor}` }}
+                className={`rounded-2xl z-50 sm:p-6 p-4 flex items-center justify-between md:flex-nowrap flex-wrap md:gap-0 gap-3 w-full min-h-24`}
+              >
+                <div className="md:basis-1/2">
+                  <div className="flex items-center justify-start gap-4">
+                    <span className="rounded-full p-3 bg-white sm:h-20 sm:w-20 h-16 w-16 flex items-center justify-center">
+                      <Image
+                        src={`${item?.src}`}
+                        alt={`${item?.title}` + "icon"}
+                        width={45}
+                        height={45}
+                        className="max-sm:w-12 max-sm:h-12"
+                      />
+                    </span>
+                    <div className="text-white font-bold sm:text-2xl text-xl ">
+                      {item?.title}
+                    </div>
                   </div>
                 </div>
+                <div className="md:basis-1/2">
+                  <p className="rounded-full p-2 text-white sm:text-xl text-base">
+                    {item?.details}
+                  </p>
+                </div>
               </div>
-              <div className="md:basis-1/2">
-                <p className="rounded-full p-2 text-white sm:text-xl text-base">
-                  {item?.details}
-                </p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
       <Image

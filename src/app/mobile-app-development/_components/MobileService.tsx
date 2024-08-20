@@ -21,11 +21,11 @@ const MobileService = () => {
         <div className="mb-4">
           <MobileAppCard
             title="Cross-platform app development"
-            classes="hover:bg-white bg-[#048C5B] text-white"
+            classes="hover:bg-white hover:text-black bg-[#048C5B] text-white"
             textColor="group-hover:!text-red"
             titleColor="group-hover:!text-red !text-red"
             iconColor=""
-            description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Porem ipsum dolor sit amet, consectetur adipiscing elit."
+            description="Cross-platform apps that can work in different environments and industries thanks to a unique blend of native and web app technologies. cross-platform app development is a single codebase, ease of maintenance, and reduced development costs."
             icon={
               <TbLayoutGridAdd className={` md:text-[140px] text-[80px]`} />
             }
@@ -36,16 +36,16 @@ const MobileService = () => {
             {" "}
             <MobileAppCard
               title="Android app development"
-              classes="hover:bg-white bg-[#13429B] text-white"
-              description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+              classes="hover:bg-white hover:text-black bg-[#13429B] text-white"
+              description="With 2.5 billion active users, Android is the world's most popular operating system. Our expert developers create stable, scalable custom apps to help you grow your business and reach your target audience."
               icon={<TfiAndroid className="md:text-[140px]  text-[80px]" />}
             />
           </div>
           <div className="">
             <MobileAppCard
               title="Ios App Development"
-              classes="hover:bg-white bg-[#710583] text-white"
-              description="Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+              classes="hover:bg-white hover:text-black bg-[#710583] text-white"
+              description="Our certified developers create efficient iOS apps for all devices, offering support from design to deployment and maintenance. We deliver top-notch iOS app development with a value-driven, build-by-build approach."
               icon={<SiApple className="md:text-[140px]  text-[80px]" />}
             />
           </div>

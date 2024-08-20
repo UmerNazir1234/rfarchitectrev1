@@ -26,7 +26,7 @@ const BecomePartnerForm = () => {
   return (
     <section className="bg-no-repeat bg-cover ">
       <div className="pb-24 page-width">
-        <div className="bg-black bg-opacity-10 lg:mt-28 mt-16 lg:px-10 lg:py-16 py-6 px-2 rounded-3xl border-[#97989C] rounded-4xl border border-opacity-45 ">
+        <div className="bg-black bg-opacity-10 lg:mt-28 mt-16 lg:px-10 lg:py-16 py-6 px-2 rounded-3xl border-[#97989C] rounded-4xl border border-opacity-45 bp-form-bg">
           <div>
             <div className="flex items-center justify-center">
               <Heading
@@ -89,7 +89,7 @@ const BecomePartnerForm = () => {
                   How would you like to join us?
                 </p>
 
-                <div className="flex items-center justify-between gap-10 mt-5">
+                <div className="flex items-center justify-between gap-10 mt-5 flex-wrap">
                   <div className="bg-blueLight w-full p-4 rounded-lg border-primary border">
                     <label className="flex items-center justify-start gap-3">
                       <input
