@@ -89,27 +89,40 @@ export type icons =
 export type Author = {
   _id: string;
   name: string;
-  image: string | null;
-  role: string | null;
+  image: string;
+  role: string;
   email: string;
-  created_at: string;
-  updated_at: string;
+  createdAt: string;
+  updatedAt: string;
+  __v: number;
 };
+
+export type Blog = {
+  _id: string;
+  title: string;
+  slug: string;
+  content: string | null;
+  feature_image: string | null;
+  createdAt: string;
+  updatedAt: string;
+  __v: number;
+};
+
 export type BlogPost = {
   _id: string;
   title: string;
-  feature_image: string | null;
-  created_at: string;
-  updated_at: string;
+  slug: string;
+  feature_image: string;
   content: string;
   tags: string[] | null;
-  slug: string;
-  author: Author;
-  comments: any[]; // You can further define the structure of comments if needed
-  views: number | null;
-  likes: number | null;
-  blogIds: string[];
-  blogs?: any; // Assuming blogIds is an array of strings, modify if it's different
+  views: number;
+  likes: number;
   seo_title: string;
   seo_description: string;
+  author: Author;
+  comments: any[]; // Replace 'any[]' with the appropriate type if available
+  blogs: Blog[];
+  createdAt: string;
+  updatedAt: string;
+  __v: number;
 };
