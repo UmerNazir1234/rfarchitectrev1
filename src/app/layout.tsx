@@ -9,7 +9,7 @@ import { Site } from "@/helpers/Site";
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | ${Site.name}`,
+    template: `%s | ${Site?.SEO_prefix}`,
     default: Site?.SEO_title,
   },
   description: `${Site?.SEO_Description}`,

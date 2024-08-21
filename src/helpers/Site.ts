@@ -12,7 +12,7 @@ export const Site = {
   address: "3rd floor Taha Mall, Defence Rd, Rawalpindi, Punjab 47300",
   email: "info@rftechnologies.com.pk",
   number: "+92 334 4738506",
-  themeColor: '#002475',
+  themeColor: "#002475",
   social_links: {
     facebook: "https://www.facebook.com/rftechnologiespk/",
     twitter: "https://twitter.com/rftechnologies_",
@@ -21,14 +21,15 @@ export const Site = {
     youtube: "https://www.youtube.com/channel/UCwNKTsriLX7-VB_KLG5-vUQ",
     whatsapp: "https://api.whatsapp.com/send?phone=+923344738506%E2%80%8B",
   },
-  SEO_title: "Premier Software Services for Digital Products - RF Tech",
+  SEO_prefix: "RF Tech",
+  SEO_title: "RF Tech - Your Partner in Digital Growth & Innovation",
   SEO_Description:
-    "RF Tech Solutions - Premier Software Services Provider. Transform your ideas into digital success with top-tier solutions and marketing strategies.",
-  routes:[
+    "Boost your business with RF Tech's digital marketing, web development, and SEO services. Innovative solutions for growth and success.",
+  routes: [
     {
-      id:2222,
-      name:'Home',
-      link: ''
+      id: 2222,
+      name: "Home",
+      link: "",
     },
     {
       id: 1,
@@ -111,9 +112,9 @@ export const Site = {
       link: "/woocommerce-development",
     },
     {
-      id:20,
+      id: 20,
       name: "Our Services",
-      link: "/our-services"
-    }
-  ]
+      link: "/our-services",
+    },
+  ],
 };
