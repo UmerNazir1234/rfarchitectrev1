@@ -7,7 +7,6 @@ import { BlogPost } from "@/lib/type";
 
 export const runtime = "edge";
 
-
 const page = async ({ params }: any) => {
   const response = await fetchClient(`/article/${params?.slug}`);
   const { data } = response;
@@ -33,7 +32,9 @@ const page = async ({ params }: any) => {
           </p>
         </div>
         <div>
-          <p className="text-[#8C8C8C] my-4 text-lg">{formatDate(article?.createdAt)}</p>
+          <p className="text-[#8C8C8C] my-4 text-lg">
+            {formatDate(article?.createdAt)}
+          </p>
         </div>
         <div className="">
           <Image

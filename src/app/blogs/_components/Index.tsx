@@ -5,7 +5,6 @@ import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
 import BlogCard from "./BlogCard";
 import { BlogPost } from "@/lib/type";
-import { json } from "stream/consumers";
 type props = {
   blogs: BlogPost[] | null;
 };

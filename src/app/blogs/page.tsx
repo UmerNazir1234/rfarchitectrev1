@@ -5,7 +5,7 @@ export const runtime = "edge";
 
 const page = async () => {
   const response = await fetchClient(`/article/all`);
-  // console.log(response);
+ console.log(response)
   return <Index blogs={response?.data} />;
 };
 
