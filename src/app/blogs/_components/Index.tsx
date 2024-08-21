@@ -5,6 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
 import BlogCard from "./BlogCard";
 import { BlogPost } from "@/lib/type";
+import BlogHeader from "./BlogHeader";
 type props = {
   blogs: BlogPost[] | null;
 };
@@ -19,10 +20,9 @@ const Index = ({ blogs }: props) => {
         href="/contact-us"
         classes="bg-white !text-primary"
       />
-
-      <div className="pt-32 pb-12 relative">
-        {/* <BlogHeader /> */}
-        <section className="relative">
+      <section className="pt-32 pb-12 relative">
+        <BlogHeader />
+        <div className="relative">
           {blogs && blogs.length > 0 && (
             <div className="page-width py-12 relative z-50">
               <div className="flex  lg:gap-10 sm:gap-5 gap-6 flex-wrap">
@@ -61,7 +61,7 @@ const Index = ({ blogs }: props) => {
             height={300}
             className="absolute left-0 -bottom-12"
           />
-        </section>
+        </div>
         <Image
           src={`https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721909694/RfTechnologiesWebsite/Trade_Mark-02_2_ppmsma.svg`}
           width={294}
@@ -70,7 +70,7 @@ const Index = ({ blogs }: props) => {
           loading="lazy"
           className="absolute top-0 right-0 "
         />
-      </div>
+      </section>
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."

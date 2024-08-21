@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Heading from "./Heading";
 import Link from "next/link";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { baseURL } from "@/lib/utils";
 
 const Form = ({ data }: any) => {
   const [formData, setFormData] = useState({

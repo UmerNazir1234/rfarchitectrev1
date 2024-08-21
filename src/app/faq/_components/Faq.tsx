@@ -5,8 +5,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Button from "./Button";
-import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
 
 type faqProps = {
@@ -15,24 +13,15 @@ type faqProps = {
   id: number;
 };
 type props = {
+  title: string;
   data: faqProps[];
   classes?: string;
 };
-const Faq = ({ data, classes }: props) => {
+const Faq = ({ data, classes, title }: props) => {
   return (
     <div className={`${classes ? classes : "py-12"}  relative`}>
       <div className="page-width relative z-50">
-        <div className="flex items-center justify-center">
-          <Button
-            title="have a question"
-            classes="bg-secondary"
-            icon={true}
-            enableIcons={true}
-          />
-        </div>
-        <h3 className="text-center text-primary mt-8 ">
-          Frequently Ask Questions
-        </h3>
+        <h3 className="text-center text-primary mt-8 ">{title}</h3>
         <div className="mt-14">
           <Accordion type="single" collapsible>
             {data?.map((data, index) => (
@@ -42,14 +31,6 @@ const Faq = ({ data, classes }: props) => {
               </AccordionItem>
             ))}
           </Accordion>
-          <div className="flex items-center justify-center mt-10">
-            <Button
-              title="Read More"
-              href="/faq"
-              classes="btn--outline"
-              icon={<GoArrowUpRight className="h-7 w-7" />}
-            />
-          </div>
         </div>
       </div>
       <Image

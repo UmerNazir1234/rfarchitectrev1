@@ -42,18 +42,17 @@ const ProjectSubmission = ({
           </div>
           <div className="lg:basis-1/3 basis-full relative z-20 ">
             <div className="flex gap-4 items-center justify-between flex-col">
-         
-                <p className="p-lg text-white">
-                  <span className="font-bold me-2">Email:</span>
-                  <a href={"mailto:" + Site?.email}>{Site?.email}</a>
-                </p>
-        
-                <p className="p-lg text-white">
-                  {" "}
-                  <span className="font-bold me-2">Number:</span>
-                  <a href={"tel:" + Site?.number}>{Site?.number}</a>
-                </p>
-              
+              <p className="p-lg text-white">
+                <span className="font-bold me-2">Email:</span>
+                <a href={"mailto:" + Site?.email}>{Site?.email}</a>
+              </p>
+
+              <p className="p-lg text-white">
+                {" "}
+                <span className="font-bold me-2">Number:</span>
+                <a href={"tel:" + Site?.number}>{Site?.number}</a>
+              </p>
+
               {btnUrl && <Button title={btnTitle} href={btnUrl} />}
             </div>
           </div>

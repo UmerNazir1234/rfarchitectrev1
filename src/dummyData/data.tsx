@@ -258,7 +258,7 @@ export const featuredProjects = [
     id: 6,
     title: "Big Little Things",
 
-    url: "/our-work/#big",
+    url: "/our-work/#biglittlethings",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997866/RfTechnologiesWebsite/big-little-1-e1653320233846_ctxsjz.webp",
   },
@@ -282,7 +282,7 @@ export const featuredProjects = [
     id: 9,
     title: "EazyTicks",
 
-    url: "/our-work/#eazyticks",
+    url: "/our-work/#ezticks",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721998002/RfTechnologiesWebsite/EazyTicks-Image_rtyiio.webp",
   },
@@ -300,6 +300,48 @@ export const featuredProjects = [
     url: "/our-work/#epic",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721998064/RfTechnologiesWebsite/epic-neons_tqjtxe.webp",
+  },
+  {
+    id: 12,
+    title: "Ozelu Studio",
+    url: "/our-work/#ozelu",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776302/RfTechnologiesWebsite/image_56_i69zku.png",
+  },
+  {
+    id: 13,
+    title: "EZFUNDRAZR",
+    url: "/our-work/#ezfundrazr",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
+  },
+  {
+    id: 14,
+    title: "Jenson Bike Shipping",
+    url: "/our-work/#jensonbikeshipping",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776300/RfTechnologiesWebsite/image_61_bbvb27.png",
+  },
+  {
+    id: 15,
+    title: "The Transparency",
+    url: "/our-work/#thetransparency",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
+  },
+  {
+    id: 16,
+    title: "Combine Marketing",
+    url: "/our-work/#combinemarketing",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776296/RfTechnologiesWebsite/image_66_sxtpis.png",
+  },
+  {
+    id: 17,
+    title: "Hard Core Mattress",
+    url: "/our-work/#hard",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776295/RfTechnologiesWebsite/image_68_w2qfee.png",
   },
 ];
 
@@ -492,7 +534,6 @@ export const aboutTabs: Tabs[] = [
   },
 ];
 
-
 export const work: Work[] = [
   {
     id: 1,
@@ -512,7 +553,7 @@ export const work: Work[] = [
   },
   {
     id: 2,
-    workId: "EazyTicks",
+    workId: "ezticks",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776305/RfTechnologiesWebsite/image_62_ci28zj.png",
     title: "Eazyticks",
@@ -2203,7 +2244,8 @@ export const becomeImageWithText = [
     title: "Why Choose a Business Partner?",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741821/RfTechnologiesWebsite/Group_1597883963_hevjr1.svg",
-    description:"Partnering with experts gives you access to specialized knowledge and tailored strategies designed to drive your success. You gain a strategic ally committed to achieving your goals and overcoming challenges.<br/><br/>A strong partnership offers more than just services; it provides enhanced support and streamlined processes, ensuring measurable results and long-term growth.",
+    description:
+      "Partnering with experts gives you access to specialized knowledge and tailored strategies designed to drive your success. You gain a strategic ally committed to achieving your goals and overcoming challenges.<br/><br/>A strong partnership offers more than just services; it provides enhanced support and streamlined processes, ensuring measurable results and long-term growth.",
     btnLink: "",
     btnTitle: "",
     ctaLink: "",
@@ -2287,7 +2329,7 @@ export const shopifyBenefits = [
                 redirect to any URL.`,
     bgClr: "#F9D1F0",
     titleClr: "#B7419B",
-  }
+  },
 ];
 
 export const wordPressBenefits = [
@@ -2318,5 +2360,5 @@ export const wordPressBenefits = [
     content: `WordPress provides a very easy drag and drop functionality to customize your site for a better experience.`,
     bgClr: "#F9D1F0",
     titleClr: "#B7419B",
-  }
+  },
 ];

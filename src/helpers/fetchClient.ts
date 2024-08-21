@@ -1,4 +1,6 @@
-export const BASE_URL = process.env.NEXT_PUBLIC_API_URL as string;
+// export const BASE_URL = process.env.NEXT_PUBLIC_API_URL as string;
+const BASE_URL =
+  "https://rftechnologies-ajd6pr9pi-rf-technologies-projects.vercel.app";
 
 /**
  * Type definition for the options parameter in fetchClient function.
@@ -23,7 +25,7 @@ async function fetchClient(
     const response = await fetch(url, {
       ...options,
     });
-    if(!response?.ok){
+    if (!response?.ok) {
       return null;
     }
     const result = await response.json();
