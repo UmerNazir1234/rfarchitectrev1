@@ -1,4 +1,3 @@
-import Benifits from "@/components/Benifits";
 import Hero from "@/components/Hero";
 import ImageWithText from "@/components/ImageWithText";
 import ProjectSubmission from "@/components/ProjectSubmission";
@@ -16,7 +15,6 @@ const Index = () => {
         title='Become a <span class="text-secondary">Valued Partner</span>'
         logo={false}
       />
-      
       <ImageWithText content={becomeImageWithText} />
       <PerfectPartnerShip />
       <Benefits />
