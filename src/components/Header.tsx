@@ -79,7 +79,7 @@ const Header = () => {
                       </button>
                       {dropdownOpen && (
                         <div
-                          className={`fixed z-50 inset-3 header-bg-custom top-[70px] h-fit min text-white rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
+                          className={`fixed z-999 inset-3 header-bg-custom top-[70px] h-fit min text-white rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
                             dropdownOpen
                               ? "opacity-100 translate-y-0"
                               : "opacity-0 -translate-y-5"

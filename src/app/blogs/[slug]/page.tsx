@@ -44,7 +44,7 @@ const page = async ({ params }: any) => {
             loading="lazy"
             width={900}
             height={600}
-            className="object-cover object-center relative z-50"
+            className="object-cover object-center relative z-1"
           />
         </div>
         <div className="mt-10">
