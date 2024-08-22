@@ -1,6 +1,5 @@
 // export const BASE_URL = process.env.NEXT_PUBLIC_API_URL as string;
-const BASE_URL =
-  "https://rftechnologies-ajd6pr9pi-rf-technologies-projects.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 /**
  * Type definition for the options parameter in fetchClient function.

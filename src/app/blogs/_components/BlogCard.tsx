@@ -18,7 +18,7 @@ const BlogCard = ({ data}: BlogProps) => {
           <Link
             key={index}
             href={`/blogs/${item?.slug}`}
-            className="lg:basis-[30%] relative z-50 sm:basis-[46%] basis-full rounded-2xl  border border-opacity-30 hover:shadow-2xl shadow-xl overflow-hidden"
+            className="bg-white lg:basis-[30%] relative z-50 sm:basis-[46%] basis-full rounded-2xl  border border-opacity-30 hover:shadow-2xl shadow-xl overflow-hidden"
           >
             <div className="h-[260px] relative">
               <Image

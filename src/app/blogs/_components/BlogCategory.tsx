@@ -1,22 +1,30 @@
-import Link from "next/link";
-import React from "react";
-type categoryProps = {
-  title?: string;
-  _id: number;
-  slug: string;
-};
+"use client";
+import { Blog } from "@/lib/type";
+import React, { useState } from "react";
+
 type props = {
-  data: categoryProps[];
+  data: Blog[] | null;
 };
 const BlogCategory = ({ data }: props) => {
+  const [active, setActive] = useState<any>(null);
   // console.log(data);
   return (
-    <div className="">
-      <div className="flex items-center justify-start flex-wrap lg:gap-16 md:gap-8 gap-6 py-6">
-        {data?.map((item, index) => (
-          <Link
-            href={`blog/${item?.slug}`}
+    <div className="flex items-center justify-start flex-wrap lg:gap-8 md:gap-6 gap-3 py-6">
+      <button
+        type="button"
+        className={`md:text-xl text-sm text-medium ${
+          !active
+            ? "rounded-full bg-[#d0dbf3] px-6 py-3 text-primary font-bold"
+            : ""
+        }`}
+      >
+        All
+      </button>
+      {data?.map((item, index) => {
+        return (
+          <button
             key={index}
+            type="button"
             className={`md:text-xl text-sm text-medium ${
               index == 0
                 ? "rounded-full bg-[#d0dbf3] px-6 py-3 text-primary font-bold"
@@ -24,9 +32,9 @@ const BlogCategory = ({ data }: props) => {
             }`}
           >
             {item?.title}
-          </Link>
-        ))}
-      </div>
+          </button>
+        );
+      })}
     </div>
   );
 };

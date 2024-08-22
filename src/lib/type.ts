@@ -94,7 +94,7 @@ export type Author = {
   email: string;
   createdAt: string;
   updatedAt: string;
-  __v: number;
+  __v: number | string;
 };
 
 export type Blog = {
@@ -105,34 +105,24 @@ export type Blog = {
   feature_image: string | null;
   createdAt: string;
   updatedAt: string;
-  __v: number;
+  __v: number | string;
 };
 
 export type BlogPost = {
   _id: string;
   title: string;
-<<<<<<< HEAD
   slug: string;
   feature_image: string;
-=======
-  feature_image: string | null;
-  createdAt: string;
-  updatedAt: string;
->>>>>>> 1ea25b8292a99c299b9474e0e7fbbb8d13d3193b
   content: string;
   tags: string[] | null;
   views: number;
   likes: number;
   seo_title: string;
   seo_description: string;
-<<<<<<< HEAD
   author: Author;
   comments: any[]; // Replace 'any[]' with the appropriate type if available
   blogs: Blog[];
   createdAt: string;
   updatedAt: string;
-  __v: number;
-=======
-  __v: string;
->>>>>>> 1ea25b8292a99c299b9474e0e7fbbb8d13d3193b
+  __v: number | string;
 };
