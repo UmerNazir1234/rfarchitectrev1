@@ -23,7 +23,7 @@ const Index = ({ blogs }: props) => {
       />
       <section className="pt-32 pb-12 relative">
         <Suspense fallback={<p>loading....</p>}>
-        <BlogHeader blogs={blogs}/>
+          <BlogHeader blogs={blogs} />
         </Suspense>
         <Image
           src={`https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721909694/RfTechnologiesWebsite/Trade_Mark-02_2_ppmsma.svg`}
