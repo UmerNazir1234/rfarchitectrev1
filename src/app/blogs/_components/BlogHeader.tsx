@@ -1,49 +1,21 @@
-import React from "react";
 import Search from "./Search";
 import BlogCategory from "./BlogCategory";
-import Image from "next/image";
+import fetchClient from "@/helpers/fetchClient";
+export const runtime = "edge";
 
-const data = [
-  {
-    id: 1,
-    title: "For You",
-  },
-  {
-    id: 2,
-    title: "Software Development",
-  },
-  {
-    id: 3,
-    title: "Design",
-  },
-  {
-    id: 4,
-    title: "Artificial Intelligence",
-  },
-  {
-    id: 5,
-    title: "Mental Health",
-  },
-  {
-    id: 6,
-    title: "Technology",
-  },
-  {
-    id: 7,
-    title: "Self Improvement",
-  },
-];
+const BlogHeader = async () => {
+  const response = await fetchClient(`/blog/all`);
+  const { data } = response;
 
-const BlogHeader = () => {
   return (
-    <section className="relative">
+    <div className="relative">
       <div className="page-width">
         <div className="md:!ps-6">
           <Search />
           <BlogCategory data={data} />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
