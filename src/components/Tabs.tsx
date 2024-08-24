@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { tabs } from "@/dummyData/data";
 import type { Tabs } from "@/lib/type"; // Use type-only import
 
 type TabsProps = {

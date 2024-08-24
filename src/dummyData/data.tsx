@@ -506,25 +506,25 @@ export const aboutTabs: Tabs[] = [
     label: "Knowledge",
     content:
       "Knowledge is the foundation of innovation. At RF Technologies, we believe that true power lies in not just acquiring knowledge, but in delivering it precisely when and where it's needed. Our team of experts is dedicated to guiding our clients with the insights they need to excel. We don't just speak to everyone; we focus on our target audience, communicating in a way that resonates with them. This strategic approach sets us apart from the competition, allowing us to cut through the noise and deliver unparalleled value.",
-    icon: <TbBulb className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <TbBulb className="lg:!w-20 lg:!h-20 !w-10 !h-10" />,
   },
   {
     label: "Promise",
     content:
       "Our commitment to our clients is unwavering. We make promises that we intend to keep, ensuring that every project we undertake is completed with the highest level of integrity and professionalism. At RF Technologies, a promise is more than just words; it's a bond of trust. We understand the importance of reliability in building long-lasting relationships, and we work tirelessly to uphold the trust our clients place in us.",
-    icon: <PiHandshakeLight className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <PiHandshakeLight className="lg:!w-20 lg:!h-20 !w-10 !h-10" />,
   },
   {
     label: "Consistency",
     content:
       "Consistency is key to our success. At RF Technologies, we are committed to maintaining a high standard of quality across all our services. Whether it's our approach to problem-solving or our attention to detail, consistency is what ensures our clients receive the same level of excellence every time they work with us. This steadfast dedication to quality is what keeps us ahead in a competitive industry.",
-    icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <FcProcess className="lg:!w-20 lg:!h-20 !w-10 !h-10" />,
   },
   {
     label: "Authenticity",
     content:
       "Authenticity is at the heart of everything we do. We believe in being true to our values and transparent in our dealings. At RF Technologies, authenticity means staying genuine in our approach, whether it's in our communication with clients or the way we conduct our business. This honesty and openness are what build trust and foster strong, enduring partnerships.",
-    icon: <BiCheckShield className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <BiCheckShield className="lg:!w-20 lg:!h-20 !w-10 !h-10" />,
   },
   {
     label: "Passion",
