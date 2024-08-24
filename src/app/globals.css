@@ -33,7 +33,7 @@
   .p-lg {
     @apply lg:text-[26px] text-xl font-medium leading-normal max-sm:text-base;
   }
-  
+
   .text-italic {
     @apply text-secondary italic font-semibold;
   }
@@ -43,7 +43,7 @@
   }
   .h2,
   h2 {
-    @apply xl:text-[50px]  lg:text-[40] md:text-[32px] text-[30px] leading-tight max-sm:leading-none font-bold drop-shadow-lg;
+    @apply xl:text-[50px]  lg:text-[40] md:text-[32px] text-[24px] leading-tight max-sm:leading-none font-bold drop-shadow-lg;
   }
   .h3,
   h3 {
@@ -117,7 +117,7 @@
   .input--field {
     @apply bg-[#E3E7F3] font-nunito rounded-lg md:py-5 md:px-5 p-2 border-white border border-opacity-30 text-white md:text-2xl text-xl w-full;
   }
-  .blog-chip{
+  .blog-chip {
     @apply md:text-xl text-sm rounded-full hover:bg-[#d0dbf3] md:px-4 md:py-2 px-3 py-1 hover:text-primary font-bold;
   }
   .testimonial .swiper-button-prev:after,
@@ -214,7 +214,7 @@
   .text-balance {
     text-wrap: balance;
   }
-  .custom-backdrop{
+  .custom-backdrop {
     background: url(https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723456684/RfTechnologiesWebsite/Frame_1597883875_msdq2s.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -222,46 +222,45 @@
     border-radius: 0.75rem;
     background-color: #3a3a3a;
   }
-  @media(max-width:768px){
+  @media (max-width: 768px) {
     .bottom-svg,
-    .top-svg{
-      height:22px;
+    .top-svg {
+      height: 22px;
     }
   }
 }
 
-
 /* Stack Card */
-.stack-card > *{
+.stack-card > * {
   transition: all 200ms ease-out;
 }
-.stack-card .content{
+.stack-card .content {
   height: 0;
   opacity: 0;
 }
-.stack-card:hover .content{
+.stack-card:hover .content {
   opacity: 1;
-  height:100%;
+  height: 100%;
 }
-.stack-card .image-wrapper{
+.stack-card .image-wrapper {
 }
-.stack-card:hover .image-wrapper{
+.stack-card:hover .image-wrapper {
   flex-direction: row;
 }
-.stack-card .card-wrapper{
+.stack-card .card-wrapper {
 }
-.stack-card:hover .card-wrapper{
+.stack-card:hover .card-wrapper {
   justify-content: flex-start;
 }
-.bp-form-bg{
+.bp-form-bg {
   background-image: url(https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723724537/RfTechnologiesWebsite/Group_1597883982_znbt7d.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-@media (max-width:520px){
-  .serviceSlider{
-    margin-top:-10px;
+@media (max-width: 520px) {
+  .serviceSlider {
+    margin-top: -10px;
   }
 }

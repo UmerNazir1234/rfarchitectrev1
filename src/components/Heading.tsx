@@ -17,9 +17,10 @@ const Heading: React.FC<HeadingProps> = ({
   return (
     title && (
       <h2
-        className={`${classes} relative inline-block uppercase z-50  ${
+        className={`${classes} relative inline-block  uppercase z-50  ${
           icon && "xl:mb-12 mb-8"
-        }`}>
+        }`}
+      >
         {icon && (
           <>
             <span className="absolute left-0 top-0 -ml-5 lg:-mt-4 -mt-5 bg-transparent bg-contain ">
