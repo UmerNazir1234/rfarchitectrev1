@@ -31,7 +31,7 @@ const Index = ({ blogs }: props) => {
           height={265}
           alt="rf logo"
           loading="lazy"
-          className="absolute top-0 right-0 "
+          className="absolute top-0 right-0 z-0"
         />
       </section>
       <ProjectSubmission

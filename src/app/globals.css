@@ -117,6 +117,9 @@
   .input--field {
     @apply bg-[#E3E7F3] font-nunito rounded-lg md:py-5 md:px-5 p-2 border-white border border-opacity-30 text-white md:text-2xl text-xl w-full;
   }
+  .blog-chip{
+    @apply md:text-xl text-sm rounded-full hover:bg-[#d0dbf3] md:px-4 md:py-2 px-3 py-1 hover:text-primary font-bold;
+  }
   .testimonial .swiper-button-prev:after,
   .testimonial .swiper-button-next:after {
     color: var(--color-primary) !important;
