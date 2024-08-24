@@ -27,7 +27,7 @@ const Testimonials = ({ data }: Props) => {
         <div className="flex items-center justify-center">
           <Button
             title="testimonials"
-            classes="bg-secondary"
+            classes="bg-secondary cursor-none"
             icon={true}
             enableIcons={true}
           />

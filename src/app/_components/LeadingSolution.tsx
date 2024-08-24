@@ -21,11 +21,11 @@ const LeadingSolution = ({ content }: props) => {
             enableIcons={true}
             title={content?.roundCta}
             iconStyle="stroke-secondary"
-            classes="bg-secondary absolute top-5 left-5"
+            classes="bg-secondary absolute top-5 left-5 cursor-none"
           />
           <div className="flex justify-center md:flex-nowrap flex-wrap gap-2 lg:pt-18 lg:px-16 sm:py-20 sm:px-10 max-sm:pt-10 max-sm:px-3  ">
             <div className="md:basis-[45%]  basis-full">
-              <h2 className="text-primary md:w-3/4 uppercase">
+              <h2 className="text-primary md:w-3/4 uppercase xl:text-[60px] md:text-[46px] text-[30px]">
                 {content?.title}
               </h2>
             </div>

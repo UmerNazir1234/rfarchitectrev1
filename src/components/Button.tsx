@@ -45,7 +45,9 @@ const Button = ({
           </>
         )}
         <span>{title}</span>
-        {icon && <span className="flex items-center justify-center">{icon}</span>}
+        {icon && (
+          <span className="flex items-center justify-center">{icon}</span>
+        )}
       </Link>
     );
   }
