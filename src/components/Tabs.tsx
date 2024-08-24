@@ -41,7 +41,7 @@ const TabsComponent = ({ tabs }: TabsProps) => {
             <div className="flex items-center justify-center lg:mb-4 mb-1">
               {tab?.icon}
             </div>
-            <p className="md:text-lg text-base font-semibold">{tab.label}</p>
+            <p className=" text-base font-bold">{tab.label}</p>
           </button>
         ))}
       </div>

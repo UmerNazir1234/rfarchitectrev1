@@ -52,7 +52,7 @@ const ImageWithText = ({ content, classes, children }: CardProps) => {
                       title={data?.btnTitle}
                       classes="bg-secondary uppercase"
                       enableIcons={true}
-                      href={data?.btnLink}
+                    
                       iconStyle="stroke-secondary"
                     />
                   )}
@@ -112,9 +112,9 @@ const ImageWithText = ({ content, classes, children }: CardProps) => {
               src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721649364/RfTechnologiesWebsite/Vector_adriqe.svg"
               alt="Background Image"
               loading="lazy"
-              width={583}
-              height={550}
-              className="object-center object-contain absolute -top-56  left-0 transform  z-0 max-sm:w-[300px] max-sm:h-[300px]"
+              width={400}
+              height={400}
+              className="object-center object-contain absolute top-28 left-0 transform z-0 max-sm:w-[300px] max-sm:h-[300px]"
             />
           )}
         </section>

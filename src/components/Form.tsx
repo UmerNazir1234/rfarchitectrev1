@@ -98,7 +98,7 @@ const Form = ({ data }: FormProps) => {
   };
 
   return (
-    <div className="bg-themblack lg:mt-28 mt-16 lg:px-10 lg:py-16 py-6 px-2 rounded-2xl border border-white border-opacity-45">
+    <div className="bg-themblack relative z-30 lg:mt-28 mt-16 lg:px-10 lg:py-16 py-6 px-2 rounded-2xl border border-white border-opacity-45">
       <div>
         <div className="flex items-center justify-center">
           <Heading

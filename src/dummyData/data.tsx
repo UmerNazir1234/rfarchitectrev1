@@ -1,6 +1,5 @@
 import { TbBulb } from "react-icons/tb";
 import { PiHandshakeLight } from "react-icons/pi";
-import { FcProcess } from "react-icons/fc";
 import { BiCheckShield } from "react-icons/bi";
 import { SiFireship } from "react-icons/si";
 import { Tabs, Work } from "@/lib/type";
@@ -8,7 +7,6 @@ import { TbVirusSearch } from "react-icons/tb";
 import { TbSettingsPause } from "react-icons/tb";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import { BsKanban } from "react-icons/bs";
-import { content } from "@/data/mad";
 import { VscTerminalUbuntu } from "react-icons/vsc";
 
 export const menuItems = [
@@ -2275,7 +2273,7 @@ export const becomePartnersTabs: Tabs[] = [
     label: "Modified Developers",
     content:
       "At RF Technologies, we continuously evolve our development practices to stay ahead of the curve. Our team of modified developers is equipped with the latest tools and methodologies, enabling us to offer innovative solutions tailored to your specific needs. By choosing us, you partner with a team that is not only skilled but also adaptable, ensuring that your projects benefit from cutting-edge techniques and forward-thinking strategies.",
-    icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <VscTerminalUbuntu className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
   {
     label: "Trustworthy Companionship",

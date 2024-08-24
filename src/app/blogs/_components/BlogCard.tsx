@@ -9,8 +9,8 @@ type BlogProps = {
   data: BlogPost[];
 };
 
-const BlogCard = ({ data}: BlogProps) => {
-  // console.log(data);
+const BlogCard = ({ data }: BlogProps) => {
+  console.log("data blog",data);
   return (
     <>
       {data?.map((item, index) => {
@@ -38,9 +38,11 @@ const BlogCard = ({ data}: BlogProps) => {
                 <h4 className="text-bold xl:text-[26px] lg:text-[23px] text-[20px]">
                   {item?.title}
                 </h4>
-                {item?.createdAt && <p className="text-[#8C8C8C] text-sm">
-                  {formatDate(item?.createdAt)}
-                </p>}
+                {item?.createdAt && (
+                  <p className="text-[#8C8C8C] text-sm">
+                    {formatDate(item?.createdAt)}
+                  </p>
+                )}
                 <div className="flex items-center justify-start gap-3">
                   <Image
                     src={`${

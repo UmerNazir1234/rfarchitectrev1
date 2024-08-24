@@ -14,12 +14,11 @@ const BlogHeader = async ({ blogs }: props) => {
   const [chips, setChips] = useState<Blog[] | null>(null);
   const [loading, setLoading] = useState(false);
 
-
   const fetchData = async () => {
     try {
       setLoading(true);
       const response = await fetchClient(`/blog/all`);
-      //console.log(response);
+
       if (response) {
         const { data } = response;
         setChips(data);
@@ -36,7 +35,7 @@ const BlogHeader = async ({ blogs }: props) => {
   useEffect(() => {
     fetchData();
   }, []);
-  //console.log(blogs);
+  // console.log(blogs);
   return (
     <>
       <div className="relative z-1">

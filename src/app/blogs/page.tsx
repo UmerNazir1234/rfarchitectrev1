@@ -6,7 +6,7 @@ export const revalidate = 0;
 
 const page = async () => {
   const response = await fetchClient(`/article/all`);
-  //console.log(response?.data)
+ 
   return <Index blogs={response?.data} />;
 };
 

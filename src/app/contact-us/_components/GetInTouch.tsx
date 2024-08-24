@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 const GetInTouch = ({ data }: any) => {
   const [loading, setLoading] = useState();
   return (
-    <section className="bg-light relative z-50">
+    <section className="bg-light relative ">
       <div className="page-width xl:py-40 lg:py-36 py-20">
         <div className="flex lg:flex-nowrap flex-wrap items-center justify-center xl:gap-20 lg:gap-10 md:gap-6 gap-3">
           <div className=" lg:basis-1/2 relative z-20 basis-full rounded-lg overflow-hidden">

@@ -15,10 +15,10 @@ const SubServices = ({ data }: dataProps) => {
           "url('https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721475774/RfTechnologiesWebsite/Vector_11_bncewh.svg')",
       }}
     >
-      <div className="flex items-center justify-center flex-col gap-10 pb-12 relative z-50">
+      <div className="flex items-center justify-center flex-col gap-10 pb-12 relative z-50  ">
         <Button
           title="Our Services"
-          classes="bg-secondary"
+          classes="bg-secondary cursor-default"
           enableIcons={true}
         />
         <h2 className="text-white uppercase">What we offer</h2>
