@@ -4,68 +4,108 @@ import Heading from "./Heading";
 import Link from "next/link";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-const Form = ({ data }: any) => {
-  const [formData, setFormData] = useState({
+type FormProps = {
+  data: {
+    title: string;
+    tagline: string;
+  };
+};
+
+type FormData = {
+  name: string;
+  email: string;
+  message: string;
+  joinUs: boolean;
+  file: File | null;
+};
+
+const Form = ({ data }: FormProps) => {
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     message: "",
+    joinUs: false,
+    file: null,
   });
   const [loading, setLoading] = useState(false);
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
+
+    if (e.target && e.target.type === "checkbox") {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: e.target.checked,
+      }));
+    } else {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }));
+    }
+  };
+
+  const handleFileChange = (e: any) => {
+    const file = e.target.files?.[0] || null;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      file: file,
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
+    setLoading(true);
 
-    // Implement form submission logic here
-    console.log("Form submitted:", formData);
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("message", formData.message);
+      formDataToSend.append("join_us", String(formData.joinUs));
+      if (formData.file) {
+        formDataToSend.append("file", formData.file);
+      }
 
-    // try {
-    //   setLoading(true);
-    //   const form = {
-    //     to: "raoabrar629@gmail.com",
-    //     subject: "Need Help?",
-    //     text: "Sending this message form the website",
-    //     html: `<h1>Name:  ${formData?.name}</h1><p>Email:  ${formData?.email}</p><p>Message: <br/> ${formData?.message}</p>`,
-    //   };
-    //   const response = await fetch(baseURL + "/api/contact", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(form),
-    //   });
-    //   console.log(response);
-    //   setLoading(false);
-    // } catch (error) {
-    //   console.log(error);
-    //   setLoading(false);
-    // }
-    // // Reset form fields after submission (optional)
-    // setFormData({
-    //   name: "",
-    //   email: "",
-    //   message: "",
-    // });
+      const response = await fetch("/contact-us/", {
+        method: "POST",
+        body: formDataToSend,
+      });
+
+      if (response.ok) {
+        setSuccessMessage(
+          "Thank you! Your form has been successfully submitted. We will get back to you shortly."
+        );
+      } else {
+        console.error(
+          "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
+        );
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting the form:", error);
+    } finally {
+      setLoading(false);
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+        joinUs: false,
+        file: null,
+      });
+    }
   };
 
   return (
-    <div className="bg-themblack lg:mt-28 mt-16 lg:px-10 lg:py-16 py-6 px-2 rounded-2xl border border-white border-opacity-45 ">
+    <div className="bg-themblack lg:mt-28 mt-16 lg:px-10 lg:py-16 py-6 px-2 rounded-2xl border border-white border-opacity-45">
       <div>
         <div className="flex items-center justify-center">
           <Heading
             title={data?.title}
             icon={true}
             iconStyle="!stroke-white"
-            classes="text-white "
+            classes="text-white"
           />
         </div>
         <p className="text-white md:text-2xl text-base text-center">
@@ -75,30 +115,30 @@ const Form = ({ data }: any) => {
 
       <form onSubmit={handleSubmit} className="flex flex-wrap md:pt-16 pt-10">
         <div className="flex items-center justify-between md:gap-10 gap-2 w-full">
-          <div className="basis-1/2 ">
+          <div className="basis-1/2">
             <div className="relative">
               <input
                 type="text"
                 id="name"
                 name="name"
-                value={formData?.name}
-                onChange={(e) => handleInputChange(e)}
+                value={formData.name}
+                onChange={handleInputChange}
                 placeholder="Name"
                 className="input--field text-black"
                 required
               />
             </div>
           </div>
-          <div className="basis-1/2 ">
+          <div className="basis-1/2">
             <div className="relative">
               <input
                 type="email"
                 id="email"
                 name="email"
+                value={formData.email}
+                onChange={handleInputChange}
                 placeholder="Email"
-                value={formData?.email}
-                onChange={(e) => handleInputChange(e)}
-                className=" input--field text-black"
+                className="input--field text-black"
                 required
               />
             </div>
@@ -110,27 +150,34 @@ const Form = ({ data }: any) => {
               id="message"
               name="message"
               className="input--field text-black"
-              value={formData?.message}
-              onChange={(e) => handleInputChange(e)}
+              value={formData.message}
+              onChange={handleInputChange}
+              placeholder="Message"
               required
               rows={6}
             ></textarea>
           </div>
         </div>
-        <div className="w-full mt-8 ">
-          <input
-            className="input--field !border-dashed !md:py-10 text-black"
-            id="file_input"
-            type="file"
-          />
+        <div className="w-full mt-8">
+          <div className="relative">
+            <input
+              className="input--field !border-dashed !md:py-10 text-black"
+              id="file_input"
+              type="file"
+              name="file"
+              onChange={handleFileChange}
+            />
+          </div>
         </div>
         <div className="flex items-start gap-4 mt-8">
           <input
             id="link-checkbox"
             type="checkbox"
-            value=""
+            name="joinUs"
+            checked={formData.joinUs}
+            onChange={handleInputChange}
             className="mt-1.5"
-          ></input>
+          />
           <label
             htmlFor="link-checkbox"
             className="lg:text-2xl md:text-xl text-base text-white leading-tight"
@@ -139,8 +186,8 @@ const Form = ({ data }: any) => {
             NDA. This site is protected by reCAPTCHA and the Google Privacy
             Policy and Terms of Service apply.
             <Link
-              href="#"
-              className="ps-2 text-white dark:text-black hover:underline"
+              href="/policies/privacy-policy"
+              className="ps-2 text-white hover:underline"
             >
               Privacy Policy and Terms of Service apply.
             </Link>
@@ -161,6 +208,9 @@ const Form = ({ data }: any) => {
           </button>
         </div>
       </form>
+      <div className="tex text-green-500 font-normal text-xl mt-4">
+        {successMessage}
+      </div>
     </div>
   );
 };

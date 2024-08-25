@@ -3,26 +3,30 @@ import React, { useState } from "react";
 import Heading from "@/components/Heading";
 
 const BecomePartnerForm = () => {
-  const [formData, setFormData] = useState({
+  type formProps = {
+    name: string;
+    email: string;
+    message: string;
+    projectType: "companyToCompany" | "outSourceProject";
+  };
+  const [formData, setFormData] = useState<formProps>({
     name: "",
     email: "",
     message: "",
-    joinOption: "",
+    projectType: "companyToCompany", // default value
   });
 
-  const handleChange = (e: any) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
+    setFormData({
+      ...formData,
       [name]: value,
-    }));
+    });
   };
-
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+    console.log("form Data Become A partner", formData);
   };
-
   return (
     <section className="bg-no-repeat bg-cover ">
       <div className="pb-24 page-width">
@@ -50,10 +54,10 @@ const BecomePartnerForm = () => {
                       type="text"
                       id="name"
                       name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
                       placeholder="Name"
                       className="input--field !text-black"
-                      value={formData.name}
-                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -63,10 +67,10 @@ const BecomePartnerForm = () => {
                       type="email"
                       id="email"
                       name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       placeholder="Email"
                       className="input--field !text-black"
-                      value={formData.email}
-                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -77,10 +81,10 @@ const BecomePartnerForm = () => {
                     id="message"
                     name="message"
                     placeholder="Message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     className="input--field !text-black"
                     rows={6}
-                    value={formData.message}
-                    onChange={handleChange}
                   ></textarea>
                 </div>
               </div>
@@ -95,9 +99,8 @@ const BecomePartnerForm = () => {
                       <input
                         type="radio"
                         name="joinOption"
-                        value="companyToCompany"
-                        checked={formData.joinOption === "companyToCompany"}
-                        onChange={handleChange}
+                        checked={formData.projectType === "companyToCompany"}
+                        onChange={handleInputChange}
                       />
                       <p className="text-xl">Company to Company Business</p>
                     </label>
@@ -108,8 +111,8 @@ const BecomePartnerForm = () => {
                         type="radio"
                         name="joinOption"
                         value="outSourceProject"
-                        checked={formData.joinOption === "outSourceProject"}
-                        onChange={handleChange}
+                        checked={formData.projectType === "outSourceProject"}
+                        onChange={handleInputChange}
                       />
                       <p className="text-xl">Out Source Project</p>
                     </label>
