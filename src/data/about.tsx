@@ -78,19 +78,19 @@ const content = {
   about: {
     title: "about rf technologies",
     description: `We are a team of endless innovators striving to connect dots and
-            people. A <span class="text-italic text-secondary">true leading company </span>
+            people. A <span class="!italic text-secondary">true leading company </span>
             with sustained commitments to your
-            <span className="text-italic text-secondary">business goals </span>. We are always
+            <span class='!italic text-secondary'>business goals </span>. We are always
             searching for an experienced approach to help brands understand the
             digital role of solving real business problems,
-            <span className="text-italic text-secondary">finding opportunities </span>, and
+            <span class="!italic text-secondary">finding opportunities </span>, and
             giving them intangible results. In our environment, you will get to
             learn, earn, grow and discover. When everything gets blurry our vision
-            helps us to <span className="text-italic text-secondary">stay focused</span>. Our
+            helps us to <span class="!italic text-secondary">stay focused</span>. Our
             staff contains all types of thinkers and innovators that are coming
             from all walks of life. Our success formula drives all possible
             approaches to make a drastic inclusion. We as a team serve and
-            <span className="text-italic text-secondary">deliver the best</span> to our
+            <span class="!italic text-secondary">deliver the best</span> to our
             customers.`,
     dotsImage: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719912842/RfTechnologiesWebsite/Group_1597883856_r26khq.png`,
     rfLogo: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719848735/RfTechnologiesWebsite/Trade_Mark-02_2_oggpmo.png`,

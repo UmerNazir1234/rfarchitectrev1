@@ -15,25 +15,25 @@ type props = {
 };
 const ServiceCard = ({ card }: props) => {
   return (
-    <div className="h-full min-h-[450px] rounded-[30px] shadow-xl bg-white p-6 flex items-center text-center justify-center flex-col gap-8 hover:bg-gradient-to-b hover:from-primary hover:to-primarylight group ">
+    <div className="h-full min-h-[450px] rounded-[30px] shadow-xl bg-white lg:p-8 p-4 flex items-center text-center justify-center flex-col gap-8 hover:bg-gradient-to-b hover:from-primary hover:to-primarylight group ">
       <Link
         href={card?.btnLink}
         aria-label={card?.title + "service"}
         className="bg-gradient-to-br group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-white from-primary to-primarylight md:p-4 p-2 rounded-lg "
       >
-       {card?.icon}
+        {card?.icon}
       </Link>
-      <div className="text-[19px] !font-bold group-hover:text-white text-center">
+      <div className=" lg:text-2xl text-xl !font-bold group-hover:text-white text-center">
         {card?.title}
       </div>
-      <p className="text-lg text-textLight group-hover:text-white">
+      <p className="lg:text-xl text-lg text-textLight group-hover:text-white">
         {card?.content}
       </p>
       <Button
         title="Read More"
         icon={<GoArrowUpRight />}
         href={card?.btnLink}
-        classes="bg-light !text-primary !py-3 !px-8 !text-base !font-semibold"
+        classes="bg-light !text-primary !py-3 !px-8 !text-lg !font-semibold"
       />
     </div>
   );

@@ -4,7 +4,7 @@ import React from "react";
 
 const PerfectPartnerShip = () => {
   return (
-    <section className="flex flex-row relative items-center justify-center bg-cover bg-no-repeat py-48  overflow-hidden bg-primary">
+    <section className="flex flex-row relative items-center justify-center  py-48  overflow-hidden bg-primary">
       <div className="page-width">
         <div className="flex items-center justify-center">
           <Heading title="Perfect Partnership" />
@@ -21,18 +21,18 @@ const PerfectPartnerShip = () => {
         src={
           "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719912842/RfTechnologiesWebsite/Group_1597883856_r26khq.png"
         }
-        width={260}
-        height={260}
-        alt=""
-        className="absolute right-24 top-0 max-lg:w-36 max-lg:h-36 max-sm:w-20 max-sm:h-20 max-sm:top-0 max-sm:right-4"
+        width={190}
+        height={190}
+        alt="Dots"
+        className="absolute right-0 top-0 max-lg:w-36 max-lg:h-36 max-sm:w-20 max-sm:h-20 max-sm:top-0 max-sm:right-4"
         loading="lazy"
       />
       <Image
         src={
           "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719848735/RfTechnologiesWebsite/Trade_Mark-02_2_oggpmo.png"
         }
-        width={250}
-        height={250}
+        width={180}
+        height={180}
         alt="Rf icon"
         className="absolute left-0 lg:-bottom-[30px] bottom-0 max-lg:w-48 max-lg:h-48 max-sm:w-20 max-sm:h-20 max-md:hidden object-center object-contain"
         loading="lazy"

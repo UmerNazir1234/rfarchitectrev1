@@ -2,15 +2,16 @@ import Heading from "@/components/Heading";
 import Image from "next/image";
 import React from "react";
 
-type contentProps ={
-    title:string,
-    description?:string,
-    classes?:string
-}
+type contentProps = {
+  title: string;
+  description?: string;
+  classes?: string;
+};
 
-const HeadingBox = ({title,description,classes}:contentProps) => {
+const HeadingBox = ({ title, description, classes }: contentProps) => {
   return (
     <section className="relative">
+
       <div className="page-width ">
         <div className="flex items-center justify-center lg:py-36 py-16 lg:gap-24 gap-6 lg:flex-nowrap flex-wrap">
           <div className="lg:basis-[45%] basis-full max-lg:ps-6">
@@ -22,7 +23,7 @@ const HeadingBox = ({title,description,classes}:contentProps) => {
           </div>
           <div className="lg:basis-[65%] basis-full relative z-50">
             <p className="bg-blueLight md:p-10 p-4 rounded-3xl border-primary border p-lg">
-           {description}
+              {description}
             </p>
           </div>
         </div>

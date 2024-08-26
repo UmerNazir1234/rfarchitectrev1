@@ -47,7 +47,7 @@ const HeroSlider = ({ data }: HeroSliderProps) => {
                       dangerouslySetInnerHTML={{ __html: item.title }}
                     ></h1>
                     {item?.description && (
-                      <p className="text-md !font-advent_Pro md:text-3xl text-2xl m-auto text-white mt-6 max-w-[80%]">
+                      <p className="text-md !font-advent_Pro md:text-3xl text-2xl m-auto text-white mt-6 sm:max-w-[80%]">
                         {item?.description}
                       </p>
                     )}

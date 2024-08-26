@@ -12,6 +12,10 @@ yarn dev
 pnpm dev
 # or
 bun dev  
+
+
+
+NEXT_PUBLIC_API_URL="https://rftechnologies-api.vercel.app"
 ```
    
 Open [http://localhost:3000](http://localhost:3000)with your browser to see the results.

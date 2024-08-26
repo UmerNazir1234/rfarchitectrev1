@@ -25,7 +25,7 @@ const Faq = ({ data, classes }: props) => {
         <div className="flex items-center justify-center">
           <Button
             title="have a question"
-            classes="bg-secondary"
+            classes="bg-secondary cursor-default"
             icon={true}
             enableIcons={true}
           />

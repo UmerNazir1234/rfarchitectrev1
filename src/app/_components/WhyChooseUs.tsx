@@ -3,6 +3,8 @@ import IconConsulting from "@/components/Icons/IconConsulting";
 import IconReact from "@/components/Icons/IconReact";
 import IconSupport from "@/components/Icons/IconSupport";
 import React from "react";
+import WhyChooseRightCard from "./WhyChooseRightCard";
+import WhyChooseLeftCard from "./WhyChooseLeftCard";
 
 const WhyChooseUs = () => {
   return (
@@ -20,6 +22,7 @@ const WhyChooseUs = () => {
               classes="bg-secondary uppercase"
               enableIcons={true}
               iconStyle="stroke-secondary"
+              href="/about-us"
             />
             <h2 className=" text-white mt-6">
               WE PROVIDE THE BEST IT SOLUTION
@@ -28,79 +31,49 @@ const WhyChooseUs = () => {
           <div className="flex items-start lg:flex-nowrap flex-wrap justify-start gap-4 mt-12">
             <div className="lg:basis-[60%] basis-full">
               <div className="flex items-start justify-center flex-col gap-6 itSolutionCard">
-                <div className="group cursor-pointer">
-                  <div className="flex items-center group-hover:text-primary group-hover:bg-white sm:gap-10  gap-3 text-white justify-start bg-white bg-opacity-20 sm:p-8 p-3 rounded-2xl border-primary border-2 lg:max-w-2xl max-w-full">
-                    <div>
-                      <IconConsulting
-                        fill="group-hover:fill-primary"
-                        classes="lg:w-auto !w-16 !h-16 lg:h-auto "
-                      />
-                    </div>
-                    <div>
-                      <h5 className="">CONSULTING</h5>
-                      <p className="">
-                        We provide effective consultations to our clients which
+                <WhyChooseLeftCard
+                  icon={
+                    <IconConsulting
+                      fill="group-hover:fill-primary"
+                      classes="lg:w-auto !w-16 !h-16 lg:h-auto "
+                    />
+                  }
+                  title="CONSULTING"
+                  content="We provide effective consultations to our clients which
                         helps customers and organizations to improve their
-                        performance.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="group cursor-pointer">
-                  <div className="flex items-center  group-hover:text-primary group-hover:bg-white sm:gap-10 gap-3 text-white justify-start bg-white bg-opacity-20 sm:p-8 p-3 rounded-2xl border-primary border-2 lg:max-w-2xl max-w-full">
-                    <div>
-                      <IconSupport
-                        fill="group-hover:fill-primary"
-                        classes="lg:w-auto !w-16 !h-16 lg:h-auto"
-                      />
-                    </div>
-                    <div>
-                      <h5 className="">PRODUCTION</h5>
-                      <p>
-                        During the production, Experts take care of all the
+                        performance."
+                />
+                <WhyChooseLeftCard
+                  icon={
+                    <IconSupport
+                      fill="group-hover:fill-primary"
+                      classes="lg:w-auto !w-16 !h-16 lg:h-auto"
+                    />
+                  }
+                  title="PRODUCTION"
+                  content="During the production, Experts take care of all the
                         possible solutions and flexibilities for a better and
-                        more successful digital product.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="group cursor-pointer">
-                  <div className="flex items-center  group-hover:text-primary group-hover:bg-white sm:gap-10 gap-3 text-white justify-start bg-white bg-opacity-20 sm:p-8 p-3 rounded-2xl border-primary border-2 lg:max-w-2xl max-w-full">
-                    <div>
-                      <IconReact
-                        fill="group-hover:stroke-primary"
-                        classes="lg:w-auto !w-16 !h-16 lg:h-auto"
-                      />
-                    </div>
-                    <div>
-                      <h5 className="">SUPPORT</h5>
-                      <p>{`
-                        We don't abandon you. we provide 24/7 support and
-                        maintenance for your product.
-                      `}</p>
-                    </div>
-                  </div>
-                </div>
+                        more successful digital product."
+                />
+                <WhyChooseLeftCard
+                  icon={
+                    <IconReact
+                      fill="group-hover:stroke-primary"
+                      classes="lg:w-auto !w-16 !h-16 lg:h-auto"
+                    />
+                  }
+                  title="SUPPORT"
+                  content=" We don't abandon you. we provide 24/7 support and
+                        maintenance for your product."
+                />
               </div>
             </div>
             <div className="lg:basis-[40%] basis-full">
               <div className="flex items-center justify-center sm:gap-4 gap-2 flex-wrap">
-                <div className="transform3d flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2">
-                  <h3 className="!font-medium">312+</h3>
-                  <p>Products</p>
-                </div>
-                <div className="transform3deven flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2 ">
-                  <h3 className="!font-medium">20+</h3>
-                  <p>Employees</p>
-                </div>
-                <div className="transform3d flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2">
-                  <h3 className="!font-medium">200+</h3>
-                  <p>Clients</p>
-                </div>
-                <div className="transform3deven flex items-center flex-col gap-2 text-white justify-start bg-white bg-opacity-20 min-w-52 max-sm:min-w-36 sm:py-6 sm:px-14 py-6 px-4 rounded-xl border-primary border-2 ">
-                  <h3 className="!font-medium">6+</h3>
-                  <p>Experience</p>
-                </div>
+                <WhyChooseRightCard number="312+" title="Products" />
+                <WhyChooseRightCard number="20+" title="Employees" />
+                <WhyChooseRightCard number="200+" title="Clients" />
+                <WhyChooseRightCard number="6+" title="Experience" />
               </div>
             </div>
           </div>

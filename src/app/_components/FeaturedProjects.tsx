@@ -27,6 +27,7 @@ const FeaturedProjects = ({ data }: propsProjects) => {
             title="featured projects"
             classes="bg-secondary"
             icon={true}
+            href="/our-work"
             enableIcons={true}
           />
         </div>

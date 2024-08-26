@@ -1,5 +1,5 @@
-import React from 'react'
-import Index from './_components/Index'
+import React from "react";
+import Index from "./_components/Index";
 import { Metadata } from "next";
 const title = `Tailored Web Design & Development Solutions for Success`;
 const description = `Get top-notch web design and development with RF Tech. We deliver custom, responsive websites tailored to your business needs and goals.`;
@@ -23,8 +23,10 @@ export const metadata: Metadata = {
 };
 const page = () => {
   return (
-    <div><Index/></div>
-  )
-}
+    <div>
+      <Index />
+    </div>
+  );
+};
 
-export default page
+export default page;

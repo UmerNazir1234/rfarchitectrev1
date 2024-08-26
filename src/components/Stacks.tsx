@@ -10,7 +10,6 @@ const Stacks = () => {
       <div className="page-width pb-12 relative z-50">
         <div className="flex items-center justify-center flex-col gap-8 pb-10">
           <Button
-            href="/"
             title="Our Stack"
             classes="bg-secondary"
             enableIcons

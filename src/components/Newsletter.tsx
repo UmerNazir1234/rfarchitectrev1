@@ -8,22 +8,24 @@ const Newsletter = ({ classes }: any) => {
       <div className="page-width">
         <div className="bg-secondary rounded-xl sm:p-10 p-4 sm:py-16 py-10 relative">
           <div className="flex items-center justify-between gap-3 lg:flex-nowrap flex-wrap">
-            <div className="lg:basis-2/3 basis-full">
+            <div className="lg:basis-[55%] basis-full">
               <h3 className="text-white lg:text-start text-center lg:m-0 mb-3">
                 Subscribe to our Newsletter
               </h3>
             </div>
-            <div className="lg:basis-1/3 basis-full">
+            <div className="lg:basis-[45%] basis-full">
               <div className="bg-white flex items-center justify-between gap-2 p-2 rounded-full ps-4">
                 {" "}
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="h-full w-full px-2 py-1.5 border-none"
+                  className="h-full w-full px-2 py-1.5 border-none sm:text-2xl relative z-10"
                   placeholder="Enter you email"
                 />
-                <Button title="Subscribe" />
+                <button className="btn btn--primary uppercase max-sm:text-base">
+                  Subscribe
+                </button>
               </div>
             </div>
           </div>
@@ -35,7 +37,7 @@ const Newsletter = ({ classes }: any) => {
             alt="rftech logo"
             width={250}
             height={300}
-            className="absolute left-0 bottom-0 object-contain"
+            className="absolute left-0 bottom-0 object-contain max-md:w-40 max-md:h-40 z-0"
           />
         </div>
       </div>

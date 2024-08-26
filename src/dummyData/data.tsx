@@ -1,6 +1,5 @@
 import { TbBulb } from "react-icons/tb";
 import { PiHandshakeLight } from "react-icons/pi";
-import { FcProcess } from "react-icons/fc";
 import { BiCheckShield } from "react-icons/bi";
 import { SiFireship } from "react-icons/si";
 import { Tabs, Work } from "@/lib/type";
@@ -8,7 +7,7 @@ import { TbVirusSearch } from "react-icons/tb";
 import { TbSettingsPause } from "react-icons/tb";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import { BsKanban } from "react-icons/bs";
-import { content } from "@/data/mad";
+import { VscTerminalUbuntu } from "react-icons/vsc";
 
 export const menuItems = [
   { id: 1, name: "Who We Are?", link: "/about-us" },
@@ -486,7 +485,7 @@ export const tabs: Tabs[] = [
     label: "Consistency",
     content:
       "As they say, knowledge is power. We completely agree with this statement. Not only knowledge is power but delivering knowledge at the right time to the right people is a superpower. We have a bunch of workers who are diverting people’s attention by providing them with the quality they want. Our brand speciality is that we are not appealing to everyone but only holds on to the target audience. Our brand identity is to promote ourselves in the language they want to hear. This adaptation cuts all the voices of other competitive companies.",
-    icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <VscTerminalUbuntu className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
   {
     label: "Authenticity",
@@ -506,25 +505,25 @@ export const aboutTabs: Tabs[] = [
     label: "Knowledge",
     content:
       "Knowledge is the foundation of innovation. At RF Technologies, we believe that true power lies in not just acquiring knowledge, but in delivering it precisely when and where it's needed. Our team of experts is dedicated to guiding our clients with the insights they need to excel. We don't just speak to everyone; we focus on our target audience, communicating in a way that resonates with them. This strategic approach sets us apart from the competition, allowing us to cut through the noise and deliver unparalleled value.",
-    icon: <TbBulb className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <TbBulb className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
     label: "Promise",
     content:
       "Our commitment to our clients is unwavering. We make promises that we intend to keep, ensuring that every project we undertake is completed with the highest level of integrity and professionalism. At RF Technologies, a promise is more than just words; it's a bond of trust. We understand the importance of reliability in building long-lasting relationships, and we work tirelessly to uphold the trust our clients place in us.",
-    icon: <PiHandshakeLight className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <PiHandshakeLight className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
     label: "Consistency",
     content:
       "Consistency is key to our success. At RF Technologies, we are committed to maintaining a high standard of quality across all our services. Whether it's our approach to problem-solving or our attention to detail, consistency is what ensures our clients receive the same level of excellence every time they work with us. This steadfast dedication to quality is what keeps us ahead in a competitive industry.",
-    icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <VscTerminalUbuntu className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
     label: "Authenticity",
     content:
       "Authenticity is at the heart of everything we do. We believe in being true to our values and transparent in our dealings. At RF Technologies, authenticity means staying genuine in our approach, whether it's in our communication with clients or the way we conduct our business. This honesty and openness are what build trust and foster strong, enduring partnerships.",
-    icon: <BiCheckShield className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <BiCheckShield className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
     label: "Passion",
@@ -2274,7 +2273,7 @@ export const becomePartnersTabs: Tabs[] = [
     label: "Modified Developers",
     content:
       "At RF Technologies, we continuously evolve our development practices to stay ahead of the curve. Our team of modified developers is equipped with the latest tools and methodologies, enabling us to offer innovative solutions tailored to your specific needs. By choosing us, you partner with a team that is not only skilled but also adaptable, ensuring that your projects benefit from cutting-edge techniques and forward-thinking strategies.",
-    icon: <FcProcess className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+    icon: <VscTerminalUbuntu className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
   {
     label: "Trustworthy Companionship",

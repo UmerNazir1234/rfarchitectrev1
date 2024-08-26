@@ -8,7 +8,7 @@ type WorkProps = {
 
 const WorkCard = ({ work }: WorkProps) => {
   return (
-    <section>
+    <section className="md:!-mt-20">
       <div>
         {work?.map((item) => {
           return (
@@ -68,9 +68,7 @@ const WorkCard = ({ work }: WorkProps) => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4 justify-start flex-col max-md:items-center basis-full md:basis-2/5">
-                  <h2 className="text-4xl md:text-6xl">
-                    {item?.title}
-                  </h2>
+                  <h2 className="text-4xl md:text-6xl">{item?.title}</h2>
                   <p className="font-nunito max-md:text-center !leading-normal text-lg md:text-xl">
                     {item?.text}
                   </p>
