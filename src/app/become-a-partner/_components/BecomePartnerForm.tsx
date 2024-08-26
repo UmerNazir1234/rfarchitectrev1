@@ -1,19 +1,25 @@
 "use client";
 import React, { useState } from "react";
 import Heading from "@/components/Heading";
-
+import { baseURL } from "@/lib/utils";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+type formProps = {
+  name: string;
+  email: string;
+  message: string;
+  file: null;
+  joinUs: "companyToCompany" | "outSourceProject";
+};
 const BecomePartnerForm = () => {
-  type formProps = {
-    name: string;
-    email: string;
-    message: string;
-    projectType: "companyToCompany" | "outSourceProject";
-  };
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [formData, setFormData] = useState<formProps>({
     name: "",
     email: "",
     message: "",
-    projectType: "companyToCompany", // default value
+    file: null,
+    joinUs: "companyToCompany", // default value
   });
 
   const handleInputChange = (e: any) => {
@@ -23,9 +29,51 @@ const BecomePartnerForm = () => {
       [name]: value,
     });
   };
-  const handleSubmit = (e: any) => {
+
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log("form Data Become A partner", formData);
+    setLoading(true);
+    try {
+      let form = new FormData();
+      form.append("name", formData?.name);
+      form.append("email", formData?.email);
+      form.append("message", formData?.message);
+      form.append("join_us", String(formData?.joinUs));
+      form.append("file", formData?.file ? formData?.file : "");
+      const response = await fetch(baseURL + "/contact-us", {
+        method: "POST",
+        body: form,
+      });
+      if (response?.ok) {
+        const result = await response?.json();
+        if (result?.status == "Success") {
+          setError(false);
+          setSuccessMessage(
+            "Thank you! Your form has been successfully submitted. We will get back to you shortly."
+          );
+          setLoading(false);
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+            joinUs: "companyToCompany",
+            file: null,
+          });
+        } else {
+          setError(true);
+          setLoading(false);
+          console.error(
+            "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
+          );
+        }
+      }
+    } catch (error) {
+      setError(true);
+      setLoading(false);
+      console.error(
+        "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
+      );
+    }
   };
   return (
     <section className="bg-no-repeat bg-cover ">
@@ -57,7 +105,8 @@ const BecomePartnerForm = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="Name"
-                      className="input--field !text-black"
+                      className="input--field !text-black bg-transparent border-gray-600"
+                      required
                     />
                   </div>
                 </div>
@@ -70,7 +119,8 @@ const BecomePartnerForm = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="Email"
-                      className="input--field !text-black"
+                      className="input--field !text-black  bg-transparent border-gray-600"
+                      required
                     />
                   </div>
                 </div>
@@ -83,8 +133,9 @@ const BecomePartnerForm = () => {
                     placeholder="Message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="input--field !text-black"
+                    className="input--field !text-black  bg-transparent border-gray-600"
                     rows={6}
+                    required
                   ></textarea>
                 </div>
               </div>
@@ -93,25 +144,24 @@ const BecomePartnerForm = () => {
                   How would you like to join us?
                 </p>
 
-                <div className="flex items-center justify-between gap-10 mt-5 flex-wrap">
-                  <div className="bg-blueLight w-full p-4 rounded-lg border-primary border">
+                <div className="flex items-center justify-between mt-5 flex-wrap md:flex-nowrap gap-6">
+                  <div className="bg-blueLight w-full p-4 rounded-lg border-primary border basis-full">
                     <label className="flex items-center justify-start gap-3">
                       <input
                         type="radio"
                         name="joinOption"
-                        checked={formData.projectType === "companyToCompany"}
+                        defaultChecked={formData.joinUs === "companyToCompany"}
                         onChange={handleInputChange}
                       />
                       <p className="text-xl">Company to Company Business</p>
                     </label>
                   </div>
-                  <div className="bg-blueLight w-full p-4 rounded-lg border-primary border">
+                  <div className="bg-blueLight w-full p-4 rounded-lg border-primary border basis-full">
                     <label className="flex items-center justify-start gap-3">
                       <input
                         type="radio"
                         name="joinOption"
-                        value="outSourceProject"
-                        checked={formData.projectType === "outSourceProject"}
+                        defaultChecked={formData.joinUs === "outSourceProject"}
                         onChange={handleInputChange}
                       />
                       <p className="text-xl">Out Source Project</p>
@@ -126,9 +176,20 @@ const BecomePartnerForm = () => {
                   className="btn bg-primary !text-secondary lg:!px-32 !px-24 
                   !text-white"
                 >
-                  SUBMIT
+                  <span>Submit</span>
+                  {loading && (
+                    <AiOutlineLoading3Quarters className="ms-3 animate-spin" />
+                  )}
                 </button>
               </div>
+              {successMessage && (
+                <div className="tex text-green-600 font-normal text-xl mt-4 border rounded p-3 border-gray-600">
+                  {successMessage}
+                </div>
+              )}
+              {error && (
+                <div className="mt-4 text-red-600 font-medium">{`Form submission failed: We encountered an issue while processing your request. Please try again later !!`}</div>
+              )}
             </div>
           </form>
         </div>

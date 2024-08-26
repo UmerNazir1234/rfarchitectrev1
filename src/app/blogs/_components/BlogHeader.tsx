@@ -18,7 +18,6 @@ const BlogHeader = async ({ blogs }: props) => {
     try {
       setLoading(true);
       const response = await fetchClient(`/blog/all`);
-
       if (response) {
         const { data } = response;
         setChips(data);
@@ -35,7 +34,7 @@ const BlogHeader = async ({ blogs }: props) => {
   useEffect(() => {
     fetchData();
   }, []);
-  // console.log(blogs);
+  //console.log(blogs);
   return (
     <>
       <div className="relative z-1">
@@ -47,7 +46,7 @@ const BlogHeader = async ({ blogs }: props) => {
         </div>
       </div>
       <div className="relative">
-        {blogs && blogs.length > 0 && (
+        {blogs && blogs?.length > 0 && (
           <div className="page-width py-12 relative z-50">
             <div className="flex  lg:gap-10 sm:gap-5 gap-6 flex-wrap">
               <BlogCard data={blogs} />

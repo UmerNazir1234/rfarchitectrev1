@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Heading from "./Heading";
 import Link from "next/link";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { baseURL } from "@/lib/utils";
 
 type FormProps = {
   data: {
@@ -21,7 +22,6 @@ type FormData = {
 
 const Form = ({ data }: FormProps) => {
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
-
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -30,6 +30,7 @@ const Form = ({ data }: FormProps) => {
     file: null,
   });
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleInputChange = (e: any) => {
     const { name, value } = e.target;
@@ -58,42 +59,46 @@ const Form = ({ data }: FormProps) => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setLoading(true);
-
     try {
-      const formDataToSend = new FormData();
-      formDataToSend.append("name", formData.name);
-      formDataToSend.append("email", formData.email);
-      formDataToSend.append("message", formData.message);
-      formDataToSend.append("join_us", String(formData.joinUs));
-      if (formData.file) {
-        formDataToSend.append("file", formData.file);
-      }
-
-      const response = await fetch("/contact-us/", {
+      let form = new FormData();
+      form.append("name", formData?.name);
+      form.append("email", formData?.email);
+      form.append("message", formData?.message);
+      form.append("join_us", String(formData?.joinUs));
+      form.append("file", formData?.file ? formData?.file : "");
+      const response = await fetch(baseURL + "/contact-us", {
         method: "POST",
-        body: formDataToSend,
+        body: form,
       });
-
-      if (response.ok) {
-        setSuccessMessage(
-          "Thank you! Your form has been successfully submitted. We will get back to you shortly."
-        );
-      } else {
-        console.error(
-          "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
-        );
+      if (response?.ok) {
+        const result = await response?.json();
+        if (result?.status == "Success") {
+          setError(false);
+          setSuccessMessage(
+            "Thank you! Your form has been successfully submitted. We will get back to you shortly."
+          );
+          setLoading(false);
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+            joinUs: false,
+            file: null,
+          });
+        } else {
+          setError(true);
+          setLoading(false);
+          console.error(
+            "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
+          );
+        }
       }
     } catch (error) {
-      console.error("An error occurred while submitting the form:", error);
-    } finally {
+      setError(true);
       setLoading(false);
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-        joinUs: false,
-        file: null,
-      });
+      console.error(
+        "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
+      );
     }
   };
 
@@ -112,7 +117,6 @@ const Form = ({ data }: FormProps) => {
           {data?.tagline}
         </p>
       </div>
-
       <form onSubmit={handleSubmit} className="flex flex-wrap md:pt-16 pt-10">
         <div className="flex items-center justify-between md:gap-10 gap-2 w-full">
           <div className="basis-1/2">
@@ -208,9 +212,14 @@ const Form = ({ data }: FormProps) => {
           </button>
         </div>
       </form>
-      <div className="tex text-green-500 font-normal text-xl mt-4">
-        {successMessage}
-      </div>
+      {successMessage && (
+        <div className="tex text-green-500 font-normal text-xl mt-4">
+          {successMessage}
+        </div>
+      )}
+      {error && (
+        <div className="mt-4 text-red-600 font-medium">{`Form submission failed: We encountered an issue while processing your request. Please try again later !!`}</div>
+      )}
     </div>
   );
 };

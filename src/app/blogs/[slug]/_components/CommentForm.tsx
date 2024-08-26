@@ -1,17 +1,24 @@
 "use client";
+import { baseURL } from "@/lib/utils";
 import React, { useState } from "react";
-
-const CommentForm = () => {
-  type data = {
-    comments?: string;
-    name?: string;
-    email?: string;
-  };
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+type data = {
+  message: string;
+  name: string;
+  email: string;
+  published: boolean;
+  article: any;
+};
+const CommentForm = ({ id }: { id: any }) => {
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [formData, setFormData] = useState<data>({
-    comments: "",
+    message: "",
     name: "",
     email: "",
+    published: false,
+    article: id,
   });
 
   const handleInputChnage = (e: any) => {
@@ -20,9 +27,51 @@ const CommentForm = () => {
       [e.target.name]: e.target.value,
     }));
   };
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log("Form Data", formData);
+    if (!id) return;
+    setLoading(true);
+
+    try {
+      let form = new FormData();
+      form.append("name", formData?.name);
+      form.append("email", formData?.email);
+      form.append("message", formData?.message);
+      form.append("article", id);
+      const response = await fetch(baseURL + "/contact-us", {
+        method: "POST",
+        body: form,
+      });
+      if (response?.ok) {
+        const result = await response?.json();
+        if (result?.status == "Success") {
+          setError(false);
+          setSuccessMessage(
+            "Thank you! Your form has been successfully submitted."
+          );
+          setLoading(false);
+          setFormData({
+            message: "",
+            name: "",
+            email: "",
+            published: false,
+            article: id,
+          });
+        } else {
+          setError(true);
+          setLoading(false);
+          console.error(
+            "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
+          );
+        }
+      }
+    } catch (error) {
+      setError(true);
+      setLoading(false);
+      console.error(
+        "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
+      );
+    }
   };
   return (
     <>
@@ -31,13 +80,13 @@ const CommentForm = () => {
         <div className="w-full mt-8">
           <div className="relative mb-4">
             <textarea
-              id="comments"
-              name="comments"
-              placeholder="Comments"
-              value={formData?.comments}
+              id="message"
+              name="message"
+              value={formData?.message}
               onChange={handleInputChnage}
               className="input--field !text-black"
               rows={4}
+              required
             ></textarea>
           </div>
           <div className="relative mb-4">
@@ -49,6 +98,7 @@ const CommentForm = () => {
               onChange={handleInputChnage}
               placeholder="Name"
               className="input--field !text-black"
+              required
             />
           </div>
           <div className="relative mb-4">
@@ -60,6 +110,7 @@ const CommentForm = () => {
               value={formData?.email}
               placeholder="Email"
               className=" input--field !text-black"
+              required
             />
           </div>
         </div>
@@ -69,9 +120,20 @@ const CommentForm = () => {
             type="submit"
             className="btn bg-white !text-secondary btn--outline !px-16 !border-secondary"
           >
-            SUBMIT
+            <span>Submit</span>
+            {loading && (
+              <AiOutlineLoading3Quarters className="ms-3 animate-spin" />
+            )}
           </button>
         </div>
+        {successMessage && (
+          <div className="tex text-green-500 font-normal text-xl mt-4">
+            {successMessage}
+          </div>
+        )}
+        {error && (
+          <div className="mt-4 text-red-600 font-medium">{`Form submission failed: We encountered an issue while processing your request. Please try again later !!`}</div>
+        )}
       </form>
     </>
   );

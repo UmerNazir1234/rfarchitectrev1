@@ -4,18 +4,20 @@ import CommentForm from "./_components/CommentForm";
 import { baseURL, formatDate } from "@/lib/utils";
 import fetchClient from "@/helpers/fetchClient";
 import { BlogPost } from "@/lib/type";
+import PageError from "@/components/PageError";
 
 export const runtime = "edge";
 
 const page = async ({ params }: any) => {
   const response = await fetchClient(`/article/${params?.slug}`);
+  if (!response) return <PageError />;
   const { data } = response;
   const article: BlogPost = data;
   return (
     <section className="relative">
       <div className="max-w-4xl m-auto sm:py-24 py-12 xl:px-6 px-3">
-        <h1 className="h2 font-bold mb-6">{article?.title}</h1>
-        <div className="flex items-center justify-start gap-3">
+        <h1 className="h2 font-bold mb-6 capitalize">{article?.title}</h1>
+        <div className="flex items-center justify-start gap-3 mb-4">
           <Image
             src={`${
               article?.author?.image
@@ -31,11 +33,13 @@ const page = async ({ params }: any) => {
             {article?.author?.name}
           </p>
         </div>
-        <div>
-          <p className="text-[#8C8C8C] my-4 text-lg">
-            {formatDate(article?.createdAt)}
-          </p>
-        </div>
+        {article?.createdAt && (
+          <div>
+            <p className="text-[#8C8C8C] my-4 text-lg">
+              {formatDate(article?.createdAt)}
+            </p>
+          </div>
+        )}
         <div className="">
           <Image
             src={
@@ -56,7 +60,7 @@ const page = async ({ params }: any) => {
             dangerouslySetInnerHTML={{ __html: article?.content }}
           />
         </div>
-        <CommentForm />
+        <CommentForm id={article?._id} />
       </div>
       <Image
         src={`https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721909694/RfTechnologiesWebsite/Trade_Mark-02_2_ppmsma.svg`}
