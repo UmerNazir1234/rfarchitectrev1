@@ -1,8 +1,45 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Button from "./Button";
 import Image from "next/image";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import fetchClient from "@/helpers/fetchClient";
 
 const Newsletter = ({ classes }: any) => {
+  const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState<any>("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      if (!email) return;
+      setLoading(true);
+      const response = await fetchClient("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+      if (response && response?.status == "Success") {
+        setMessage(
+          response?.message ||
+            "Subscription successful! Check your email for a welcome newsletter."
+        );
+        setError(false);
+        setEmail('');
+      } else {
+        setMessage("");
+        setError(true);
+      }
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
+  };
   return (
     <section className={`${classes || ""} pb-20 pt-12 `}>
       <div className="page-width">
@@ -13,21 +50,44 @@ const Newsletter = ({ classes }: any) => {
                 Subscribe to our Newsletter
               </h3>
             </div>
-            <div className="lg:basis-[45%] basis-full">
+            <form
+              className="lg:basis-[45%] basis-full"
+              onSubmit={(e) => handleSubmit(e)}
+            >
               <div className="bg-white flex items-center justify-between gap-2 p-2 rounded-full ps-4">
                 {" "}
                 <input
-                  type="text"
-                  name=""
-                  id=""
-                  className="h-full w-full px-2 py-1.5 border-none sm:text-2xl relative z-10"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="h-full w-full px-2 py-1.5 bg-transparent border-none sm:text-2xl relative z-10 focus:ring-0 focus:outline-none hover:outline-none focus-visible:outline-none"
                   placeholder="Enter you email"
                 />
-                <button className="btn btn--primary uppercase max-sm:text-base">
-                  Subscribe
+                <button
+                  className="btn btn--primary uppercase max-sm:text-base"
+                  type="submit"
+                  disabled={loading}
+                >
+                  <span>Subscribe</span>
+                  {loading && (
+                    <AiOutlineLoading3Quarters className="ms-3 animate-spin" />
+                  )}
                 </button>
               </div>
-            </div>
+              {message && (
+                <div className="p-3 font-semibold text-lg border-primary border rounded-full mt-3">
+                  {message}
+                </div>
+              )}
+              {error && (
+                <div className="p-3 font-semibold text-lg border-primary border rounded-full mt-3">
+                  Something went wrong! Please try again.
+                </div>
+              )}
+            </form>
           </div>
           <Image
             src={
