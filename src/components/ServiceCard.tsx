@@ -7,6 +7,7 @@ type props = {
   card: {
     id: number;
     icon: React.ReactElement;
+    iconBg?: string;
     title: string;
     content: string;
     btnText: string;
@@ -19,7 +20,7 @@ const ServiceCard = ({ card }: props) => {
       <Link
         href={card?.btnLink}
         aria-label={card?.title + "service"}
-        className="bg-gradient-to-br group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-white from-primary to-primarylight md:p-4 p-2 rounded-lg "
+        className={`md:p-4 p-2 rounded-lg ${card?.iconBg || ""} `}
       >
         {card?.icon}
       </Link>

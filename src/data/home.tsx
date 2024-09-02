@@ -20,6 +20,7 @@ interface BannerItem {
 interface ServiceCard {
   id: number;
   icon: React.ReactElement;
+  iconBg?: string;
   title: string;
   content: string;
   btnText: string;
@@ -79,6 +80,7 @@ const homeContent: HomeContent = {
     cards: [
       {
         id: 1,
+        iconBg: "bg-lightRed",
         icon: <IconWebDev classes="w-16 h-16" />,
         title: "Application Development",
         content:

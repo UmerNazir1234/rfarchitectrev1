@@ -6,40 +6,36 @@ const IconWebDev = ({ classes }: props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${classes || classes}`}
       width="76"
       height="76"
       viewBox="0 0 76 76"
       fill="none"
+      className={`${classes || ""}`}
     >
       <path
         d="M42.8125 19.875C43.1937 19.875 43.5594 20.0265 43.829 20.296C44.0985 20.5656 44.25 20.9313 44.25 21.3125V42.875H9.75V21.3125C9.75 20.9313 9.90145 20.5656 10.171 20.296C10.4406 20.0265 10.8063 19.875 11.1875 19.875H42.8125ZM11.1875 17C10.0438 17 8.94685 17.4544 8.1381 18.2631C7.32935 19.0719 6.875 20.1688 6.875 21.3125V45.75H47.125V21.3125C47.125 20.1688 46.6707 19.0719 45.8619 18.2631C45.0531 17.4544 43.9562 17 42.8125 17H11.1875ZM4 47.1875H50C50 48.3312 49.5457 49.4281 48.7369 50.2369C47.9281 51.0457 46.8312 51.5 45.6875 51.5H8.3125C7.16875 51.5 6.07185 51.0457 5.2631 50.2369C4.45435 49.4281 4 48.3312 4 47.1875Z"
-        fill="white"
-        className="group-hover:!fill-primary"
+        fill="#EF8384"
       />
       <path
         d="M54 27.6429H71M54 54.3571H71M68.5714 24H56.4286C55.2143 24 54 25.2143 54 26.4286V55.5714C54 56.7857 55.2143 58 56.4286 58H68.5714C69.7857 58 71 56.7857 71 55.5714V26.4286C71 25.2143 69.7857 24 68.5714 24Z"
-        stroke="white"
-        className="group-hover:!stroke-primary"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke="#EF8384"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <path
         d="M35.6667 27.1667L38.3252 29.4568C39.441 30.421 40 30.902 40 31.5C40 32.098 39.441 32.579 38.3252 33.5432L35.6667 35.8333M18.3333 27.1667L15.6748 29.4568C14.559 30.421 14 30.902 14 31.5C14 32.098 14.559 32.579 15.6748 33.5432L18.3333 35.8333M29.1667 25L24.8333 38"
-        stroke="white"
-        className="group-hover:!stroke-primary"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke="#EF8384"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <path
         d="M66.1667 39.1667L67.2914 40.1356C67.7635 40.5435 68 40.747 68 41C68 41.253 67.7635 41.4565 67.2914 41.8644L66.1667 42.8333M58.8333 39.1667L57.7086 40.1356C57.2365 40.5435 57 40.747 57 41C57 41.253 57.2365 41.4565 57.7086 41.8644L58.8333 42.8333M63.4167 38.25L61.5833 43.75"
-        stroke="white"
-        className="group-hover:!stroke-primary"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke="#EF8384"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </svg>
   );
