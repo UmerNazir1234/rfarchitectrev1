@@ -10,7 +10,6 @@ type ContentProps = {
   btnUrl?: string;
   titleColor?: string;
 };
-
 const ProjectSubmission = ({
   title,
   description,
@@ -21,7 +20,6 @@ const ProjectSubmission = ({
   if (!title) {
     return null;
   }
-
   return (
     <section className="bg-secondary relative py-10">
       <div className="page-width">

@@ -16,6 +16,7 @@
     --color-bg: #f1f3fb;
     --color-bg-lightBlue: rgba(167, 193, 253, 0.3);
     --color-text-light: #8f8787;
+    --bg-gray: #cfd6e9;
   }
   * {
     padding: 0;
@@ -31,7 +32,7 @@
   }
 
   .p-lg {
-    @apply lg:text-[26px] text-xl font-medium leading-normal max-sm:text-base;
+    @apply lg:text-[24px] text-xl font-medium leading-normal max-sm:text-base;
   }
 
   .text-italic {

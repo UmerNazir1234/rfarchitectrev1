@@ -37,7 +37,7 @@ const BlogHeader = async ({ blogs }: props) => {
   //console.log(blogs);
   return (
     <>
-      <div className="relative z-1">
+      <div className="relative z-1 mt-16">
         <div className="page-width">
           <div className="md:!ps-6">
             <Search />

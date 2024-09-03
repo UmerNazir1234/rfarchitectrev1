@@ -1,5 +1,6 @@
 import IconApplicationDev from "@/components/Icons/IconApplicationDev";
 import IconCircle from "@/components/Icons/IconCircle";
+import IconCrm from "@/components/Icons/IconCrm";
 import IconCustomSoftDev from "@/components/Icons/IconCustomSoftDev";
 import IconDigitalMarketing from "@/components/Icons/IconDigitalMarketing";
 import IconGrapic from "@/components/Icons/IconGrapic";
@@ -80,17 +81,17 @@ const homeContent: HomeContent = {
     cards: [
       {
         id: 1,
-        iconBg: "bg-lightRed",
+        iconBg: "#FFF6EE",
         icon: <IconWebDev classes="w-16 h-16" />,
         title: "Application Development",
         content:
           "Build a successful iOS or Android app that optimize your processes.",
-
         btnText: "Read More",
         btnLink: "/mobile-app-development",
       },
       {
         id: 2,
+        iconBg: "#FEF3F3",
         icon: <IconApplicationDev classes="w-16 h-16" />,
         title: "Website Development",
         content:
@@ -101,6 +102,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 3,
+        iconBg: "#EBF4FA",
         icon: <IconDigitalMarketing classes="w-16 h-16" />,
         title: "Digital Marketing",
         content:
@@ -111,6 +113,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 4,
+        iconBg: "#FDECF3",
         icon: <IconGrapic classes="w-16 h-16" />,
         title: "Graphic Design & UX/UI",
         content:
@@ -121,15 +124,16 @@ const homeContent: HomeContent = {
       },
       {
         id: 5,
-        icon: <IconSeo classes="w-16 h-16" />,
+        iconBg: "#E9F3D3",
+        icon: <IconCrm classes="w-16 h-16" />,
         title: "CRM Development",
         content: "Enhancing customer relationships with tailored CRM systems.",
-
         btnText: "Read More",
         btnLink: "/crm-development",
       },
       {
         id: 6,
+        iconBg: "#EBF6D3",
         icon: <IconShopify classes="w-16 h-16" />,
         title: "Shopify Development",
         content:
@@ -140,6 +144,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 7,
+        iconBg: "#EDE2F8",
         icon: <IconWoocommerce classes="w-16 h-16" />,
         title: "Woocommerce Development",
         content:
@@ -150,6 +155,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 8,
+        iconBg: "#EAFCF3",
         icon: <IconWordpress classes="w-16 h-16" />,
         title: "Wordpress Development",
         content:
@@ -160,6 +166,7 @@ const homeContent: HomeContent = {
       },
       {
         id: 9,
+        iconBg: "#FEF3F3",
         icon: <IconCustomSoftDev classes="w-16 h-16" />,
         title: "Custom Software Development",
         content:

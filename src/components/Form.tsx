@@ -103,7 +103,7 @@ const Form = ({ data }: FormProps) => {
   };
 
   return (
-    <div className="bg-themblack relative z-30 lg:mt-28 mt-16 lg:px-10 lg:py-16 py-6 px-2 rounded-2xl border border-white border-opacity-45">
+    <div className="bg-themblack relative z-30 lg:mt-28 mt-16 max-sm:mt-8 lg:px-10 lg:py-16 py-6 px-2 rounded-2xl border border-white border-opacity-45">
       <div>
         <div className="flex items-center justify-center">
           <Heading
@@ -118,8 +118,8 @@ const Form = ({ data }: FormProps) => {
         </p>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-wrap md:pt-16 pt-10">
-        <div className="flex items-center justify-between md:gap-10 gap-2 w-full">
-          <div className="basis-1/2">
+        <div className="flex max-md:flex-wrap items-center justify-between md:gap-10 gap-0 w-full">
+          <div className="basis-1/2 max-md:basis-full ">
             <div className="relative">
               <input
                 type="text"
@@ -133,7 +133,7 @@ const Form = ({ data }: FormProps) => {
               />
             </div>
           </div>
-          <div className="basis-1/2">
+          <div className="basis-1/2 max-md:basis-full max-md:mt-8">
             <div className="relative">
               <input
                 type="email"

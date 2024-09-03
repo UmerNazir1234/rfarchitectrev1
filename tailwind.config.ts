@@ -27,7 +27,7 @@ const config: Config = {
         blueLight: "var(--color-bg-lightBlue)",
         themblack: "var(--color-foreground-rgb)",
         textLight: "var(--color-text-light)",
-        lightRed: "#FEF3F3",
+        grayDark:"var(--bg-gray)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

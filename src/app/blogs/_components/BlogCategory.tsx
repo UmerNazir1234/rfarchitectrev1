@@ -12,7 +12,7 @@ const BlogCategory = ({ data }: props) => {
     <div className="flex items-center justify-start flex-wrap gap-3 py-6">
       <button
         type="button"
-        className={`blog-chip ${!active ? "bg-[#d0dbf3] text-primary" : ""}`}
+        className={`py-1 leading-none blog-chip ${!active ? "bg-[#d0dbf3] text-primary" : ""}`}
       >
         All
       </button>
