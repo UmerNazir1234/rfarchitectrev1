@@ -63,6 +63,29 @@ const SubServices = ({ data }: dataProps) => {
           className="absolute top-4 right-4 z-40 max-sm:w-[200px] max-sm:h-[200px]"
         />
       </section>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-full max-w-full -mt-[1px]"
+        viewBox="0 0 1440 81"
+        fill="none"
+        preserveAspectRatio="none"
+      >
+        <g clip-path="url(#clip0_1766_1358)">
+          <path
+            d="M968 0H1439.5V81.5L847 81C855.4 81 863.167 77 866 75C881.167 64 938.9 12.6 946.5 7C954.1 1.4 964 0 968 0Z"
+            fill="transparent"
+          />
+          <path
+            d="M847 81H0V0H967.5C959.1 0 951.333 4 948.5 6C933.333 17 876.1 68.4 868.5 74C860.9 79.6 851 81 847 81Z"
+            fill="#002475"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_1766_1358">
+            <rect width="1440" height="81" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
     </div>
   );
 };
