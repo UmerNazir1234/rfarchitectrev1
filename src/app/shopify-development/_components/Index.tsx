@@ -32,8 +32,9 @@ const Index = () => {
         classes="bg-white !text-primary"
       />
       <Hero />
+      
       <SubServices data={content?.ourServices?.cards} />
-      <ShopifyServices data={content?.whyChooseUs}/>
+      <ShopifyServices data={content?.whyChooseUs} />
       <div className="flex items-center justify-center pt-32">
         <Heading
           title="Shopify online store 2.0"
@@ -43,7 +44,7 @@ const Index = () => {
         />
       </div>
       <ImageWithText content={shopImageWithText} classes="!pt-8" />
-      <Benifits data={shopifyBenefits}/>
+      <Benifits data={shopifyBenefits} />
       <ImageWithText content={shopifyImageWithText} classes="!pb-24">
         <div className="mt-4 w-full">
           <Features data={shopifyFeatures} />

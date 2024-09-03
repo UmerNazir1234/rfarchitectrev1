@@ -6,7 +6,7 @@ import React from "react";
 
 const ContactForm = ({ data }: any) => {
   return (
-    <section className="relative z-60 -mt-[120px] w-full">
+    <section className="relative z-60 -mt-[130px] w-full">
       {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
@@ -60,7 +60,7 @@ const ContactForm = ({ data }: any) => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 81"
         fill="none"
-        className="w-full max-w-full -mt-[1px]"
+        className="w-full max-w-full -mb-[1px]"
       >
         <g clip-path="url(#clip0_1766_1353)">
           <path
