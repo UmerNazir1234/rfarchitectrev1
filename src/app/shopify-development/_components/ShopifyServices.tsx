@@ -20,11 +20,11 @@ const ShopifyServices = ({ data }: props) => {
           <Button
             title={data?.roundCta}
             href="/about-us"
-            classes="bg-secondary"
+            classes="bg-secondary cursor-default "
             enableIcons={true}
           />
         </div>
-        <div className="flex items-stretch gap-3 justify-center max-lg:flex-wrap ">
+        <div className="flex  items-stretch gap-8 justify-center max-lg:flex-wrap ">
           <ShopifyServiceCards
             title="In-Depth Analysis"
             image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721809181/RfTechnologiesWebsite/Mask_group_54_xnciip.svg"

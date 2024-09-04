@@ -1,14 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import type { Tabs } from "@/lib/type"; // Use type-only import
-import { IoMdArrowDropdownCircle } from "react-icons/io";
+import type { Tabs } from "@/lib/type";
 
 type TabsProps = {
-  tabs: Tabs[]; // Using the Tabs type for props
+  tabs: Tabs[];
 };
 
 const TabsComponent = ({ tabs }: TabsProps) => {
-  // Renamed to avoid conflict
   const [activeTab, setActiveTab] = useState(tabs[0].label);
 
   return (
@@ -17,8 +15,10 @@ const TabsComponent = ({ tabs }: TabsProps) => {
         {tabs.map((tab) => (
           <button
             key={tab.label}
-            className={`w-full rounded-xl lg:min-w-52 min-w-28 lg:py-8 relative md:py-4 py-2 px-6 text-primary font-semibold bg-blueLight shadow ${
-              activeTab === tab.label ? "bg-secondary text-white" : ""
+            className={`w-full rounded-xl lg:min-w-52 min-w-28 lg:py-8 relative md:py-4 py-2 px-6 text-primary font-semibold  shadow ${
+              activeTab === tab.label
+                ? "bg-secondary text-white"
+                : "bg-grayDark"
             }`}
             onClick={() => setActiveTab(tab.label)}
           >

@@ -13,7 +13,7 @@ const ShopifyServiceCards = ({ title, details, classes, image }: cardProps) => {
       <div
         className={`rounded-xl lg:basis-1/3 md:basis-[47%]  ${
           classes ? classes : "bg-primary"
-        } flex items-center justify-center flex-col gap-3 sm:p-6 p-4 text-white shadow `}
+        } flex items-center justify-center flex-col gap-6 sm:p-8 p-4 text-white shadow `}
       >
         <div className="flex items-center justify-center">
           <Image
@@ -24,10 +24,12 @@ const ShopifyServiceCards = ({ title, details, classes, image }: cardProps) => {
             className="m-auto max-sm:w-16 max-sm:h-16"
           />
         </div>
-        <div className="xl:text-3xl md:text-2xl text-xl font-bold text-center text-primary">
+        <div className="xl:text-[26px] md:text-2xl text-xl font-bold text-center text-primary">
           {title}
         </div>
-        <p className="lg:text-lg text-base text-center text-black">{details}</p>
+        <p className="lg:text-lg font-medium text-base text-center text-black">
+          {details}
+        </p>
       </div>
     )
   );

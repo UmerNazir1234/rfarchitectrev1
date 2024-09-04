@@ -13,10 +13,10 @@ const WhatMakesUnique = () => {
       </div>
       <Image
         src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723551717/RfTechnologiesWebsite/Vector_cksoqw.png"
-        width={580}
-        height={480}
+        width={500}
+        height={440}
         alt="background"
-        className="absolute top-0 left-0 z-0 max-md:w-96 max-md:h-96"
+        className="absolute -top-40 left-0 z-0 max-md:w-72 max-md:h-72"
         loading="lazy"
       />
     </section>

@@ -11,7 +11,7 @@ type props = {
   cards: {
     id: number;
     icon: React.ReactElement;
-    iconBg?:string;
+    iconBg?: string;
     title: string;
     content: string;
     btnText: string;

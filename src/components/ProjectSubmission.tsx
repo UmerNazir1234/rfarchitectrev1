@@ -10,7 +10,6 @@ type ContentProps = {
   btnUrl?: string;
   titleColor?: string;
 };
-
 const ProjectSubmission = ({
   title,
   description,
@@ -21,11 +20,10 @@ const ProjectSubmission = ({
   if (!title) {
     return null;
   }
-
   return (
     <section className="bg-secondary relative py-10">
       <div className="page-width">
-        <div className="flex items-center justify-start gap-8 md:flex-nowrap flex-wrap">
+        <div className="flex items-center justify-start sm:gap-8 gap-4 md:flex-nowrap flex-wrap">
           <div className="lg:basis-2/3 basis-full">
             <div className=" max-md:text-center">
               <h2
