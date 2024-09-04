@@ -18,7 +18,6 @@ import { GoArrowUpRight } from "react-icons/go";
 import ShopifyServices from "./ShopifyServices";
 import Benifits from "@/components/Benifits";
 import { content } from "@/data/sds";
-import { Site } from "@/helpers/Site";
 
 const Index = () => {
   return (
@@ -29,29 +28,29 @@ const Index = () => {
         btnTitle="Lets Talk"
         btnIcon={<GoArrowUpRight />}
         href="/contact-us"
-        classes="bg-white !text-primary"
+        classes="bg-white !text-primary "
       />
       <Hero />
-      
+
       <SubServices data={content?.ourServices?.cards} />
       <ShopifyServices data={content?.whyChooseUs} />
-      <div className="flex items-center justify-center pt-32">
+      <div className="flex items-center justify-center md:pt-32 pt-16">
         <Heading
           title="Shopify online store 2.0"
           icon={true}
-          classes="!mb-0 !text-primary max-md:text-xl"
+          classes="!mb-0 !text-primary max-md:text-2xl"
           iconStyle="stroke-primary"
         />
       </div>
-      <ImageWithText content={shopImageWithText} classes="!pt-8" />
+      <ImageWithText content={shopImageWithText} classes="!p-8" />
       <Benifits data={shopifyBenefits} />
-      <ImageWithText content={shopifyImageWithText} classes="!pb-24">
+      <ImageWithText content={shopifyImageWithText} classes="md:!pb-24 !pb-8">
         <div className="mt-4 w-full">
           <Features data={shopifyFeatures} />
         </div>
       </ImageWithText>
       <Stacks />
-      <Faq data={content?.faqs} classes="!py-24" />
+      <Faq data={content?.faqs} classes="md:!py-24 !py-8" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we'll get back to you as soon as possible."

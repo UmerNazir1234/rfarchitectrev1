@@ -13,8 +13,8 @@ type props = {
 const Benifits = ({ data }: props) => {
   return (
     <section>
-      <div className="page-width sm:pt-16 sm:pb-32 max-sm:py-16">
-        <div className="flex items-center justify-center mb-16">
+      <div className="page-width sm:pt-16 sm:pb-32 max-sm:py-8">
+        <div className="flex items-center justify-center sm:mb-16 mb-8">
           <Button
             title="Care features"
             enableIcons={true}
@@ -46,7 +46,7 @@ const Benifits = ({ data }: props) => {
               >
                 <div className="flex items-start justify-start flex-col gap-4">
                   <h4
-                    className={`text-[${item?.titleClr}]`}
+                    className={`text-[${item?.titleClr}] !capitalize`}
                     style={{ color: item?.titleClr }}
                   >
                     {item?.title}

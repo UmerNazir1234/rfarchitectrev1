@@ -8,7 +8,7 @@ const Stacks = () => {
   return (
     <div className="relative">
       <div className="page-width pb-12 relative z-50">
-        <div className="flex items-center justify-center flex-col gap-8 pb-10">
+        <div className="flex items-center justify-center flex-col md:gap-8 gap-4 pb-10">
           <Button
             title="Our Stack"
             classes="bg-secondary"

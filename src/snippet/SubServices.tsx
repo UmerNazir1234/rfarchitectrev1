@@ -32,17 +32,17 @@ const SubServices = ({ data }: dataProps) => {
         </defs>
       </svg>
 
-      <section className="bg-center bg-cover bg-no-repeat py-32 relative z-50 bg-primary">
+      <section className="bg-center bg-cover bg-no-repeat py-16  z-50 bg-primary">
         <div className="flex items-center justify-center flex-col gap-10 pb-12 relative z-50  ">
           <Button
             title="Our Services"
             classes="bg-secondary cursor-default"
             enableIcons={true}
           />
-          <h2 className="text-white uppercase">What we offer</h2>
+          <h2 className="text-white uppercase">How We Can Help?</h2>
         </div>
         <div className="page-width ">
-          <div className="flex justify-center gap-10 flex-wrap">
+          <div className="flex justify-center md:gap-10 gap-4 flex-wrap">
             <SubServiceCard data={data} />
           </div>
         </div>
@@ -52,15 +52,15 @@ const SubServices = ({ data }: dataProps) => {
           loading="lazy"
           width={200}
           height={200}
-          className="absolute left-0 bottom-0 max-sm:!w-[150px] max-sm:!h-[150px]"
+          className="absolute left-0 bottom-0 max-sm:!w-[100px] max-sm:!h-[100px]"
         />
         <Image
           src={`https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721485903/Trade_Mark-02_2_kjzezd.svg`}
           alt="Rf icon"
           loading="lazy"
-          width={320}
-          height={320}
-          className="absolute top-4 right-4 z-40 max-sm:w-[200px] max-sm:h-[200px]"
+          width={300}
+          height={300}
+          className="absolute top-4 right-4 z-40 max-sm:w-[100px] max-sm:h-[100px]"
         />
       </section>
       <svg

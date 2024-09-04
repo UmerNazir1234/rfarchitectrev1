@@ -40,11 +40,11 @@
   }
   .h1,
   h1 {
-    @apply lg:text-[110px] md:text-[70px] text-[55px] font-semibold leading-tight drop-shadow-lg;
+    @apply xl:text-[110px] lg:text-[90px]  md:text-[70px] text-[55px] font-semibold leading-tight max-sm:leading-none drop-shadow-lg;
   }
   .h2,
   h2 {
-    @apply xl:text-[50px]  lg:text-[40] md:text-[32px] text-[24px] leading-tight max-sm:leading-none font-bold drop-shadow-lg;
+    @apply xl:text-[50px]  lg:text-[44] md:text-[40px] text-[34px] leading-tight max-sm:leading-none font-bold drop-shadow-lg;
   }
   .h3,
   h3 {

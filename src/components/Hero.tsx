@@ -30,7 +30,7 @@ const Hero = ({
             backgroundImage: `url(${image})`,
           }}
         >
-          <div className="flex items-center pt-48 flex-col bg-cover bg-center mx-auto min-h-[80vh] max-sm:min-h-[70vh] max-w-8xl">
+          <div className="flex items-center md:pt-32 pt-24 px-3 flex-col bg-cover bg-center mx-auto min-h-[80vh] max-sm:min-h-[70vh] max-w-8xl">
             {title && (
               <>
                 <h1

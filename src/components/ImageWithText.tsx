@@ -52,7 +52,6 @@ const ImageWithText = ({ content, classes, children }: CardProps) => {
                       title={data?.btnTitle}
                       classes="bg-secondary uppercase"
                       enableIcons={true}
-                    
                       iconStyle="stroke-secondary"
                     />
                   )}
@@ -67,7 +66,7 @@ const ImageWithText = ({ content, classes, children }: CardProps) => {
                 )}
                 {data?.description && (
                   <p
-                    className="md:text-2xl text-xl"
+                    className="md:text-2xl text-lg"
                     dangerouslySetInnerHTML={{
                       __html: (data?.description && data?.description) || "",
                     }}
