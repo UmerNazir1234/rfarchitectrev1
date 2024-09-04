@@ -21,14 +21,7 @@ const Benifits = ({ data }: props) => {
             iconStyle="stroke-primary"
           />
         </div>
-        {/* <div className="flex items-center justify-center mb-8">
-          <Heading
-            title="Why Shopify"
-            classes="text-primary"
-            icon={true}
-            iconStyle="stroke-primary"
-          />
-        </div> */}
+   
 
         <div className="flex relative z-50 items-stretch justify-center flex-wrap shadow-lg max-sm:rounded-xl border border-[#404040] rounded-xl">
           {data?.map((item) => {
