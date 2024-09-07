@@ -20,7 +20,7 @@ const TestimonialCard = ({
       <FaQuoteLeft className="text-primary sm:text-8xl text-6xl" />
       {review && <div className="sm:text-2xl text-xl">{review}</div>}
       <div className="flex items-center justify-start gap-2">
-        <div>
+        {/* <div>
           {client_image && (
             <Image
               src={client_image}
@@ -31,8 +31,8 @@ const TestimonialCard = ({
               className="rounded-full"
             />
           )}
-        </div>
-        <div className="flex-grow flex flex-col pl-4">
+        </div> */}
+        <div className="flex-grow flex flex-col ">
           <h4 className="text-primary font-bold">{client_name}</h4>
           <span className="text-[#A5A5A5] text-lg leading-tight">
             {client_country}
