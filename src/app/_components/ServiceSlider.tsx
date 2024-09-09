@@ -20,7 +20,7 @@ type props = {
 };
 const ServiceSlider = ({ cards }: props) => {
   return (
-    <section className="w-full lg:-mt-[240px] md:-mt-[250px]   max-md:-mt-[200px] max-sm:-mt-[140px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
+    <section className="w-full lg:-mt-[240px] md:-mt-[210px]   max-md:-mt-[150px] max-sm:-mt-[80px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
       <div className="">
         <Swiper
           autoplay={{

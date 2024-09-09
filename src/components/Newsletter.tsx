@@ -29,7 +29,7 @@ const Newsletter = ({ classes }: any) => {
             "Subscription successful! Check your email for a welcome newsletter."
         );
         setError(false);
-        setEmail('');
+        setEmail("");
       } else {
         setMessage("");
         setError(true);
@@ -96,7 +96,7 @@ const Newsletter = ({ classes }: any) => {
             loading="lazy"
             alt="rftech logo"
             width={250}
-            height={300}
+            height={250}
             className="absolute left-0 bottom-0 object-contain max-md:w-40 max-md:h-40 z-0"
           />
         </div>

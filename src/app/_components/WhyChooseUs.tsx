@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
   return (
     <div>
       <div
-        className="bg-no-repeat bg-cover md:py-24 py-10"
+        className="bg-no-repeat bg-cover md:pt-24 pb-60"
         style={{
           backgroundImage: `url("https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720179109/WhyChooseUs_pm78cb.png")`,
         }}
