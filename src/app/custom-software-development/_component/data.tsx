@@ -25,7 +25,7 @@ export const customSoftwareDeveloperCardText = [
       },
       {
         icon: <BsDatabaseFillGear className="text-[80px] max-sm:text-[40px]" />,
-        cardTitle: "Real Time and Data",
+        cardTitle: "System Architecture & Design ",
       },
       {
         icon: <HiDocumentReport className="text-[80px] max-sm:text-[40px]" />,

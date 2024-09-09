@@ -34,7 +34,9 @@
   .p-lg {
     @apply lg:text-[24px] text-xl font-medium leading-normal max-sm:text-base;
   }
-
+.dropdown_custom{
+  z-index: 9999 !important;
+}
   .text-italic {
     @apply text-secondary italic font-semibold;
   }

@@ -8,8 +8,33 @@ import { TbSettingsPause } from "react-icons/tb";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import { BsKanban } from "react-icons/bs";
 import { VscTerminalUbuntu } from "react-icons/vsc";
+import IconShopify from "@/components/Icons/IconShopify";
+import IconWoocommerce from "@/components/Icons/IconWoocommerce";
+import IconGrapic from "@/components/Icons/IconGrapic";
+import IconCrm from "@/components/Icons/IconCrm";
+import IconWordpress from "@/components/Icons/IconWordpress";
+import IconApplicationDev from "@/components/Icons/IconApplicationDev";
+import IconCustomSoftDev from "@/components/Icons/IconCustomSoftDev";
+import IconSeo from "@/components/Icons/IconSeo";
+import IconDigitalMarketing from "@/components/Icons/IconDigitalMarketing";
 
-export const menuItems = [
+interface SubLink {
+  id: number;
+  icon: React.ReactElement;
+  iconBg?: string;
+  title: string;
+  description: string;
+  link: string;
+}
+
+interface MenuItem {
+  id: number;
+  name: string;
+  link: string;
+  links?: SubLink[];
+}
+
+export const menuItems: MenuItem[] = [
   { id: 1, name: "Who We Are?", link: "/about-us" },
   { id: 2, name: "Our Work", link: "/our-work" },
   {
@@ -19,7 +44,8 @@ export const menuItems = [
     links: [
       {
         id: 1,
-        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196288/RfTechnologiesWebsite/Vector_ifagk2.svg",
+        icon: <IconShopify classes="w-12 h-12" />,
+        iconBg: "#EBF6D3",
         title: "Shopify Development",
         description:
           "Run Your business today with best e-commerce platform for online stores and retail point-of-sale systems.",
@@ -27,7 +53,8 @@ export const menuItems = [
       },
       {
         id: 2,
-        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196288/RfTechnologiesWebsite/Group_1597883894_ryszwv.svg",
+        icon: <IconCustomSoftDev classes="w-12 h-12" />,
+        iconBg: "#FEF3F3",
         title: "Custom Software Development",
         description:
           "Process of designing, creating, deploying, and maintaining software for a specific organizations.",
@@ -35,7 +62,8 @@ export const menuItems = [
       },
       {
         id: 3,
-        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196291/RfTechnologiesWebsite/Mask_group_amioaw.svg",
+        icon: <IconApplicationDev classes="w-12 h-12" />,
+        iconBg: "#FEF3F3",
         title: "Mobile Application Development",
         description:
           "Bring your project to market on every device and platform. attractive design and Fully Functional",
@@ -43,7 +71,8 @@ export const menuItems = [
       },
       {
         id: 4,
-        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196290/RfTechnologiesWebsite/Vector_1_wogkfq.svg",
+        icon: <IconWordpress classes="w-12 h-12" />,
+        iconBg: "#EAFCF3",
         title: "Wordpress Development",
         description:
           "Fulfills your content management needs, event calendars, media management, and general page content.",
@@ -51,7 +80,8 @@ export const menuItems = [
       },
       {
         id: 5,
-        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196290/RfTechnologiesWebsite/Mask_group_1_g65yf4.svg",
+        icon: <IconCrm classes="w-12 h-12" />,
+        iconBg: "#E9F3D3",
         title: "CRM Development",
         description:
           "Get your personal CRM which allows for leads generation, assigning leads and staff management",
@@ -59,7 +89,8 @@ export const menuItems = [
       },
       {
         id: 6,
-        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196289/RfTechnologiesWebsite/Group_1597883895_rbvc1l.svg",
+        icon: <IconWoocommerce classes="w-12 h-12" />,
+        iconBg: "#EDE2F8",
         title: "Woocommerce Development",
         description:
           "Turn your WordPress website into an E-commerce Store online fully customizable",
@@ -67,7 +98,8 @@ export const menuItems = [
       },
       {
         id: 7,
-        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196288/RfTechnologiesWebsite/Mask_group_2_tfk5vp.svg",
+        icon: <IconGrapic classes="w-12 h-12" />,
+        iconBg: "#FDECF3",
         title: "Graphic Designing",
         description:
           "Creation of visual compositions to solve problems and communicate ideas through typography, imagery, color and form",
@@ -75,7 +107,8 @@ export const menuItems = [
       },
       {
         id: 8,
-        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196290/RfTechnologiesWebsite/Group_1597883896_uvpa5k.svg",
+        icon: <IconSeo classes="w-12 h-12" />,
+        iconBg: "#E3F4F9",
         title: "Search Engine Optimization",
         description:
           "Process of improving the quality and quantity of website traffic to a website or a web page from search engines.",
@@ -83,7 +116,8 @@ export const menuItems = [
       },
       {
         id: 9,
-        icon: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723196288/RfTechnologiesWebsite/Group_1597883897_lanfsg.svg",
+        icon: <IconDigitalMarketing classes="w-12 h-12" />,
+        iconBg: "#EBF4FA",
         title: "Digital Marketing",
         description:
           "Promotion of brands to connect with potential customers using the internet and other forms of digital communication",

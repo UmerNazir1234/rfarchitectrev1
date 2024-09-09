@@ -8,7 +8,7 @@ type dataProps = {
 };
 const SubServices = ({ data }: dataProps) => {
   return (
-    <div className="relative z-60 -mt-[130px] w-full">
+    <div className="relative -mt-[130px] w-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 81"

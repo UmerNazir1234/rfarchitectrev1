@@ -79,7 +79,7 @@ const Header = () => {
                       </button>
                       {dropdownOpen && (
                         <div
-                          className={`fixed z-999 inset-3 header-bg-custom top-[70px] h-fit min text-white rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
+                          className={`fixed !z-50 inset-3 header-bg-custom top-[70px] h-fit min text-white rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
                             dropdownOpen
                               ? "opacity-100 translate-y-0"
                               : "opacity-0 -translate-y-5"
@@ -108,17 +108,19 @@ const Header = () => {
                                       <div className="flex items-center justify-center min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg">
                                         <Link
                                           href={item?.link}
+                                          onClick={handleDropdownToggle}
                                           className="block"
                                         >
                                           <div className="flex items-start justify-start gap-3">
-                                            <div className="bg-white group-hover:bg-secondary p-2 rounded min-h-12 flex items-center justify-center">
-                                              <Image
-                                                src={`${item?.icon}`}
-                                                alt={item?.title + "icon"}
-                                                loading="lazy"
-                                                width={30}
-                                                height={30}
-                                              />
+                                            <div
+                                              className={`p-2 rounded  w-16 h-16 flex items-center justify-center `}
+                                              style={{
+                                                backgroundColor: `${
+                                                  item?.iconBg || ""
+                                                }`,
+                                              }}
+                                            >
+                                              {item?.icon}
                                             </div>
                                             <div>
                                               <h5 className="group-hover:text-primary">

@@ -81,7 +81,7 @@ const homeContent: HomeContent = {
     cards: [
       {
         id: 1,
-        iconBg: "#FFF6EE",
+        iconBg: "#FEF3F3",
         icon: <IconWebDev classes="w-16 h-16" />,
         title: "Application Development",
         content:
