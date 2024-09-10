@@ -20,7 +20,7 @@ NEXT_PUBLIC_API_URL="https://rftechnologies-api.vercel.app"
    
 Open [http://localhost:3000](http://localhost:3000)with your browser to see the results.
 
-You can start editing the page by modfying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modfying `app/page.tsx`. The page auto-updates as you edit the file.sadfasdf
 
 
 ## Learn More 
