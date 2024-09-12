@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import IconDots from "@/components/Icons/IconDots";
 import SubServiceCard from "@/components/SubServiceCard";
 import { subServiceProps } from "@/lib/type";
 import Image from "next/image";
@@ -32,7 +33,7 @@ const SubServices = ({ data }: dataProps) => {
         </defs>
       </svg>
 
-      <section className="bg-center bg-cover bg-no-repeat py-16  z-50 bg-primary">
+      <section className="bg-center bg-cover bg-no-repeat py-16  z-30 bg-primary relative">
         <div className="flex items-center justify-center flex-col gap-10 pb-12 relative z-50  ">
           <Button
             title="Our Services"
@@ -46,14 +47,16 @@ const SubServices = ({ data }: dataProps) => {
             <SubServiceCard data={data} />
           </div>
         </div>
-        <Image
+
+        <IconDots clasess="absolute left-0 bottom-0 max-sm:!w-[100px] max-sm:!h-[100px] z-20 max-md:w-10 max-md:h-10" />
+        {/* <Image
           src={`https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721485173/Group_1597883856_ptuvcr.svg`}
           alt="Dots"
           loading="lazy"
           width={200}
           height={200}
-          className="absolute left-0 bottom-0 max-sm:!w-[100px] max-sm:!h-[100px]"
-        />
+          className="absolute left-0 bottom-0 max-sm:!w-[100px] max-sm:!h-[100px] z-20"
+        /> */}
         <Image
           src={`https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721485903/Trade_Mark-02_2_kjzezd.svg`}
           alt="Rf icon"
@@ -65,7 +68,7 @@ const SubServices = ({ data }: dataProps) => {
       </section>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full max-w-full -mt-[1px]"
+        className="w-full max-w-full -mt-[1px] relative z-10"
         viewBox="0 0 1440 81"
         fill="none"
         preserveAspectRatio="none"
