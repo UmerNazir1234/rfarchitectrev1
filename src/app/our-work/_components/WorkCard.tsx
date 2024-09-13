@@ -14,7 +14,7 @@ const WorkCard = ({ work }: WorkProps) => {
           return (
             <div
               key={item?.id}
-              className={`w-full block ${
+              className={`w-full block  ${
                 item?.id == 1 ? "-mt-14 relative z-10" : "-mt-[2px]"
               }`}
             >
@@ -48,7 +48,7 @@ const WorkCard = ({ work }: WorkProps) => {
               <div
                 key={item?.id}
                 id={`${item?.workId}`}
-                className={`md:flex px-12 max-md:px-4 max-md:pb-6 items-center justify-evenly max-md:flex-wrap w-full ${
+                className={`md:flex gap-6  px-12 max-md:px-4 max-md:pb-6 items-center justify-evenly max-md:flex-wrap w-full ${
                   item?.imageFirst ? "flex-row" : "flex-row-reverse"
                 }`}
                 style={{
@@ -67,12 +67,12 @@ const WorkCard = ({ work }: WorkProps) => {
                     />
                   </div>
                 </div>
-                <div className="flex items-start gap-4 justify-start flex-col max-md:items-center basis-full md:basis-2/5">
+                <div className="flex basis-full md:basis-1/2 page-width items-start gap-4 justify-start flex-col max-md:items-center ">
                   <h2 className="text-4xl md:text-6xl">{item?.title}</h2>
                   <p className="font-nunito max-md:text-center !leading-normal text-lg md:text-xl">
                     {item?.text}
                   </p>
-                  <h4 className=" text-lg md:text-xl font-nunito">
+                  <h4 className=" text-lg md:text-xl max-sm:text-center font-nunito">
                     {item?.subtitle}
                   </h4>
                 </div>

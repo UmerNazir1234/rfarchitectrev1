@@ -740,9 +740,27 @@ export const work: Work[] = [
     textColor: "#28292D",
     topBgFirstClr: "#f85431",
     topBgSecondClr: "#f85431",
-    bottomBgSecondClr: "#FDF4E6",
+    bottomBgSecondClr: "#e6e6e6",
     bottomBgFirstClr: "#FDF4E6",
     imageFirst: true,
+  },
+    {
+    id: 12,
+    title: "Wildflower",
+    workId: "whildflower",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997065/RfTechnologiesWebsite/wearewildflower-300x145.webp_sopxw0.webp",
+    text: "We Specialize In Hard Foam Mattresses!",
+    subtitle: "WordPress Elementor, Woocommerce",
+    color: "#e6e6e6",
+    textColor: "#28292D",
+    topBgFirstClr: "#000",
+    topBgSecondClr: "#000",
+    bottomBgSecondClr: "#e6e6e6",
+    bottomBgFirstClr: "#e6e6e6",
+    imageFirst: true,
+
+    
   },
 ];
 

@@ -33,7 +33,7 @@ const SubServices = ({ data }: dataProps) => {
         </defs>
       </svg>
 
-      <section className="bg-center bg-cover bg-no-repeat py-16  z-30 bg-primary relative">
+      <section className="bg-center bg-cover bg-no-repeat py-8  z-30 bg-primary ">
         <div className="flex items-center justify-center flex-col gap-10 pb-12 relative z-50  ">
           <Button
             title="Our Services"
@@ -61,14 +61,14 @@ const SubServices = ({ data }: dataProps) => {
           src={`https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721485903/Trade_Mark-02_2_kjzezd.svg`}
           alt="Rf icon"
           loading="lazy"
-          width={300}
-          height={300}
-          className="absolute top-4 right-4 z-40 max-sm:w-[100px] max-sm:h-[100px]"
+          width={200}
+          height={200}
+          className="absolute top-4 right-4  z-0"
         />
       </section>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full max-w-full -mt-[1px] relative z-10"
+        className="w-full max-w-full -mt-[1px] relative z-10 max-sm:w-100 max-sm:h-100"
         viewBox="0 0 1440 81"
         fill="none"
         preserveAspectRatio="none"

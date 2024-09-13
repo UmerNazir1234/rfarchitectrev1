@@ -71,8 +71,8 @@ const ProjectSubmission = ({
         src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720613337/Frame_1597883705_yhbvpg.svg"
         loading="lazy"
         alt="Image Circle"
-        width={200}
-        height={200}
+        width={150}
+        height={150}
         className="absolute -top-20 max-md:-top-10 right-0 max-lg:w-36 max-lg:h-36 max-md:w-20 max-md:h-20"
       />
     </section>

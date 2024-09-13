@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
+import IconFiverr from "./Icons/IconFiverr";
+import Link from "next/link";
 
 type TestimonialCardProps = {
   review?: string;
@@ -16,8 +18,14 @@ const TestimonialCard = ({
   client_country,
 }: TestimonialCardProps) => {
   return (
-    <div className="bg-white shadow-sm p-8 max-md:p-6 rounded-xl flex items-stretch justify-start flex-col sm:gap-6 gap-4 min-h-[430px]">
-      <FaQuoteLeft className="text-primary sm:text-8xl text-6xl" />
+    <div className="bg-white shadow-sm p-8 max-md:p-6 rounded-xl flex items-stretch justify-start flex-col sm:gap-6 gap-4 min-h-[430px] relative">
+      <Link
+        href="#"
+        className="absolute md:top-8 top-6 right-4 max-sm:w-10 max-sm:h-10"
+      >
+        <IconFiverr />
+      </Link>
+      <FaQuoteLeft className="text-primary sm:text-6xl text-5xl" />
       {review && <div className="sm:text-2xl text-xl">{review}</div>}
       <div className="flex items-center justify-start gap-2">
         {/* <div>

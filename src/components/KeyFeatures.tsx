@@ -17,7 +17,7 @@ type keyFeaturesProps = {
 };
 const KeyFeatures = ({ data, heading, btnUrl, btnTitle }: keyFeaturesProps) => {
   return (
-    <section className=" bg-center bg-cover bg-no-repeat py-32 relative z-0">
+    <section className=" bg-center bg-cover bg-no-repeat lg:py-32 md:py-24 py-16 relative z-0">
       <div className="flex items-center justify-center flex-col gap-10 pb-12 relative z-50">
         <Button
           title={btnTitle}

@@ -41,7 +41,7 @@ const Newsletter = ({ classes }: any) => {
     }
   };
   return (
-    <section className={`${classes || ""} pb-20 pt-12 `}>
+    <section className={`${classes || ""} lg:pb-20 md:pb-16 pb-12 pt-8 `}>
       <div className="page-width">
         <div className="bg-secondary rounded-xl sm:p-10 p-4 sm:py-16 py-10 relative">
           <div className="flex items-center justify-between gap-3 lg:flex-nowrap flex-wrap">

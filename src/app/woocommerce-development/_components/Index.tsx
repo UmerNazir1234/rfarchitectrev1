@@ -34,9 +34,9 @@ const Index = () => {
         btnTitle="Care features"
         btnUrl="/"
       />
-      <TextWithCards content={woocomemrceCardText} classes="py-32" />
+      <TextWithCards content={woocomemrceCardText} classes="pb-32 lg:pb-24 pb-16" />
       <Stacks />
-      <Faq data={woocomemrcefaq} classes="py-24" />
+      <Faq data={woocomemrcefaq} classes="lg:py-24 md:py-16 py-8" />
       <ProjectSubmission
         title="Submit Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
