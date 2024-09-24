@@ -8,7 +8,7 @@ const IconConsulting = ({ classes,fill }: any) => {
       height="100"
       viewBox="0 0 100 100"
       fill="none"
-      className={`${classes}`}
+      className={`${classes} `}
     >
       <g clipPath="url(#clip0_873_41)">
         <path

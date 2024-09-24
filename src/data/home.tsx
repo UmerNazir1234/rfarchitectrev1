@@ -66,15 +66,15 @@ const homeContent: HomeContent = {
       title: "IT SOLUTIONS <span class='text-secondary'>&</span> SERVICES",
       url: "/about-us",
       description:
-        "Want to Turn Your Idea into a Successful Digital Product with Expert Marketing Strategies? ",
+        "Turning an idea into a successful digital product requires a well-defined process that blends product development with strategic marketing. ",
       image:
-        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722243811/RfTechnologiesWebsite/Desktop_-_9_lcv48g.png",
+        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727169916/RfTechnologiesWebsite/Desktop_-_10_ieqlla.png",
     },
   ],
   ourServices: {
     roundCta: "OUR SERVICES",
     title: "We Provide Leading Solutions In",
-    content: ` At RF Tech, we deliver top-quality services in Graphic designing, web development, CRM development, App Development, SEO, digital marketing. Our expert team is dedicated to helping your business thrive with innovative and effective digital solutions. Partner with us to achieve unparalleled success.
+    content: ` At RF Tech, we deliver top-quality services in Graphic Designing, Website Development, CRM Development, App Development, SEO, Digital Marketing. Our expert team is dedicated to helping your business thrive with innovative and effective digital solutions. Partner with us to achieve unparalleled success.
 `,
     btnText: "Get Started",
     btnLink: "/contact-us",

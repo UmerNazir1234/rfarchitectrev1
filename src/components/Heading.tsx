@@ -31,7 +31,7 @@ const Heading: React.FC<HeadingProps> = ({
             </span>
           </>
         )}
-        <span>{title}</span>
+        <span dangerouslySetInnerHTML={{ __html: title }} />
       </h2>
     )
   );

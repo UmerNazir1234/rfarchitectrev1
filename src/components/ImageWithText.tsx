@@ -9,22 +9,38 @@ type CardProps = {
   content: imageWithText[];
   classes?: string;
   children?: React.ReactNode;
+  fullWidth?: boolean;
 };
 
-const ImageWithText = ({ content, classes, children }: CardProps) => {
+const ImageWithText = ({
+  content,
+  fullWidth,
+  classes,
+  children,
+}: CardProps) => {
   return (
     <>
       {content?.map((data, index) => (
         <section className="relative" key={index}>
-          <div className={`page-width ${classes || "py-16"} relative z-10`}>
+          <div
+            className={`${fullWidth ? "full-page-width" : "page-width"}  ${
+              classes || "py-16"
+            } relative z-10`}
+          >
             <div
               className={`flex items-center justify-between md:gap-20 gap-6 ${
                 data?.imageFirst && data?.imageFirst === true
                   ? "max-lg:flex-col-reverse"
-                  : "flex-row-reverse"
+                  : "lg:flex-row-reverse flex-col-reverse "
               }  lg:flex-nowrap  flex-wrap`}
             >
-              <div className="lg:basis-[50%] basis-full">
+              <div
+                className={` ${
+                  data?.imageFirst === false && fullWidth
+                    ? "flex items-center justify-end"
+                    : ""
+                } lg:basis-[50%] basis-full `}
+              >
                 {data?.image ? (
                   <Image
                     src={`${data?.image}`}
@@ -32,7 +48,9 @@ const ImageWithText = ({ content, classes, children }: CardProps) => {
                     loading="lazy"
                     width={800}
                     height={616}
-                    className="object-center object-contain max-sm:h-[350px] max-sm:w-fit m-auto"
+                    className={`object-center object-contain max-sm:h-fit max-sm:w-fit ${
+                      fullWidth ? "sm:text-left" : "m-auto"
+                    }  `}
                   />
                 ) : (
                   <Image
@@ -45,20 +63,24 @@ const ImageWithText = ({ content, classes, children }: CardProps) => {
                   />
                 )}
               </div>
-              <div className="lg:basis-[50%] basis-full  flex items-start justify-center flex-col max-xl:mb-8">
-                <div className="flex items-start justify-start lg:mb-12 mb-8">
-                  {data?.btnLink && data?.btnTitle && (
+              <div
+                className={`${
+                  fullWidth ? "sm:px-10" : ""
+                } lg:basis-[50%] basis-full  flex items-start justify-center flex-col max-xl:mb-8`}
+              >
+                {data?.btnLink && data?.btnTitle && (
+                  <div className="flex items-start justify-start lg:mb-12 mb-8">
                     <Button
                       title={data?.btnTitle}
                       classes="bg-secondary uppercase"
                       enableIcons={true}
                       iconStyle="stroke-secondary"
                     />
-                  )}
-                </div>
+                  </div>
+                )}
                 {data?.title && (
                   <h2
-                    className="text-primary mb-6 uppercase"
+                    className="text-primary mb-6 uppercase text-left"
                     dangerouslySetInnerHTML={{
                       __html: (data?.title && data?.title) || "",
                     }}
@@ -66,7 +88,7 @@ const ImageWithText = ({ content, classes, children }: CardProps) => {
                 )}
                 {data?.description && (
                   <p
-                    className="md:text-2xl text-lg"
+                    className="md:text-2xl text-lg text-left"
                     dangerouslySetInnerHTML={{
                       __html: (data?.description && data?.description) || "",
                     }}

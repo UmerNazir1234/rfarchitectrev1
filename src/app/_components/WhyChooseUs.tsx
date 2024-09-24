@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
                   icon={
                     <IconConsulting
                       fill="group-hover:fill-primary"
-                      classes="lg:w-auto !w-16 !h-16 lg:h-auto "
+                      classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100 "
                     />
                   }
                   title="CONSULTING"
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
                   icon={
                     <IconSupport
                       fill="group-hover:fill-primary"
-                      classes="lg:w-auto !w-16 !h-16 lg:h-auto"
+                      classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100"
                     />
                   }
                   title="PRODUCTION"
@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
                   icon={
                     <IconReact
                       fill="group-hover:stroke-primary"
-                      classes="lg:w-auto !w-16 !h-16 lg:h-auto"
+                      classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100"
                     />
                   }
                   title="SUPPORT"

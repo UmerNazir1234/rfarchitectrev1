@@ -67,7 +67,7 @@ export const menuItems: MenuItem[] = [
         title: "Mobile Application Development",
         description:
           "Bring your project to market on every device and platform. attractive design and Fully Functional",
-        link: "/mobile-application-development",
+        link: "/mobile-app-development",
       },
       {
         id: 4,
@@ -126,6 +126,7 @@ export const menuItems: MenuItem[] = [
     ],
   },
   { id: 4, name: "Contact Us", link: "/contact-us" },
+  { id: 5, name: "BlueTicks", link: "/blueticks" },
 ];
 
 /* home */
@@ -744,7 +745,7 @@ export const work: Work[] = [
     bottomBgFirstClr: "#FDF4E6",
     imageFirst: true,
   },
-    {
+  {
     id: 12,
     title: "Wildflower",
     workId: "whildflower",
@@ -759,8 +760,6 @@ export const work: Work[] = [
     bottomBgSecondClr: "#e6e6e6",
     bottomBgFirstClr: "#e6e6e6",
     imageFirst: true,
-
-    
   },
 ];
 
