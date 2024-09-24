@@ -4,8 +4,8 @@ import Form from "../Form";
 const BlueTicksForm = () => {
   return (
     <>
-      <div className="flex items-center jusity-start">
-        <div className="basis-1/2 sm:px-16 px-3 bg-secondary py-28 relative">
+      <div className="flex items-center jusity-start flex-wrap">
+        <div className="lg:basis-1/2 basis-full sm:px-16 px-3 bg-secondary py-28 relative">
           <h2 className="text-primary pb-6"> ELEVATE YOUR EVENTS</h2>
           <p className="text-2xl text-white mt-4">
             All-in-one platform & integrated tech for seamless event management.
@@ -39,7 +39,7 @@ const BlueTicksForm = () => {
             />
           </svg>
         </div>
-        <div className="basis-1/2 bg-primary p-14 rounded-l-[50px]">
+        <div className="lg:basis-1/2 basis-full bg-primary lg:p-14 p-10 rounded-l-[50px]">
           <h3 className="text-white text-[32px]">
             Experience the Future of Event Management
           </h3>
