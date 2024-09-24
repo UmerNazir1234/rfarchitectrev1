@@ -137,7 +137,7 @@ const Form = () => {
                 value={formData.lastName}
                 onChange={handleInputChange}
                 placeholder="Last Name*"
-                className="input--field placeholder:text-white placeholder:text-opacity-40 bg-white bg-opacity-20 text-white p-3 text-black"
+                className="input--field placeholder:text-white placeholder:text-opacity-40 bg-white bg-opacity-20 text-white p-3 "
                 required
               />
             </div>
@@ -152,7 +152,7 @@ const Form = () => {
               value={formData.email}
               onChange={handleInputChange}
               placeholder="Work Email*"
-              className="input--field placeholder:text-white placeholder:text-opacity-40 bg-white bg-opacity-20 text-white p-3 text-black"
+              className="input--field placeholder:text-white placeholder:text-opacity-40 bg-white bg-opacity-20 text-white p-3"
               required
             />
           </div>
@@ -167,7 +167,7 @@ const Form = () => {
                 value={formData.organization}
                 onChange={handleInputChange}
                 placeholder="Organization*"
-                className="input--field placeholder:text-white placeholder:text-opacity-40 bg-white bg-opacity-20 text-white p-3 text-black"
+                className="input--field placeholder:text-white placeholder:text-opacity-40 bg-white bg-opacity-20 text-white p-3 "
                 required
               />
             </div>
@@ -181,7 +181,7 @@ const Form = () => {
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder="Phone*"
-                className="input--field placeholder:text-white placeholder:text-opacity-40 bg-white bg-opacity-20 text-white p-3 text-black"
+                className="input--field placeholder:text-white placeholder:text-opacity-40 bg-white bg-opacity-20 text-white p-3 "
                 required
               />
             </div>
