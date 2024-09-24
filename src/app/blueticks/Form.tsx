@@ -50,58 +50,55 @@ const Form = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    // setLoading(true);
-    // try {
-    //   let form = new FormData();
-    //   form.append("firstName", formData?.firstName);
-    //   form.append("lastName", formData?.lastName);
-    //   form.append("organization", formData?.firstName);
-    //   form.append("phone", formData?.phone);
-    //   form.append("country", formData?.country);
-    //   form.append("email", formData?.email);
-    //   form.append("message", formData?.message);
-    //   form.append("join_us", String(formData?.joinUs));
-    //   form.append("file", formData?.file ? formData?.file : "");
-    //   const response = await fetch(baseURL + "/contact-us", {
-    //     method: "POST",
-    //     body: form,
-    //   });
-    //   if (response?.ok) {
-    //     const result = await response?.json();
-    //     if (result?.status == "Success") {
-    //       setError(false);
-    //       setSuccessMessage(
-    //         "Thank you! Your form has been successfully submitted. We will get back to you shortly."
-    //       );
-    //       setLoading(false);
-    //       setFormData({
-    //         firstName: "",
-    //         lastName: "",
-    //         organization: "",
-    //         phone: "",
-    //         country: "",
-    //         email: "",
-    //         message: "",
-    //         joinUs: false,
-    //         file: null,
-    //       });
-    //     } else {
-    //       setError(true);
-    //       setLoading(false);
-    //       console.error(
-    //         "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
-    //       );
-    //     }
-    //   }
-    // } catch (error) {
-    //   setError(true);
-    //   setLoading(false);
-    //   console.error(
-    //     "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
-    //   );
-    // }
-    console.log(formData);
-    console.log(e);
+    setLoading(true);
+    try {
+      let form = new FormData();
+      form.append("name", formData?.firstName + " " + formData?.lastName);
+      form.append("phone", formData?.phone);
+      form.append("email", formData?.email);
+      form.append(
+        "message",
+        `Organization: ${formData?.organization} \n Country: ${formData?.country} \n Phone: ${formData?.phone}  `
+      );
+      form.append("join_us", String(formData?.joinUs));
+      const response = await fetch(baseURL + "/contact-us", {
+        method: "POST",
+        body: form,
+      });
+      if (response?.ok) {
+        const result = await response?.json();
+        if (result?.status == "Success") {
+          setError(false);
+          setSuccessMessage(
+            "Thank you! Your form has been successfully submitted. We will get back to you shortly."
+          );
+          setLoading(false);
+          setFormData({
+            firstName: "",
+            lastName: "",
+            organization: "",
+            phone: "",
+            country: "",
+            email: "",
+            message: "",
+            joinUs: false,
+            file: null,
+          });
+        } else {
+          setError(true);
+          setLoading(false);
+          console.error(
+            "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
+          );
+        }
+      }
+    } catch (error) {
+      setError(true);
+      setLoading(false);
+      console.error(
+        "Form submission failed: We encountered an issue while processing your request. Please try again later !!"
+      );
+    }
   };
 
   return (
@@ -212,7 +209,7 @@ const Form = () => {
             I agree to receive emails from <strong>RF Technologies </strong>,
             Inc. about relevant content, products, and services. I understand I
             can manage my communication preferences or unsubscribe at any time.
-            <div className="sm:mt-8 pt-4 lg:text-[18px] md:text-[16px] text-sm">
+            <div className="mt-8 lg:text-[18px] md:text-[16px] text-sm">
               Please refer to our
               <span className="px-1.5">
                 <Link

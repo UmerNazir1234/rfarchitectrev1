@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="mt-8">
               <Button
                 title="Get Started"
-                href="https://blueticks.pages.dev/"
+                href="/contact-us"
                 icon={<GoArrowUpRight />}
               />
             </div>

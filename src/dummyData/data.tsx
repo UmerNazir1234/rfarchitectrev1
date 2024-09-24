@@ -125,8 +125,8 @@ export const menuItems: MenuItem[] = [
       },
     ],
   },
-  { id: 4, name: "Contact Us", link: "/contact-us" },
-  { id: 5, name: "BlueTicks", link: "/blueticks" },
+  { id: 4, name: "BlueTicks", link: "/blueticks" },
+  { id: 5, name: "Contact Us", link: "/contact-us" },
 ];
 
 /* home */
