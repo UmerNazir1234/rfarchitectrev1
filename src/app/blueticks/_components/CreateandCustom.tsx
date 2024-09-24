@@ -4,7 +4,7 @@ import React from "react";
 
 const CreateandCustom = () => {
   return (
-    <div className="relative">
+    <div className="relative pt-10">
       <ImageWithText fullWidth={true} content={createandcustom} />
       <svg
         xmlns="http://www.w3.org/2000/svg"

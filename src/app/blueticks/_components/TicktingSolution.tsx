@@ -6,7 +6,7 @@ import React from "react";
 
 const TicktingSolution = () => {
   return (
-    <div className="text-center">
+    <div className="text-center max-sm:pt-10">
       <Heading
         title="SIMPLIFIED TICKTING <span class='text-secondary'>SOLUTIONS</span>"
         icon={true}

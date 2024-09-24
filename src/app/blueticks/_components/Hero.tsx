@@ -5,7 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Hero = () => {
   return (
-    <section className="h-full min-h-screen flex items-center justify-start overflow-hidden relative">
+    <section className="h-full sm:min-h-screen min-h-[85vh] flex sm:items-center items-end max-sm:pb-10 justify-start overflow-hidden relative">
       <div className=" max-w-full w-full relative z-20">
         <div className="page-width">
           <div className="max-w-xl">
@@ -13,7 +13,7 @@ const Hero = () => {
             <h3 className="text-secondary max-sm:mt-2 drop-shadow-lg">
               Your E-Ticketing Platform
             </h3>
-            <p className="text-2xl mt-4">
+            <p className="md:text-2xl text-xl mt-4">
               Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per conubia nostra, per

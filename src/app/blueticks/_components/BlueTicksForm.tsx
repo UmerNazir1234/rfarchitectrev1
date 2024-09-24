@@ -4,14 +4,14 @@ import Form from "../Form";
 const BlueTicksForm = () => {
   return (
     <>
-      <div className="flex items-center jusity-start flex-wrap">
-        <div className="lg:basis-1/2 basis-full sm:px-16 px-3 bg-secondary py-28 relative">
+      <section className="flex items-center jusity-start flex-wrap pb-10">
+        <div className="lg:basis-1/2 basis-full sm:px-16 px-3 bg-secondary lg:py-28 md:py-20 py-16 relative">
           <h2 className="text-primary pb-6"> ELEVATE YOUR EVENTS</h2>
-          <p className="text-2xl text-white mt-4">
+          <p className="md:text-2xl text-xl text-white mt-4">
             All-in-one platform & integrated tech for seamless event management.
             Request a demo to see how you can:
           </p>
-          <ul className="list-disc ps-8 text-white text-2xl flex items-start justify-start flex-col gap-3 mt-4 font-nunito">
+          <ul className="list-disc ps-8 text-white md:text-2xl text-xl flex items-start justify-start flex-col gap-3 mt-4 font-nunito">
             <li>Plan and Create Events</li>
             <li>Easily Manage Events Onsite</li>
             <li>Easily Manage Events Onsite</li>
@@ -23,7 +23,7 @@ const BlueTicksForm = () => {
             height="218"
             viewBox="0 0 252 218"
             fill="none"
-            className="absolute top-8 right-4"
+            className="absolute top-8 right-4 max-sm:h-[130px] max-sm:w-[130px]"
           >
             <path
               d="M243.783 24.269C247.563 24.269 250.628 21.2044 250.628 17.424C250.628 13.6436 247.563 10.5789 243.783 10.5789C240.002 10.5789 236.938 13.6436 236.938 17.424C236.938 21.2044 240.002 24.269 243.783 24.269Z"
@@ -39,13 +39,13 @@ const BlueTicksForm = () => {
             />
           </svg>
         </div>
-        <div className="lg:basis-1/2 basis-full bg-primary lg:p-14 p-10 rounded-l-[50px]">
-          <h3 className="text-white text-[32px]">
+        <div className="lg:basis-1/2 basis-full bg-primary lg:p-14 md:p-10 p-5 lg:rounded-l-[50px]">
+          <h3 className="text-white md:text-[32px] text-[26px]">
             Experience the Future of Event Management
           </h3>
           <Form />
         </div>
-      </div>
+      </section>
     </>
   );
 };

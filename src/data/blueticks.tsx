@@ -57,7 +57,7 @@ export const createandcustom = [
   {
     title: "Create & customize your categories, event & products",
     image:
-      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727180501/RfTechnologiesWebsite/Group_1597883970_ueae3x.svg",
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727188067/RfTechnologiesWebsite/Group_1597883970_ueae3x_1_ljlo85.png",
     description: `Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.   
 `,
     btnLink: "/",
