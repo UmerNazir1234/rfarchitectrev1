@@ -1,21 +1,41 @@
 import React from "react";
 import Form from "../Form";
+const benefits = {
+  title: "Benefits",
+  description: "All-in-one platform & integrated tech for seamless event management. Request a demo to see how you can:",
+
+  benefitsList: [
+    {
+      title: "Improved Efficiency",
+      description: "Reduces manual processing and long queues by offering digital ticketing."
+    },
+    {
+      title: "Enhanced User Experience",
+      description: "Provides a simple and convenient way for students, faculty, and visitors to purchase and access tickets."
+    },
+    {
+      title: "Centralized Event Management",
+      description: "Organize and promote all events from a single platform, increasing visibility and attendance."
+    }
+  ]
+};
+
 
 const BlueTicksForm = () => {
   return (
     <>
       <section className="flex items-center jusity-start flex-wrap pb-10">
         <div className="lg:basis-1/2 basis-full sm:px-16 px-3 bg-secondary lg:py-28 md:py-20 py-16 relative">
-          <h2 className="text-primary pb-6"> ELEVATE YOUR EVENTS</h2>
+          <h2 className="text-primary pb-6"> {benefits?.title}</h2>
           <p className="md:text-2xl text-xl text-white mt-4">
-            All-in-one platform & integrated tech for seamless event management.
-            Request a demo to see how you can:
+           {benefits?.description}
           </p>
           <ul className="list-disc ps-8 text-white md:text-2xl text-xl flex items-start justify-start flex-col gap-3 mt-4 font-nunito">
-            <li>Plan and Create Events</li>
-            <li>Easily Manage Events Onsite</li>
-            <li>Easily Manage Events Onsite</li>
-            <li>Measure and Analyze Results</li>
+            {benefits?.benefitsList?.map((item, index) => (
+              <li key={index}>
+                <strong>{item.title}:</strong> {item.description}
+              </li>
+            ))}
           </ul>
           <svg
             xmlns="http://www.w3.org/2000/svg"

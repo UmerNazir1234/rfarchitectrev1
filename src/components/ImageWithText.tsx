@@ -88,7 +88,7 @@ const ImageWithText = ({
                 )}
                       {data?.subtitle && (
                   <h2
-                    className="text-secondary  text-3xl mb-6 leading-6 text-left"
+                    className="text-secondary  text-3xl mb-6  text-left"
                     dangerouslySetInnerHTML={{
                       __html: (data?.subtitle && data?.subtitle) || "",
                     }}

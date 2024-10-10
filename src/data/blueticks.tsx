@@ -38,11 +38,11 @@ export const blueTicksImageWithText = [
 
 export const manageSales = [
   {
-    title: "Easy to manage your Sales",
+    title: "Mission & Vision",
+    subtitle:"Our mission and vision is to be the leading e-ticketing platform globallyBLUETICKS",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727178708/RfTechnologiesWebsite/Group_1597883968_wgfi0g.svg",
-    description: `Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  
-`,
+    description: `Empowering organizations to manage and sell their event tickets independently.We aim to connect people with the moments that matter, making ticket purchasing easy, fast, and enjoyable for everyone.`,
     btnLink: "/",
     btnTitle: "",
     ctaLink: "",
@@ -56,11 +56,10 @@ export const manageSales = [
 
 export const createandcustom = [
   {
-    title: "Create & customize your categories, event & products",
+    title: "Own Your Platform, Keep Your Profits",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727188067/RfTechnologiesWebsite/Group_1597883970_ueae3x_1_ljlo85.png",
-    description: `Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.   
-`,
+    description: ` By adopting a dedicated E-ticketing platform, organizations can eliminate the need to pay service fees, transaction fees, and hidden costs to third-party providers`,
     btnLink: "/",
     btnTitle: "",
     ctaLink: "",
@@ -74,10 +73,10 @@ export const createandcustom = [
 
 export const managereports = [
   {
-    title: "Manage your reports, User Roles, permissions & much more",
+    title: "Direct Control Over Pricing",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727182275/RfTechnologiesWebsite/Group_1597883974_stqlh1.png",
-    description: `Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.   
+    description: `Organizations can set their own ticket prices without worrying about additional fees cutting into their revenue, allowing for more competitive pricing and increased profit margins.
 `,
     btnLink: "/",
     btnTitle: "",
