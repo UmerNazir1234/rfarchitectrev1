@@ -23,7 +23,7 @@ export const blueTicksImageWithText = [
     subtitle:"Where The Organization Can",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727177035/RfTechnologiesWebsite/Group_1597883966_wztb7q.svg",
-    description: `Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+    description: `❖<strong>Avoid Third-Party Charges</strong>:No more paying commissions or transaction fees to third-party platforms.</br>❖<strong>Full Control</strong>:Manage all aspects of event ticketing directly, including pricing, promotions, and customer engagement.</br>❖<strong>Branding and Customization:</strong>Tailor the platform to reflect the organization’s unique brand identity.​
 `,
     btnLink: "/",
     btnTitle: "",
