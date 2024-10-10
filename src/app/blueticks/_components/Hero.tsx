@@ -14,10 +14,8 @@ const Hero = () => {
               Your E-Ticketing Platform
             </h3>
             <p className="md:text-2xl text-xl mt-4">
-              Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos.{" "}
+              Your ultimate destination for securing tickets to the most sought-after events and experiences! At BlueTicks, we strive to connect you with a world of entertainment, ensuring you never miss out on your favorite concerts, sports matches, theater performances, and more, independently.
+
             </p>
             <div className="mt-8">
               <Button

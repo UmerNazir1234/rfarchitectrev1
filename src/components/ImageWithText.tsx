@@ -80,9 +80,17 @@ const ImageWithText = ({
                 )}
                 {data?.title && (
                   <h2
-                    className="text-primary mb-6 uppercase text-left"
+                    className={`text-primary ${data?.subtitle ? '' : 'mb-6' }   uppercase text-left`}
                     dangerouslySetInnerHTML={{
                       __html: (data?.title && data?.title) || "",
+                    }}
+                  ></h2>
+                )}
+                      {data?.subtitle && (
+                  <h2
+                    className="text-primary text-3xl mb-6 uppercase text-left"
+                    dangerouslySetInnerHTML={{
+                      __html: (data?.subtitle && data?.subtitle) || "",
                     }}
                   ></h2>
                 )}

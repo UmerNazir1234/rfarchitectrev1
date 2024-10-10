@@ -19,7 +19,8 @@
 
 export const blueTicksImageWithText = [
   {
-    title: "Free e-ticketing system",
+    title: "We Offer a Dedicated Platform",
+    subtitle:"Where The Organization Can",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727177035/RfTechnologiesWebsite/Group_1597883966_wztb7q.svg",
     description: `Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 

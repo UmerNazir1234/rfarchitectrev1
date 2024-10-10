@@ -51,6 +51,7 @@ type imageCards = {
 
 export type imageWithText = {
   title?: string;
+  subtitle?:string;
   btnTitle?: string;
   btnLink?: string;
   ctaLink?: string;
