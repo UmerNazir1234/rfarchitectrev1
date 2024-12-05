@@ -30,6 +30,7 @@ const Footer = () => {
     "/our-work": "!bg-[#FDF4E6]",
     "/become-a-partner": "!bg-light",
     "/": "!bg-light",
+    "/our-services": "!bg-white",
   };
 
   const footerClass = footerColors[pathname] || "bg-gray-500";

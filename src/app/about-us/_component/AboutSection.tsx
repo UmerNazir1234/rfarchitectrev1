@@ -88,7 +88,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ data }) => {
         fill="none"
         preserveAspectRatio="none"
       >
-        <g clip-path="url(#clip0_1766_1358)">
+        <g clipPath="url(#clip0_1766_1358)">
           <path
             d="M968 0H1439.5V81.5L847 81C855.4 81 863.167 77 866 75C881.167 64 938.9 12.6 946.5 7C954.1 1.4 964 0 968 0Z"
             fill="transparent"

@@ -16,7 +16,7 @@ type props = {
 };
 const ServiceCard = ({ card }: props) => {
   return (
-    <div className="h-full min-h-[450px] rounded-[30px] shadow-xl bg-white lg:p-8 p-4 flex items-center text-center justify-center flex-col gap-8 hover:bg-gradient-to-b hover:from-primary hover:to-primarylight group ">
+    <div className="h-full min-h-[450px] rounded-[30px] shadow-2xl  bg-white lg:p-8 p-4 flex items-center text-center justify-center flex-col gap-8 hover:bg-gradient-to-b hover:from-primary hover:to-primarylight group ">
       <Link
         href={card?.btnLink}
         aria-label={card?.title + "service"}

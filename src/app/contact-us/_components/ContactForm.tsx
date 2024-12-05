@@ -14,7 +14,7 @@ const ContactForm = ({ data }: any) => {
         fill="none"
         className="w-full max-w-full -mb-[1px]"
       >
-        <g clip-path="url(#clip0_1766_1353)">
+        <g clipPath="url(#clip0_1766_1353)">
           <path
             d="M307.5 0H1440V81H203C211.4 81 219.166 77 222 75C237.166 64 278.4 12.6 286 7C293.6 1.4 303.5 0 307.5 0Z"
             fill="black"
@@ -53,7 +53,7 @@ const ContactForm = ({ data }: any) => {
         fill="none"
         preserveAspectRatio="none"
       >
-        <g clip-path="url(#clip0_1766_1358)">
+        <g clipPath="url(#clip0_1766_1358)">
           <path
             d="M968 0H1439.5V81.5L847 81C855.4 81 863.167 77 866 75C881.167 64 938.9 12.6 946.5 7C954.1 1.4 964 0 968 0Z"
             fill="transparent"

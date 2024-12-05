@@ -35,8 +35,8 @@ const LeadingSolution = ({ content }: props) => {
               y2="52.779"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BCCDF2" />
-              <stop offset="1" stop-color="#0B3DAB" />
+              <stop stopColor="#BCCDF2" />
+              <stop offset="1" stopColor="#0B3DAB" />
             </linearGradient>
           </defs>
         </svg>
