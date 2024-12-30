@@ -18,6 +18,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import ShopifyServices from "./ShopifyServices";
 import Benifits from "@/components/Benifits";
 import { content } from "@/data/sds";
+import CaseStudySection from "./CaseStudySection";
 
 const Index = () => {
   return (
@@ -50,6 +51,7 @@ const Index = () => {
         </div>
       </ImageWithText>
       <Stacks />
+      <CaseStudySection />
       <Faq data={content?.faqs} classes="md:!py-24 !py-8" />
       <ProjectSubmission
         title="Submit Your Project"

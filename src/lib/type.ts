@@ -51,7 +51,7 @@ type imageCards = {
 
 export type imageWithText = {
   title?: string;
-  subtitle?:string;
+  subtitle?: string;
   btnTitle?: string;
   btnLink?: string;
   ctaLink?: string;
@@ -126,4 +126,13 @@ export type BlogPost = {
   createdAt: string;
   updatedAt: string;
   __v: number | string;
+};
+
+export type ShopifyCaseStudy = {
+  id: number;
+  title: string;
+  problem: string;
+  solution: string;
+  slug: string;
+  image: string;
 };
