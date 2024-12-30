@@ -8,9 +8,9 @@ export type Project = {
   tech: string;
   image: string;
 };
+export type techKeys = "shopify" | "wordpress";
 export type caseStudies = {
-  shopify: Project[];
-  wordpress: Project[]
+  [key in techKeys]: Project[];
 };
 export const caseStudies: caseStudies = {
   shopify: [
