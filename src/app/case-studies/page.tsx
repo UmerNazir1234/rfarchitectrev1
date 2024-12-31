@@ -1,9 +1,8 @@
-import React from 'react'
-import { caseStudies } from '@/data/caseStudies'
+import { redirect } from 'next/navigation'
 const page = () => {
-  console.log(caseStudies)
+
   return (
-    <div><pre>{JSON.stringify(caseStudies, null, 2)}</pre></div>
+    redirect(`/`)
   )
 }
 

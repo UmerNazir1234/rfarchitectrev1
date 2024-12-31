@@ -28,6 +28,7 @@ const config: Config = {
         themblack: "var(--color-foreground-rgb)",
         textLight: "var(--color-text-light)",
         grayDark:"var(--bg-gray)",
+        facebook: "var(--facebook)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -33,7 +33,7 @@ const ProjectSubmission = ({
               >
                 {title}
               </h2>
-              <p className="text-white xl:text-3xl text-2xl w-3/4 max-md:text-center text-start max-lg:w-full mt-3 ">
+              <p className="text-white xl:text-2xl text-xl w-3/4 max-md:text-center text-start max-lg:w-full mt-3 ">
                 {description}
               </p>
             </div>

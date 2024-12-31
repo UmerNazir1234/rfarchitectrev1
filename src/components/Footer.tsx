@@ -27,13 +27,18 @@ const Footer = () => {
     "/mobile-app-development": "!bg-[#edac18]",
     "/custom-software-development": "!bg-[#edac18]",
     "/contact-us": "!bg-light",
-    "/our-work": "!bg-[#FDF4E6]",
+    "/our-work": "!bg-[#e6e6e6]",
     "/become-a-partner": "!bg-light",
     "/": "!bg-light",
     "/our-services": "!bg-white",
   };
 
-  const footerClass = footerColors[pathname] || "bg-gray-500";
+  const caseStudyPathPattern = /^\/case-studies\/(.+)\/(.+)$/;
+  const isCaseStudyPath = caseStudyPathPattern.test(pathname);
+
+  // Apply color based on the dynamic case study path
+  const footerClass = isCaseStudyPath ? "!bg-[#edac18]" : (footerColors[pathname] || "bg-gray-500");
+
   return (
     <footer
       className={`pt-20 max-sm:pt-20 relative overflow-hidden bg-light ${footerClass}`}
