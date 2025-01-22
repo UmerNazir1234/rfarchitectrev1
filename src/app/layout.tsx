@@ -6,6 +6,7 @@ import { Advent_Pro } from "next/font/google";
 import { Nunito } from "next/font/google";
 import Providers from "./Providers";
 import { Site } from "@/helpers/Site";
+import Analytics from "@/components/Analytics";
 
 export const metadata: Metadata = {
   title: {
@@ -95,6 +96,7 @@ export default function RootLayout({
           rel="prefetch"
           href={Site?.logo}
         />
+        <Analytics />
       </head>
       <body className={`${advent_Pro?.variable} ${nunito?.variable}`}>
         <Providers>
