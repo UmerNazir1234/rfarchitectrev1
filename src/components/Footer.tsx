@@ -12,8 +12,8 @@ import Social from "./Social";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { IoLogoLinkedin } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -96,9 +96,9 @@ const Footer = () => {
             <div className="flex items-center justify-start gap-6">
             <Social url={Site?.social_links?.facebook} icon={<FaFacebook className="w-8 h-auto"/>} />
             <Social url={Site?.social_links?.instagram} icon={<FaInstagram className="w-8 h-auto" />} />
-          
             <Social url={Site?.social_links?.twitter} icon={<FaTwitter className="w-8 h-auto" />} />
             <Social url={Site?.social_links?.youtube} icon={<FaYoutube className="w-8 h-auto" />} />
+            <Social url={Site?.social_links?.whatsapp} icon={<FaWhatsappSquare className="w-8 h-auto" />} />
             </div>
           </div>
           <div className="flex flex-col gap-8 items-start xl:basis-[20%] lg:basis-[30%] md:basis-[25%] basis-full  justify-start">
