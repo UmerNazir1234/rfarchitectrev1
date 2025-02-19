@@ -1,6 +1,7 @@
-import { redirect } from 'next/navigation'
-const page = () => {
+import { redirect } from 'next/navigation';
 
+
+const page = () => {
   return (
     redirect(`/`)
   )
