@@ -81,8 +81,8 @@ const homeContent: HomeContent = {
     cards: [
       {
         id: 1,
-        iconBg: "#FEF3F3",
-        icon: <IconWebDev classes="w-16 h-16" />,
+        iconBg: "#FFF6EE",
+        icon: <IconApplicationDev classes="w-16 h-16" />,
         title: "Application Development",
         content:
           "Build a successful iOS or Android app that optimize your processes.",
@@ -92,7 +92,7 @@ const homeContent: HomeContent = {
       {
         id: 2,
         iconBg: "#FEF3F3",
-        icon: <IconApplicationDev classes="w-16 h-16" />,
+        icon: <IconWebDev classes="w-16 h-16" />,
         title: "Website Development",
         content:
           "Creating stunning, user-friendly websites that captivate and convert.",

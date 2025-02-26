@@ -47,6 +47,7 @@ const IconApplicationDev = ({ classes }: props) => {
         />
       </defs>
     </svg>
+    
   );
 };
 
