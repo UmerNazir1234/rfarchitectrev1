@@ -177,7 +177,9 @@ const homeContent: HomeContent = {
       },
     ],
   },
-  faqs: [
+
+  
+  faqs: [    
     {
       id: 1,
       question: "What is RF Technologies?",
