@@ -51,7 +51,8 @@ const Index = () => {
         </div>
       </ImageWithText>
       <Stacks />
-      <CaseStudySection />
+      {/* case study for the shopify */}
+      {/* <CaseStudySection /> */}
       <Faq data={content?.faqs} classes="md:!py-24 !py-8" />
       <ProjectSubmission
         title="Submit Your Project"
