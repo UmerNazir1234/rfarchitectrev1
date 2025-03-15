@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { Work } from "@/lib/type";
+import { GoArrowUpRight } from "react-icons/go";
+import Link from "next/link";
 
 type WorkProps = {
   work: Work[];
@@ -75,6 +77,15 @@ const WorkCard = ({ work }: WorkProps) => {
                   <h4 className=" text-lg md:text-xl max-sm:text-center font-nunito">
                     {item?.subtitle}
                   </h4>
+                  {item?.url && (
+                    <Link
+                      href={item?.url}
+                      target="_blank"
+                      className="flex items-center gap-2 text-lg md:text-xl max-sm:text-center font-nunito"
+                    >
+                      View <GoArrowUpRight />
+                    </Link>
+                  )}
                 </div>
               </div>
               {item?.imageFirst ? (
