@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Work } from "@/lib/type";
 import { GoArrowUpRight } from "react-icons/go";
+import Link from "next/link";
 
 type WorkProps = {
   work: Work[];
@@ -15,11 +16,10 @@ const WorkCard = ({ work }: WorkProps) => {
           return (
             <div
               key={item?.id}
-              className={`w-full block  ${
-                item?.id == 1 ? "-mt-14 relative z-10" : "-mt-[2px]"
-              }`}
+              className={`w-full block  ${item?.id == 1 ? "-mt-14 relative z-10" : "-mt-[2px]"
+                }`}
             >
-             
+
               {item?.id === 1 && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +50,8 @@ const WorkCard = ({ work }: WorkProps) => {
               <div
                 key={item?.id}
                 id={`${item?.workId}`}
-                className={`md:flex gap-6  px-12 max-md:px-4 max-md:pb-6 items-center justify-evenly max-md:flex-wrap w-full ${
-                  item?.imageFirst ? "flex-row" : "flex-row-reverse"
-                }`}
+                className={`md:flex gap-6  px-12 max-md:px-4 max-md:pb-6 items-center justify-evenly max-md:flex-wrap w-full ${item?.imageFirst ? "flex-row" : "flex-row-reverse"
+                  }`}
                 style={{
                   color: item?.textColor || "white", // Default to white
                   backgroundColor: item?.color || "#28292D", // Default background
@@ -78,17 +77,15 @@ const WorkCard = ({ work }: WorkProps) => {
                     {item?.subtitle}
                   </h4>
                   {item?.link && (
-                    <a
-                      href={item?.link}
-                      className="text-secondary text-lg font-semibold flex items-center gap-2"
-                    >
-                      View Case Study
-                      <GoArrowUpRight />
-                    </a>
+                    <Link
+                      href={item.link}
+                      className="flex items-center gap-2 text-lg md:text-xl max-sm:text-center font-nunito text-secondary font-bold border-b-2 border-secondary hover:bg-secondary hover:text-white transition-all duration-300 py-2 px-4 mb-5">
+                      View Case Study <GoArrowUpRight />
+                    </Link>
                   )}
                 </div>
               </div>
-             
+
               {item?.imageFirst ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -21,6 +21,7 @@ export type Work = {
   bottomBgSecondClr?: string | null;
   bottomBgFirstClr?: string | null;
   imageFirst?: boolean;
+  url?:string;
 };
 
 /* text with cards */
