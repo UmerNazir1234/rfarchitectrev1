@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Work } from "@/lib/type";
+import { GoArrowUpRight } from "react-icons/go";
 
 type WorkProps = {
   work: Work[];
@@ -18,6 +19,7 @@ const WorkCard = ({ work }: WorkProps) => {
                 item?.id == 1 ? "-mt-14 relative z-10" : "-mt-[2px]"
               }`}
             >
+             
               {item?.id === 1 && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +77,18 @@ const WorkCard = ({ work }: WorkProps) => {
                   <h4 className=" text-lg md:text-xl max-sm:text-center font-nunito">
                     {item?.subtitle}
                   </h4>
+                  {item?.link && (
+                    <a
+                      href={item?.link}
+                      className="text-secondary text-lg font-semibold flex items-center gap-2"
+                    >
+                      View Case Study
+                      <GoArrowUpRight />
+                    </a>
+                  )}
                 </div>
               </div>
+             
               {item?.imageFirst ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -134,6 +146,7 @@ const WorkCard = ({ work }: WorkProps) => {
           );
         })}
       </div>
+
     </section>
   );
 };

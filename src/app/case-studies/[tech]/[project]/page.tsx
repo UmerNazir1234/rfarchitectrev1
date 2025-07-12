@@ -5,6 +5,7 @@ import Link from "next/link";
 export const runtime = "edge";
 
 const page = ({ params }: { params: { tech: techKeys; project: string } }) => {
+
   const tech = caseStudies[params?.tech];
   if (!tech) {
     return <>No technology found.</>;
@@ -12,7 +13,7 @@ const page = ({ params }: { params: { tech: techKeys; project: string } }) => {
   const project = tech.find((p) => p.slug === params?.project);
   if (!project) {
     return <>No project found. </>;
-  }
+  } 
 
   return (
     <>

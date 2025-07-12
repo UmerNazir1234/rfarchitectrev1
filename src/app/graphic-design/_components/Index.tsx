@@ -1,8 +1,5 @@
 import Hero from "@/components/Hero";
-import ImageWithText from "@/components/ImageWithText";
-import TextWithCards from "@/components/TextWithCards";
 import React from "react";
-
 import { GoArrowUpRight } from "react-icons/go";
 import Stacks from "@/components/Stacks";
 import Faq from "@/components/Faq";
@@ -10,7 +7,6 @@ import {
   faq,
   grapicCardText,
   grapicDesignServiceData,
-  woocomemrceCardText,
 } from "@/dummyData/data";
 import ProjectSubmission from "@/components/ProjectSubmission";
 import SubServices from "@/snippet/SubServices";

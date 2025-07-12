@@ -14,6 +14,7 @@ export type Work = {
   text: string;
   subtitle: string;
   color?: string;
+  link?: string;
   textColor?: string;
   topBgFirstClr?: string | null;
   topBgSecondClr?: string | null;

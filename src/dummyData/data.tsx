@@ -575,6 +575,7 @@ export const work: Work[] = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776305/RfTechnologiesWebsite/image_52_zznfko.png",
     title: "Elite By ECW",
+    link: "/case-studies/shopify/elite-ecw",
     text: "Elite Sports & Apparel",
     subtitle: "React Extension Shopify",
     color: "#28292D",
@@ -1554,7 +1555,7 @@ export const trustedBrandImageWithText = [
     description:
       "We are passionate about delivering exceptional results. Our marketing experts develop tailored strategies to ensure high-class outcomes and drive significant revenue growth for our clients.<br/><br/>With a commitment to excellence, we employ innovative techniques and data-driven approaches to achieve optimal performance. Our goal is to provide impactful solutions that elevate your brand and maximize your success.",
     btnLink: "/",
-    btnTitle: "OUR APPROCH",
+    btnTitle: "OUR APPROACH",
     ctaLink: "",
     ctaTitle: "",
     imageFirst: true,
@@ -1822,7 +1823,7 @@ export const grapicCardText = [
       },
       {
         title: "1350+",
-        cardTitle: "Front-end and UX & UI Design Tampltes",
+        cardTitle: "Front-end and UX & UI Design Templates",
       },
       {
         title: "94+",

@@ -81,10 +81,10 @@ export const caseStudies: caseStudies = {
       subTitle:
         "Our moto is to make sure you Look Great Feel Great Ready To Preform",
       projectImages: [
-        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1735564145/RfTechnologiesWebsite/IMG-20230606-WA0040_6c74822e-fefa-4797-a99f-5c27f0acef0e_zai2sb.jpg",
-        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1735563579/RfTechnologiesWebsite/Shoes-_-ELITE-BY-ECW-Team-Sports-12-30-2024_05_59_PM_yrtvjn.png",
-        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1735558680/RfTechnologiesWebsite/IMG-20230606-WA0015_523420ef-c3b9-4e8c-8c7b-2d07067fffb6_nofs9p.jpg",
-        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1735558680/RfTechnologiesWebsite/IMG-20230606-WA0015_523420ef-c3b9-4e8c-8c7b-2d07067fffb6_nofs9p.jpg",
+        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1752327689/RfTechnologiesWebsite/icbox-product_qkdfgx.png",
+        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1752327689/RfTechnologiesWebsite/icbox-slide_rbo2v8.png",
+        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1752327689/RfTechnologiesWebsite/icebox-section_p5thbe.png",
+        "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1752327689/RfTechnologiesWebsite/icebox-collection_ab1x79.png",
       ],
       social: [
         {
@@ -105,13 +105,9 @@ export const caseStudies: caseStudies = {
       email: "icebox@gmail.com",
       contactNumber: "052-7505354",
       logo: "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1735637886/RfTechnologiesWebsite/Untitled_design_koqbag.webp",
-      problem: `Elite ECW tackles common e-commerce challenges by offering practical and effective solutions to boost your online business. To reduce cart abandonment, streamline the checkout process by minimizing steps, displaying all costs upfront, and sending timely email reminders to customers who leave items in their cart. Additionally, providing multiple payment options and guest checkout features can further reduce abandonment rates.
-
-              Building customer trust is crucial for retaining long-term clients. A professional, easy-to-navigate website design, clear product descriptions, customer reviews, and testimonials all contribute to credibility. Offering secure payment gateways and clear return policies enhances trustworthiness, encouraging shoppers to complete their purchases with confidence.
-
-              Driving traffic to your e-commerce site requires a combination of strategies. Start with SEO optimization to increase visibility in search engine results. Leverage social media platforms to reach your target audience through ads, influencer collaborations, and engaging posts. Consistently producing high-quality, informative, and entertaining content keeps customers coming back and enhances brand loyalty. Additionally, integrating email marketing campaigns and running promotions or seasonal sales can further drive traffic and increase conversions.`,
+      problem: `Icebox Sneakers had a fragmented online presence with no unified branding or design consistency across their website and social platforms. The website lacked modern aesthetics, intuitive navigation, and mobile responsiveness, which negatively impacted user experience and trust. Additionally, the site performance was slow, with poor loading times that affected bounce rates and conversions. The brand was also struggling to effectively engage its audience on social media due to inconsistent content and lack of performance tracking tools.`,
       solution:
-        " Elite ECW addresses common e-commerce challenges with proven, actionable solutions. By streamlining the checkout process, displaying transparent pricing, and sending timely email reminders, cart abandonment rates are minimized. A professional website design, customer reviews, and secure payment options help build trust with customers. To boost traffic, we optimize SEO, run targeted social media ads, and create engaging content that drives conversions and increases customer loyalty. These solutions work together to enhance the overall customer experience and improve business performance.",
+        "We redesigned the Icebox Sneakers website to reflect a clean, modern, and professional aesthetic aligned with sneaker culture. Our design improvements focused on enhancing user experience with faster loading times, mobile responsiveness, clear product layouts, and a more intuitive checkout flow. On the performance side, we optimized all images, scripts, and third-party apps to boost site speed and stability. We also integrated tracking tools such as Google Analytics and Meta Pixel to monitor user behavior and campaign performance. Additionally, we provided a content strategy and visual identity system to ensure consistency across social platforms, resulting in stronger engagement, better brand recall, and improved conversion rates.",
       slug: "icebox-sneakers",
       url: "https://iceboxsneakers.co.il/",
       tech: "shopify",
