@@ -2,6 +2,7 @@
 import React from "react";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import { ThemeProvider } from "@/context/ThemeContext";
+import MicrosoftClarity from "@/components/MicrosoftClarity";
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -15,6 +16,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
           shallowRouting
         />
       </ThemeProvider>
+      <MicrosoftClarity />
     </>
   );
 };
