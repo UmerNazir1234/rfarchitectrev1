@@ -19,8 +19,8 @@ const Hero = () => {
             </p>
             <div className="mt-8">
               <Button
-                title="Get Started"
-                href="/contact-us"
+                title="View Demo"
+                href="https://blueticks.pages.dev"
                 icon={<GoArrowUpRight />}
               />
             </div>
