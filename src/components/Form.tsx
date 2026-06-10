@@ -187,8 +187,7 @@ const Form = ({ data }: FormProps) => {
             className="lg:text-2xl md:text-xl text-base text-white leading-tight"
           >
             We care about your privacy and automatically agree to the following
-            NDA. This site is protected by reCAPTCHA and the Google Privacy
-            Policy and Terms of Service apply.
+            NDA. This site is protected by reCAPTCHA and the Google Privacy.
             <Link
               href="/policies/privacy-policy"
               className="ps-2 text-white hover:underline"

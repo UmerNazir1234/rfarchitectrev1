@@ -64,7 +64,7 @@ const Newsletter = ({ classes }: any) => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="h-full w-full px-2 py-1.5 bg-transparent border-none sm:text-2xl relative z-10 focus:ring-0 focus:outline-none hover:outline-none focus-visible:outline-none"
-                  placeholder="Enter you email"
+                  placeholder="Enter your email"
                 />
                 <button
                   className="btn btn--primary uppercase max-sm:text-base"

@@ -31,7 +31,7 @@ const Faq = ({ data, classes }: props) => {
           />
         </div>
         <h3 className="text-center text-primary mt-8 ">
-          Frequently Ask Questions
+          Frequently Asked Questions
         </h3>
         <div className="mt-14">
           <Accordion type="single" collapsible>

@@ -132,7 +132,7 @@ const content = {
       id: 4,
       title: "Built-In Marketing Tools",
       content:
-        "Shopify has built-in marketing tools which make it lower the cast on start-ups. It allows us to edit page meta title, meta description, meta URL, make pages visible and invisible, and redirect to any URL.",
+        "Shopify has built-in marketing tools which make it lower the cost on start-ups. It allows us to edit page meta title, meta description, meta URL, make pages visible and invisible, and redirect to any URL.",
     },
   ],
   advantages: {

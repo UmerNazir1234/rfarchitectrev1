@@ -19,7 +19,7 @@ const Index = () => {
       <PerfectPartnerShip />
       <Benefits />
       <ProjectSubmission
-        title="Transform your brand's challenges into successes wi th our expert solutions."
+        title="Transform your brand's challenges into successes with our expert solutions."
         titleColor="!text-white"
       />
       <BecomePartnerForm />

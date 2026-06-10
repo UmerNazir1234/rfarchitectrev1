@@ -39,7 +39,7 @@ export const blueTicksImageWithText = [
 export const manageSales = [
   {
     title: "Mission & Vision",
-    subtitle:"Our mission and vision is to be the leading e-ticketing platform globallyBLUETICKS",
+    subtitle:"Our mission and vision is to be the leading e-ticketing platform globally BLUETICKS",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727178708/RfTechnologiesWebsite/Group_1597883968_wgfi0g.svg",
     description: `Empowering organizations to manage and sell their event tickets independently.We aim to connect people with the moments that matter, making ticket purchasing easy, fast, and enjoyable for everyone.`,

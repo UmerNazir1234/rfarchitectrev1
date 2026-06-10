@@ -31,7 +31,7 @@ export const caseStudies: caseStudies = {
       id: 1,
       title: "Elite ECW",
       subTitle:
-        "Our moto is to make sure you Look Great Feel Great Ready To Preform",
+        "Our motto is to make sure you Look Great Feel Great Ready To Perform",
       social: [
         {
           icon: <FaInstagram className="w-6 h-6 " />,
@@ -79,7 +79,7 @@ export const caseStudies: caseStudies = {
       id: 2,
       title: "Icebox Sneakers",
       subTitle:
-        "Our moto is to make sure you Look Great Feel Great Ready To Preform",
+        "Our motto is to make sure you Look Great Feel Great Ready To Perform",
       projectImages: [
         "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1752327689/RfTechnologiesWebsite/icbox-product_qkdfgx.png",
         "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1752327689/RfTechnologiesWebsite/icbox-slide_rbo2v8.png",
@@ -116,7 +116,7 @@ export const caseStudies: caseStudies = {
     },
     {
       id: 3,
-      title: "Bruno Apperal",
+      title: "Bruno Apparel",
       subTitle:
         "Where Quality Meets Conscience",
       projectImages: [

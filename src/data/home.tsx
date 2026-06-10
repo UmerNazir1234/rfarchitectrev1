@@ -54,7 +54,7 @@ const homeContent: HomeContent = {
     {
       id: 1,
       title:
-        "<span class='text-secondary'>RF TECHNOLOGIES</span> We Provide Awnsers. ",
+        "<span class='text-secondary'>RF TECHNOLOGIES</span> We Provide Answers. ",
       url: "/about-us",
       description:
         "Want To Turn Your Idea Into A Digital Product And Make It Successful Using Best Marketing Strategies?",

@@ -111,7 +111,7 @@ const content: Content = {
     ],
   },
   grapicDesigning: {
-    title: "Grapic Designing",
+    title: "Graphic Designing",
     items: [
       {
         id: 1,

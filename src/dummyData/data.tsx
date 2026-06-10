@@ -179,7 +179,7 @@ export const testimonial = [
   {
     id: 6,
     review:
-      "Having worked on multiple projects with RFtechnologoes, i've always been very happy with the outcome and quality.",
+      "Having worked on multiple projects with RF Technologies, i've always been very happy with the outcome and quality.",
     client_name: "Austen Plummer",
     client_image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721990356/RfTechnologiesWebsite/PHOTO-2018-06-20-19-37-19_puar6j.webp",
@@ -1741,7 +1741,7 @@ export const seoCardText = [
 ];
 /* endseo */
 
-/* grapic designing */
+/* graphic designing */
 export const grapicDesignServiceData = [
   {
     id: 1,
@@ -1834,7 +1834,7 @@ export const grapicCardText = [
   },
 ];
 
-/* end grapic designing */
+/* end graphic designing */
 
 /* CRM */
 export const crmServiceData = [
@@ -2376,7 +2376,7 @@ export const shopifyBenefits = [
     id: 4,
     title: "Built-In Marketing Tools",
     content: `Shopify has built-in marketing tools which make it lower the
-                cast on start-ups. It allows us to edit page meta title, meta
+                cost on start-ups. It allows us to edit page meta title, meta
                 description, meta URL, make pages visible and invisible, and
                 redirect to any URL.`,
     bgClr: "#F9D1F0",
