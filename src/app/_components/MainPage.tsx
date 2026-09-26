@@ -17,10 +17,10 @@ const MainPage = () => {
       <HeroSlider data={homeContent?.banner} />
       <LeadingSolution content={homeContent?.ourServices} />
       <ServiceSlider cards={homeContent?.ourServices?.cards} />
-      <Steps classes="max-sm:!py-10" />
-      <WhyChooseUs />
       <FeaturedProjects data={featuredProjects} />
       <Testimonials data={testimonial} />
+      <Steps classes="max-sm:!py-10" />
+      <WhyChooseUs />
       <Faq data={homeContent?.faqs} />
       <Newsletter />
     </>

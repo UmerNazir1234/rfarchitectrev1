@@ -54,38 +54,38 @@ const homeContent: HomeContent = {
     {
       id: 1,
       title:
-        "<span class='text-secondary'>RF TECHNOLOGIES</span> We Provide Answers. ",
-      url: "/about-us",
+        "A BUSINESS PARTNER FOR <span class='text-secondary'>CHANGE THAT LASTS</span>",
+      url: "/contact-us",
       description:
-        "Want To Turn Your Idea Into A Digital Product And Make It Successful Using Best Marketing Strategies?",
+        "For growing businesses facing operational bottlenecks or customer-growth challenges. One accountable partner aligns the right strategy, delivery, and ongoing support, trusted by 200+ clients.",
       image:
         "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722243811/RfTechnologiesWebsite/Desktop_-_9_lcv48g.png",
     },
     {
       id: 2,
-      title: "IT SOLUTIONS <span class='text-secondary'>&</span> SERVICES",
-      url: "/about-us",
+      title: "YOUR BUSINESS GOALS, <span class='text-secondary'>FIRST</span>",
+      url: "/contact-us",
       description:
-        "Turning an idea into a successful digital product requires a well-defined process that blends product development with strategic marketing. ",
+        "We help growing teams solve real business challenges with practical digital solutions, from the first conversation through launch and continued improvement.",
       image:
         "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727169916/RfTechnologiesWebsite/Desktop_-_10_ieqlla.png",
     },
   ],
   ourServices: {
-    roundCta: "OUR SERVICES",
-    title: "We Provide Leading Solutions In",
-    content: ` At RF Tech, we deliver top-quality services in Graphic Designing, Website Development, CRM Development, App Development, SEO, Digital Marketing. Our expert team is dedicated to helping your business thrive with innovative and effective digital solutions. Partner with us to achieve unparalleled success.
+    roundCta: "BUSINESS CHALLENGES",
+    title: "Solve the business problem behind the brief",
+    content: `From attracting customers and improving digital experiences to removing operational friction, we match the right service to the work in front of you. Our team can deliver one focused improvement or support connected needs across your business.
 `,
-    btnText: "Get Started",
+    btnText: "Discuss Your Priorities",
     btnLink: "/contact-us",
     cards: [
       {
         id: 1,
         iconBg: "#FFF6EE",
         icon: <IconApplicationDev classes="w-16 h-16" />,
-        title: "Application Development",
+        title: "Help customers get things done on the move",
         content:
-          "Build a successful iOS or Android app that optimize your processes.",
+          "Mobile application development makes key services and workflows easier to use wherever customers or staff need them.",
         btnText: "Read More",
         btnLink: "/mobile-app-development",
       },
@@ -93,9 +93,9 @@ const homeContent: HomeContent = {
         id: 2,
         iconBg: "#FEF3F3",
         icon: <IconWebDev classes="w-16 h-16" />,
-        title: "Website Development",
+        title: "Turn more visits into customer action",
         content:
-          "Creating stunning, user-friendly websites that captivate and convert.",
+          "Web development creates clear, dependable journeys that help visitors understand your offer and take the next step.",
 
         btnText: "Read More",
         btnLink: "/web-development",
@@ -104,9 +104,9 @@ const homeContent: HomeContent = {
         id: 3,
         iconBg: "#EBF4FA",
         icon: <IconDigitalMarketing classes="w-16 h-16" />,
-        title: "Digital Marketing",
+        title: "Reach the right buyers and build demand",
         content:
-          "Crafting campaigns that engage, convert, and retain customers",
+          "Digital marketing connects relevant audiences with campaigns built to generate qualified interest and repeat engagement.",
 
         btnText: "Read More",
         btnLink: "/digital-marketing",
@@ -115,9 +115,9 @@ const homeContent: HomeContent = {
         id: 4,
         iconBg: "#FDECF3",
         icon: <IconGrapic classes="w-16 h-16" />,
-        title: "Graphic Design & UX/UI",
+        title: "Make your offer clear and memorable",
         content:
-          "Crafting visually stunning graphics that enhance your brand identity.",
+          "Graphic design and UX/UI make your brand easier to recognize, your offer easier to understand, and your experience easier to use.",
 
         btnText: "Read More",
         btnLink: "/graphic-design",
@@ -126,8 +126,8 @@ const homeContent: HomeContent = {
         id: 5,
         iconBg: "#E9F3D3",
         icon: <IconCrm classes="w-16 h-16" />,
-        title: "CRM Development",
-        content: "Enhancing customer relationships with tailored CRM systems.",
+        title: "Keep leads and customer follow-up moving",
+        content: "CRM development organizes customer records, sales activity, and follow-ups around how your team works.",
         btnText: "Read More",
         btnLink: "/crm-development",
       },
@@ -135,9 +135,9 @@ const homeContent: HomeContent = {
         id: 6,
         iconBg: "#EBF6D3",
         icon: <IconShopify classes="w-16 h-16" />,
-        title: "Shopify Development",
+        title: "Make online buying easier to complete",
         content:
-          "Building robust, scalable e-commerce stores for online success.",
+          "Shopify development improves product discovery, checkout, and the day-to-day work of running your online store.",
 
         btnText: "Read More",
         btnLink: "/shopify-development",
@@ -146,9 +146,9 @@ const homeContent: HomeContent = {
         id: 7,
         iconBg: "#EDE2F8",
         icon: <IconWoocommerce classes="w-16 h-16" />,
-        title: "Woocommerce Development",
+        title: "Make store operations fit your business",
         content:
-          "Designing and developing high-performance e-commerce stores on WooCommerce.",
+          "WooCommerce development tailors product, checkout, and order workflows to the needs of your customers and team.",
 
         btnText: "Read More",
         btnLink: "/woocommerce-development",
@@ -157,9 +157,9 @@ const homeContent: HomeContent = {
         id: 8,
         iconBg: "#EAFCF3",
         icon: <IconWordpress classes="w-16 h-16" />,
-        title: "Wordpress Development",
+        title: "Keep your website content easy to manage",
         content:
-          "Building versatile and scalable WordPress sites tailored to your needs.",
+          "WordPress development gives your team an adaptable site for publishing useful content and growing your online presence.",
 
         btnText: "Read More",
         btnLink: "/wordPress-development",
@@ -168,9 +168,9 @@ const homeContent: HomeContent = {
         id: 9,
         iconBg: "#FEF3F3",
         icon: <IconCustomSoftDev classes="w-16 h-16" />,
-        title: "Custom Software Development",
+        title: "Remove repetitive work and process gaps",
         content:
-          "Delivering bespoke software solutions that drive business innovation.",
+          "Custom software connects workflows and replaces manual tasks with tools designed around your operation.",
 
         btnText: "Read More",
         btnLink: "/custom-software-development",
@@ -180,34 +180,34 @@ const homeContent: HomeContent = {
 faqs: [
     {
       id: 1,
-      question: "What is RF Technologies?",
+      question: "Who does RF Technologies help?",
       answer:
-        "RF Technologies is a software company which provides custom software development, e-commerce development, digital marketing and Shopify development services.",
+        "We partner with growing businesses that need to improve operations, customer experience, or digital growth. We align the right expertise to each business goal and stay involved beyond delivery.",
     },
     {
       id: 2,
       question: "What services does RF Technologies offer?",
       answer:
-        "At RF Tech, we provide a comprehensive range of digital solutions including SEO, digital marketing, web development, Shopify and WooCommerce development, WordPress development, custom software development, CRM development, and graphic design. Our goal is to tailor these services to meet the unique needs of your business and drive measurable results.",
+        "Our work includes business websites and e-commerce, custom software, CRM, mobile applications, design, SEO, and digital marketing. We recommend the services that fit your priorities rather than a fixed package.",
     },
     {
       id: 3,
       question: "What makes your web development services stand out?",
       answer:
-        "Our web development services are distinguished by our commitment to creating user-centric, high-performance websites. We focus on delivering responsive designs, seamless functionality, and a robust user experience. Whether you need a new site or a revamp, our team ensures that your website aligns with your brand and business objectives.",
+        "We start with your customers and business goals, then shape the site structure, content, and functionality around them. The result is designed to support real journeys such as generating leads, completing purchases, or finding support.",
     },
     {
       id: 4,
       question:
-        "How do you ensure the success of custom software development projects?",
+        "How do you keep a project aligned with our business goals?",
       answer:
-        "We ensure the success of custom software development projects through a structured approach that includes comprehensive requirements gathering, iterative development, and rigorous testing. Our team works closely with you throughout the process to ensure the final product meets your specifications, enhances operational efficiency, and delivers tangible benefits.",
+        "We clarify the desired outcomes and constraints up front, review progress with your team as work moves forward, and test against agreed requirements. This keeps decisions connected to the operational improvement the project is meant to deliver.",
     },
     {
       id: 5,
       question: "How can I become a partner with RF Technologies?",
       answer:
-        "You can contact us to become a partner or you can visit our office or manage a meeting with us.",
+        "Share the business challenge or opportunity you are working on through our contact page. We will arrange a conversation to understand your goals and recommend a practical next step.",
     },
   ],
 };

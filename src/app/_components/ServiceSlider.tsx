@@ -1,11 +1,6 @@
 "use client";
 
 import React from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import ServiceCard from "@/components/ServiceCard";
 type props = {
   cards: {
@@ -19,58 +14,12 @@ type props = {
   }[];
 };
 const ServiceSlider = ({ cards }: props) => {
-
-
   return (
-    <section className="w-full lg:-mt-[240px] md:-mt-[210px] max-md:-mt-[150px] max-sm:-mt-[80px] mb-20 z-50 relative max-sm:px-4 serviceSlider">
-      <div className="">
-        <Swiper
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: true,
-            pauseOnMouseEnter: true,
-          }}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          spaceBetween={30}
-          slidesPerView={5}
-          centeredSlides={true}
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 5,
-            },
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 15,
-            },
-
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 20,
-            },
-
-            1400: {
-              slidesPerView: 5,
-              spaceBetween: 30,
-            },
-          }}
-          loop={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="!pb-16 "
-        >
-          {cards?.map((card) => {
-            return (
-              <SwiperSlide key={card?.id} className="h-full">
-                <ServiceCard card={card} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+    <section className="w-full lg:-mt-[240px] md:-mt-[210px] max-md:-mt-[150px] max-sm:-mt-[80px] mb-20 z-50 relative serviceSlider">
+      <div className="page-width grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6 xl:grid-cols-3">
+        {cards?.map((card) => (
+          <ServiceCard key={card?.id} card={card} />
+        ))}
       </div>
     </section>
   );

@@ -18,14 +18,14 @@ const WhyChooseUs = () => {
         <div className="page-width">
           <div className="">
             <Button
-              title="why choose us"
+              title="your ongoing partner"
               classes="bg-secondary uppercase"
               enableIcons={true}
               iconStyle="stroke-secondary"
               href="/about-us"
             />
             <h2 className=" text-white mt-6">
-              WE PROVIDE THE BEST IT SOLUTION
+              Support that continues as your business evolves
             </h2>
           </div>
           <div className="flex items-start lg:flex-nowrap flex-wrap justify-start gap-4 mt-12">
@@ -39,9 +39,7 @@ const WhyChooseUs = () => {
                     />
                   }
                   title="CONSULTING"
-                  content="We provide effective consultations to our clients which
-                        helps customers and organizations to improve their
-                        performance."
+                  content="We learn how your business operates, clarify the outcomes that matter, and shape the work around your priorities."
                 />
                 <WhyChooseLeftCard
                   icon={
@@ -51,9 +49,7 @@ const WhyChooseUs = () => {
                     />
                   }
                   title="PRODUCTION"
-                  content="During the production, Experts take care of all the
-                        possible solutions and flexibilities for a better and
-                        more successful digital product."
+                  content="Our team works alongside yours through delivery, adapting the plan as real business needs become clearer."
                 />
                 <WhyChooseLeftCard
                   icon={
@@ -63,8 +59,7 @@ const WhyChooseUs = () => {
                     />
                   }
                   title="SUPPORT"
-                  content=" We don't abandon you. we provide 24/7 support and
-                        maintenance for your product."
+                  content="After launch, we remain available to maintain what is working and help you respond to what changes."
                 />
               </div>
             </div>

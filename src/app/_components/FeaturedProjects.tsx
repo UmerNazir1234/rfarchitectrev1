@@ -48,7 +48,7 @@ const FeaturedProjects = ({ data }: propsProjects) => {
         <div className="xl:ps-48 max-xl:px-4">
           <div className="flex items-center justify-center">
             <Button
-              title="featured projects"
+              title="CLIENT WORK"
               classes="bg-secondary"
               icon={true}
               href="/our-work"
@@ -56,7 +56,7 @@ const FeaturedProjects = ({ data }: propsProjects) => {
             />
           </div>
           <h2 className="text-white text-center mt-6 max-w-5xl m-auto ">
-            We Serve the Best Works View Case Studies
+            Business challenges met with practical delivery
           </h2>
           <div className="mt-16 relative">
             <Swiper

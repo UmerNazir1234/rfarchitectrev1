@@ -10,15 +10,36 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "@/context/ThemeContext";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useEffect, useState } from "react";
+import {
+  FiArrowRight,
+  FiBriefcase,
+  FiChevronDown,
+  FiGrid,
+  FiHome,
+  FiInfo,
+  FiMail,
+} from "react-icons/fi";
+
+const getMobileNavIcon = (name: string) => {
+  switch (name) {
+    case "Home":
+      return <FiHome />;
+    case "Services":
+      return <FiGrid />;
+    case "Our Work":
+      return <FiBriefcase />;
+    case "About Us":
+      return <FiInfo />;
+    default:
+      return <FiMail />;
+  }
+};
 
 const Header = () => {
   const pathname = usePathname();
   const { toggle, open } = useTheme();
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const handleDropdownToggle = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
+  const [activeDropdownId, setActiveDropdownId] = useState<number | null>(null);
+  const [mobileExpandedId, setMobileExpandedId] = useState<number | null>(null);
   const handleToggle = () => {
     toggle();
   };
@@ -59,28 +80,28 @@ const Header = () => {
                   {item?.links && item?.links?.length > 0 ? (
                     <div
                       className="relative"
-                      onMouseEnter={handleDropdownToggle}
-                      onMouseLeave={handleDropdownToggle}
+                      onMouseEnter={() => setActiveDropdownId(item.id)}
+                      onMouseLeave={() => setActiveDropdownId(null)}
                     >
                       <button
                         className={`flex items-center justify-center gap-1 ${
                           pathname == "" ? "text-primary !font-bold" : ""
                         } font-semibold text-xl hover:text-primary`}
-                        onClick={handleDropdownToggle}
+                        onClick={() => setActiveDropdownId(item.id)}
                       >
                         <span className="">{item?.name}</span>
                         <span
                           className={`transform transition-transform duration-300 ${
-                            dropdownOpen ? "rotate-180" : "rotate-0"
+                            activeDropdownId === item.id ? "rotate-180" : "rotate-0"
                           }`}
                         >
                           <MdKeyboardArrowDown />
                         </span>
                       </button>
-                      {dropdownOpen && (
+                      {activeDropdownId === item.id && (
                         <div
                           className={`fixed !z-50 inset-3 header-bg-custom top-[70px] h-fit min text-white rounded-xl  border-white border transition-all duration-300 ease-in-out transform ${
-                            dropdownOpen
+                            activeDropdownId === item.id
                               ? "opacity-100 translate-y-0"
                               : "opacity-0 -translate-y-5"
                           }`}
@@ -92,7 +113,11 @@ const Header = () => {
                             <div className="header-inside-color relative z-20">
                               <div className="flex items-center justify-center my-4 border-b-2 border-white pb-10 ">
                                 <Button
-                                  title="Services we offer"
+                                  title={
+                                    item.name === "Our Work"
+                                      ? "Explore our work"
+                                      : "Services we offer"
+                                  }
                                   classes="bg-transparent text-white"
                                   enableIcons={true}
                                   iconStyle="stroke-white"
@@ -108,8 +133,8 @@ const Header = () => {
                                       <div className="flex items-center justify-center min-h-36 p-4 gap-2 group-hover:bg-white group-hover:shadow group-hover:rounded-lg">
                                         <Link
                                           href={item?.link}
-                                          onClick={handleDropdownToggle}
-                                          className="block"
+                                          onClick={() => setActiveDropdownId(null)}
+                                          className="block w-full"
                                         >
                                           <div className="flex items-start justify-start gap-3">
                                             <div
@@ -169,28 +194,147 @@ const Header = () => {
         </div>
       </header>
       <nav
+        aria-label="Mobile navigation"
         className={`fixed z-100 inset-0  bg-white transform transition-transform w-full h-full block duration-300  ${
           open ? "translate-x-0" : "-translate-x-full"
         } xl:hidden`}
       >
-        <ul className="flex items-center justify-center gap-10 flex-col p-5 h-dvh bg-white ">
-          {menuItems?.map((item) => (
-            <li key={item.name}>
-              <Link
-                href={item.link}
-                onClick={() => handleToggle()}
-                className={`${
-                  pathname == item?.link ? "text-primary !font-bold" : ""
-                } font-semibold text-xl hover:text-primary`}
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <button className="absolute right-4 top-4" onClick={toggle}>
-          <MdClose className="icon icon-close" />
-        </button>
+        <div className="flex h-dvh flex-col overflow-hidden bg-light">
+          <div className="flex items-center justify-between border-b border-primary/10 px-5 py-4 sm:px-8">
+            <Link href="/" onClick={handleToggle} aria-label="RF Technologies home">
+              {Site?.logo ? (
+                <Image
+                  src={Site.logo}
+                  alt={`${Site.name} logo`}
+                  width={150}
+                  height={56}
+                  className="h-12 w-auto object-contain"
+                />
+              ) : (
+                <span className="text-xl font-bold text-primary">{Site?.name}</span>
+              )}
+            </Link>
+            <button
+              type="button"
+              aria-label="Close navigation"
+              onClick={handleToggle}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/15 text-primary transition-colors hover:bg-primary/5 active:bg-primary/10"
+            >
+              <MdClose className="h-6 w-6" />
+            </button>
+          </div>
+          <div className="flex-1 overflow-y-auto px-4 py-5 sm:px-8 sm:py-8">
+            <ul className="mx-auto flex max-w-xl flex-col gap-2">
+              {menuItems?.map((item) => {
+                const hasLinks = Boolean(item.links?.length);
+                const isExpanded = mobileExpandedId === item.id;
+                const isActive =
+                  pathname === item.link ||
+                  Boolean(item.links?.some((link) => pathname === link.link));
+                const rowClasses = `flex min-h-14 w-full items-center gap-4 rounded-xl px-4 py-3 text-left text-lg font-semibold transition-colors active:bg-primary/10 ${
+                  isActive
+                    ? "bg-primary/5 text-primary"
+                    : "text-primary hover:bg-primary/5"
+                }`;
+
+                return (
+                  <li key={item.name}>
+                    {hasLinks ? (
+                      <div className="overflow-hidden rounded-xl border border-primary/10 bg-white shadow-sm">
+                        <button
+                          type="button"
+                          aria-expanded={isExpanded}
+                          aria-controls={`mobile-nav-group-${item.id}`}
+                          onClick={() =>
+                            setMobileExpandedId(isExpanded ? null : item.id)
+                          }
+                          className={rowClasses}
+                        >
+                          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-secondary/15 text-primary">
+                            {getMobileNavIcon(item.name)}
+                          </span>
+                          <span className="flex-1">{item.name}</span>
+                          <FiChevronDown
+                            aria-hidden="true"
+                            className={`h-5 w-5 shrink-0 text-secondary transition-transform duration-300 ${
+                              isExpanded ? "rotate-180" : "rotate-0"
+                            }`}
+                          />
+                        </button>
+                        <div
+                          id={`mobile-nav-group-${item.id}`}
+                          className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+                            isExpanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                          }`}
+                        >
+                          <div className="min-h-0 overflow-hidden">
+                            <ul className="mx-4 mb-3 ml-8 border-l border-secondary/50 pl-3">
+                              {item.links?.map((link) => (
+                                <li key={link.id}>
+                                  <Link
+                                    href={link.link}
+                                    onClick={handleToggle}
+                                    aria-current={
+                                      pathname === link.link ? "page" : undefined
+                                    }
+                                    className={`flex min-h-12 items-center gap-3 rounded-lg px-3 py-2 text-base transition-colors active:bg-primary/10 ${
+                                      pathname === link.link
+                                        ? "bg-primary/5 font-semibold text-primary"
+                                        : "text-primary/80 hover:bg-primary/5 hover:text-primary"
+                                    }`}
+                                  >
+                                    <FiArrowRight
+                                      aria-hidden="true"
+                                      className="h-4 w-4 shrink-0 text-secondary"
+                                    />
+                                    <span>{link.title}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                              {item.name === "Services" && (
+                                <li>
+                                  <Link
+                                    href={item.link}
+                                    onClick={handleToggle}
+                                    aria-current={
+                                      pathname === item.link ? "page" : undefined
+                                    }
+                                    className="flex min-h-12 items-center gap-3 rounded-lg px-3 py-2 text-base font-semibold text-primary transition-colors hover:bg-primary/5 active:bg-primary/10"
+                                  >
+                                    <FiArrowRight
+                                      aria-hidden="true"
+                                      className="h-4 w-4 shrink-0 text-secondary"
+                                    />
+                                    <span>View all services</span>
+                                  </Link>
+                                </li>
+                              )}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <Link
+                        href={item.link}
+                        onClick={handleToggle}
+                        aria-current={pathname === item.link ? "page" : undefined}
+                        className={`${rowClasses} rounded-xl border border-transparent`}
+                      >
+                        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-secondary/15 text-primary">
+                          {getMobileNavIcon(item.name)}
+                        </span>
+                        <span className="flex-1">{item.name}</span>
+                        {pathname === item.link && (
+                          <span className="h-2 w-2 rounded-full bg-secondary" />
+                        )}
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
       </nav>
     </>
   );

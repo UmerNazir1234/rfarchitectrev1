@@ -35,11 +35,10 @@ interface MenuItem {
 }
 
 export const menuItems: MenuItem[] = [
-  { id: 1, name: "Who We Are?", link: "/about-us" },
-  { id: 2, name: "Our Work", link: "/our-work" },
+  { id: 1, name: "Home", link: "/" },
   {
-    id: 3,
-    name: "Our Services",
+    id: 2,
+    name: "Services",
     link: "/our-services",
     links: [
       {
@@ -125,7 +124,28 @@ export const menuItems: MenuItem[] = [
       },
     ],
   },
-  { id: 4, name: "BlueTicks", link: "/blueticks" },
+  {
+    id: 3,
+    name: "Our Work",
+    link: "/our-work",
+    links: [
+      {
+        id: 1,
+        icon: <PiProjectorScreenChart className="w-12 h-12" />,
+        title: "Portfolio & Case Studies",
+        description: "Explore the projects and results we have delivered for our clients.",
+        link: "/our-work",
+      },
+      {
+        id: 2,
+        icon: <BsKanban className="w-12 h-12" />,
+        title: "BlueTicks",
+        description: "Discover our event ticketing product and its capabilities.",
+        link: "/blueticks",
+      },
+    ],
+  },
+  { id: 4, name: "About Us", link: "/about-us" },
   { id: 5, name: "Contact Us", link: "/contact-us" },
 ];
 
