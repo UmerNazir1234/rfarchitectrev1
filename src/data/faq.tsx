@@ -22,7 +22,7 @@ interface Content {
   csd: Section;
 }
 
-const content: Content = {
+const legacyContent: Content = {
   faq: {
     title: "Frequently Asked Questions",
     items: [
@@ -316,6 +316,54 @@ const content: Content = {
           "Do you offer support and maintenance after the software is delivered?",
         answer:
           "Our process includes understanding your needs, developing initial concepts, refining designs based on your feedback, and delivering the final product. We ensure clear communication and collaboration throughout the project to achieve the best results.",
+      },
+    ],
+  },
+};
+
+const businessItems = [
+  legacyContent.faq.items[0],
+  ...legacyContent.grapicDesigning.items,
+  legacyContent.mobileApp.items[0],
+  legacyContent.digitalmarketing.items[0],
+  legacyContent.seo.items[0],
+  legacyContent.crm.items[0],
+  legacyContent.csd.items[0],
+].map((item, index) => ({ ...item, id: index + 1 }));
+
+const content = {
+  business: {
+    title: "Business FAQs",
+    items: businessItems,
+  },
+  founder: {
+    title: "Founder FAQs",
+    items: [],
+  },
+  shopify: {
+    title: "Shopify FAQs",
+    items: [legacyContent.shopify.items[0]],
+  },
+  partnership: {
+    title: "Technology Partnership FAQs",
+    items: [
+      {
+        id: 1,
+        question: "What does a technology partnership with RF Technologies look like?",
+        answer:
+          "We work with you over time, starting by understanding your business goals and priorities. From there, we can advise on the technology approach, plan and deliver agreed work, and continue collaborating as your needs evolve.",
+      },
+      {
+        id: 2,
+        question: "Who is the technology partnership model for?",
+        answer:
+          "It can suit agencies that need a technology delivery partner, startups developing a product, and businesses without an in-house technology team. The work is shaped around your goals, context, and available capabilities.",
+      },
+      {
+        id: 3,
+        question: "How is a technology partnership different from hiring a vendor for one project?",
+        answer:
+          "A one-off vendor relationship is usually centered on a defined brief and delivery. A technology partnership is more ongoing and consultative: we collaborate on priorities, discuss options, and adapt the work as the business and its needs change.",
       },
     ],
   },

@@ -8,7 +8,7 @@ const TicktingSolution = () => {
   return (
     <div className="text-center max-sm:pt-10">
       <Heading
-        title="SIMPLIFIED TICKETING <span class='text-secondary'>SOLUTIONS</span>"
+        title="THE PROBLEM"
         icon={true}
         iconStyle="stroke-primary"
         classes="text-primary font-bold drop-shadow-lg max-sm:text-xl "

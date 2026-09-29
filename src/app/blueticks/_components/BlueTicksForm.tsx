@@ -1,21 +1,21 @@
 import React from "react";
 import Form from "../Form";
 const benefits = {
-  title: "Benefits",
-  description: "All-in-one platform & integrated tech for seamless event management. Request a demo to see how you can:",
+  title: "Platform capabilities",
+  description: "BlueTicks gives organizations tools to:",
 
   benefitsList: [
     {
-      title: "Improved Efficiency",
-      description: "Reduces manual processing and long queues by offering digital ticketing."
+      title: "Manage events",
+      description: "Organize and promote events from one platform."
     },
     {
-      title: "Enhanced User Experience",
-      description: "Provides a simple and convenient way for students, faculty, and visitors to purchase and access tickets."
+      title: "Control ticket sales",
+      description: "Set ticket prices and manage sales directly."
     },
     {
-      title: "Centralized Event Management",
-      description: "Organize and promote all events from a single platform, increasing visibility and attendance."
+      title: "Customize branding",
+      description: "Tailor the platform to reflect the organization's identity."
     }
   ]
 };

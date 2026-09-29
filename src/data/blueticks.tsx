@@ -19,12 +19,11 @@
 
 export const blueTicksImageWithText = [
   {
-    title: "We Offer a Dedicated Platform",
-    subtitle:"Where The Organization Can",
+    title: "Ticketing without direct control",
+    subtitle: "The challenge",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727177035/RfTechnologiesWebsite/Group_1597883966_wztb7q.svg",
-    description: `❖<strong>Avoid Third-Party Charges</strong>:No more paying commissions or transaction fees to third-party platforms.</br>❖<strong>Full Control</strong>:Manage all aspects of event ticketing directly, including pricing, promotions, and customer engagement.</br>❖<strong>Branding and Customization:</strong>Tailor the platform to reflect the organization’s unique brand identity.​
-`,
+    description: `Organizations selling event tickets can face third-party service or transaction fees and limited control over ticket pricing, promotions, and customer engagement.`,
     btnLink: "/",
     btnTitle: "",
     ctaLink: "",
@@ -38,11 +37,11 @@ export const blueTicksImageWithText = [
 
 export const manageSales = [
   {
-    title: "Mission & Vision",
-    subtitle:"Our mission and vision is to be the leading e-ticketing platform globally BLUETICKS",
+    title: "APPROACH",
+    subtitle:"A dedicated, organization-controlled ticketing platform",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727178708/RfTechnologiesWebsite/Group_1597883968_wgfi0g.svg",
-    description: `Empowering organizations to manage and sell their event tickets independently.We aim to connect people with the moments that matter, making ticket purchasing easy, fast, and enjoyable for everyone.`,
+    description: `RF Technologies focused BlueTicks on independent event sales, giving organizations direct control over event management, pricing, promotions, and their branded experience.`,
     btnLink: "/",
     btnTitle: "",
     ctaLink: "",
@@ -56,10 +55,10 @@ export const manageSales = [
 
 export const createandcustom = [
   {
-    title: "Own Your Platform, Keep Your Profits",
+    title: "SOLUTION",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727188067/RfTechnologiesWebsite/Group_1597883970_ueae3x_1_ljlo85.png",
-    description: ` By adopting a dedicated E-ticketing platform, organizations can eliminate the need to pay service fees, transaction fees, and hidden costs to third-party providers`,
+    description: `BlueTicks is an e-ticketing platform where organizations can manage and promote events, manage ticket sales, set their own prices, and tailor the platform to their brand.`,
     btnLink: "/",
     btnTitle: "",
     ctaLink: "",
@@ -73,11 +72,10 @@ export const createandcustom = [
 
 export const managereports = [
   {
-    title: "Direct Control Over Pricing",
+    title: "BUSINESS IMPACT",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727182275/RfTechnologiesWebsite/Group_1597883974_stqlh1.png",
-    description: `Organizations can set their own ticket prices without worrying about additional fees cutting into their revenue, allowing for more competitive pricing and increased profit margins.
-`,
+    description: `The project materials describe intended benefits such as avoiding third-party service charges and keeping control of ticket pricing. They do not provide verified adoption, revenue, or efficiency results, so no measured outcome is reported here.`,
     btnLink: "/",
     btnTitle: "",
     ctaLink: "",
