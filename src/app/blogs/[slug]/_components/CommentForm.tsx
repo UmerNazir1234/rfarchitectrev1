@@ -120,7 +120,7 @@ const CommentForm = ({ id }: { id: any }) => {
             type="submit"
             className="btn bg-white !text-secondary btn--outline !px-16 !border-secondary"
           >
-            <span>Submit</span>
+            <span>Post Comment</span>
             {loading && (
               <AiOutlineLoading3Quarters className="ms-3 animate-spin" />
             )}

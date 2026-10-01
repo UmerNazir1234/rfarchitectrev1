@@ -32,3 +32,20 @@ export const formatDate = (dateString: string): string => {
   const date = new Date(dateString);
   return date.toLocaleDateString(undefined, options);
 };
+
+export const normalizeBlogAuthorName = (name?: string | null): string => {
+  if (!name) return "";
+
+  const normalized = name.trim();
+  const lowerCaseName = normalized.toLowerCase();
+
+  if (
+    lowerCaseName === "rao abraa ahmad" ||
+    lowerCaseName === "rao abraa ahmad " ||
+    lowerCaseName === "rao abraa ahmad"
+  ) {
+    return "Qasim Manzoor";
+  }
+
+  return normalized;
+};

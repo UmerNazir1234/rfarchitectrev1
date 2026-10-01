@@ -38,115 +38,129 @@ export const menuItems: MenuItem[] = [
   { id: 1, name: "Home", link: "/" },
   {
     id: 2,
-    name: "Services",
+    name: "Solutions",
     link: "/our-services",
     links: [
       {
         id: 1,
         icon: <IconShopify classes="w-12 h-12" />,
         iconBg: "#EBF6D3",
-        title: "Shopify Development",
-        description:
-          "Run Your business today with best e-commerce platform for online stores and retail point-of-sale systems.",
+        title: "Shopify Engineering",
+        description: "Engineering across the Shopify ecosystem, beyond storefronts.",
         link: "/shopify-development",
       },
       {
         id: 2,
-        icon: <IconCustomSoftDev classes="w-12 h-12" />,
+        icon: <IconApplicationDev classes="w-12 h-12" />,
         iconBg: "#FEF3F3",
-        title: "Custom Software Development",
-        description:
-          "Process of designing, creating, deploying, and maintaining software for a specific organizations.",
+        title: "Product & SaaS Development",
+        description: "Take digital products from idea through launch and scale.",
         link: "/custom-software-development",
       },
       {
         id: 3,
-        icon: <IconApplicationDev classes="w-12 h-12" />,
+        icon: <IconCustomSoftDev classes="w-12 h-12" />,
         iconBg: "#FEF3F3",
-        title: "Mobile Application Development",
-        description:
-          "Bring your project to market on every device and platform. attractive design and Fully Functional",
-        link: "/mobile-app-development",
+        title: "Custom Software",
+        description: "Purpose-built software for your business and operations.",
+        link: "/custom-software-development",
       },
       {
         id: 4,
-        icon: <IconWordpress classes="w-12 h-12" />,
-        iconBg: "#EAFCF3",
-        title: "Wordpress Development",
-        description:
-          "Fulfills your content management needs, event calendars, media management, and general page content.",
-        link: "/wordpress-development",
-      },
-      {
-        id: 5,
-        icon: <IconCrm classes="w-12 h-12" />,
-        iconBg: "#E9F3D3",
-        title: "CRM Development",
-        description:
-          "Get your personal CRM which allows for leads generation, assigning leads and staff management",
-        link: "/crm-development",
-      },
-      {
-        id: 6,
-        icon: <IconWoocommerce classes="w-12 h-12" />,
-        iconBg: "#EDE2F8",
-        title: "Woocommerce Development",
-        description:
-          "Turn your WordPress website into an E-commerce Store online fully customizable",
-        link: "/woocommerce-development",
-      },
-      {
-        id: 7,
-        icon: <IconGrapic classes="w-12 h-12" />,
-        iconBg: "#FDECF3",
-        title: "Graphic Designing",
-        description:
-          "Creation of visual compositions to solve problems and communicate ideas through typography, imagery, color and form",
-        link: "/graphic-design",
-      },
-      {
-        id: 8,
-        icon: <IconSeo classes="w-12 h-12" />,
-        iconBg: "#E3F4F9",
-        title: "Search Engine Optimization",
-        description:
-          "Process of improving the quality and quantity of website traffic to a website or a web page from search engines.",
-        link: "/seo",
-      },
-      {
-        id: 9,
-        icon: <IconDigitalMarketing classes="w-12 h-12" />,
-        iconBg: "#EBF4FA",
-        title: "Digital Marketing",
-        description:
-          "Promotion of brands to connect with potential customers using the internet and other forms of digital communication",
-        link: "/digital-marketing",
+        icon: <PiHandshakeLight className="w-12 h-12" />,
+        title: "Technology Partnership",
+        description: "Long-term engineering support aligned with your business.",
+        link: "/about-us",
       },
     ],
   },
   {
     id: 3,
-    name: "Our Work",
-    link: "/our-work",
+    name: "Products",
+    link: "/products",
     links: [
       {
         id: 1,
-        icon: <PiProjectorScreenChart className="w-12 h-12" />,
-        title: "Portfolio & Case Studies",
-        description: "Explore the projects and results we have delivered for our clients.",
-        link: "/our-work",
+        icon: <BsKanban className="w-12 h-12" />,
+        title: "BlueTicks",
+        description: "Explore our event ticketing product.",
+        link: "/blueticks",
       },
       {
         id: 2,
-        icon: <BsKanban className="w-12 h-12" />,
-        title: "BlueTicks",
-        description: "Discover our event ticketing product and its capabilities.",
-        link: "/blueticks",
+        icon: <PiProjectorScreenChart className="w-12 h-12" />,
+        title: "Spotly (Coming Soon)",
+        description: "A new product from RF Technologies.",
+        link: "/products#spotly",
+      },
+      {
+        id: 3,
+        icon: <TbBulb className="w-12 h-12" />,
+        title: "More Products Coming Soon",
+        description: "More products are in development.",
+        link: "/products#future-products",
       },
     ],
   },
-  { id: 4, name: "About Us", link: "/about-us" },
-  { id: 5, name: "Contact Us", link: "/contact-us" },
+  { id: 4, name: "Work", link: "/our-work" },
+  {
+    id: 5,
+    name: "Industries",
+    link: "/industries",
+    links: [
+      {
+        id: 1,
+        icon: <IconShopify classes="w-12 h-12" />,
+        title: "eCommerce",
+        description: "Digital commerce experiences and operations.",
+        link: "/industries/ecommerce",
+      },
+      {
+        id: 2,
+        icon: <TbBulb className="w-12 h-12" />,
+        title: "Startups",
+        description: "Build and grow digital products from the ground up.",
+        link: "/industries/startups",
+      },
+      {
+        id: 3,
+        icon: <BiCheckShield className="w-12 h-12" />,
+        title: "SMEs",
+        description: "Technology that supports practical business growth.",
+        link: "/industries/smes",
+      },
+      {
+        id: 4,
+        icon: <PiHandshakeLight className="w-12 h-12" />,
+        title: "Agencies",
+        description: "A dependable engineering partner for agency teams.",
+        link: "/industries/agencies",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Insights",
+    link: "/blogs",
+    links: [
+      {
+        id: 1,
+        icon: <TbVirusSearch className="w-12 h-12" />,
+        title: "Blog",
+        description: "Perspectives on technology, products, and commerce.",
+        link: "/blogs",
+      },
+      {
+        id: 2,
+        icon: <TbSettingsPause className="w-12 h-12" />,
+        title: "Resources",
+        description: "Helpful answers and practical guidance.",
+        link: "/faq",
+      },
+    ],
+  },
+  { id: 7, name: "About", link: "/about-us" },
+  { id: 8, name: "Contact", link: "/contact-us" },
 ];
 
 /* home */
@@ -272,14 +286,14 @@ export const featuredProjects = [
     id: 1,
     title: "Elite ECW",
 
-    url: "/our-work/#elite",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721996209/RfTechnologiesWebsite/elite_ejhwtj.webp",
   },
   {
     id: 2,
     title: "Wildflower",
-    url: "/our-work/#whildflower",
+    url: "/our-work",
 
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997065/RfTechnologiesWebsite/wearewildflower-300x145.webp_sopxw0.webp",
@@ -288,7 +302,7 @@ export const featuredProjects = [
     id: 3,
     title: "Thrust",
 
-    url: "/our-work/#thrust",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997760/RfTechnologiesWebsite/thrust-1-e1653319909879_hteovy.webp",
   },
@@ -296,7 +310,7 @@ export const featuredProjects = [
     id: 4,
     title: "Presto",
 
-    url: "/our-work/#presto",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997797/RfTechnologiesWebsite/other-1_uqi3w2.webp",
   },
@@ -304,7 +318,7 @@ export const featuredProjects = [
     id: 5,
     title: "The Lazy Monkey",
 
-    url: "/our-work/#thelazy",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997830/RfTechnologiesWebsite/lazy-monkey-1_cuq5dm.webp",
   },
@@ -312,7 +326,7 @@ export const featuredProjects = [
     id: 6,
     title: "Big Little Things",
 
-    url: "/our-work/#biglittlethings",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997866/RfTechnologiesWebsite/big-little-1-e1653320233846_ctxsjz.webp",
   },
@@ -320,7 +334,7 @@ export const featuredProjects = [
     id: 7,
     title: " Pump Apparel",
 
-    url: "/our-work/#pump",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997919/RfTechnologiesWebsite/pumpapparel-1-e1653320400598_i33jaj.webp",
   },
@@ -328,7 +342,7 @@ export const featuredProjects = [
     id: 8,
     title: "Niki's",
 
-    url: "/our-work/#niki",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997965/RfTechnologiesWebsite/nikisss-banner-img_rabd61.webp",
   },
@@ -336,7 +350,7 @@ export const featuredProjects = [
     id: 9,
     title: "EazyTicks",
 
-    url: "/our-work/#ezticks",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721998002/RfTechnologiesWebsite/EazyTicks-Image_rtyiio.webp",
   },
@@ -344,56 +358,56 @@ export const featuredProjects = [
     id: 10,
     title: "Elite Customizer",
 
-    url: "/our-work/#elitecustomizer",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721998034/RfTechnologiesWebsite/shopify-app_fkbokv.webp",
   },
   {
     id: 11,
     title: "Epic Neons",
-    url: "/our-work/#epic",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721998064/RfTechnologiesWebsite/epic-neons_tqjtxe.webp",
   },
   {
     id: 12,
     title: "Ozelu Studio",
-    url: "/our-work/#ozelu",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776302/RfTechnologiesWebsite/image_56_i69zku.png",
   },
   {
     id: 13,
     title: "EZFUNDRAZR",
-    url: "/our-work/#ezfundrazr",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
   },
   {
     id: 14,
     title: "Jenson Bike Shipping",
-    url: "/our-work/#jensonbikeshipping",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776300/RfTechnologiesWebsite/image_61_bbvb27.png",
   },
   {
     id: 15,
     title: "The Transparency",
-    url: "/our-work/#thetransparency",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776301/RfTechnologiesWebsite/image_57_nuez5n.png",
   },
   {
     id: 16,
     title: "Combine Marketing",
-    url: "/our-work/#combinemarketing",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776296/RfTechnologiesWebsite/image_66_sxtpis.png",
   },
   {
     id: 17,
     title: "Hard Core Mattress",
-    url: "/our-work/#hard",
+    url: "/our-work",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776295/RfTechnologiesWebsite/image_68_w2qfee.png",
   },
@@ -413,7 +427,7 @@ export const informationLinks = [
   },
   {
     id: 3,
-    name: "Portfolio",
+    name: "Work",
     link: "/our-work",
   },
   {
@@ -557,33 +571,33 @@ export const tabs: Tabs[] = [
 
 export const aboutTabs: Tabs[] = [
   {
-    label: "Knowledge",
+    label: "Business Understanding",
     content:
-      "Knowledge is the foundation of innovation. At RF Technologies, we believe that true power lies in not just acquiring knowledge, but in delivering it precisely when and where it's needed. Our team of experts is dedicated to guiding our clients with the insights they need to excel. We don't just speak to everyone; we focus on our target audience, communicating in a way that resonates with them. This strategic approach sets us apart from the competition, allowing us to cut through the noise and deliver unparalleled value.",
+      "We do not simply build software because it was requested. We learn how the business works, understand the people affected, and define the outcome that matters. Then we solve business problems using technology that fits the context.",
     icon: <TbBulb className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
-    label: "Promise",
+    label: "Shopify Engineering",
     content:
-      "Our commitment to our clients is unwavering. We make promises that we intend to keep, ensuring that every project we undertake is completed with the highest level of integrity and professionalism. At RF Technologies, a promise is more than just words; it's a bond of trust. We understand the importance of reliability in building long-lasting relationships, and we work tirelessly to uphold the trust our clients place in us.",
+      "Our commerce work extends across the Shopify ecosystem, not just storefronts. We consider the connected customer experience, integrations, and operations around a store, then engineer what the business needs to serve customers and run effectively.",
     icon: <PiHandshakeLight className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
-    label: "Consistency",
+    label: "Product Engineering",
     content:
-      "Consistency is key to our success. At RF Technologies, we are committed to maintaining a high standard of quality across all our services. Whether it's our approach to problem-solving or our attention to detail, consistency is what ensures our clients receive the same level of excellence every time they work with us. This steadfast dedication to quality is what keeps us ahead in a competitive industry.",
+      "Digital products need more than a first release. We work through the product journey from idea and prototype to MVP, launch, and scale, keeping business goals and user needs in view as decisions evolve.",
     icon: <VscTerminalUbuntu className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
-    label: "Authenticity",
+    label: "Technology Partnership",
     content:
-      "Authenticity is at the heart of everything we do. We believe in being true to our values and transparent in our dealings. At RF Technologies, authenticity means staying genuine in our approach, whether it's in our communication with clients or the way we conduct our business. This honesty and openness are what build trust and foster strong, enduring partnerships.",
+      "Our role can continue after launch. We work alongside client teams with long-term, embedded engineering support, building context over time and adapting as products, operations, and priorities change.",
     icon: <BiCheckShield className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
-    label: "Passion",
+    label: "Long-Term Growth",
     content:
-      "Passion drives us to go the extra mile. At RF Technologies, we are passionate about technology and its potential to transform businesses. This passion fuels our creativity and innovation, pushing us to deliver solutions that are not only effective but also inspiring. Our enthusiasm for what we do is evident in the results we achieve for our clients, making us a partner who is as invested in their success as they are.",
+      "We measure good partnership by whether the work continues to serve the business. We support teams beyond delivery, helping them respond to new opportunities, improve what is already in place, and make thoughtful next-step decisions.",
     icon: <SiFireship className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
 ];
@@ -598,6 +612,12 @@ export const work: Work[] = [
     link: "/case-studies/shopify/elite-ecw",
     text: "Elite Sports & Apparel",
     subtitle: "React Extension Shopify",
+    caseStudy: {
+      problem: "The existing case-study notes identify cart abandonment, customer trust, and store traffic as the key e-commerce challenges.",
+      approach: "The available project notes do not document the discovery and delivery approach in enough detail.",
+      solution: "A Shopify implementation with a React extension; the case notes also describe checkout, product information, trust, and acquisition improvements.",
+      businessImpact: "The notes describe intended improvements but provide no verified business-impact measurements.",
+    },
     color: "#28292D",
     textColor: "#FFFFFF",
     topBgFirstClr: "#28292D",
@@ -614,6 +634,12 @@ export const work: Work[] = [
     title: "Eazyticks",
     text: "Online E-Ticketing Platform",
     subtitle: "Nextjs & Microsoft .Net",
+    caseStudy: {
+      problem: "The customer's original business challenge is not documented in the available project notes.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "An online e-ticketing platform built with Next.js and Microsoft .NET.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#F85431",
     textColor: "#ffffff",
     topBgFirstClr: "#f85431",
@@ -630,6 +656,12 @@ export const work: Work[] = [
     title: "Ozelu Studio",
     text: "Traditional Photo Studio Services Online",
     subtitle: "Nextjs",
+    caseStudy: {
+      problem: "The brief was to bring traditional photo studio services online.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "A Next.js experience for accessing photo studio services online.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#378C84",
     textColor: "#FFFFFF",
     topBgFirstClr: "#f85431",
@@ -646,6 +678,12 @@ export const work: Work[] = [
     title: "EZFUNDRAZR",
     text: "FUNDRAISING MADE EASY",
     subtitle: "Microsoft.Net",
+    caseStudy: {
+      problem: "The available brief identifies fundraising as the business need but does not detail the original obstacles.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "A Microsoft .NET fundraising platform positioned to make fundraising easier.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#BFF1E9",
     textColor: "#000000",
     topBgFirstClr: "#f85431",
@@ -662,6 +700,12 @@ export const work: Work[] = [
     title: "Jenson Bike Shipping",
     text: "The Most Convenient, Affordable Way to Ship Your Bike and Gear",
     subtitle: "Shopify, UPS API integration",
+    caseStudy: {
+      problem: "The project brief centers on making bike and gear shipping convenient and affordable.",
+      approach: "The documented implementation paired Shopify with a UPS API integration.",
+      solution: "An online bike-and-gear shipping experience with UPS integration.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#00263A",
     textColor: "#ffffff",
     topBgFirstClr: "#f85431",
@@ -678,6 +722,12 @@ export const work: Work[] = [
     title: "The Coach Corner",
     text: "Communication/Stratagies Platform for Players & Coaches",
     subtitle: "Next Js, Microsoft .Net Core",
+    caseStudy: {
+      problem: "The project brief centers on communication and strategy between coaches and players.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "A communication and strategy platform built with Next.js and Microsoft .NET Core.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#133561",
     textColor: "#FFFFFF",
     topBgFirstClr: "#133561",
@@ -692,9 +742,15 @@ export const work: Work[] = [
     workId: "pump",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720776300/RfTechnologiesWebsite/image_63_vm0xvw.png",
-    title: "Pump Appearl",
+    title: "Pump Apparel",
     text: "Fitness Wear",
     subtitle: "Shopify , UX & UI Design",
+    caseStudy: {
+      problem: "The original business challenge is not documented in the available project notes.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "A Shopify and UX/UI experience for fitness apparel.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#932828",
     textColor: "#ffffff",
     topBgFirstClr: "#f85431",
@@ -711,6 +767,12 @@ export const work: Work[] = [
     title: "Niki's",
     text: "Natural Wipes & Parent’s Corner",
     subtitle: "Flutter Native App",
+    caseStudy: {
+      problem: "The specific need behind the app is not documented in the available project notes.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "A Flutter native app for Natural Wipes and Parent's Corner.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#4EB4BA",
     textColor: "#000000",
     topBgFirstClr: "#f85431",
@@ -727,6 +789,12 @@ export const work: Work[] = [
     title: "Big Little Things.",
     text: "WordPress E-commerce",
     subtitle: "",
+    caseStudy: {
+      problem: "The business challenge behind the e-commerce project has not been documented yet.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "A WordPress e-commerce experience.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#F4AE0F",
     textColor: "#ffffff",
     topBgFirstClr: "#f85431",
@@ -743,6 +811,12 @@ export const work: Work[] = [
     title: "Combine Marketing",
     text: "Find All Good Projects In One Place",
     subtitle: "WordPress Elementor",
+    caseStudy: {
+      problem: "The project brief describes a need to find relevant projects in one place; further business context is not documented.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "A WordPress Elementor experience for finding projects in one place.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#5089C6",
     textColor: "#ffffff",
     topBgFirstClr: "#f85431",
@@ -759,6 +833,12 @@ export const work: Work[] = [
     title: "Hard Core Mattress",
     text: "We Specialize In Hard Foam Mattresses!",
     subtitle: "WordPress Elementor, Woocommerce",
+    caseStudy: {
+      problem: "The specific business challenge behind the storefront is not documented in the available project notes.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "A WordPress and WooCommerce storefront for a specialty hard-foam mattress business.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#FDF4E6",
     textColor: "#28292D",
     topBgFirstClr: "#f85431",
@@ -773,14 +853,64 @@ export const work: Work[] = [
     workId: "whildflower",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721997065/RfTechnologiesWebsite/wearewildflower-300x145.webp_sopxw0.webp",
-    text: "We Specialize In Hard Foam Mattresses!",
-    subtitle: "WordPress Elementor, Woocommerce",
+    text: "Wildflower project details are being confirmed.",
+    subtitle: "Case study details pending",
+    caseStudy: {
+      problem: "The business problem has not been documented yet.",
+      approach: "The project discovery and delivery approach has not been documented yet.",
+      solution: "The delivered solution has not been confirmed yet.",
+      businessImpact: "No measured business impact has been provided.",
+    },
     color: "#e6e6e6",
     textColor: "#28292D",
     topBgFirstClr: "#000",
     topBgSecondClr: "#000",
     bottomBgSecondClr: "#e6e6e6",
     bottomBgFirstClr: "#e6e6e6",
+    imageFirst: true,
+  },
+  {
+    id: 13,
+    workId: "blueticks",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727173589/RfTechnologiesWebsite/Group_1597883988_hqegge.png",
+    title: "BlueTicks",
+    text: "An organization-controlled e-ticketing platform for independent event sales.",
+    subtitle: "Event management, ticket sales, pricing, and promotions",
+    caseStudy: {
+      problem: "Organizations selling event tickets can face third-party service or transaction fees and limited control over pricing, promotions, and customer engagement.",
+      approach: "RF Technologies focused BlueTicks on independent event sales and direct organizational control.",
+      solution: "A branded e-ticketing platform for managing and promoting events, ticket sales, pricing, and the organization experience.",
+      businessImpact: "No measured business results have been provided. The documented intended benefit is greater control over event sales and pricing.",
+    },
+    color: "#002475",
+    textColor: "#FFFFFF",
+    topBgFirstClr: "#002475",
+    topBgSecondClr: "#002475",
+    bottomBgSecondClr: "#EDAC18",
+    bottomBgFirstClr: "#002475",
+    imageFirst: false,
+  },
+  {
+    id: 14,
+    workId: "spotly",
+    image:
+      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721470809/RfTechnologiesWebsite/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279_e7mp3b.jpg",
+    title: "Spotly (Coming Soon)",
+    text: "A platform connecting everyday users and businesses with their favorite celebrities.",
+    subtitle: "Personalized celebrity services for personal and business occasions",
+    caseStudy: {
+      problem: "Everyday users and businesses need a way to request personalized celebrity content for personal or business occasions.",
+      approach: "The product is organized around direct requests for personalized celebrity services; further product-development details are not documented yet.",
+      solution: "A platform for requesting personalized voice notes, video messages, special event wishes, promotional content, and other celebrity services.",
+      businessImpact: "Spotly is coming soon, so adoption and business-impact results are not available yet.",
+    },
+    color: "#28292D",
+    textColor: "#FFFFFF",
+    topBgFirstClr: "#28292D",
+    topBgSecondClr: "#28292D",
+    bottomBgSecondClr: "#EDAC18",
+    bottomBgFirstClr: "#28292D",
     imageFirst: true,
   },
 ];

@@ -28,7 +28,7 @@ const Index = () => {
       <Hero
         title={`<span class="text-secondary">CRM</span>  Development`}
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721737499/RfTechnologiesWebsite/customer-relationship-management-concept_2_webhmt.svg"
-        btnTitle="Lets Talk"
+        btnTitle="Discuss Your Project"
         btnIcon={<GoArrowUpRight />}
         href="/contact-us"
         classes="bg-white !text-primary"
@@ -52,9 +52,9 @@ const Index = () => {
       <Stacks />
       <Faq data={crmFaqs} classes="py-24" />
       <ProjectSubmission
-        title="Submit Your Project"
+        title="Discuss Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        btnTitle="Submit Your Project"
+        btnTitle="Discuss Your Project"
         btnUrl="/"
       />
     </div>

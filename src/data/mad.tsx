@@ -2,7 +2,7 @@ const content = {
     banner: {
       id: 1,
       title: `<span class="text-secondary">Mobile App</span> Development`,
-      btnText: "LET’S TALK",
+      btnText: "Discuss Your Project",
       btnLink: "/contact-us",
       image:
         "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720687833/RfTechnologiesWebsite/representation-user-experience-interface-design_1_1_jpayhx.png",

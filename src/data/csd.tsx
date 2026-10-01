@@ -2,7 +2,7 @@ const content = {
   banner: {
     id: 1,
     title: `<span class="text-secondary">Custom Software</span> Development`,
-    btnText: "LET’S TALK",
+    btnText: "Discuss Your Project",
     btnLink: "/contact-us",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721664492/RfTechnologiesWebsite/programming-background-with-person-working-with-codes-computer_1_cglxcf.png",

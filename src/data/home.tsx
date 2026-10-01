@@ -54,19 +54,19 @@ const homeContent: HomeContent = {
     {
       id: 1,
       title:
-        "A BUSINESS PARTNER FOR <span class='text-secondary'>CHANGE THAT LASTS</span>",
+        "TECHNOLOGY PARTNER FOR <span class='text-secondary'>DIGITAL PRODUCTS & COMMERCE</span>",
       url: "/contact-us",
       description:
-        "For growing businesses facing operational bottlenecks or customer-growth challenges. One accountable partner aligns the right strategy, delivery, and ongoing support, trusted by 200+ clients.",
+        "We solve business problems using technology, from the first discovery conversation through launch, ongoing support, and growth.",
       image:
         "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1722243811/RfTechnologiesWebsite/Desktop_-_9_lcv48g.png",
     },
     {
       id: 2,
-      title: "YOUR BUSINESS GOALS, <span class='text-secondary'>FIRST</span>",
+      title: "BUSINESS PROBLEMS, <span class='text-secondary'>SOLVED WITH TECHNOLOGY</span>",
       url: "/contact-us",
       description:
-        "We help growing teams solve real business challenges with practical digital solutions, from the first conversation through launch and continued improvement.",
+        "We understand your business, recommend the right solution, and stay alongside your team as the product or commerce experience grows.",
       image:
         "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727169916/RfTechnologiesWebsite/Desktop_-_10_ieqlla.png",
     },
@@ -76,7 +76,7 @@ const homeContent: HomeContent = {
     title: "Solve the business problem behind the brief",
     content: `From attracting customers and improving digital experiences to removing operational friction, we match the right service to the work in front of you. Our team can deliver one focused improvement or support connected needs across your business.
 `,
-    btnText: "Discuss Your Priorities",
+    btnText: "Discuss Your Project",
     btnLink: "/contact-us",
     cards: [
       {

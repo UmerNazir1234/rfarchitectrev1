@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import IconConsulting from "@/components/Icons/IconConsulting";
-import IconReact from "@/components/Icons/IconReact";
+import IconShopify from "@/components/Icons/IconShopify";
 import IconSupport from "@/components/Icons/IconSupport";
 import React from "react";
 import WhyChooseRightCard from "./WhyChooseRightCard";
@@ -18,14 +18,14 @@ const WhyChooseUs = () => {
         <div className="page-width">
           <div className="">
             <Button
-              title="your ongoing partner"
+              title="OUR FOUR PILLARS"
               classes="bg-secondary uppercase"
               enableIcons={true}
               iconStyle="stroke-secondary"
               href="/about-us"
             />
             <h2 className=" text-white mt-6">
-              Support that continues as your business evolves
+              Technology shaped around your business and its goals
             </h2>
           </div>
           <div className="flex items-start lg:flex-nowrap flex-wrap justify-start gap-4 mt-12">
@@ -33,13 +33,13 @@ const WhyChooseUs = () => {
               <div className="flex items-start justify-center flex-col gap-6 itSolutionCard">
                 <WhyChooseLeftCard
                   icon={
-                    <IconConsulting
+                    <IconShopify
                       fill="group-hover:fill-primary"
                       classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100 "
                     />
                   }
-                  title="CONSULTING"
-                  content="We learn how your business operates, clarify the outcomes that matter, and shape the work around your priorities."
+                  title="SHOPIFY ENGINEERING"
+                  content="We engineer across the Shopify ecosystem, not just storefronts, connecting commerce experiences, integrations, and operations."
                 />
                 <WhyChooseLeftCard
                   icon={
@@ -48,18 +48,28 @@ const WhyChooseUs = () => {
                       classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100"
                     />
                   }
-                  title="PRODUCTION"
-                  content="Our team works alongside yours through delivery, adapting the plan as real business needs become clearer."
+                  title="PRODUCT ENGINEERING"
+                  content="We take products from idea to prototype, MVP, launch, and scale with engineering grounded in real user and business needs."
                 />
                 <WhyChooseLeftCard
                   icon={
-                    <IconReact
+                    <IconSupport
                       fill="group-hover:stroke-primary"
                       classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100"
                     />
                   }
-                  title="SUPPORT"
-                  content="After launch, we remain available to maintain what is working and help you respond to what changes."
+                  title="TECHNOLOGY PARTNERSHIP"
+                  content="We provide long-term, embedded engineering support, staying alongside your team as priorities and products evolve."
+                />
+                <WhyChooseLeftCard
+                  icon={
+                    <IconConsulting
+                      fill="group-hover:fill-primary"
+                      classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100 "
+                    />
+                  }
+                  title="BUSINESS UNDERSTANDING"
+                  content="We solve business problems using technology. We first understand how your business works, then recommend the right solution."
                 />
               </div>
             </div>

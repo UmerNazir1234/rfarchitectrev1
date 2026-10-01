@@ -18,7 +18,7 @@ const Index = () => {
       <Hero
         title={`<span class="text-secondary">Frequently Asked </span> Questions`}
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721663715/RfTechnologiesWebsite/question-mark-icon-solving-problem-solution-concept_1_typb1e.png"
-        btnTitle="Lets Talk"
+        btnTitle="Discuss Your Project"
         btnIcon={<GoArrowUpRight />}
         href="/contact-us"
         classes="bg-white !text-primary"
@@ -28,9 +28,9 @@ const Index = () => {
       <Faq title={shopify?.title} data={shopify?.items} />
       <Faq title={partnership?.title} data={partnership?.items} />
       <ProjectSubmission
-        title="Submit Your Project"
+        title="Discuss Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        btnTitle="Submit Your Project"
+        btnTitle="Discuss Your Project"
         btnUrl="/"
       />
     </div>

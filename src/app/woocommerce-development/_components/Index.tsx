@@ -21,7 +21,7 @@ const Index = () => {
       <Hero
         title={`<span class="text-secondary">WOO - Commerce</span> Development`}
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721639866/RfTechnologiesWebsite/fikret-tozak-Zk--Ydz2IAs-unsplash_vmk6pk.svg"
-        btnTitle="Lets Talk"
+        btnTitle="Discuss Your Project"
         btnIcon={<GoArrowUpRight />}
         href="/contact-us"
         classes="bg-white !text-primary"
@@ -38,9 +38,9 @@ const Index = () => {
       <Stacks />
       <Faq data={woocomemrcefaq} classes="lg:py-24 md:py-16 py-8" />
       <ProjectSubmission
-        title="Submit Your Project"
+        title="Discuss Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        btnTitle="Submit Your Project"
+        btnTitle="Discuss Your Project"
         btnUrl="/"
       />
     </>

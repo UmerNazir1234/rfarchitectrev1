@@ -72,65 +72,51 @@ interface Content {
 
 const content = {
   banner: {
-    title: `WHO WE ARE <span class="text-secondary">?</span>`,
+    title: `TECHNOLOGY PARTNER FOR <span class="text-secondary">DIGITAL PRODUCTS & COMMERCE</span>`,
     image: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719827376/RfTechnologiesWebsite/aboutusimage_q5msz5.jpg`,
   },
   about: {
-    title: "about rf technologies",
-    description: `We are a team of endless innovators striving to connect dots and
-            people. A <span class="!italic text-secondary">true leading company </span>
-            with sustained commitments to your
-            <span class='!italic text-secondary'>business goals </span>. We are always
-            searching for an experienced approach to help brands understand the
-            digital role of solving real business problems,
-            <span class="!italic text-secondary">finding opportunities </span>, and
-            giving them intangible results. In our environment, you will get to
-            learn, earn, grow and discover. When everything gets blurry our vision
-            helps us to <span class="!italic text-secondary">stay focused</span>. Our
-            staff contains all types of thinkers and innovators that are coming
-            from all walks of life. Our success formula drives all possible
-            approaches to make a drastic inclusion. We as a team serve and
-            <span class="!italic text-secondary">deliver the best</span> to our
-            customers.`,
+      title: "technology partner for digital products and commerce",
+      description: `We do not start with a software brief and assume the answer. <span class="!italic text-secondary">We solve business problems using technology.</span> That starts with understanding how your business works, what your customers need, and what progress should look like.
+        <br/><br/>This understanding guides our work across the Shopify ecosystem, beyond storefronts; product engineering from idea and prototype through MVP, launch, and scale; and long-term partnerships where our engineers work alongside your team. We recommend the right solution for the challenge, then stay involved as it is built, launched, supported, and grown.`,
     dotsImage: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719912842/RfTechnologiesWebsite/Group_1597883856_r26khq.png`,
     rfLogo: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719848735/RfTechnologiesWebsite/Trade_Mark-02_2_oggpmo.png`,
     letsItImage: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719913174/RfTechnologiesWebsite/Let_s_get_IT_done_isjw4p.png`,
   },
   wearerf: {
-    title: "we are rf tech",
+    title: "we are rf technologies",
     description:
-      "Our company was established in late 2018. Our main office is situated in Rawalpindi where our staff is available 24 hours a day. We work as a team there and provide them with our maximum efforts. A friendly environment enables our clients to completely speak their minds. So we can have an idea about what type of work they expected from us. And we are always so on with their expectations.",
+      "Founded in 2018, RF Technologies brings product thinking and engineering together. We work closely with clients to understand their business, align on the outcome they need, and build a partnership that can continue beyond launch.",
   },
   experience: {
-    title: "Experience Talk",
-    description: `In the era of the 20th century, our lives are dependent on technologies and we are bound to these gadgets. These robotic machines have turned our lives into survival mode.</br></br>
-    What would be the success definition in our words? Or how we interrupt failures in our lives? Yes, we called success to a well-settled business, air-conditioned offices with well-furnished furniture. We give importance to materialistic things but not to life's moral and ethical values.
-    </br></br>
-    Why do people clap on other successes and feel sad about their failures? We have fed our minds that success brings prosperity to lives. That is just a stubborn statement made by ourselves.`,
+    title: "Business understanding comes first",
+    description: `Building software is not the goal by itself. The goal is to solve a real business problem using technology.</br></br>
+    Before recommending an approach, we learn how the business operates, where customers or teams encounter friction, and what a useful result would mean. That context helps us choose what to build, what to integrate, and what not to overcomplicate.</br></br>
+    We bring the same business-first thinking to commerce engineering and digital products, and stay accountable through delivery and ongoing support.`,
   },
   vision: {
     ourvision: {
       id: 1,
       title: "our vision",
       detials:
-        "We wanted to master the world with our latest technologies and techniques. Through advancement, in digital means, we aspire to be leaders. Satisfaction, innovation, teamwork, and dedication are the prime values of our company and these values define who we are, how we work, and what we strive for. These core values and modulation reflect the internal theme of our company.",
+        "To be a trusted technology partner for digital products and commerce, helping organizations turn business challenges into useful, lasting digital experiences.",
     },
     ourmission: {
       id: 1,
       title: "our mission",
       detials:
-        "How many times have you been changing channels and eventually seen an entrepreneur giving advice or what was your feeling when the last time you held a magazine and again a successful man gave his intellectual ideas? That time you held your breath and wanted to be one of them. Our goal is to take advantage of technology for our welfare as well as those who are connected with us. We have a whole different perception of seeing the world. We consider your values and ethics and try to convince you according to them. We have also brought revolutionary change to many of our clients’ lives.",
+        "To understand each business before recommending a solution, then bring the right engineering to build, launch, and support it. From Shopify ecosystem work to products developed from idea through scale, we aim to solve the problem at hand and grow with the teams we serve.",
     },
     image: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720612053/Vector_2_ds4oyb.png`,
   },
   projectSubmission: {
-    title: "Submit Your Project",
+    title: "Discuss Your Project",
     details:
-      "Let us know your requirements and we’ll get back to you as soon as possible.",
+      "Tell us about the business challenge, digital product, or commerce opportunity you want to move forward.",
     email: "info@rftechnologies.com",
     number: "00 000 0000",
     btnurl: "/contact-us",
-    btntitle: "submit your project",
+    btntitle: "Discuss Your Project",
   },
   tabs: {
     1: {

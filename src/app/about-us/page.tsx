@@ -1,8 +1,8 @@
 import React from "react";
 import AboutUs from "./_component/AboutUs";
 import { Metadata } from "next";
-const title = `About Us - Discover RF Tech's Mission & Expertise`;
-const description = `Explore the story behind RF Tech. Find out how our commitment to innovation and excellence drives our digital marketing and development services.
+const title = `About RF Technologies | Digital Products & Commerce Partner`;
+const description = `Meet RF Technologies, a technology partner for digital products and commerce. We solve business problems using technology through Shopify engineering, product engineering, and long-term partnership.
 `;
 const URL = "/about-us";
 

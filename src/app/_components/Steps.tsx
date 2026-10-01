@@ -18,13 +18,14 @@ const Steps = ({ classes }: props) => {
           />
         </div>
         <h2 className="!text-primary text-center mt-4 max-w-5xl m-auto">
-          A clear path from business challenge to measurable progress
+          Discover → Understand Your Business → Recommend the Right Solution →
+          Build → Launch → Support → Grow
         </h2>
         <div className="block xl:min-h-[600px] sm:min-h-[500] min-h-[300px] w-full relative md:mt-20">
           <Image
             src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720172066/RfTechnologiesWebsite/Group_1597883770_bag6zl.png"
             loading="lazy"
-            alt="Steps to Build a SuccessfulDigital Product"
+            alt="Our journey: Discover, Understand Your Business, Recommend the Right Solution, Build, Launch, Support, and Grow"
             fill
             objectFit="contain"
             className=""

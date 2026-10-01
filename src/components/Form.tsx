@@ -204,7 +204,7 @@ const Form = ({ data }: FormProps) => {
             disabled={loading}
             className="btn bg-white !text-secondary lg:!px-32 !px-24"
           >
-            <span>Submit</span>
+            <span>Send</span>
             {loading && (
               <AiOutlineLoading3Quarters className="ms-3 animate-spin" />
             )}

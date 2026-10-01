@@ -129,7 +129,7 @@ const page = ({ params }: { params: { tech: techKeys; project: string } }) => {
       <ProjectSubmission
         title="Build Your Vision with Us"
         description="RF Technologies creates cutting-edge, user-centric websites and digital solutions. Contact us today to bring your vision to life"
-        btnTitle="Contact us"
+        btnTitle="Discuss Your Project"
         btnUrl="/contact-us"
       />
     </>

@@ -26,7 +26,7 @@ const Index = () => {
       <Hero
         title={content?.banner?.title}
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720779660/RfTechnologiesWebsite/image_70_unicwe.png"
-        btnTitle="Lets Talk"
+        btnTitle="Discuss Your Project"
         btnIcon={<GoArrowUpRight />}
         href="/contact-us"
         classes="bg-white !text-primary "
@@ -54,9 +54,9 @@ const Index = () => {
       <CaseStudySection />
       <Faq data={content?.faqs} classes="md:!py-24 !py-8" />
       <ProjectSubmission
-        title="Submit Your Project"
+        title="Discuss Your Project"
         description="Let us know your requirements and we'll get back to you as soon as possible."
-        btnTitle="Submit Your Project"
+        btnTitle="Discuss Your Project"
         btnUrl="/contact-us"
       />
     </>

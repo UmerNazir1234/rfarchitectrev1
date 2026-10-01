@@ -12,23 +12,32 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { useEffect, useState } from "react";
 import {
   FiArrowRight,
+  FiBookOpen,
   FiBriefcase,
   FiChevronDown,
   FiGrid,
   FiHome,
   FiInfo,
+  FiLayers,
   FiMail,
+  FiPackage,
 } from "react-icons/fi";
 
 const getMobileNavIcon = (name: string) => {
   switch (name) {
     case "Home":
       return <FiHome />;
-    case "Services":
+    case "Solutions":
       return <FiGrid />;
-    case "Our Work":
+    case "Products":
+      return <FiPackage />;
+    case "Work":
       return <FiBriefcase />;
-    case "About Us":
+    case "Industries":
+      return <FiLayers />;
+    case "Insights":
+      return <FiBookOpen />;
+    case "About":
       return <FiInfo />;
     default:
       return <FiMail />;
@@ -114,9 +123,9 @@ const Header = () => {
                               <div className="flex items-center justify-center my-4 border-b-2 border-white pb-10 ">
                                 <Button
                                   title={
-                                    item.name === "Our Work"
-                                      ? "Explore our work"
-                                      : "Services we offer"
+                                    item.name === "Work"
+                                      ? "Explore case studies"
+                                      : `Explore ${item.name.toLowerCase()}`
                                   }
                                   classes="bg-transparent text-white"
                                   enableIcons={true}
@@ -183,7 +192,7 @@ const Header = () => {
           </nav>
           <div className="flex items-center justify-between  sm:gap-4 gap-2  ">
             <Button
-              title="Get Started"
+              title="Discuss Your Project"
               classes="!capitalize bg-gradient-to-b from-primary to-primarylight !text-[22px] !px-12 max-sm:!px-4 max-sm:!py-2 max-sm:!text-xl max-sm:hidden"
               href="/contact-us"
             />
@@ -291,7 +300,7 @@ const Header = () => {
                                   </Link>
                                 </li>
                               ))}
-                              {item.name === "Services" && (
+                              {item.name === "Solutions" && (
                                 <li>
                                   <Link
                                     href={item.link}
@@ -305,7 +314,7 @@ const Header = () => {
                                       aria-hidden="true"
                                       className="h-4 w-4 shrink-0 text-secondary"
                                     />
-                                    <span>View all services</span>
+                                    <span>View all solutions</span>
                                   </Link>
                                 </li>
                               )}

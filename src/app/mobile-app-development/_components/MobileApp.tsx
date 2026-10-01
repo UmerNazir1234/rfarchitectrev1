@@ -18,7 +18,7 @@ const MobileApp = () => {
       <Hero
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720687833/RfTechnologiesWebsite/representation-user-experience-interface-design_1_1_jpayhx.png"
         title={`<span class="text-secondary">Mobile App</span> Development`}
-        btnTitle="LET'S TALK"
+        btnTitle="Discuss Your Project"
         href="/"
         classes="bg-white !text-primary"
         btnIcon={<GoArrowUpRight className="fill-primary icon icon--up" />}
@@ -34,9 +34,9 @@ const MobileApp = () => {
       <OurStack />
       <Faq data={madFaqs} />
       <ProjectSubmission
-        title="Submit Your Project"
+        title="Discuss Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        btnTitle="Submit Your Project"
+        btnTitle="Discuss Your Project"
         btnUrl="/"
       />
     </>

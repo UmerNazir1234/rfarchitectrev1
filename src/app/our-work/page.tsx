@@ -1,9 +1,9 @@
 import React from "react";
 import OurWork from "./_components/OurWork";
 import { Metadata } from "next";
-const title = `Portfolio - RF Tech's Best Work & Case Studies`;
-const description = `Explore RF Tech’s portfolio to see our successful projects and case studies. Discover how our digital solutions drive business results.`;
-const URL = "/portfolio";
+const title = `Work & Case Studies | RF Technologies`;
+const description = `Explore RF Technologies case studies to see the business challenges, approaches, and digital solutions behind our client work.`;
+const URL = "/our-work";
 
 export const metadata: Metadata = {
   title,

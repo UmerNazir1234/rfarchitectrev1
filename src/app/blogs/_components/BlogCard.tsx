@@ -1,6 +1,6 @@
 "use client";
 import { BlogPost } from "@/lib/type";
-import { formatDate } from "@/lib/utils";
+import { formatDate, normalizeBlogAuthorName } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -50,14 +50,14 @@ const BlogCard = ({ data }: BlogProps) => {
                         ? item?.author?.image
                         : "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1723542314/RfTechnologiesWebsite/27470334_7309681_yjzb6l_ewsoc4.jpg"
                     }`}
-                    alt={`${item?.author?.name}`}
+                    alt={`${normalizeBlogAuthorName(item?.author?.name) || "Author"}`}
                     width={44}
                     height={44}
                     className="rounded-full w-[32px] h-[32px]"
                   />
                   <div>
                     <p className="text-lg font-medium text-gray-700 mb-0">
-                      {item?.author?.name}
+                      {normalizeBlogAuthorName(item?.author?.name)}
                     </p>
                   </div>
                 </div>

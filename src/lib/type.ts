@@ -13,6 +13,12 @@ export type Work = {
   title: string;
   text: string;
   subtitle: string;
+  caseStudy?: {
+    problem: string;
+    approach: string;
+    solution: string;
+    businessImpact: string;
+  };
   color?: string;
   link?: string;
   textColor?: string;

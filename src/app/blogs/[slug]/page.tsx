@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import CommentForm from "./_components/CommentForm";
-import { baseURL, formatDate } from "@/lib/utils";
+import { baseURL, formatDate, normalizeBlogAuthorName } from "@/lib/utils";
 import fetchClient from "@/helpers/fetchClient";
 import { BlogPost } from "@/lib/type";
 import PageError from "@/components/PageError";
@@ -24,13 +24,13 @@ const page = async ({ params }: any) => {
                 ? article?.author?.image
                 : "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721904405/RfTechnologiesWebsite/Ellipse_59_rz7akd.png"
             }`}
-            alt={article?.author?.name}
+            alt={normalizeBlogAuthorName(article?.author?.name) || "Author"}
             width={50}
             height={50}
             className="w-10 h-10 rounded-full"
           />
           <p className="text-xl font-medium text-gray-600">
-            {article?.author?.name}
+            {normalizeBlogAuthorName(article?.author?.name)}
           </p>
         </div>
         {article?.createdAt && (

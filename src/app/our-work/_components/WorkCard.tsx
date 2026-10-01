@@ -72,6 +72,18 @@ const WorkCard = ({ work }: WorkProps) => {
                   <h2 className="text-4xl md:text-6xl">{item?.title}</h2>
                   <p className="font-nunito max-md:text-center !leading-normal text-lg md:text-xl">
                     {item?.text}
+                    {item?.caseStudy && (
+                      <>
+                        <br />
+                        <strong>Problem:</strong> {item.caseStudy.problem}
+                        <br />
+                        <strong>Approach:</strong> {item.caseStudy.approach}
+                        <br />
+                        <strong>Solution:</strong> {item.caseStudy.solution}
+                        <br />
+                        <strong>Business impact:</strong> {item.caseStudy.businessImpact}
+                      </>
+                    )}
                   </p>
                   <h4 className=" text-lg md:text-xl max-sm:text-center font-nunito">
                     {item?.subtitle}

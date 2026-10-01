@@ -22,7 +22,7 @@ const Index = () => {
       <Hero
         title={`<span class="text-secondary">WordPress</span> Development`}
         image="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721639866/RfTechnologiesWebsite/fikret-tozak-Zk--Ydz2IAs-unsplash_vmk6pk.svg"
-        btnTitle="Lets Talk"
+        btnTitle="Discuss Your Project"
         btnIcon={<GoArrowUpRight />}
         href="/contact-us"
         classes="bg-white !text-primary"
@@ -35,9 +35,9 @@ const Index = () => {
       <Stacks />
       <Faq data={wordpressfaq} classes="py-24" />
       <ProjectSubmission
-        title="Submit Your Project"
+        title="Discuss Your Project"
         description="Let us know your requirements and we’ll get back to you as soon as possible."
-        btnTitle="Submit Your Project"
+        btnTitle="Discuss Your Project"
         btnUrl="/contact-us"
       />
     </>

@@ -48,7 +48,7 @@ const FeaturedProjects = ({ data }: propsProjects) => {
         <div className="xl:ps-48 max-xl:px-4">
           <div className="flex items-center justify-center">
             <Button
-              title="CLIENT WORK"
+              title="CASE STUDIES"
               classes="bg-secondary"
               icon={true}
               href="/our-work"

@@ -176,7 +176,7 @@ const BecomePartnerForm = () => {
                   className="btn bg-primary !text-secondary lg:!px-32 !px-24 
                   !text-white"
                 >
-                  <span>Submit</span>
+                  <span>Send Inquiry</span>
                   {loading && (
                     <AiOutlineLoading3Quarters className="ms-3 animate-spin" />
                   )}

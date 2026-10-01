@@ -53,7 +53,7 @@ const HeroSlider = ({ data }: HeroSliderProps) => {
                     )}
                     <p className="mt-10 lg:mt-16 flex items-center justify-center ">
                       <Button
-                        title="Discuss Your Business Priorities"
+                        title="Discuss Your Project"
                         href={item?.url}
                         classes="bg-white !text-primary uppercase !px-14  hover:!text-white bg-gradient-to-l hover:from-primary hover:to-primary hover:!transition-all hover:!ease-out hover:!duration-200"
                         icon={

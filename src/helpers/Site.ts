@@ -43,7 +43,7 @@ export const Site = {
     },
     {
       id: 3,
-      name: "Portfolio",
+      name: "Work",
       link: "/our-work",
     },
     {
