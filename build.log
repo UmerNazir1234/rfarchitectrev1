@@ -1,0 +1,14 @@
+
+> rftech@1.0.0 build
+> next build && tsc --project tsconfig.server.json
+
+  ▲ Next.js 14.2.5
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+Type error: Invalid value for '--ignoreDeprecations'.
+

@@ -1,12 +1,16 @@
 import React from "react";
+
 type props = {
   classes?: string;
+  fill?: string;
+  stroke?: string;
 };
-const IconShopify = ({ classes }: props) => {
+
+const IconShopify = ({ classes, fill, stroke }: props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-       className={`${classes || ''}`}
+      className={`${classes || ""} ${fill || ""} ${stroke || ""}`.trim()}
       viewBox="0 0 24 24"
       fill="none"
     >

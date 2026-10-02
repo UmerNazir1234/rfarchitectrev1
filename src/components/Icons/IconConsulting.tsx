@@ -1,6 +1,12 @@
 import React from "react";
 
-const IconConsulting = ({ classes,fill }: any) => {
+type props = {
+  classes?: string;
+  fill?: string;
+  stroke?: string;
+};
+
+const IconConsulting = ({ classes, fill, stroke }: props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +14,7 @@ const IconConsulting = ({ classes,fill }: any) => {
       height="100"
       viewBox="0 0 100 100"
       fill="none"
-      className={`${classes} `}
+      className={`${classes || ""} ${fill || ""} ${stroke || ""}`.trim()}
     >
       <g clipPath="url(#clip0_873_41)">
         <path
