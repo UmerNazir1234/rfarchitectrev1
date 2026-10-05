@@ -2,9 +2,9 @@ import React from "react";
 import Index from "./_component/Index";
 
 import { Metadata } from "next";
-const title = `RF Tech: Expert Custom Software Development`;
-const description = `RF Tech provides custom software development services, creating tailored solutions to meet your business needs and drive success.`;
-const URL = "/custom-software-development";
+const title = `Custom Software`;
+const description = `Purpose-built software to connect workflows, systems, and business operations.`;
+const URL = "/solutions/custom-software";
 
 export const metadata: Metadata = {
   title,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: URL,
   },
   openGraph: {
-    title,
+    title: `${title} | RF Technologies`,
     description,
     url: URL,
   },

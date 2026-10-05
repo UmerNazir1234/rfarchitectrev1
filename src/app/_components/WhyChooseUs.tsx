@@ -1,7 +1,5 @@
 import Button from "@/components/Button";
-import IconConsulting from "@/components/Icons/IconConsulting";
-import IconShopify from "@/components/Icons/IconShopify";
-import IconSupport from "@/components/Icons/IconSupport";
+import { FiLayers, FiLink, FiShoppingBag, FiTarget } from "react-icons/fi";
 import React from "react";
 import WhyChooseRightCard from "./WhyChooseRightCard";
 import WhyChooseLeftCard from "./WhyChooseLeftCard";
@@ -22,7 +20,7 @@ const WhyChooseUs = () => {
               classes="bg-secondary uppercase"
               enableIcons={true}
               iconStyle="stroke-secondary"
-              href="/about-us"
+              href="/solutions"
             />
             <h2 className=" text-white mt-6">
               Technology shaped around your business and its goals
@@ -33,40 +31,36 @@ const WhyChooseUs = () => {
               <div className="flex items-start justify-center flex-col gap-6 itSolutionCard">
                 <WhyChooseLeftCard
                   icon={
-                    <IconShopify
-                      fill="group-hover:fill-primary"
-                      classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100 "
-                    />
+                    <span aria-hidden="true">
+                      <FiShoppingBag className="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100" />
+                    </span>
                   }
                   title="SHOPIFY ENGINEERING"
                   content="We engineer across the Shopify ecosystem, not just storefronts, connecting commerce experiences, integrations, and operations."
                 />
                 <WhyChooseLeftCard
                   icon={
-                    <IconSupport
-                      fill="group-hover:fill-primary"
-                      classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100"
-                    />
+                    <span aria-hidden="true">
+                      <FiLayers className="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100" />
+                    </span>
                   }
                   title="PRODUCT ENGINEERING"
                   content="We take products from idea to prototype, MVP, launch, and scale with engineering grounded in real user and business needs."
                 />
                 <WhyChooseLeftCard
                   icon={
-                    <IconSupport
-                      fill="group-hover:stroke-primary"
-                      classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100"
-                    />
+                    <span aria-hidden="true">
+                      <FiLink className="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100" />
+                    </span>
                   }
                   title="TECHNOLOGY PARTNERSHIP"
                   content="We provide long-term, embedded engineering support, staying alongside your team as priorities and products evolve."
                 />
                 <WhyChooseLeftCard
                   icon={
-                    <IconConsulting
-                      fill="group-hover:fill-primary"
-                      classes="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100 "
-                    />
+                    <span aria-hidden="true">
+                      <FiTarget className="lg:w-auto !w-16 !h-16 lg:h-auto group-hover:transition-all group-hover:delay-100" />
+                    </span>
                   }
                   title="BUSINESS UNDERSTANDING"
                   content="We solve business problems using technology. We first understand how your business works, then recommend the right solution."
@@ -75,10 +69,10 @@ const WhyChooseUs = () => {
             </div>
             <div className="lg:basis-[40%] basis-full">
               <div className="flex items-center justify-center sm:gap-4 gap-2 flex-wrap">
-                <WhyChooseRightCard number="312+" title="Products" />
-                <WhyChooseRightCard number="20+" title="Employees" />
-                <WhyChooseRightCard number="200+" title="Clients" />
-                <WhyChooseRightCard number="6+" title="Experience" />
+                <WhyChooseRightCard number="End-to-end" title="Shopify ecosystem" />
+                <WhyChooseRightCard number="Idea to scale" title="Product engineering" />
+                <WhyChooseRightCard number="Long-term" title="Technology partnership" />
+                <WhyChooseRightCard number="Business-first" title="Technology decisions" />
               </div>
             </div>
           </div>

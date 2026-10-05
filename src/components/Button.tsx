@@ -35,10 +35,10 @@ const Button = ({
       >
         {enableIcons && (
           <>
-            <span className="absolute left-0 top-0 -ml-2 -mt-4 bg-transparent bg-contain">
+            <span aria-hidden="true" className="absolute left-0 top-0 -ml-2 -mt-4 bg-transparent bg-contain">
               <IconRound classes={iconStyle} />{" "}
             </span>
-            <span className="absolute right-0 bottom-0 -mr-2 -mb-4 bg-transparent bg-contain transform rotate-180 ">
+            <span aria-hidden="true" className="absolute right-0 bottom-0 -mr-2 -mb-4 bg-transparent bg-contain transform rotate-180 ">
               {" "}
               <IconRound classes={iconStyle} />{" "}
             </span>
@@ -46,7 +46,7 @@ const Button = ({
         )}
         <span>{title}</span>
         {icon && (
-          <span className="flex items-center justify-center">{icon}</span>
+          <span aria-hidden="true" className="flex items-center justify-center">{icon}</span>
         )}
       </Link>
     );
@@ -62,10 +62,10 @@ const Button = ({
     >
       {enableIcons && (
         <>
-          <span className="absolute left-0 top-0 -ml-2 -mt-4 bg-transparent bg-contain">
+          <span aria-hidden="true" className="absolute left-0 top-0 -ml-2 -mt-4 bg-transparent bg-contain">
             <IconRound classes={iconStyle} />{" "}
           </span>
-          <span className="absolute right-0 bottom-0 -mr-2 -mb-4 bg-transparent bg-contain transform rotate-180 ">
+          <span aria-hidden="true" className="absolute right-0 bottom-0 -mr-2 -mb-4 bg-transparent bg-contain transform rotate-180 ">
             {" "}
             <IconRound classes={iconStyle} />{" "}
           </span>
@@ -73,7 +73,7 @@ const Button = ({
       )}
 
       <span>{title}</span>
-      {icon && <span className="">{icon}</span>}
+      {icon && <span aria-hidden="true" className="">{icon}</span>}
     </button>
   );
 };

@@ -1,24 +1,24 @@
 import React from "react";
 import AboutUs from "./_component/AboutUs";
 import { Metadata } from "next";
-const title = `About RF Technologies | Digital Products & Commerce Partner`;
-const description = `Meet RF Technologies, a technology partner for digital products and commerce. We solve business problems using technology through Shopify engineering, product engineering, and long-term partnership.
+const title = `About`;
+const description = `Meet RF Technologies, a Digital Product, Commerce & Technology Partner. We solve business problems using Shopify engineering, product engineering, custom software, and long-term technical partnership.
 `;
 const URL = "/about-us";
 
 export const metadata: Metadata = {
-  title,
+  title: `${title} | Digital Product, Commerce & Technology Partner`,
   description,
   alternates: {
     canonical: URL,
   },
   openGraph: {
-    title,
+    title: `${title} | Digital Product, Commerce & Technology Partner | RF Technologies`,
     description,
     url: URL,
   },
   twitter: {
-    title,
+    title: `${title} | Digital Product, Commerce & Technology Partner | RF Technologies`,
     description,
   },
 };

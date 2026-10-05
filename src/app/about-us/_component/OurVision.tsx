@@ -6,30 +6,25 @@ import React from "react";
 
 const OurVision = ({ data }: any) => {
   return (
-    <section className="relative">
+    <section id="mission-vision" className="relative">
       <div className="page-width py-12">
+        <div className="text-center">
+          <Heading title="Our Mission &amp; Vision" classes="text-primary" />
+        </div>
         <div className="flex justify-between lg:flex-none flex-wrap lg:gap-28 gap-4">
           <div className="lg:flex-1 basis-full">
             <div className="text-center flex flex-col items-center justify-center lg:gap-12 gap-6">
-              <IconEye classes="!w-10 !h-10" />
-              <Heading
-                title={data?.ourvision?.title}
-                classes="text-primary"
-                iconStyle="stroke-primary"
-              />
+              <IconMisson classes="!w-10 !h-10" />
+              <h3 className="h4 text-primary">{data?.ourmission?.title}</h3>
             </div>
-            <p className="p-lg text-justify">{data?.ourvision?.detials}</p>
+            <p className="p-lg text-justify">{data?.ourmission?.detials}</p>
           </div>
           <div className="lg:flex-1 basis-full">
             <div className="text-center flex flex-col items-center justify-center lg:gap-12 gap-4">
-              <IconMisson classes="!w-10 !h-10" />
-              <Heading
-                title={data?.ourmission?.title}
-                classes="text-primary"
-                iconStyle="stroke-primary"
-              />
+              <IconEye classes="!w-10 !h-10" />
+              <h3 className="h4 text-primary">{data?.ourvision?.title}</h3>
             </div>
-            <p className="p-lg text-justify">{data?.ourmission?.detials}</p>
+            <p className="p-lg text-justify">{data?.ourvision?.detials}</p>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import Index from "./_components/Index";
 import { Metadata } from "next";
-const title = `RF Tech: Professional Shopify Development Services`;
-const description = `Unlock e-commerce success with RF Tech's Shopify development services. Custom solutions to grow and optimize your online store`;
-const URL = "/";
+const title = `Shopify Engineering`;
+const description = `Shopify engineering across storefronts, integrations, and commerce operations, shaped around your business needs.`;
+const URL = "/solutions/shopify-engineering";
 
 export const metadata: Metadata = {
   title,
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     canonical: URL,
   },
   openGraph: {
-    title,
+    title: `${title} | RF Technologies`,
     description,
     url: URL,
   },

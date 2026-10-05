@@ -27,44 +27,48 @@ const HeroSlider = ({ data }: HeroSliderProps) => {
         <ul className="h-full w-full flex">
           <Swiper
             pagination={{ type: "bullets", clickable: true }}
-            autoplay={true}
+            autoplay={{ delay: 10000 }}
             loop={true}
             modules={[Autoplay, Pagination]}
           >
-            {data.map((item) => (
-              <SwiperSlide key={item?.id}>
-                <div
-                  className="h-full w-full absolute left-0 top-0 "
-                  style={{
-                    background: `url(${item?.image}) center center / cover scroll no-repeat`,
-                  }}
-                ></div>
-                <div className="h-full w-full absolute left-0 top-0 bg-black opacity-20"></div>
-                <div className="relative z-10 h-full flex items-center justify-center">
-                  <div className="text-center md:max-w-[57%] max-w-[90%]">
-                    <h1
-                      className="lg:text-[90px]  drop-shadow-2xl md:text-[70px] text-4xl font-bold leading-tight text-white"
-                      dangerouslySetInnerHTML={{ __html: item.title }}
-                    ></h1>
-                    {item?.description && (
-                      <p className="text-md !font-advent_Pro md:text-3xl text-2xl m-auto text-white mt-6 sm:max-w-[80%]">
-                        {item?.description}
-                      </p>
-                    )}
-                    <p className="mt-10 lg:mt-16 flex items-center justify-center ">
-                      <Button
-                        title="Discuss Your Project"
-                        href={item?.url}
-                        classes="bg-white !text-primary uppercase !px-14  hover:!text-white bg-gradient-to-l hover:from-primary hover:to-primary hover:!transition-all hover:!ease-out hover:!duration-200"
-                        icon={
-                          <GoArrowUpRight className="group-hover:!stroke-white group-hover:!fill-white" />
-                        }
+            {data.map((item, index) => {
+              const Heading = index === 0 ? "h1" : "h2";
+
+              return (
+                <SwiperSlide key={item?.id}>
+                  <div
+                    className="h-full w-full absolute left-0 top-0 "
+                    style={{
+                      background: `url(${item?.image}) center center / cover scroll no-repeat`,
+                    }}
+                  ></div>
+                  <div className="h-full w-full absolute left-0 top-0 bg-black opacity-20"></div>
+                  <div className="relative z-10 h-full flex items-center justify-center">
+                    <div className="text-center md:max-w-[57%] max-w-[90%]">
+                      <Heading
+                        className="lg:text-[90px]  drop-shadow-2xl md:text-[70px] text-4xl font-bold leading-tight text-white"
+                        dangerouslySetInnerHTML={{ __html: item.title }}
                       />
-                    </p>
+                      {item?.description && (
+                        <p className="text-md !font-advent_Pro md:text-3xl text-2xl m-auto text-white mt-6 sm:max-w-[80%]">
+                          {item?.description}
+                        </p>
+                      )}
+                      <p className="mt-10 lg:mt-16 flex items-center justify-center ">
+                        <Button
+                          title="Discuss Your Project"
+                          href={item?.url}
+                          classes="bg-white !text-primary uppercase !px-14  hover:!text-white bg-gradient-to-l hover:from-primary hover:to-primary hover:!transition-all hover:!ease-out hover:!duration-200"
+                          icon={
+                            <GoArrowUpRight className="group-hover:!stroke-white group-hover:!fill-white" />
+                          }
+                        />
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </ul>
       </div>

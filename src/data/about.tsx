@@ -72,13 +72,13 @@ interface Content {
 
 const content = {
   banner: {
-    title: `TECHNOLOGY PARTNER FOR <span class="text-secondary">DIGITAL PRODUCTS & COMMERCE</span>`,
+    title: `Digital Product, Commerce &amp; <span class="text-secondary">Technology Partner</span>`,
     image: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719827376/RfTechnologiesWebsite/aboutusimage_q5msz5.jpg`,
   },
   about: {
-      title: "technology partner for digital products and commerce",
-      description: `We do not start with a software brief and assume the answer. <span class="!italic text-secondary">We solve business problems using technology.</span> That starts with understanding how your business works, what your customers need, and what progress should look like.
-        <br/><br/>This understanding guides our work across the Shopify ecosystem, beyond storefronts; product engineering from idea and prototype through MVP, launch, and scale; and long-term partnerships where our engineers work alongside your team. We recommend the right solution for the challenge, then stay involved as it is built, launched, supported, and grown.`,
+    title: "who we are",
+    description: `RF Technologies is a technology partner for businesses building, launching, or improving digital products. We work with companies that need commerce engineering, a SaaS or digital product, custom software, connected systems, or ongoing technical support.
+      <br/><br/>Our work starts with understanding the business and the people it serves. We help address practical business and customer-experience challenges with engineering that fits the need, then stay involved through delivery and beyond.`,
     dotsImage: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719912842/RfTechnologiesWebsite/Group_1597883856_r26khq.png`,
     rfLogo: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719848735/RfTechnologiesWebsite/Trade_Mark-02_2_oggpmo.png`,
     letsItImage: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1719913174/RfTechnologiesWebsite/Let_s_get_IT_done_isjw4p.png`,
@@ -86,7 +86,7 @@ const content = {
   wearerf: {
     title: "we are rf technologies",
     description:
-      "Founded in 2018, RF Technologies brings product thinking and engineering together. We work closely with clients to understand their business, align on the outcome they need, and build a partnership that can continue beyond launch.",
+      "RF Technologies brings product thinking and engineering together. We work closely with clients to understand their business, align on the outcome they need, and build a partnership that can continue beyond launch.",
   },
   experience: {
     title: "Business understanding comes first",
@@ -98,14 +98,12 @@ const content = {
     ourvision: {
       id: 1,
       title: "our vision",
-      detials:
-        "To be a trusted technology partner for digital products and commerce, helping organizations turn business challenges into useful, lasting digital experiences.",
+      detials: "Help businesses grow sustainably with digital products and technology partnerships shaped around real needs.",
     },
     ourmission: {
       id: 1,
       title: "our mission",
-      detials:
-        "To understand each business before recommending a solution, then bring the right engineering to build, launch, and support it. From Shopify ecosystem work to products developed from idea through scale, we aim to solve the problem at hand and grow with the teams we serve.",
+      detials: "Understand the business problem first, then apply practical engineering to build, launch, and support useful digital products. We work as long-term partners, keeping decisions connected to sustainable business growth.",
     },
     image: `https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720612053/Vector_2_ds4oyb.png`,
   },

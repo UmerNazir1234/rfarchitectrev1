@@ -1,11 +1,58 @@
 import Button from "@/components/Button";
 import Image from "next/image";
 import React from "react";
+import {
+  FiCompass,
+  FiCode,
+  FiLifeBuoy,
+  FiSearch,
+  FiSend,
+  FiTarget,
+  FiTrendingUp,
+} from "react-icons/fi";
 
 type props = {
   classes?: string;
 };
 const Steps = ({ classes }: props) => {
+  const journeySteps = [
+    {
+      title: "Discover",
+      description: "Surface the challenge and opportunity.",
+      icon: <FiSearch className="h-6 w-6" aria-hidden="true" />,
+    },
+    {
+      title: "Understand Your Business",
+      description: "Learn about operations, customers, and constraints.",
+      icon: <FiTarget className="h-6 w-6" aria-hidden="true" />,
+    },
+    {
+      title: "Recommend the Right Solution",
+      description: "Choose a practical technology approach.",
+      icon: <FiCompass className="h-6 w-6" aria-hidden="true" />,
+    },
+    {
+      title: "Build",
+      description: "Engineer the agreed product or system.",
+      icon: <FiCode className="h-6 w-6" aria-hidden="true" />,
+    },
+    {
+      title: "Launch",
+      description: "Put the solution into use.",
+      icon: <FiSend className="h-6 w-6" aria-hidden="true" />,
+    },
+    {
+      title: "Support",
+      description: "Stay involved as needs change.",
+      icon: <FiLifeBuoy className="h-6 w-6" aria-hidden="true" />,
+    },
+    {
+      title: "Grow",
+      description: "Improve as the business evolves.",
+      icon: <FiTrendingUp className="h-6 w-6" aria-hidden="true" />,
+    },
+  ];
+
   return (
     <section className={`relative py-20 ${classes || classes} `}>
       <div className="page-width">
@@ -21,6 +68,17 @@ const Steps = ({ classes }: props) => {
           Discover → Understand Your Business → Recommend the Right Solution →
           Build → Launch → Support → Grow
         </h2>
+        <ol className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          {journeySteps.map((step) => (
+            <li key={step.title} className="flex items-start gap-3 text-primary">
+              <span className="mt-1 shrink-0 text-primary">{step.icon}</span>
+              <span>
+                <strong className="block">{step.title}</strong>
+                <span>{step.description}</span>
+              </span>
+            </li>
+          ))}
+        </ol>
         <div className="block xl:min-h-[600px] sm:min-h-[500] min-h-[300px] w-full relative md:mt-20">
           <Image
             src="https://res.cloudinary.com/dzmrdbwqh/image/upload/v1720172066/RfTechnologiesWebsite/Group_1597883770_bag6zl.png"

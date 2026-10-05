@@ -1,14 +1,10 @@
-import IconApplicationDev from "@/components/Icons/IconApplicationDev";
-import IconCircle from "@/components/Icons/IconCircle";
-import IconCrm from "@/components/Icons/IconCrm";
-import IconCustomSoftDev from "@/components/Icons/IconCustomSoftDev";
 import IconDigitalMarketing from "@/components/Icons/IconDigitalMarketing";
 import IconGrapic from "@/components/Icons/IconGrapic";
 import IconSeo from "@/components/Icons/IconSeo";
-import IconShopify from "@/components/Icons/IconShopify";
 import IconWebDev from "@/components/Icons/IconWebDev";
 import IconWoocommerce from "@/components/Icons/IconWoocommerce";
 import IconWordpress from "@/components/Icons/IconWordpress";
+import { FiCode, FiLayers, FiLink, FiShoppingBag } from "react-icons/fi";
 
 interface BannerItem {
   id: number;
@@ -74,7 +70,7 @@ const homeContent: HomeContent = {
   ourServices: {
     roundCta: "BUSINESS CHALLENGES",
     title: "Solve the business problem behind the brief",
-    content: `From attracting customers and improving digital experiences to removing operational friction, we match the right service to the work in front of you. Our team can deliver one focused improvement or support connected needs across your business.
+    content: `We solve business problems using technology. We start with your business context, then align Shopify engineering, product and SaaS development, custom software, or ongoing technical partnership to the need.
 `,
     btnText: "Discuss Your Project",
     btnLink: "/contact-us",
@@ -82,12 +78,12 @@ const homeContent: HomeContent = {
       {
         id: 1,
         iconBg: "#FFF6EE",
-        icon: <IconApplicationDev classes="w-16 h-16" />,
-        title: "Help customers get things done on the move",
+        icon: <FiLayers className="w-16 h-16" aria-hidden="true" />,
+        title: "Product & SaaS Development",
         content:
-          "Mobile application development makes key services and workflows easier to use wherever customers or staff need them.",
+          "Take a digital product from idea and prototype through MVP, launch, and scale.",
         btnText: "Read More",
-        btnLink: "/mobile-app-development",
+        btnLink: "/solutions/product-saas-development",
       },
       {
         id: 2,
@@ -125,22 +121,22 @@ const homeContent: HomeContent = {
       {
         id: 5,
         iconBg: "#E9F3D3",
-        icon: <IconCrm classes="w-16 h-16" />,
-        title: "Keep leads and customer follow-up moving",
-        content: "CRM development organizes customer records, sales activity, and follow-ups around how your team works.",
+        icon: <FiLink className="w-16 h-16" aria-hidden="true" />,
+        title: "Technology Partnership",
+        content: "Long-term engineering support that stays aligned with business and product priorities.",
         btnText: "Read More",
-        btnLink: "/crm-development",
+        btnLink: "/solutions/technology-partnership",
       },
       {
         id: 6,
         iconBg: "#EBF6D3",
-        icon: <IconShopify classes="w-16 h-16" />,
-        title: "Make online buying easier to complete",
+        icon: <FiShoppingBag className="w-16 h-16" aria-hidden="true" />,
+        title: "Shopify Engineering",
         content:
-          "Shopify development improves product discovery, checkout, and the day-to-day work of running your online store.",
+          "We engineer across the Shopify ecosystem, connecting commerce experiences, integrations, and operations.",
 
         btnText: "Read More",
-        btnLink: "/shopify-development",
+        btnLink: "/solutions/shopify-engineering",
       },
       {
         id: 7,
@@ -167,13 +163,13 @@ const homeContent: HomeContent = {
       {
         id: 9,
         iconBg: "#FEF3F3",
-        icon: <IconCustomSoftDev classes="w-16 h-16" />,
-        title: "Remove repetitive work and process gaps",
+        icon: <FiCode className="w-16 h-16" aria-hidden="true" />,
+        title: "Custom Software",
         content:
-          "Custom software connects workflows and replaces manual tasks with tools designed around your operation.",
+          "Connect workflows and systems with software designed around your business operations.",
 
         btnText: "Read More",
-        btnLink: "/custom-software-development",
+        btnLink: "/solutions/custom-software",
       },
     ],
   },
@@ -182,19 +178,19 @@ faqs: [
       id: 1,
       question: "Who does RF Technologies help?",
       answer:
-        "We partner with growing businesses that need to improve operations, customer experience, or digital growth. We align the right expertise to each business goal and stay involved beyond delivery.",
+        "We work with businesses building or improving digital products and commerce experiences, as well as teams that need custom software or ongoing engineering support.",
     },
     {
       id: 2,
       question: "What services does RF Technologies offer?",
       answer:
-        "Our work includes business websites and e-commerce, custom software, CRM, mobile applications, design, SEO, and digital marketing. We recommend the services that fit your priorities rather than a fixed package.",
+        "Our core work is Shopify engineering, product and SaaS development, custom software, and long-term technology partnership. We recommend an approach based on your business needs.",
     },
     {
       id: 3,
-      question: "What makes your web development services stand out?",
+      question: "How do you approach a technology project?",
       answer:
-        "We start with your customers and business goals, then shape the site structure, content, and functionality around them. The result is designed to support real journeys such as generating leads, completing purchases, or finding support.",
+        "We understand the business problem, learn how your operations and customers are affected, and recommend the right technology approach before work begins.",
     },
     {
       id: 4,

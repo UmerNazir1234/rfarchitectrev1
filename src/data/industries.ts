@@ -14,7 +14,7 @@ const heroImage =
 
 export const industryPages: Record<string, IndustryPageContent> = {
   ecommerce: {
-    title: "eCommerce Technology Partner | RF Technologies",
+    title: "eCommerce Technology Partner",
     description:
       "Shopify engineering, commerce software, and long-term technology support for eCommerce businesses.",
     canonical: "/industries/ecommerce",
@@ -54,7 +54,7 @@ export const industryPages: Record<string, IndustryPageContent> = {
     ],
   },
   startups: {
-    title: "Startup Product Engineering | RF Technologies",
+    title: "Startup Product Engineering",
     description:
       "Product and SaaS engineering, custom software, and technology partnership for startups building and growing digital products.",
     canonical: "/industries/startups",
@@ -94,7 +94,7 @@ export const industryPages: Record<string, IndustryPageContent> = {
     ],
   },
   smes: {
-    title: "Technology Partner for SMEs | RF Technologies",
+    title: "Technology Partner for SMEs",
     description:
       "Custom software, Shopify engineering, product development, and ongoing technology partnership for growing businesses.",
     canonical: "/industries/smes",
@@ -134,7 +134,7 @@ export const industryPages: Record<string, IndustryPageContent> = {
     ],
   },
   agencies: {
-    title: "Embedded Technology Partner for Agencies | RF Technologies",
+    title: "Embedded Technology Partner for Agencies",
     description:
       "Extend agency delivery with embedded engineering for Shopify, digital products, SaaS, and custom software.",
     canonical: "/industries/agencies",

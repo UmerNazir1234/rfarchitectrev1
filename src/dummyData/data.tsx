@@ -8,6 +8,21 @@ import { TbSettingsPause } from "react-icons/tb";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import { BsKanban } from "react-icons/bs";
 import { VscTerminalUbuntu } from "react-icons/vsc";
+import {
+  FiBookOpen,
+  FiBox,
+  FiCode,
+  FiFileText,
+  FiGrid,
+  FiHome,
+  FiLayers,
+  FiLink,
+  FiPackage,
+  FiShoppingBag,
+  FiShoppingCart,
+  FiUsers,
+  FiZap,
+} from "react-icons/fi";
 import IconShopify from "@/components/Icons/IconShopify";
 import IconWoocommerce from "@/components/Icons/IconWoocommerce";
 import IconGrapic from "@/components/Icons/IconGrapic";
@@ -39,38 +54,38 @@ export const menuItems: MenuItem[] = [
   {
     id: 2,
     name: "Solutions",
-    link: "/our-services",
+    link: "/solutions",
     links: [
       {
         id: 1,
-        icon: <IconShopify classes="w-12 h-12" />,
+        icon: <FiShoppingBag className="w-12 h-12" aria-hidden="true" />,
         iconBg: "#EBF6D3",
         title: "Shopify Engineering",
         description: "Engineering across the Shopify ecosystem, beyond storefronts.",
-        link: "/shopify-development",
+        link: "/solutions/shopify-engineering",
       },
       {
         id: 2,
-        icon: <IconApplicationDev classes="w-12 h-12" />,
+        icon: <FiLayers className="w-12 h-12" aria-hidden="true" />,
         iconBg: "#FEF3F3",
         title: "Product & SaaS Development",
         description: "Take digital products from idea through launch and scale.",
-        link: "/custom-software-development",
+        link: "/solutions/product-saas-development",
       },
       {
         id: 3,
-        icon: <IconCustomSoftDev classes="w-12 h-12" />,
+        icon: <FiCode className="w-12 h-12" aria-hidden="true" />,
         iconBg: "#FEF3F3",
         title: "Custom Software",
         description: "Purpose-built software for your business and operations.",
-        link: "/custom-software-development",
+        link: "/solutions/custom-software",
       },
       {
         id: 4,
-        icon: <PiHandshakeLight className="w-12 h-12" />,
+        icon: <FiLink className="w-12 h-12" aria-hidden="true" />,
         title: "Technology Partnership",
         description: "Long-term engineering support aligned with your business.",
-        link: "/about-us",
+        link: "/solutions/technology-partnership",
       },
     ],
   },
@@ -81,24 +96,31 @@ export const menuItems: MenuItem[] = [
     links: [
       {
         id: 1,
-        icon: <BsKanban className="w-12 h-12" />,
-        title: "BlueTicks",
-        description: "Explore our event ticketing product.",
-        link: "/blueticks",
+        icon: <FiPackage className="w-12 h-12" aria-hidden="true" />,
+        title: "E-Ticketing Platform",
+        description: "View product details.",
+        link: "/products/blueticks",
       },
       {
         id: 2,
-        icon: <PiProjectorScreenChart className="w-12 h-12" />,
-        title: "Spotly (Coming Soon)",
-        description: "A new product from RF Technologies.",
-        link: "/products#spotly",
+        icon: <FiGrid className="w-12 h-12" aria-hidden="true" />,
+        title: "Society Management",
+        description: "View product details.",
+        link: "/products",
       },
       {
         id: 3,
-        icon: <TbBulb className="w-12 h-12" />,
-        title: "More Products Coming Soon",
-        description: "More products are in development.",
-        link: "/products#future-products",
+        icon: <FiBox className="w-12 h-12" aria-hidden="true" />,
+        title: "EzFundRazr",
+        description: "View product details.",
+        link: "/products",
+      },
+      {
+        id: 4,
+        icon: <FiZap className="w-12 h-12" aria-hidden="true" />,
+        title: "Spotlyy",
+        description: "View product details.",
+        link: "/products/spotly",
       },
     ],
   },
@@ -110,28 +132,28 @@ export const menuItems: MenuItem[] = [
     links: [
       {
         id: 1,
-        icon: <IconShopify classes="w-12 h-12" />,
+        icon: <FiShoppingCart className="w-12 h-12" aria-hidden="true" />,
         title: "eCommerce",
         description: "Digital commerce experiences and operations.",
         link: "/industries/ecommerce",
       },
       {
         id: 2,
-        icon: <TbBulb className="w-12 h-12" />,
+        icon: <FiZap className="w-12 h-12" aria-hidden="true" />,
         title: "Startups",
         description: "Build and grow digital products from the ground up.",
         link: "/industries/startups",
       },
       {
         id: 3,
-        icon: <BiCheckShield className="w-12 h-12" />,
+        icon: <FiHome className="w-12 h-12" aria-hidden="true" />,
         title: "SMEs",
         description: "Technology that supports practical business growth.",
         link: "/industries/smes",
       },
       {
         id: 4,
-        icon: <PiHandshakeLight className="w-12 h-12" />,
+        icon: <FiUsers className="w-12 h-12" aria-hidden="true" />,
         title: "Agencies",
         description: "A dependable engineering partner for agency teams.",
         link: "/industries/agencies",
@@ -145,14 +167,14 @@ export const menuItems: MenuItem[] = [
     links: [
       {
         id: 1,
-        icon: <TbVirusSearch className="w-12 h-12" />,
+        icon: <FiFileText className="w-12 h-12" aria-hidden="true" />,
         title: "Blog",
         description: "Perspectives on technology, products, and commerce.",
         link: "/blogs",
       },
       {
         id: 2,
-        icon: <TbSettingsPause className="w-12 h-12" />,
+        icon: <FiBookOpen className="w-12 h-12" aria-hidden="true" />,
         title: "Resources",
         description: "Helpful answers and practical guidance.",
         link: "/faq",
@@ -417,46 +439,86 @@ export const featuredProjects = [
 export const informationLinks = [
   {
     id: 1,
-    name: "Become a Partner",
-    link: "/become-a-partner",
+    name: "Home",
+    link: "/",
   },
   {
     id: 2,
-    name: "About Us",
-    link: "/about-us",
+    name: "Products",
+    link: "/products",
   },
   {
     id: 3,
-    name: "Work",
-    link: "/our-work",
+    name: "BlueTicks",
+    link: "/products/blueticks",
   },
   {
     id: 4,
-    name: "Blogs",
-    link: "/blogs",
+    name: "Spotly (Coming Soon)",
+    link: "/products/spotly",
   },
   {
     id: 5,
-    name: "Faq's",
-    link: "/faq",
+    name: "Case Studies",
+    link: "/our-work",
   },
   {
     id: 6,
+    name: "Industries",
+    link: "/industries",
+  },
+  {
+    id: 7,
+    name: "eCommerce",
+    link: "/industries/ecommerce",
+  },
+  {
+    id: 8,
+    name: "Startups",
+    link: "/industries/startups",
+  },
+  {
+    id: 9,
+    name: "SMEs",
+    link: "/industries/smes",
+  },
+  {
+    id: 10,
+    name: "Agencies",
+    link: "/industries/agencies",
+  },
+  {
+    id: 11,
+    name: "Blog",
+    link: "/blogs",
+  },
+  {
+    id: 12,
+    name: "Resources",
+    link: "/faq",
+  },
+  {
+    id: 13,
+    name: "About",
+    link: "/about-us",
+  },
+  {
+    id: 14,
+    name: "Contact",
+    link: "/contact-us",
+  },
+  {
+    id: 15,
     name: "NDA",
     link: "/policies/nda",
   },
   {
-    id: 7,
-    name: "Contact Us",
-    link: "/contact-us",
-  },
-  {
-    id: 8,
+    id: 16,
     name: "Privacy Policy",
     link: "/policies/privacy-policy",
   },
   {
-    id: 9,
+    id: 17,
     name: "Terms & Conditions",
     link: "/policies/terms-conditions",
   },
@@ -465,53 +527,28 @@ export const informationLinks = [
 export const serviceLinks = [
   {
     id: 1,
-    name: "Web Development",
-    link: "/web-development",
+    name: "Solutions",
+    link: "/solutions",
   },
   {
     id: 2,
-    name: "WordPress Development",
-    link: "/wordpress-development",
+    name: "Shopify Engineering",
+    link: "/solutions/shopify-engineering",
   },
   {
     id: 3,
-    name: "Shopify Development",
-    link: "/shopify-development",
+    name: "Product & SaaS Development",
+    link: "/solutions/product-saas-development",
   },
   {
     id: 4,
-    name: "Digital Marketing",
-    link: "/digital-marketing",
+    name: "Custom Software",
+    link: "/solutions/custom-software",
   },
   {
     id: 5,
-    name: "Graphic Design",
-    link: "/graphic-design",
-  },
-  {
-    id: 6,
-    name: "SEO",
-    link: "/seo",
-  },
-  {
-    id: 7,
-    name: "Mobile App Development",
-    link: "/mobile-app-development",
-  },
-  {
-    id: 8,
-    name: "CRM Development",
-    link: "/crm-development",
-  },
-  {
-    id: 9,
-    name: "Custom Software Development",
-    link: "/custom-software-development",
-  },
-  {
-    id: 10,
-    name: "Woocommerce Development",
-    link: "woocommerce-development",
+    name: "Technology Partnership",
+    link: "/solutions/technology-partnership",
   },
 ];
 
@@ -571,34 +608,40 @@ export const tabs: Tabs[] = [
 
 export const aboutTabs: Tabs[] = [
   {
-    label: "Business Understanding",
+    label: "Business-First Approach",
     content:
-      "We do not simply build software because it was requested. We learn how the business works, understand the people affected, and define the outcome that matters. Then we solve business problems using technology that fits the context.",
+      "We begin with the business need and the people affected, then recommend engineering that fits the outcome rather than assuming a solution from the brief.",
     icon: <TbBulb className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
-    label: "Shopify Engineering",
+    label: "End-to-End Delivery",
     content:
-      "Our commerce work extends across the Shopify ecosystem, not just storefronts. We consider the connected customer experience, integrations, and operations around a store, then engineer what the business needs to serve customers and run effectively.",
+      "We can stay involved from understanding the need through building, launch, and ongoing support, keeping the work connected at each stage.",
     icon: <PiHandshakeLight className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
+  },
+  {
+    label: "Shopify Expertise",
+    content:
+      "We work across the Shopify ecosystem, considering the storefront, connected systems, and commerce operations around it.",
+    icon: <VscTerminalUbuntu className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
     label: "Product Engineering",
     content:
-      "Digital products need more than a first release. We work through the product journey from idea and prototype to MVP, launch, and scale, keeping business goals and user needs in view as decisions evolve.",
-    icon: <VscTerminalUbuntu className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
+      "We help take digital products from idea through MVP and launch, with business goals and user needs informing decisions as the product develops.",
+    icon: <SiFireship className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
   },
   {
-    label: "Technology Partnership",
+    label: "Long-Term Support",
     content:
-      "Our role can continue after launch. We work alongside client teams with long-term, embedded engineering support, building context over time and adapting as products, operations, and priorities change.",
+      "We stay alongside teams beyond launch, building context and adapting engineering support as their products and priorities change.",
     icon: <BiCheckShield className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
   {
-    label: "Long-Term Growth",
+    label: "International Client Experience",
     content:
-      "We measure good partnership by whether the work continues to serve the business. We support teams beyond delivery, helping them respond to new opportunities, improve what is already in place, and make thoughtful next-step decisions.",
-    icon: <SiFireship className="lg:!w-12 lg:!h-12 !w-10 !h-10" />,
+      "We work with international clients and adapt collaboration to the needs and context of each team.",
+    icon: <PiHandshakeLight className="lg:!w-24 lg:!h-24 !w-10 !h-10" />,
   },
 ];
 
@@ -2250,13 +2293,13 @@ export const shopifyFaq = [
 ];
 export const shopifyImageWithText = [
   {
-    title: "Advantage Of Choosing Us",
+    title: "Shopify Engineering for Your Business",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721741821/RfTechnologiesWebsite/Group_1597883963_hevjr1.svg",
     description:
-      "With Our best experience and good knowledge of Shopify, we provide the best solutions for your online stores.",
-    btnLink: "/",
-    btnTitle: "Advantages",
+      "We start with your business requirements and recommend Shopify engineering that fits your commerce priorities.",
+    btnLink: "/contact-us",
+    btnTitle: "Discuss Your Project",
     ctaLink: "",
     ctaTitle: "",
     imageFirst: false,
@@ -2268,7 +2311,7 @@ export const shopifyImageWithText = [
 export const shopifyFeatures = [
   {
     id: 1,
-    title: "Top Shopify Developers",
+    title: "Shopify ecosystem engineering",
   },
   {
     id: 2,
@@ -2280,15 +2323,15 @@ export const shopifyFeatures = [
   },
   {
     id: 4,
-    title: "Short Time To Online Running",
+    title: "A delivery plan aligned to your needs",
   },
   {
     id: 5,
-    title: "Full Testing and Bug-Free site",
+    title: "Testing against agreed requirements",
   },
   {
     id: 6,
-    title: "Fully Customization and Full Maintenance",
+    title: "Customization and ongoing support",
   },
   {
     id: 7,
@@ -2301,7 +2344,7 @@ export const shopImageWithText = [
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721809735/RfTechnologiesWebsite/Group_1597883964_loqihf.svg",
     description:
-      "Our Shopify Experts migrate your existing theme to Shopify Online Store 2.0 Fully accurate word by word. </br> </br> With Online 2.0 Shopify Theme, Enjoy the creative designs and Sections on all the pages of your shopify Website. Easily Customize and Highly attractive with 100% Conversion rate.",
+      "We can help adapt an existing theme to Shopify Online Store 2.0 and configure reusable sections around your storefront requirements.",
     btnLink: "",
     btnTitle: "",
     ctaLink: "",
@@ -2499,36 +2542,28 @@ export const shopifyBenefits = [
   {
     id: 1,
     title: "Hosted Solution",
-    content: `Shopify is a cloud-based setup and hosted solution where you no
-                need to worry about servers or databases. You can access your
-                store from anywhere with admin login details & an internet
-                connection without any setup.`,
+    content: `Shopify is a hosted commerce platform. Available capabilities and responsibilities depend on your selected plan and integrations.`,
     bgClr: "#F8E0E0",
     titleClr: "#CC3232",
   },
   {
     id: 2,
     title: "Security, and Reliability",
-    content: `Shopify Offers the Best Services In terms of Security and
-                provides the best data protection.`,
+    content: `Review platform security features and account controls as part of your commerce and integration requirements.`,
     bgClr: "#CAEBFF",
     titleClr: "#1270AA",
   },
   {
     id: 3,
     title: "SEO Friendly",
-    content: `Shopify has the Best built-in SEO Features that are easy to use
-                and the best to rank higher on the SERPs.`,
+    content: `Use the platform's available SEO settings alongside a content and search strategy suited to your business.`,
     bgClr: "#bbf7d0",
     titleClr: "#0E975E",
   },
   {
     id: 4,
     title: "Built-In Marketing Tools",
-    content: `Shopify has built-in marketing tools which make it lower the
-                cost on start-ups. It allows us to edit page meta title, meta
-                description, meta URL, make pages visible and invisible, and
-                redirect to any URL.`,
+    content: `Shopify includes storefront and marketing settings; available tools depend on your store configuration and selected integrations.`,
     bgClr: "#F9D1F0",
     titleClr: "#B7419B",
   },

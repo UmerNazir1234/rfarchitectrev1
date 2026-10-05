@@ -18,7 +18,6 @@ import {
   FiGrid,
   FiHome,
   FiInfo,
-  FiLayers,
   FiMail,
   FiPackage,
 } from "react-icons/fi";
@@ -34,11 +33,13 @@ const getMobileNavIcon = (name: string) => {
     case "Work":
       return <FiBriefcase />;
     case "Industries":
-      return <FiLayers />;
+      return <FiGrid />;
     case "Insights":
       return <FiBookOpen />;
     case "About":
       return <FiInfo />;
+    case "Contact":
+      return <FiMail />;
     default:
       return <FiMail />;
   }
@@ -62,7 +63,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-light drop-shadow-lg relative z-50">
-        <div className="flex items-center justify-between sm:h-28 h-24 page-width">
+        <div className="flex items-center justify-between gap-5 sm:h-28 h-24 page-width">
           <div className="flex items-center space-x-4">
             <div className="relative">
               <Link href={"/"}>
@@ -70,9 +71,9 @@ const Header = () => {
                   <Image
                     src={Site?.logo}
                     alt={`${Site?.name} + 'Offical Logo' `}
-                    height={70}
-                    width={190}
-                    className="object-contain max-sm:w-40 max-sm:h-auto"
+                    height={90}
+                    width={250}
+                    className="w-[220px] object-contain max-sm:w-40 max-sm:h-auto 2xl:w-[250px]"
                   />
                 ) : (
                   <span className="text-5xl max-sm:text-2xl font-bold text-primary">
@@ -82,9 +83,9 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <nav className="flex-1 hidden xl:flex justify-center space-x-6 ">
-            <ul className="flex justify-center items-center gap-14">
-              {menuItems?.map((item) => (
+          <nav className="hidden flex-1 justify-end xl:flex" aria-label="Main navigation">
+            <ul className="flex items-center gap-5 2xl:gap-7">
+              {menuItems?.filter((item) => item.name !== "Contact").map((item) => (
                 <li key={item?.id}>
                   {item?.links && item?.links?.length > 0 ? (
                     <div
@@ -94,8 +95,11 @@ const Header = () => {
                     >
                       <button
                         className={`flex items-center justify-center gap-1 ${
-                          pathname == "" ? "text-primary !font-bold" : ""
-                        } font-semibold text-xl hover:text-primary`}
+                          pathname === item.link ||
+                          item.links?.some((link) => pathname === link.link)
+                            ? "text-primary !font-bold"
+                            : ""
+                        } font-semibold text-lg whitespace-nowrap hover:text-primary`}
                         onClick={() => setActiveDropdownId(item.id)}
                       >
                         <span className="">{item?.name}</span>
@@ -104,7 +108,7 @@ const Header = () => {
                             activeDropdownId === item.id ? "rotate-180" : "rotate-0"
                           }`}
                         >
-                          <MdKeyboardArrowDown />
+                          <MdKeyboardArrowDown aria-hidden="true" />
                         </span>
                       </button>
                       {activeDropdownId === item.id && (
@@ -127,6 +131,7 @@ const Header = () => {
                                       ? "Explore case studies"
                                       : `Explore ${item.name.toLowerCase()}`
                                   }
+                                  href={item.link}
                                   classes="bg-transparent text-white"
                                   enableIcons={true}
                                   iconStyle="stroke-white"
@@ -154,7 +159,7 @@ const Header = () => {
                                                 }`,
                                               }}
                                             >
-                                              {item?.icon}
+                                              <span aria-hidden="true">{item?.icon}</span>
                                             </div>
                                             <div>
                                               <h5 className="group-hover:text-primary">
@@ -181,7 +186,7 @@ const Header = () => {
                       href={item.link}
                       className={`${
                         pathname == item?.link ? "text-primary !font-bold" : ""
-                      } font-semibold text-xl hover:text-primary`}
+                      } font-semibold text-lg whitespace-nowrap hover:text-primary`}
                     >
                       {item.name}
                     </Link>
@@ -193,16 +198,24 @@ const Header = () => {
           <div className="flex items-center justify-between  sm:gap-4 gap-2  ">
             <Button
               title="Discuss Your Project"
-              classes="!capitalize bg-gradient-to-b from-primary to-primarylight !text-[22px] !px-12 max-sm:!px-4 max-sm:!py-2 max-sm:!text-xl max-sm:hidden"
+              classes="!normal-case bg-gradient-to-b from-primary to-primarylight !text-xl !px-8 !py-4 whitespace-nowrap max-xl:hidden"
               href="/contact-us"
             />
-            <button className="" type="button" onClick={() => handleToggle()}>
-              <CgMenuRight className="icon icon-menu !h-10 !w-10 xl:hidden flex cursor-pointer" />
+            <button
+              className=""
+              type="button"
+              aria-label={open ? "Close navigation" : "Open navigation"}
+              aria-expanded={open}
+              aria-controls="mobile-navigation"
+              onClick={() => handleToggle()}
+            >
+              <CgMenuRight aria-hidden="true" className="icon icon-menu !h-10 !w-10 xl:hidden flex cursor-pointer" />
             </button>
           </div>
         </div>
       </header>
       <nav
+        id="mobile-navigation"
         aria-label="Mobile navigation"
         className={`fixed z-100 inset-0  bg-white transform transition-transform w-full h-full block duration-300  ${
           open ? "translate-x-0" : "-translate-x-full"
@@ -229,7 +242,7 @@ const Header = () => {
               onClick={handleToggle}
               className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/15 text-primary transition-colors hover:bg-primary/5 active:bg-primary/10"
             >
-              <MdClose className="h-6 w-6" />
+              <MdClose aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
           <div className="flex-1 overflow-y-auto px-4 py-5 sm:px-8 sm:py-8">
@@ -260,7 +273,7 @@ const Header = () => {
                           className={rowClasses}
                         >
                           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-secondary/15 text-primary">
-                            {getMobileNavIcon(item.name)}
+                            <span aria-hidden="true">{getMobileNavIcon(item.name)}</span>
                           </span>
                           <span className="flex-1">{item.name}</span>
                           <FiChevronDown
@@ -300,24 +313,22 @@ const Header = () => {
                                   </Link>
                                 </li>
                               ))}
-                              {item.name === "Solutions" && (
-                                <li>
-                                  <Link
-                                    href={item.link}
-                                    onClick={handleToggle}
-                                    aria-current={
-                                      pathname === item.link ? "page" : undefined
-                                    }
-                                    className="flex min-h-12 items-center gap-3 rounded-lg px-3 py-2 text-base font-semibold text-primary transition-colors hover:bg-primary/5 active:bg-primary/10"
-                                  >
-                                    <FiArrowRight
-                                      aria-hidden="true"
-                                      className="h-4 w-4 shrink-0 text-secondary"
-                                    />
-                                    <span>View all solutions</span>
-                                  </Link>
-                                </li>
-                              )}
+                              <li>
+                                <Link
+                                  href={item.link}
+                                  onClick={handleToggle}
+                                  aria-current={
+                                    pathname === item.link ? "page" : undefined
+                                  }
+                                  className="flex min-h-12 items-center gap-3 rounded-lg px-3 py-2 text-base font-semibold text-primary transition-colors hover:bg-primary/5 active:bg-primary/10"
+                                >
+                                  <FiArrowRight
+                                    aria-hidden="true"
+                                    className="h-4 w-4 shrink-0 text-secondary"
+                                  />
+                                  <span>View all {item.name.toLowerCase()}</span>
+                                </Link>
+                              </li>
                             </ul>
                           </div>
                         </div>
@@ -330,7 +341,7 @@ const Header = () => {
                         className={`${rowClasses} rounded-xl border border-transparent`}
                       >
                         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-secondary/15 text-primary">
-                          {getMobileNavIcon(item.name)}
+                          <span aria-hidden="true">{getMobileNavIcon(item.name)}</span>
                         </span>
                         <span className="flex-1">{item.name}</span>
                         {pathname === item.link && (
@@ -342,6 +353,13 @@ const Header = () => {
                 );
               })}
             </ul>
+            <div className="mx-auto mt-4 max-w-xl">
+              <Button
+                title="Discuss Your Project"
+                href="/contact-us"
+                classes="!capitalize bg-gradient-to-b from-primary to-primarylight !text-[22px] !px-12 max-sm:!px-4 max-sm:!py-2 max-sm:!text-xl w-full"
+              />
+            </div>
           </div>
         </div>
       </nav>

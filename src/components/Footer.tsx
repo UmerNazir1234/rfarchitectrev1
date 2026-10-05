@@ -69,6 +69,9 @@ const Footer = () => {
                 )}
               </Link>
             </div>
+            <p className="text-lg font-normal">
+              Digital Product, Commerce &amp; Technology Partner
+            </p>
             <div className="flex gap-2 items-center justify-start text-lg font-normal md:w-60">
               <span>
                 <FaMapMarkerAlt />
@@ -107,7 +110,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-8 items-start xl:basis-[20%] lg:basis-[30%] md:basis-[25%] basis-full  justify-start">
-            <h2 className="font-bold text-[32px] max-md:mt-4">Information</h2>
+            <h2 className="font-bold text-[32px] max-md:mt-4">Explore</h2>
             <ul className="flex flex-col items-start justify-start gap-4">
               {informationLinks?.map((item) => (
                 <li key={item?.id}>
@@ -119,7 +122,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-8 items-start xl:basis-[20%] lg:basis-[30%] md:basis-[25%] basis-full  justify-start relative z-1">
-            <h2 className="font-bold text-[32px] max-md:mt-4">Services</h2>
+            <h2 className="font-bold text-[32px] max-md:mt-4">Solutions</h2>
             <ul className="flex flex-col items-start justify-start gap-4">
               {serviceLinks?.map((item) => (
                 <li key={item?.id}>

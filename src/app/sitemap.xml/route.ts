@@ -2,8 +2,7 @@ import { NextResponse } from "next/server";
 import { Site } from "@/helpers/Site";
 
 export async function GET() {
-  // Generate the dynamic sitemap links
-  const links = Site?.routes?.map((link) => {
+  const links = Site.routes.map((link) => {
     return `
       <url>
         <loc>${Site?.url + link?.link}</loc>
