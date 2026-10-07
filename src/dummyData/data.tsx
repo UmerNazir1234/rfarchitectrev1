@@ -99,7 +99,7 @@ export const menuItems: MenuItem[] = [
         icon: <FiPackage className="w-12 h-12" aria-hidden="true" />,
         title: "E-Ticketing Platform",
         description: "View product details.",
-        link: "/products/blueticks",
+        link: "/blueticks",
       },
       {
         id: 2,
@@ -111,7 +111,7 @@ export const menuItems: MenuItem[] = [
       {
         id: 3,
         icon: <FiBox className="w-12 h-12" aria-hidden="true" />,
-        title: "EzFundRazr",
+        title: "EZFundRazr",
         description: "View product details.",
         link: "/products",
       },
@@ -120,7 +120,7 @@ export const menuItems: MenuItem[] = [
         icon: <FiZap className="w-12 h-12" aria-hidden="true" />,
         title: "Spotlyy",
         description: "View product details.",
-        link: "/products/spotly",
+        link: "/spotlyy",
       },
     ],
   },
@@ -454,8 +454,8 @@ export const informationLinks = [
   },
   {
     id: 4,
-    name: "Spotly (Coming Soon)",
-    link: "/products/spotly",
+    name: "Spotlyy (Coming Soon)",
+    link: "/spotlyy",
   },
   {
     id: 5,
@@ -936,17 +936,17 @@ export const work: Work[] = [
   },
   {
     id: 14,
-    workId: "spotly",
+    workId: "spotlyy",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1721470809/RfTechnologiesWebsite/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279_e7mp3b.jpg",
-    title: "Spotly (Coming Soon)",
+    title: "Spotlyy (Coming Soon)",
     text: "A platform connecting everyday users and businesses with their favorite celebrities.",
     subtitle: "Personalized celebrity services for personal and business occasions",
     caseStudy: {
       problem: "Everyday users and businesses need a way to request personalized celebrity content for personal or business occasions.",
       approach: "The product is organized around direct requests for personalized celebrity services; further product-development details are not documented yet.",
       solution: "A platform for requesting personalized voice notes, video messages, special event wishes, promotional content, and other celebrity services.",
-      businessImpact: "Spotly is coming soon, so adoption and business-impact results are not available yet.",
+      businessImpact: "Spotlyy is coming soon, so adoption and business-impact results are not available yet.",
     },
     color: "#28292D",
     textColor: "#FFFFFF",

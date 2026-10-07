@@ -152,7 +152,7 @@ const Header = () => {
                                         >
                                           <div className="flex items-start justify-start gap-3">
                                             <div
-                                              className={`p-2 rounded  w-16 h-16 flex items-center justify-center `}
+                                              className={`header-menu-card-icon p-2 rounded  w-16 h-16 flex items-center justify-center `}
                                               style={{
                                                 backgroundColor: `${
                                                   item?.iconBg || ""
@@ -299,7 +299,7 @@ const Header = () => {
                                     aria-current={
                                       pathname === link.link ? "page" : undefined
                                     }
-                                    className={`flex min-h-12 items-center gap-3 rounded-lg px-3 py-2 text-base transition-colors active:bg-primary/10 ${
+                                    className={`group flex min-h-12 items-center gap-3 rounded-lg px-3 py-2 text-base transition-colors active:bg-primary/10 ${
                                       pathname === link.link
                                         ? "bg-primary/5 font-semibold text-primary"
                                         : "text-primary/80 hover:bg-primary/5 hover:text-primary"
@@ -307,7 +307,7 @@ const Header = () => {
                                   >
                                     <FiArrowRight
                                       aria-hidden="true"
-                                      className="h-4 w-4 shrink-0 text-secondary"
+                                      className="h-4 w-4 shrink-0 text-secondary transition-colors group-hover:text-primary"
                                     />
                                     <span>{link.title}</span>
                                   </Link>

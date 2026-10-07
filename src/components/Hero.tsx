@@ -25,7 +25,7 @@ const Hero = ({
     <>
       {image && (
         <section
-          className="bg-no-repeat bg-cover bg-center relative z-0"
+          className="bg-no-repeat bg-cover bg-center relative z-0 max-sm:overflow-x-clip"
           style={{
             backgroundImage: `url(${image})`,
           }}

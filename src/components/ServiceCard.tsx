@@ -20,7 +20,7 @@ const ServiceCard = ({ card }: props) => {
       <Link
         href={card?.btnLink}
         aria-label={card?.title}
-        className="mb-5 rounded-xl p-3 transition-transform duration-300 group-hover:scale-105 sm:mb-6 sm:p-4"
+        className="service-card-icon mb-5 rounded-xl p-3 transition-transform duration-300 group-hover:scale-105 sm:mb-6 sm:p-4"
         style={{ backgroundColor: `${card?.iconBg || ""}` }}
       >
         {card?.icon}

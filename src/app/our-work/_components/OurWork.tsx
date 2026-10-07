@@ -12,7 +12,7 @@ const OurWork = () => {
       />
       <WorkCard
         work={work.filter(
-          (item) => item.workId !== "blueticks" && item.workId !== "spotly",
+          (item) => item.workId !== "blueticks" && item.workId !== "spotlyy",
         )}
       />
     </div>

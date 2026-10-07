@@ -44,7 +44,11 @@ const HeroSlider = ({ data }: HeroSliderProps) => {
                   ></div>
                   <div className="h-full w-full absolute left-0 top-0 bg-black opacity-20"></div>
                   <div className="relative z-10 h-full flex items-center justify-center">
-                    <div className="text-center md:max-w-[57%] max-w-[90%]">
+                    <div
+                      className={`text-center md:max-w-[57%] max-w-[90%] ${
+                        index === 1 ? "lg:mt-20" : ""
+                      }`}
+                    >
                       <Heading
                         className="lg:text-[90px]  drop-shadow-2xl md:text-[70px] text-4xl font-bold leading-tight text-white"
                         dangerouslySetInnerHTML={{ __html: item.title }}

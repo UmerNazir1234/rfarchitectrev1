@@ -19,7 +19,7 @@ const TextWithCards = ({ content, classes, children }: CardProps) => {
   return (
     <>
       {content?.map((data, index) => (
-        <section className="relative " key={index}>
+        <section className="relative max-sm:overflow-x-clip" key={index}>
           <div className={`page-width ${classes || "py-12"}  relative z-10`}>
             {data?.btnLink && data?.btnTitle && (
               <div className="flex items-start justify-start lg:mb-12 mb-8">

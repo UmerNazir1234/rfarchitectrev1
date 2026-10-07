@@ -266,6 +266,23 @@
   background-position: center;
 }
 
+.service-card-icon svg {
+  transition: filter 300ms;
+}
+
+.group:hover .service-card-icon svg {
+  filter: brightness(0) invert(1);
+}
+
+.group:hover .header-menu-card-icon {
+  color: var(--color-primary);
+}
+
+.group:hover .header-menu-card-icon svg * {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
 @media (max-width: 520px) {
   .serviceSlider {
     margin-top: -10px;

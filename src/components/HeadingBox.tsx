@@ -10,7 +10,7 @@ type contentProps = {
 
 const HeadingBox = ({ title, description, classes }: contentProps) => {
   return (
-    <section className="relative">
+    <section className="relative max-sm:overflow-x-clip">
       <div className="page-width ">
         <div className="flex items-center justify-center lg:py-36 py-16 lg:gap-24 gap-6 lg:flex-nowrap flex-wrap">
           <div className="lg:basis-[45%] basis-full max-lg:ps-6 max-sm:text-center max-sm:p-0">
