@@ -97,9 +97,9 @@ export const menuItems: MenuItem[] = [
       {
         id: 1,
         icon: <FiPackage className="w-12 h-12" aria-hidden="true" />,
-        title: "E-Ticketing Platform",
+        title: "EazyTicks",
         description: "View product details.",
-        link: "/blueticks",
+        link: "/products/eazyticks",
       },
       {
         id: 2,
@@ -449,8 +449,8 @@ export const informationLinks = [
   },
   {
     id: 3,
-    name: "BlueTicks",
-    link: "/products/blueticks",
+    name: "EazyTicks",
+    link: "/products/eazyticks",
   },
   {
     id: 4,
@@ -917,13 +917,13 @@ export const work: Work[] = [
     workId: "blueticks",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727173589/RfTechnologiesWebsite/Group_1597883988_hqegge.png",
-    title: "BlueTicks",
+    title: "EazyTicks",
     text: "An organization-controlled e-ticketing platform for independent event sales.",
     subtitle: "Event management, ticket sales, pricing, and promotions",
     caseStudy: {
       problem: "Organizations selling event tickets can face third-party service or transaction fees and limited control over pricing, promotions, and customer engagement.",
-      approach: "RF Technologies focused BlueTicks on independent event sales and direct organizational control.",
-      solution: "A branded e-ticketing platform for managing and promoting events, ticket sales, pricing, and the organization experience.",
+      approach: "EazyTicks provides organizers with a dedicated platform to create events, configure ticket types and pricing, manage sales and attendees, process check-ins, and handle event operations.",
+      solution: "A complete ticketing platform for event pages, ticket management, sales tracking, QR-code attendee check-in, parking and product sales, POS transactions, tickets, reports, payouts, and event promotion.",
       businessImpact: "No measured business results have been provided. The documented intended benefit is greater control over event sales and pricing.",
     },
     color: "#002475",

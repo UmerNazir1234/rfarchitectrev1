@@ -19,7 +19,12 @@ const nextConfig = {
       },
       {
         source: "/blueticks",
-        destination: "/products/blueticks",
+        destination: "/products/eazyticks",
+        permanent: true,
+      },
+      {
+        source: "/products/blueticks",
+        destination: "/products/eazyticks",
         permanent: true,
       },
     ];

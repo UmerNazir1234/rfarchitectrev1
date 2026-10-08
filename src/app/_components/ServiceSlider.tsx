@@ -15,10 +15,12 @@ type props = {
 };
 const ServiceSlider = ({ cards }: props) => {
   return (
-    <section className="w-full lg:-mt-[240px] md:-mt-[210px] max-md:-mt-[150px] max-sm:-mt-[80px] mb-20 z-50 relative serviceSlider">
-      <div className="page-width grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6 xl:grid-cols-3">
+    <section className="relative w-full pt-8 mb-20 serviceSlider">
+      <div className="page-width grid min-w-0 grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6 xl:grid-cols-4">
         {cards?.map((card) => (
-          <ServiceCard key={card?.id} card={card} />
+          <div key={card?.id} className="min-w-0">
+            <ServiceCard card={card} />
+          </div>
         ))}
       </div>
     </section>

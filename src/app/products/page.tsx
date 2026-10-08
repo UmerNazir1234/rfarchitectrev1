@@ -5,7 +5,7 @@ import { FiPackage, FiStar } from "react-icons/fi";
 
 const title = "Products";
 const description =
-  "Explore products developed by RF Technologies, including BlueTicks and the upcoming Spotlyy.";
+  "Explore products developed by RF Technologies, including EazyTicks and the upcoming Spotlyy.";
 
 export const metadata: Metadata = {
   title,
@@ -19,11 +19,11 @@ const products = [
   {
     id: 1,
     icon: <FiPackage className="h-16 w-16" aria-hidden="true" />,
-    title: "BlueTicks",
+    title: "EazyTicks",
     content:
-      "An e-ticketing product for organizations to manage and promote events, ticket sales, pricing, and their branded experience.",
-    btnText: "Explore BlueTicks",
-    btnLink: "/products/blueticks",
+      "A mobile-focused ticketing platform for organizations to create events, manage tickets and attendees, track sales, and operate live events.",
+    btnText: "Explore EazyTicks",
+    btnLink: "/products/eazyticks",
   },
   {
     id: 2,

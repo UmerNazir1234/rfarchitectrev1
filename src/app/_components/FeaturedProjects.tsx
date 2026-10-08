@@ -20,7 +20,7 @@ type propsProjects = {
 };
 const FeaturedProjects = ({ data }: propsProjects) => {
   return (
-    <div className="relative -mt-[130px]">
+    <div className="relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 81"

@@ -23,7 +23,7 @@ export const blueTicksImageWithText = [
     subtitle: "The challenge",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727177035/RfTechnologiesWebsite/Group_1597883966_wztb7q.svg",
-    description: `Organizations selling event tickets can face third-party service or transaction fees and limited control over ticket pricing, promotions, and customer engagement.`,
+    description: `Traditional ticketing solutions can make organizations dependent on third-party platforms for event management, ticket sales, customer experience, and event data. When ticketing is handled through disconnected systems, organizations can have less control over their ticketing process and attendee experience.`,
     btnLink: "/",
     btnTitle: "",
     ctaLink: "",
@@ -41,7 +41,7 @@ export const manageSales = [
     subtitle:"A dedicated, organization-controlled ticketing platform",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727178708/RfTechnologiesWebsite/Group_1597883968_wgfi0g.svg",
-    description: `RF Technologies focused BlueTicks on independent event sales, giving organizations direct control over event management, pricing, promotions, and their branded experience.`,
+    description: `Event organizers need more than a way to sell tickets. They need one system to create events, manage ticket types and pricing, monitor sales, manage attendees, process check-ins, and handle event operations. EazyTicks provides a dedicated ticketing ecosystem designed around those needs.`,
     btnLink: "/",
     btnTitle: "",
     ctaLink: "",
@@ -58,7 +58,7 @@ export const createandcustom = [
     title: "SOLUTION",
     image:
       "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727188067/RfTechnologiesWebsite/Group_1597883970_ueae3x_1_ljlo85.png",
-    description: `BlueTicks is an e-ticketing platform where organizations can manage and promote events, manage ticket sales, set their own prices, and tailor the platform to their brand.`,
+    description: `EazyTicks is a complete, organization-controlled ticketing platform. Organizers can create customizable event pages, configure ticket types, manage sales, publish events, provide QR-code check-in, and monitor events through an organizer dashboard.`,
     btnLink: "/",
     btnTitle: "",
     ctaLink: "",

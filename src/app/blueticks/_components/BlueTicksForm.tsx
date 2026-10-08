@@ -2,20 +2,28 @@ import React from "react";
 import Form from "../Form";
 const benefits = {
   title: "Platform capabilities",
-  description: "BlueTicks gives organizations tools to:",
+  description: "EazyTicks gives organizers the tools to run events from one place:",
 
   benefitsList: [
     {
-      title: "Manage events",
-      description: "Organize and promote events from one platform."
+      title: "Create event pages",
+      description: "Create and customize event pages, then publish and promote events."
     },
     {
-      title: "Control ticket sales",
-      description: "Set ticket prices and manage sales directly."
+      title: "Manage tickets and sales",
+      description: "Configure ticket types, pricing, and quantities while tracking sales and revenue."
     },
     {
-      title: "Customize branding",
-      description: "Tailor the platform to reflect the organization's identity."
+      title: "Manage attendees and check-ins",
+      description: "Manage attendee information and check people in using QR-code scanning."
+    },
+    {
+      title: "Run event operations",
+      description: "Sell event parking and products, process on-site transactions with POS, and view or print tickets."
+    },
+    {
+      title: "Manage reporting and promotion",
+      description: "Review reports and payouts, and promote events with sharing tools and QR codes."
     }
   ]
 };

@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 import Blueticks from "@/app/blueticks/_components/Blueticks";
 
-const title = "BlueTicks";
+const title = "EazyTicks";
 const description =
-  "BlueTicks is an e-ticketing platform for managing and promoting events, ticket sales, pricing, and branded experiences.";
+  "EazyTicks is a mobile-focused ticketing platform that helps organizations create, manage, and sell tickets for sports, concerts, theater, and other live events.";
 
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/products/blueticks" },
+  alternates: { canonical: "/products/eazyticks" },
   openGraph: {
     title: `${title} | RF Technologies`,
     description,
-    url: "/products/blueticks",
+    url: "/products/eazyticks",
   },
   twitter: { title: `${title} | RF Technologies`, description },
 };
 
-export default function BlueTicksProductPage() {
+export default function EazyTicksProductPage() {
   return <Blueticks />;
 }

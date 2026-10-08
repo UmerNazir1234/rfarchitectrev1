@@ -41,7 +41,7 @@ export const Site = {
       link: "/solutions/technology-partnership",
     },
     { id: 7, name: "Products", link: "/products" },
-    { id: 8, name: "BlueTicks", link: "/products/blueticks" },
+    { id: 8, name: "EazyTicks", link: "/products/eazyticks" },
     { id: 9, name: "Spotlyy", link: "/spotlyy" },
     { id: 10, name: "Work", link: "/our-work" },
     { id: 11, name: "Industries", link: "/industries" },
