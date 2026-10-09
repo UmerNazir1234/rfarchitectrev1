@@ -35,7 +35,11 @@ const ImageWithText = ({
               }  lg:flex-nowrap  flex-wrap`}
             >
               <div
-                className={` ${
+                className={`${
+                  data?.enableImageBackground
+                    ? "rounded-2xl bg-blueLight p-3 sm:p-5"
+                    : ""
+                } ${
                   data?.imageFirst === false && fullWidth
                     ? "flex items-center justify-end"
                     : ""

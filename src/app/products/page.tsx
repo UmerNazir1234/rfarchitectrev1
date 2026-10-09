@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
-import { FiPackage, FiStar } from "react-icons/fi";
+import { FiHome, FiPackage, FiStar } from "react-icons/fi";
 
 const title = "Products";
 const description =
-  "Explore products developed by RF Technologies, including EazyTicks and the upcoming Spotlyy.";
+  "Explore products developed by RF Technologies, including EazyTicks, Society Management System, and the upcoming Spotlyy.";
 
 export const metadata: Metadata = {
   title,
@@ -27,6 +27,15 @@ const products = [
   },
   {
     id: 2,
+    icon: <FiHome className="h-16 w-16" aria-hidden="true" />,
+    title: "Society Management System",
+    content:
+      "A centralized platform for residential communities to manage residents, staff, facilities, services, and communication.",
+    btnText: "Explore Society Management System",
+    btnLink: "/products/societymanagement-system",
+  },
+  {
+    id: 3,
     icon: <FiStar className="h-16 w-16" aria-hidden="true" />,
     title: "Spotlyy — Coming Soon",
     content:

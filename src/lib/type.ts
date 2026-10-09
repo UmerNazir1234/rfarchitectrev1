@@ -67,6 +67,7 @@ export type imageWithText = {
   description?: string;
   image?: string;
   imageFirst?: boolean;
+  enableImageBackground?: boolean;
   enableImageCenter?: boolean;
   enableImageleft?: boolean;
   enableImageRight?: boolean;

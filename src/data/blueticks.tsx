@@ -21,8 +21,8 @@ export const blueTicksImageWithText = [
   {
     title: "Ticketing without direct control",
     subtitle: "The challenge",
-    image:
-      "https://res.cloudinary.com/dzmrdbwqh/image/upload/v1727177035/RfTechnologiesWebsite/Group_1597883966_wztb7q.svg",
+    image: "/eazyticks.png",
+    enableImageBackground: true,
     description: `Traditional ticketing solutions can make organizations dependent on third-party platforms for event management, ticket sales, customer experience, and event data. When ticketing is handled through disconnected systems, organizations can have less control over their ticketing process and attendee experience.`,
     btnLink: "/",
     btnTitle: "",
